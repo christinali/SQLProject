@@ -10,7 +10,7 @@ class App extends Component {
           })
               .then(res => res.json())
               .then(json => {console.log(json); resolve(json)})
-              .catch(err => reject(err));
+              .catch(err => {console.log(err); reject(err)});
       });
     return (
       <div className="App">

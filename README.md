@@ -1,2 +1,2 @@
 # SQLProject
-CS 316 Course Projec
+CS 316 Course Project

@@ -7,7 +7,6 @@ class App extends Component {
       var testing = new Promise((resolve, reject) => {
           fetch("https://0.0.0:5000", {
               method: 'GET',
-              headers: opts.additionalHeaders || {},
           })
               .then(res => res.json())
               .then(json => {console.log(json); resolve(json)})

@@ -1,0 +1,14 @@
+class_num, class_name, dept_id
+101, Intro to Computer Science, CS
+101, Intro to Econ, ECON
+201, Design and Analysis of Algorithms, CS
+201, Micro-economics, ECON
+210, Macro-economics, ECON
+250, Computer Architecture, CS
+290, Web Application Development, CS
+316, Databases, CS
+101, Introduction to Cultural Anthropology, CA
+101, Beginner French 1, FR
+102, Beginner French 2, FR
+203, Intermediate French 1, FR
+204, Intermediate French 2, FR

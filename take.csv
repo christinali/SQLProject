@@ -1,0 +1,22 @@
+student_id, class_num, dept_id, time
+001, 101, CS, Fall 2016
+001, 101, Econ, Fall 2018
+001, 201, CS, Spring 2017
+001, 250, CS, Spring 2017
+001, 308, CS, Fall 2017
+001, 316, CS, Fall 2018
+002, 201, CS, Fall 2016
+002, 201, Econ, Spring 2017
+002, 250, CS, Fall 2017
+002, 290, CS, Fall 2017
+002, 316, CS, Fall 2018
+003, 101, FR, Fall 2016
+003, 102, FR, Spring 2017
+003, 203, FR, Fall 2017
+003, 204, FR, Spring 2018
+003, 201, CS, Spring 2017
+003, 216, CS, Fall 2017
+003, 316, CS, Fall 2018
+004, 101, Econ, Fall 2017
+004, 201, Econ, Spring 2018
+004, 101, CA, Spring 2018

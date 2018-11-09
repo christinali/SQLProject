@@ -43,8 +43,7 @@ class Professor(db.Model):
 class Teaches(db.Model):
     classID = db.Column('classID', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     professorID = db.Column('professorID', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
-
-
+    semester = db.Column('semester', db.String(4))
 
 class Drinker(db.Model):
     __tablename__ = 'drinker'

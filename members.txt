@@ -1,0 +1,21 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13120\viewh12280\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Team Members \
+\
+
+\b 1. Matthew O\'92Boyle 
+\b0 - In addition to general participation in all the group meetings, Matt focused the bulk of his independent work on developing the initial backend framework of our project, specifically implementing SQLAlchemy structures and code into our web app. Once we decided to use Flask for our backend, Matt took the lead on generating a sample dataset we could use to test our web app and see the results of our project. Particularly, Matt focused on establishing a clear structure for our web app\'92s backend, with a focus on how we could keep code concise and efficient while still generating the effective results we are aiming for.\
+\
+
+\b 2/3. Christina Li/Suchir Bhatt
+\b0  - In addition to general participation in all the group meetings, Christina and Suchir concentrated their work on recreating the E/R diagrams to fit our new app design, given the changes we made to make the app center around bookbagging rather than jobs as we had originally intended. This recreation also gave us a chance to both simplify previous redundancies as well as account for layers of nuance we had originally missed, and made our database design much more accurate to our final product. Once that was finished, Christina and Suchir began to focus on learning SQLAlchemy (together with Matt), a Python toolkit that interfaces seamlessly with SQL to allow for applications with high-performing database access. Specifically, they focused on utilizing the data mapper platform, which allows for direct mapping of Python classes to various parts of database schema, which will be integral to our final project.\
+\
+
+\b 4/5. Feroze Mohideen/Salil Mitra
+\b0  - In addition to general participation in all the group meetings, Feroze and Salil focused their work on developing a simple front-end interface through React.js that we could use in an interim to visualise the results of our project. The creation of an initial front-end was integral to allowing us to properly flesh out the areas of our app that we want to highlight or diminish, as seeing it all come together for the first time was critical for our app development. As a result of those conversations, Feroze and Salil also began to discuss plans for adding future layers of visualisation to our front-end, as well as how our design could change to improve the user experience. Finally, because the front-end work was more preliminary for this milestone, Feroze and Salil also completed the project and member write-ups to balance out work.\
+\
+Overall, the work was distributed fairly evenly across all group members, with most of our work stemming from multiple full-group meetings. We also began to distribute our work into sections, specifically the division between back and front end, that allowed us to specialize in what we are best at, and consequently, what we are most efficient at.}

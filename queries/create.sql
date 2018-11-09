@@ -1,0 +1,5 @@
+CREATE TABLE Taken
+(professorID INTEGER NOT NULL,
+ starNumber INTEGER NOT NULL);
+
+

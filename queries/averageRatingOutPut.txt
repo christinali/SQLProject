@@ -1,0 +1,24 @@
+test=# Select avg(t1.starNumber)
+test-# from Taken as t1
+test-# where t1.professorID=100;
+         avg          
+----------------------
+ 204.5000000000000000
+(1 row)
+test=# /*Not sure of the exact syntax but the %s represents the inputted professorID by the query from the frontend. I had it hardcoded to a certain value before to temporarily create the output, but for the actual queries it will take in input*/
+
+
+
+
+INSERTION STATEMENTS
+INSERT INTO Taken VALUES
+  (100, 400),
+  (300, 400),
+  (500, 600),
+  (800, 900),
+  (150, 600),
+(100, 9),
+  (138, 400);
+
+
+It outputs halfway between 9 and 400 which is expected, so it works!

@@ -9,7 +9,8 @@ test=# /*Not sure of the exact syntax but the %s represents the inputted profess
 
 
 
-
+------------------------------------------------------------------------------------------------
+(USER ADDED)
 INSERTION STATEMENTS
 INSERT INTO Taken VALUES
   (100, 400),

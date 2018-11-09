@@ -1,10 +1,55 @@
 from sqlalchemy import sql, orm
 from app import db
 
+class Class(db.Model):
+    __tablename__ = 'class'
+    name = db.Column('name', db.String(100))
+    classID = db.Column('classID', db.Integer, primary_key=True)
+    frequents = orm.relationship('Frequents')
+
+class Student(db.Model):
+    __tablename__ = 'student'
+    name = db.Column('name', db.String(100))
+    email = db.Column('email', db.String(100), nullable=True)
+    studentID = db.Column('studentID', db.Integer, primary_key=True)
+
+class Comment(db.Model):
+    __tablename__ = "comment"
+    text = db.Column('text', db.String(10000))
+    upvotes = db.Column('upvotes', db.Integer)
+    downvotes = db.Column('downvotes', db.Integer)
+    studentID = db.Column('studentID', db.Integer, db.ForeignKey('student.studentID'))
+    commentID = db.Column('commentID', db.Integer, primary_key=True)
+    
+class Department(db.Model):
+    __tablename__ = "department"
+    name = db.Column('name', db.String(100))
+    departmentID = db.Column('departmentID', db.Integer, primary_key=True)
+
+class Taken(db.Model):
+    __tablename__ = "taken"
+    semester = db.Column('semester', db.String(4))
+    starNumber = db.Column("starNumber", db.Float)
+    commentID = db.Column("commentID", db.Integer, primary_key=True)
+    studentID = db.Column('studentID', db.Integer, db.ForeignKey('student.studentID'))
+    classID = db.Column('classID', db.Integer, db.ForeignKey('class.classID'))
+
+
+class Professor(db.Model):
+    __tablename__ = "professor"
+    name = db.Column('name', db.String(100))
+    professorID = db.Column('professorID', db.Integer, primary_key=True)
+
+class Teaches(db.Model):
+    classID = db.Column('classID', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
+    professorID = db.Column('professorID', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
+
+
+
 class Drinker(db.Model):
     __tablename__ = 'drinker'
     name = db.Column('name', db.String(20), primary_key=True)
-    address = db.Column('address', db.String(20))
+
     likes = orm.relationship('Likes')
     frequents = orm.relationship('Frequents')
     @staticmethod

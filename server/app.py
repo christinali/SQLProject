@@ -8,10 +8,10 @@ app.secret_key = 's3cr3t'
 app.config.from_object('config')
 db = SQLAlchemy(app, session_options={'autocommit': False})
 
-@app.route('/')
-def all_drinkers():
-    drinkers = db.session.query(models.Drinker).all()
-    return render_template('all-drinkers.html', drinkers=drinkers)
+@app.route('/classes', methods=['GET'])
+def getAllClasses():
+    classes = db.session.query(models.Classes).all()
+    return jsonifu({'classes':classes})
 
 @app.route('/drinker/<name>')
 def drinker(name):

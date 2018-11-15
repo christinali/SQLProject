@@ -1,7 +1,8 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, jsonify
 from flask_sqlalchemy import SQLAlchemy
 import models
 import forms
+import sys
 
 app = Flask(__name__)
 app.secret_key = 's3cr3t'
@@ -10,8 +11,21 @@ db = SQLAlchemy(app, session_options={'autocommit': False})
 
 @app.route('/classes', methods=['GET'])
 def getAllClasses():
-    classes = db.session.query(models.Classes).all()
-    return jsonifu({'classes':classes})
+    classes = db.session.query(models.Class).all()
+    return jsonify({'classes':classes})
+
+@app.route('/departments', methods=['GET'])
+def getAllDepartments():
+    departments = db.session.query(models.Department).all()
+    departmentList = dict()
+    for department in departments:
+        departmentList[department.department_id] = department.name
+    return jsonify(departmentList)
+
+@app.route('/taken', methods=['GET'])
+def getTaken():
+    taken = db.session.query(models.Taken).all()
+    return jsonify({'taken':taken})
 
 @app.route('/drinker/<name>')
 def drinker(name):

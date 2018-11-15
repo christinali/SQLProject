@@ -1,4 +1,7 @@
 import random
+
+departmentID = ["COMPSCI", "ECON", "PSYCH", "RUSSIA", "ECE", "STAT", "MATH"]
+
 def insert_into_database(table_name):
     # @param table_name - name of the table wished to insert into
     if table_name == "Students":
@@ -15,12 +18,9 @@ def insert_into_database(table_name):
         SID_array = [12341, 12234, 1292993, 19239, 12003]
         classID_array = [1, 233, 322, 4445, 223]
         CID_array = [999292, 2939403, 202303, 303004, 23030]
-        star_array = [1, 3, 2, 4, 5, 2, 3]
+        star_array = range(1,5.1,.1)
         ret = []
-        for _ in range(10):
-            ret.append("INSERT INTO Students VALUES (" + random.choice(sem_array) + str(random.choice(SID_array)) +
-                str(random.choice(classID_array)) + str(random.choice(classID_array)) + str(random.choice(CID_array))
-                       + str(random.choice(star_array)))
+        ret.append("INSERT INTO Students VALUES (")
         return ret
     elif table_name == "Classes":
         classID_array = [1, 233, 322, 4445, 223]
@@ -40,3 +40,14 @@ def insert_into_database(table_name):
             ret.append("INSERT INTO Students VALUES (" + (random.choice(sem_array)) + str(random.choice(CID_array))
                        + str(random.choice(ProfessorID_array)))
         return ret
+    elif table_name == "Department":
+        insertionArr = list()
+        insertionArr.append("INSERT INTO Department VALUES")
+        for i in range(len(departmentID)):
+            if i!= len(departmentID)-1:
+                insertionArr.append("('"+departmentID[i]+"',"+str(i)+"),")
+            else:
+                insertionArr.append("('"+departmentID[i]+"',"+str(i)+");")
+        return "\n".join(insertionArr)
+
+print(insert_into_database("Department"))

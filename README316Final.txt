@@ -1,0 +1,4 @@
+To load our production data, we essentially used a script that would allow us to generate strings representing data following the table schema of our different tables. This script works by having a sample array of groups per attribute of each table, and then using random generation to select arbitrary members of each of these arrays to add to the tables. This script also outputs in the form of INSERT INTO statements, which allow us to directly pipe the output into our database. We have attached the script here for the tables: STUDENTS, TAKEN, CLASSES, and TEACH, but the same script is used to generate the random data for the rest of our tables through the same process. 
+
+
+** The query that we have for SQL and its output are in the SQL folder and are called averagerating.sql and averageratingoutput.txt. The files used to insert the data into the database and create and load the tables are called create.sql and load.sql

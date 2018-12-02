@@ -57,4 +57,4 @@ def pluralize(number, singular='', plural='s'):
     return singular if number in (0, 1) else plural
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)

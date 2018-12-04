@@ -53,18 +53,15 @@ handleSignup = () => {
 render = () => {
     const { email, password } = this.state;
     return (
-        <div>
-<label>
-    Email:
-<input type="text" value={this.state.email} onChange={e => this.setState({email: e.target.value})} />
-    </label>
-    <label>
-    Password:
-<input type="text" value={this.state.password} onChange={e => this.setState({password: e.target.value})} />
-    </label>
-    <button onClick={this.handleLogin}>Log in</button>
-    <button onClick={this.handleSignup}>Sign up</button>
-
+    <div>
+        <label>Email:
+        <input type="text" value={this.state.email} onChange={e => this.setState({email: e.target.value})} />
+        </label>
+        <label>Password:
+        <input type="text" value={this.state.password} onChange={e => this.setState({password: e.target.value})} />
+        </label>
+        <button onClick={this.handleLogin}>Log in</button>
+        <button onClick={this.handleSignup}>Sign up</button>
     </div>
     );
 };

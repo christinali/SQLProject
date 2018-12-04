@@ -14,6 +14,14 @@ app.config.from_object('config')
 db = SQLAlchemy(app, session_options={'autocommit': False})
 CORS(app)
 
+@app.route('/departments', methods=['GET'])
+def getAllDepartments():
+    departments = db.session.query(models.Department).all()
+    departmentList = dict()
+    for department in departments:
+        departmentList[department.department_id] = department.name
+    return jsonify(departmentList)
+
 @app.route('/get-id', methods=['GET'])
 def getId():
     email = request.args.get('email')

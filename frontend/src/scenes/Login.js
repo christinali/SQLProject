@@ -15,42 +15,42 @@ const firebaseConfig = {
 const app = firebase.initializeApp(firebaseConfig);
 
 export default class Login extends React.Component {
-    state = { email: '', password: '' };
+  state = { email: '', password: '' };
 
-    handleLogin = () => {
-      const { email, password } = this.state;
-      app
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then(async user => {
+  handleLogin = () => {
+    const { email, password } = this.state;
+    app
+    .auth()
+    .signInWithEmailAndPassword(email, password)
+    .then(async user => {
       if (user) {
-          this.props.login()
-          alert("You logged in successfully")
+        this.props.login()
+        alert("You logged in successfully")
       }
-      })
-  .catch(e => {
+    })
+    .catch(e => {
       alert(e.message);
       console.log(e)
     });
-    };
+  };
   validateForm() {
-      return this.state.email.length > 0 && this.state.password.length > 0;
+    return this.state.email.length > 0 && this.state.password.length > 0;
   }
   handleSignup = () => {
-      const { email, password } = this.state;
-      app
-          .auth()
-          .createUserWithEmailAndPassword(email, password)
-          .then(async user => {
-          if (user) {
-              this.props.login()
-              alert("You signed up successfully")
-          }
-      })
-  .catch(e => {
+    const { email, password } = this.state;
+    app
+    .auth()
+    .createUserWithEmailAndPassword(email, password)
+    .then(async user => {
+      if (user) {
+        this.props.login()
+        alert("You signed up successfully")
+      }
+    })
+    .catch(e => {
       alert(e.message);
       console.log(e);
-  });
+    });
   };
 
   handleChange = event => {

@@ -1,5 +1,6 @@
 import React from 'react';
 import firebase from 'firebase';
+import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDfXgvgX2_eyPam6O3eenzLTJHrwHc2tdc",
@@ -14,59 +15,95 @@ const firebaseConfig = {
 const app = firebase.initializeApp(firebaseConfig);
 
 export default class Login extends React.Component {
-    state = { email: '', password: '' };
+  state = { email: '', password: '' };
 
-    handleLogin = () => {
+  handleLogin = () => {
     const { email, password } = this.state;
     app
     .auth()
     .signInWithEmailAndPassword(email, password)
     .then(async user => {
-    if (user) {
+      if (user) {
         this.props.login()
         alert("You logged in successfully")
-    }
-})
-.catch(e => {
-    alert(e.message);
-    console.log(e)
-});
-};
-
-handleSignup = () => {
+      }
+    })
+    .catch(e => {
+      alert(e.message);
+      console.log(e)
+    });
+  };
+  validateForm() {
+    return this.state.email.length > 0 && this.state.password.length > 0;
+  }
+  handleSignup = () => {
     const { email, password } = this.state;
     app
-        .auth()
-        .createUserWithEmailAndPassword(email, password)
-        .then(async user => {
-        if (user) {
-            this.props.login()
-            alert("You signed up successfully")
-        }
+    .auth()
+    .createUserWithEmailAndPassword(email, password)
+    .then(async user => {
+      if (user) {
+        this.props.login()
+        alert("You signed up successfully")
+      }
     })
-.catch(e => {
-    alert(e.message);
-    console.log(e);
-});
-};
+    .catch(e => {
+      alert(e.message);
+      console.log(e);
+    });
+  };
 
-render = () => {
-    const { email, password } = this.state;
+  handleChange = event => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+  };
+
+  render() {
     return (
-        <div>
-<label>
-    Email:
-<input type="text" value={this.state.email} onChange={e => this.setState({email: e.target.value})} />
-    </label>
-    <label>
-    Password:
-<input type="text" value={this.state.password} onChange={e => this.setState({password: e.target.value})} />
-    </label>
-    <button onClick={this.handleLogin}>Log in</button>
-    <button onClick={this.handleSignup}>Sign up</button>
-
-    </div>
+      <div className="Login">
+          <div className="inner">
+            <h2>Welcome to Our App!</h2>
+            <p>Please enter your email and password to login/sign up below.</p>
+          </div>
+          <FormGroup controlId="email" bsSize="large">
+            <ControlLabel><p class='name'>Email:</p></ControlLabel>
+            <FormControl
+              autoFocus
+              type="email"
+              value={this.state.email}
+              onChange={this.handleChange}
+            />
+          </FormGroup>
+          <FormGroup controlId="password" bsSize="large">
+            <ControlLabel><p class='name'>Password:</p></ControlLabel>
+            <FormControl
+              value={this.state.password}
+              onChange={this.handleChange}
+              type="password"
+            />
+          </FormGroup>
+          <Button
+            block
+            bsSize="large"
+            disabled={!this.validateForm()}
+            type="submit"
+            onClick={this.handleLogin}
+            bsStyle="warning"
+          >
+            Login
+          </Button>
+          <Button
+            block
+            bsSize="large"
+            disabled={!this.validateForm()}
+            type="submit"
+            onClick={this.handleSignup}
+            bsStyle="warning"
+          >
+            Sign up
+          </Button>
+      </div>
     );
-};
+  }
 }
-

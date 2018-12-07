@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from full_classes import getFullClasses, getAllReviews
 from condensed_classes import getMajors, getTreqs
 from prof_info import getAllProfs
+from flask_cors import CORS
 import models
 import forms
 import sys
@@ -11,6 +12,7 @@ app = Flask(__name__)
 app.secret_key = 's3cr3t'
 app.config.from_object('config')
 db = SQLAlchemy(app, session_options={'autocommit': False})
+CORS(app)
 
 @app.route('/departments', methods=['GET'])
 def getAllDepartments():

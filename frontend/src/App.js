@@ -14,7 +14,7 @@ class App extends Component {
         <div>
             {this.state.login && <button onClick={() => this.setState({login: false})}>Log out</button>}
             {this.state.login ? <GetInfo/> : <Login login={() => this.setState({login: true})}/>}
-            hi
+            h
         </div>
     );
   }

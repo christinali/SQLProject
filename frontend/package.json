@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "firebase": "^5.7.0",
     "plotly.js": "^1.42.5",
     "rc-checkbox": "^2.1.5",
     "react": "^16.6.1",

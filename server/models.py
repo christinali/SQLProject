@@ -3,7 +3,7 @@ from app import db
 
 #TODO: Make everything lowercase rip
 class Class(db.Model):
-    __tablename__ = 'Class'
+    __tablename__ = 'class'
     name = db.Column('name', db.String(100))
     class_id = db.Column('class_id', db.Integer, primary_key=True)
     department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
@@ -13,14 +13,14 @@ class Class(db.Model):
     # cci = db.Column('cci', db.Integer)
 
 class Student(db.Model):
-    __tablename__ = 'Student'
+    __tablename__ = 'student'
     name = db.Column('name', db.String(100))
     email = db.Column('email', db.String(100), nullable=True)
     student_id = db.Column('student_id', db.Integer, primary_key=True)
     major = db.Column('major', db.String(100), db.ForeignKey('department.name'))
 
 class Comment(db.Model):
-    __tablename__ = "Comment"
+    __tablename__ = "comment"
     text = db.Column('text', db.String(10000))
     upvotes = db.Column('upvotes', db.Integer)
     downvotes = db.Column('downvotes', db.Integer)
@@ -33,9 +33,9 @@ class Department(db.Model):
     department_id = db.Column('department_id', db.Integer, primary_key=True)
 
 class Taken(db.Model):
-    __tablename__ = "Taken"
+    __tablename__ = "taken"
     semester = db.Column('semester', db.String(4))
-    starNumber = db.Column("starNumber", db.Float)
+    star_number = db.Column("star_number", db.Float)
     comment_id = db.Column("comment_id", db.Integer, nullable=True)
     student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.studentID'), primary_key=True)
     class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
@@ -43,12 +43,12 @@ class Taken(db.Model):
     department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
 
 class Professor(db.Model):
-    __tablename__ = "Professor"
+    __tablename__ = "professor"
     name = db.Column('name', db.String(100))
     professor_id = db.Column('professor_id', db.Integer, primary_key=True)
 
 class Teaches(db.Model):
-    __tablename__ = "Teaches"
+    __tablename__ = "teaches"
     class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     professor_id = db.Column('professor_id', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
     semester = db.Column('semester', db.String(4))

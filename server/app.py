@@ -57,13 +57,31 @@ def getClasses():
 def getmajors():
     user_id = request.args.get('user_id')
     major = findUserMajor(user_id)
-    print(major)
-    if (user_id):
-        return jsonify(getMajors())
+    department_id = db.session.query(models.Department).filter_by(name=major).first().department_id
+    classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
+    ans = dict()
+    for eachClass in classesInMajor:
+        goodness = 0
+        ans[eachClass.name] = dict()
+        ans[eachClass.name]['overallRating'] = getRatings(eachClass.class_id)
+    for key in ans.keys():
+        total = 0
+        for rating in ans[key]['overallRating']:
+            total+=rating
+        total/=len(ans[key]['overallRating'])
+        ans[key]['overallRating'] = total
+    return jsonify(ans)
+
+def getRatings(class_id):
+        takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
+        ratings = list()
+        for taken in takenTuples:
+                ratings.append(taken.star_number)
+        return ratings
 
 def findUserMajor(user_id):
-    major = db.session.query(models.Student).filter_by(studentID=user_id).major
-    return jsonify(major)
+    student = db.session.query(models.Student).filter_by(student_id=user_id).first()
+    return student.major
 
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():

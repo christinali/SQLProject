@@ -1,4 +1,3 @@
 INSERT INTO Comment VALUES
 ('Very clear lecturer. Fully understands the content and presents it in an interesting and fulfilling way. Homework is also useful in conveying the content to the student. Semester group project is entirely reasonable and tests are based on lectures heavily (though slides are available on course site). Take the class! Learned a lot!', 10, 2, 69, 0),
-('Very clear lecturer. Fully understands the content and presents it in an interesting and fulfilling way. Homework is also useful in conveying the content to the student. Semester group project is entirely reasonable and tests are based on lectures heavily (though slides are available on course site). Take the class! Learned a lot!', 10, 2, 69, 0),
-('S18', 3.1, NULL, 420, 002598, 0);
+('HE IS SO NICE!!!! Gives a ton of extra credit. Great at explaining concepts and always there for students. Really excited about the material and knows it well. Absolutely loves the course project and his passion shows. Also makes a lot of Simpson references! Puts a lot of effort into the course.', 100, 18, 420, 1);

@@ -1,5 +1,6 @@
 dropdb bookbagging; createdb bookbagging;
-psql bookbagging -af create.sql
+psql bookbagging -af sqlFiles/create.sql
+psql bookbagging -af sqlFiles/student.sql;
 psql bookbagging -af sqlFiles/department.sql;
 psql bookbagging -af sqlFiles/class.sql;
 psql bookbagging -af sqlFiles/professor.sql;

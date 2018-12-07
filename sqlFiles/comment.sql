@@ -1,0 +1,4 @@
+INSERT INTO Comment VALUES
+('Very clear lecturer. Fully understands the content and presents it in an interesting and fulfilling way. Homework is also useful in conveying the content to the student. Semester group project is entirely reasonable and tests are based on lectures heavily (though slides are available on course site). Take the class! Learned a lot!', 10, 2, 69, 0),
+('Very clear lecturer. Fully understands the content and presents it in an interesting and fulfilling way. Homework is also useful in conveying the content to the student. Semester group project is entirely reasonable and tests are based on lectures heavily (though slides are available on course site). Take the class! Learned a lot!', 10, 2, 69, 0),
+('S18', 3.1, NULL, 420, 002598, 0);

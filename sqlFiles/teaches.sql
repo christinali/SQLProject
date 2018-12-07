@@ -1,0 +1,3 @@
+INSERT INTO Teaches VALUES
+(015744,1, 'F18'),
+(002606,3, 'S18');

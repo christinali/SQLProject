@@ -1,6 +1,11 @@
-dropdb bookbagging; createdb bookbagging; psql bookbagging -af create.sql
-psql bookbagging -af department.sql;
-psql bookbagging -af student.sql;
+dropdb bookbagging; createdb bookbagging;
+psql bookbagging -af create.sql
+psql bookbagging -af sqlFiles/department.sql;
+psql bookbagging -af sqlFiles/class.sql;
+psql bookbagging -af sqlFiles/professor.sql;
+psql bookbagging -af sqlFiles/comment.sql;
+psql bookbagging -af sqlFiles/teaches.sql;
+
 
 
 #after this you should run app.py in the server folder

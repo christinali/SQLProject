@@ -24,7 +24,7 @@ class5 = {"id": "5", "num": 101, "dept": "CulAnth", "name": "Cultural Anthropolo
 class6 = {"id": "6", "num": 101, "dept": "Educ", "name": "Foundations of Education", "overall": 4.3, 
 "difficulty": 3.6, "nextSemProf": amy}
 
-def getMajors(): 
+def getMajors():
     return [class1, class2, class3]
     
 def getTreqs(): 

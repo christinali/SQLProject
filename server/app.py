@@ -54,9 +54,15 @@ def getClasses():
 @app.route('/get-recommended-major', methods=['GET'])
 def getmajors():
     user_id = request.args.get('user_id')
+    major = findUserMajor(user_id)
+    print(major)
     if (user_id):
         return jsonify(getMajors())
-    
+
+def findUserMajor(user_id):
+    major = db.session.query(models.Student).filter_by(studentID=user_id).major
+    return jsonify(major)
+
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     user_id = request.args.get('user_id')

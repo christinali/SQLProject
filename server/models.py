@@ -8,9 +8,9 @@ class Class(db.Model):
     classID = db.Column('classID', db.Integer, primary_key=True)
     department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
     #booleans of whether or not the t-req is satisfied by this
-    cz = db.Column('cz', db.Integer)
-    ss = db.Column('ss', db.Integer)
-    cci = db.Column('cci', db.Integer)
+    # cz = db.Column('cz', db.Integer)
+    # ss = db.Column('ss', db.Integer)
+    # cci = db.Column('cci', db.Integer)
 
 class Student(db.Model):
     __tablename__ = 'Student'
@@ -26,7 +26,7 @@ class Comment(db.Model):
     downvotes = db.Column('downvotes', db.Integer)
     studentID = db.Column('studentID', db.Integer, db.ForeignKey('student.studentID'))
     commentID = db.Column('commentID', db.Integer, primary_key=True)
-    
+
 class Department(db.Model):
     __tablename__ = 'department'
     name = db.Column('name', db.String(100))

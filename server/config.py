@@ -1,3 +1,5 @@
-SQLALCHEMY_DATABASE_URI = 'postgresql://cheesecake:dbpasswd@localhost/beers'
+import getpass
+
+SQLALCHEMY_DATABASE_URI = 'postgresql://'+getpass.getuser()+':dbpasswd@localhost/bookbagging'
 SQLALCHEMY_ECHO = True
 DEBUG = True

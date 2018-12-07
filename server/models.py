@@ -1,22 +1,26 @@
 from sqlalchemy import sql, orm
 from app import db
 
-
-#TODO: Add relationships. Right now we don't understand why some relationships like Frequents are one sided, posted on piazza and will update once we get an update on piazza
+#TODO: Make everything lowercase rip
 class Class(db.Model):
-    __tablename__ = 'class'
+    __tablename__ = 'Class'
     name = db.Column('name', db.String(100))
     classID = db.Column('classID', db.Integer, primary_key=True)
-    frequents = orm.relationship('Frequents')
+    department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
+    #booleans of whether or not the t-req is satisfied by this
+    cz = db.Column('cz', db.Integer)
+    ss = db.Column('ss', db.Integer)
+    cci = db.Column('cci', db.Integer)
 
 class Student(db.Model):
-    __tablename__ = 'student'
+    __tablename__ = 'Student'
     name = db.Column('name', db.String(100))
     email = db.Column('email', db.String(100), nullable=True)
     studentID = db.Column('studentID', db.Integer, primary_key=True)
+    major = db.Column('major', db.String(100), db.ForeignKey('department.name'))
 
 class Comment(db.Model):
-    __tablename__ = "comment"
+    __tablename__ = "Comment"
     text = db.Column('text', db.String(10000))
     upvotes = db.Column('upvotes', db.Integer)
     downvotes = db.Column('downvotes', db.Integer)
@@ -24,25 +28,27 @@ class Comment(db.Model):
     commentID = db.Column('commentID', db.Integer, primary_key=True)
     
 class Department(db.Model):
-    __tablename__ = "department"
+    __tablename__ = 'department'
     name = db.Column('name', db.String(100))
-    departmentID = db.Column('departmentID', db.Integer, primary_key=True)
+    department_id = db.Column('department_id', db.Integer, primary_key=True)
 
 class Taken(db.Model):
-    __tablename__ = "taken"
+    __tablename__ = "Taken"
     semester = db.Column('semester', db.String(4))
     starNumber = db.Column("starNumber", db.Float)
-    commentID = db.Column("commentID", db.Integer, primary_key=True)
-    studentID = db.Column('studentID', db.Integer, db.ForeignKey('student.studentID'))
-    classID = db.Column('classID', db.Integer, db.ForeignKey('class.classID'))
-
+    commentID = db.Column("commentID", db.Integer, nullable=True)
+    studentID = db.Column('studentID', db.Integer, db.ForeignKey('student.studentID'), primary_key=True)
+    classID = db.Column('classID', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
+    #TODO: This might be broken, idk if you can have a foreign key that is also nullable
+    department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
 
 class Professor(db.Model):
-    __tablename__ = "professor"
+    __tablename__ = "Professor"
     name = db.Column('name', db.String(100))
     professorID = db.Column('professorID', db.Integer, primary_key=True)
 
 class Teaches(db.Model):
+    __tablename__ = "Teaches"
     classID = db.Column('classID', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     professorID = db.Column('professorID', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
     semester = db.Column('semester', db.String(4))

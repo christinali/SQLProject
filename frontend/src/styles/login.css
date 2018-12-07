@@ -1,0 +1,15 @@
+
+.Login {
+  background: #f2efe8 none repeat scroll 0 0;
+  border-radius: 30px;
+  margin: 100px auto 30px;
+  max-width: 35%;
+  padding: 50px 70px 70px 71px;
+  font-size: 18px;
+
+
+}
+
+.inner h2 { color:#444444; font-size:70px; margin:0 0 10px 0; font-weight: bold;}
+.inner p { color:#777777; font-size:25px; margin-bottom:30px; line-height:24px;}
+.name {font-size: 20px; margin: 0;}

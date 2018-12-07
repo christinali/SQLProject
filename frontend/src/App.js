@@ -4,6 +4,7 @@ import './App.css';
 import Timeline from './scenes/Timeline';
 import Login from './scenes/Login';
 import GetInfo from './scenes/GetInfo';
+import './styles/login.css'
 
 class App extends Component {
     state = {login: false}
@@ -14,7 +15,6 @@ class App extends Component {
         <div>
             {this.state.login && <button onClick={() => this.setState({login: false})}>Log out</button>}
             {this.state.login ? <GetInfo/> : <Login login={() => this.setState({login: true})}/>}
-            h
         </div>
     );
   }

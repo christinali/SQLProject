@@ -1,24 +1,33 @@
 import React from 'react';
 import BasicInput from './BasicInput';
 import ClassInput from './ClassInput';
+import ContactInfo from './ContactInfo';
 
 
 
 export default class Input extends React.Component {
 
   state = {
-    step: 1,
+    step: 0,
     fieldValues : {
       fname : '',
       lname: '',
       gradyear: '',
       major: '',
-      classes: []
+      classes: [],
+      email: '',
+      password: ''
     }
   }
   saveValues = (fields) => {
     this.setState({
       step: this.state.step + 1,
+      fieldValues: fields
+    })
+  }
+  addClass = (fields) => {
+    this.setState({
+      step: this.state.step,
       fieldValues: fields
     })
   }
@@ -33,6 +42,14 @@ export default class Input extends React.Component {
       <div>
       {(()=> {
         switch(this.state.step) {
+          case 0:
+            return <ContactInfo
+                      fieldValues={this.state.fieldValues}
+                      nextStep={this.nextStep}
+                      saveValues={this.saveValues}
+                      exit={this.props.exitToLogin}
+                      app={this.props.app}
+                    />;
           case 1:
             return <BasicInput
                       fieldValues={this.state.fieldValues}
@@ -43,9 +60,10 @@ export default class Input extends React.Component {
           case 2:
             return <ClassInput
                     fieldValues={this.state.fieldValues}
-                    saveValues={this.saveValues}
+                    saveValues={this.addClass}
                     previousStep={this.previousStep}
                     submitRegistration={this.submitRegistration}
+                    exit={this.props.exitToLogin}
                   />;
           default:
             return null;

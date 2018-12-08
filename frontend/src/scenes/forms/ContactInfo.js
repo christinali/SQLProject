@@ -1,35 +1,29 @@
 import React from 'react';
 import firebase from 'firebase';
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Button, FormGroup, FormControl, ControlLabel, HelpBlock } from "react-bootstrap";
 
+export default class ContactInfo extends React.Component {
+  state = this.props.fieldValues;
 
-
-export default class Login extends React.Component {
-  state = { email: '', password: '' };
-
-  handleSignup = () => {
-    this.props.signup();
+  validateForm() {
+    return this.state.email.length > 0 && this.state.password.length > 0;
   }
-
-  handleLogin = () => {
+  handleSignup = () => {
     const { email, password } = this.state;
     this.props.app
     .auth()
-    .signInWithEmailAndPassword(email, password)
+    .createUserWithEmailAndPassword(email, password)
     .then(async user => {
       if (user) {
-        this.props.login()
-        alert("You logged in successfully")
+        this.props.saveValues(this.state)
+        alert("You signed up successfully")
       }
     })
     .catch(e => {
       alert(e.message);
-      console.log(e)
+      console.log(e);
     });
   };
-  validateForm() {
-    return this.state.email.length > 0 && this.state.password.length > 0;
-  }
 
   handleChange = event => {
     this.setState({
@@ -48,8 +42,8 @@ export default class Login extends React.Component {
     return (
       <div className="Login">
           <div className="inner">
-            <h2>Welcome to Our App!</h2>
-            <p>Please enter your email and password to login, or click sign up below!</p>
+            <h2>Thanks for choosing to use our service!</h2>
+            <p>Let's get some basic information from you first.</p>
           </div>
           <FormGroup controlId="email" bsSize="large">
             <ControlLabel><p className='name'>Email:</p></ControlLabel>
@@ -67,25 +61,27 @@ export default class Login extends React.Component {
               onChange={this.handleChange}
               type="password"
             />
+            <FormControl.Feedback />
+            <HelpBlock>Password must be above 6 characters.</HelpBlock>
           </FormGroup>
           <Button
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
-            onClick={this.handleLogin}
+            onClick={this.handleSignup}
             bsStyle="warning"
           >
-            Login
+            Continue
           </Button>
           <Button
             block
             bsSize="large"
             type="submit"
-            onClick={this.handleSignup}
+            onClick={this.props.exit}
             bsStyle="warning"
           >
-            Sign up
+            Exit to login
           </Button>
       </div>
     );

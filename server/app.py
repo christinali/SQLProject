@@ -159,10 +159,8 @@ def getCompleted(user_id):
 def getClassesWithReqs(needed):
     classes = dict()
     if 'alp' in needed:
-        app.logger.warning(needed)
         currClasses = db.session.query(models.Class).filter_by(alp=1).all()
         for currClass in currClasses:
-            app.logger.warning("nicenicenicenicenicenicenicenicenicenice")
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('alp')

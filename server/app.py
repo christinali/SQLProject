@@ -80,15 +80,19 @@ def getRatings(class_id):
     takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
     notNull = db.session.query(models.Taken, models.Comment).filter_by(class_id=class_id).join().all()
     totalUpvotes = 0
+    totalDownvotes = 0
     for comment in notNull:
         totalUpvotes +=comment.Comment.upvotes
+        totalDownvotes += comment.Comment.downvotes
     ratings = list()
     for taken in takenTuples:
         if taken.comment_id is not None:
             #should probably optimize
             comment = db.session.query(models.Comment).filter_by(comment_id=taken.comment_id).first()
             numUpvotes = comment.upvotes
+            numDownvotes = comment.downvotes
             timesToAppend = int(math.log(1/(1-numUpvotes/totalUpvotes),2))
+            timesToAppend -= int(math.log(1/(1-numDownvotes/totalDownvotes),2))
             for i in range(timesToAppend):
                 ratings.append(taken.star_number)
         ratings.append(taken.star_number)

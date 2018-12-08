@@ -73,6 +73,7 @@ def getmajors():
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
+    classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
 
 def getRating(class_id):
@@ -156,22 +157,28 @@ def getCompleted(user_id):
     return completed
 
 def getClassesWithReqs(needed):
-    classes = set()
+    classes = dict()
     if 'alp' in needed:
         app.logger.warning(needed)
         currClasses = db.session.query(models.Class).filter_by(alp=1).all()
         for currClass in currClasses:
             app.logger.warning("nicenicenicenicenicenicenicenicenicenice")
-            classes.add(currClass)
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('alp')
     if 'ns' in needed:
         currClasses = db.session.query(models.Class).filter_by(ns=1).all()
         for currClass in currClasses:
-            classes.add(currClass)
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('ns')
     if 'cz' in needed:
         currClasses = db.session.query(models.Class).filter_by(cz=1).all()
         for currClass in currClasses:
-            classes.add(currClass)
-    return list(classes)
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('cz')
+    return classes
 
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
@@ -183,7 +190,7 @@ def gettreqs():
             needed.remove(key)
     classList = list()
     classesWithReqs = getClassesWithReqs(needed)
-    for i,eachClass in enumerate(classesWithReqs):
+    for i,eachClass in enumerate(classesWithReqs.keys()):
         classList.append(dict())
         classList[i]['dept'] = eachClass.department_id
         classList[i]['overall'] = getRating(eachClass.class_id)
@@ -191,7 +198,39 @@ def gettreqs():
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
+        classList[i]['satisfiesNeeded'] = classesWithReqs[eachClass]
+    classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
+
+def score(currClass):
+    score = 0
+    score += currClass['overall']
+    score-=currClass['difficulty']
+    if 'satisfiesNeeded' in currClass:
+        score+=len(currClass['satisfiesNeeded'])
+    return score
+
+def compareClasses(class1, class2):
+    return score(class2) - score(class1)
+
+def cmp_to_key(mycmp):
+    'Convert a cmp= function into a key= function'
+    class K:
+        def __init__(self, obj, *args):
+            self.obj = obj
+        def __lt__(self, other):
+            return mycmp(self.obj, other.obj) < 0
+        def __gt__(self, other):
+            return mycmp(self.obj, other.obj) > 0
+        def __eq__(self, other):
+            return mycmp(self.obj, other.obj) == 0
+        def __le__(self, other):
+            return mycmp(self.obj, other.obj) <= 0
+        def __ge__(self, other):
+            return mycmp(self.obj, other.obj) >= 0
+        def __ne__(self, other):
+            return mycmp(self.obj, other.obj) != 0
+    return K
 
 @app.route('/get-class-info', methods=['GET'])
 def getClassInfo():

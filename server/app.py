@@ -64,19 +64,18 @@ def getmajors():
     major = findUserMajor(user_id)
     department_id = db.session.query(models.Department).filter_by(name=major).first().department_id
     classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
-    ans = dict()
-    for eachClass in classesInMajor:
-        ans[eachClass.name] = dict()
-        ans[eachClass.name]['overallRating'] = getRatings(eachClass.class_id)
-    for key in ans.keys():
-        total = 0
-        for rating in ans[key]['overallRating']:
-            total+=rating
-        total/=len(ans[key]['overallRating'])
-        ans[key]['overallRating'] = total
-    return jsonify(ans)
+    classList = list()
+    for i,eachClass in enumerate(classesInMajor):
+        classList.append(dict())
+        classList[i]['dept'] = major
+        classList[i]['overall'] = getRating(eachClass.class_id)
+        classList[i]['difficulty'] = getDifficulty(eachClass.class_id)
+        classList[i]['name'] = eachClass.name
+        classList[i]['id'] = eachClass.class_id
+        classList[i]['num'] = eachClass.class_num
+    return jsonify(classList)
 
-def getRatings(class_id):
+def getRating(class_id):
     takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
     notNull = db.session.query(models.Taken, models.Comment).filter_by(class_id=class_id).join().all()
     totalUpvotes = 0
@@ -91,12 +90,40 @@ def getRatings(class_id):
             comment = db.session.query(models.Comment).filter_by(comment_id=taken.comment_id).first()
             numUpvotes = comment.upvotes
             numDownvotes = comment.downvotes
-            timesToAppend = int(math.log(1/(1-numUpvotes/totalUpvotes),2))
-            timesToAppend -= int(math.log(1/(1-numDownvotes/totalDownvotes),2))
+            timesToAppend = int(math.log(1/(1-numUpvotes/totalUpvotes+.00000001),2))
+            timesToAppend -= int(math.log(1/(1-numDownvotes/totalDownvotes+.00000001),2))
             for i in range(timesToAppend):
                 ratings.append(taken.star_number)
         ratings.append(taken.star_number)
-    return ratings
+    total = 0
+    for rating in ratings:
+        total+=rating
+    return total/len(ratings)
+
+def getDifficulty(class_id):
+    takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
+    notNull = db.session.query(models.Taken, models.Comment).filter_by(class_id=class_id).join().all()
+    totalUpvotes = 0
+    totalDownvotes = 0
+    for comment in notNull:
+        totalUpvotes +=comment.Comment.upvotes
+        totalDownvotes += comment.Comment.downvotes
+    difficulties = list()
+    for taken in takenTuples:
+        if taken.comment_id is not None:
+            #should probably optimize
+            comment = db.session.query(models.Comment).filter_by(comment_id=taken.comment_id).first()
+            numUpvotes = comment.upvotes
+            numDownvotes = comment.downvotes
+            timesToAppend = int(math.log(1/(1-numUpvotes/totalUpvotes+.00000001),2))
+            timesToAppend -= int(math.log(1/(1-numDownvotes/totalDownvotes+.00000001),2))
+            for i in range(timesToAppend):
+                difficulties.append(taken.difficulty)
+        difficulties.append(taken.difficulty)
+    total = 0
+    for rating in difficulties:
+        total+=rating
+    return total/len(difficulties)
 
 def findUserMajor(user_id):
     student = db.session.query(models.Student).filter_by(student_id=user_id).first()
@@ -105,9 +132,18 @@ def findUserMajor(user_id):
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     user_id = request.args.get('user_id')
-    if (user_id):
-        return jsonify(getTreqs())
-        
+    classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
+    classList = list()
+    for i,eachClass in enumerate(classesInMajor):
+        classList.append(dict())
+        classList[i]['dept'] = major
+        classList[i]['overall'] = getRating(eachClass.class_id)
+        classList[i]['difficulty'] = getDifficulty(eachClass.class_id)
+        classList[i]['name'] = eachClass.name
+        classList[i]['id'] = eachClass.class_id
+        classList[i]['num'] = eachClass.class_num
+    return jsonify(classList)
+
 @app.route('/get-class-info', methods=['GET'])
 def getClassInfo():
     class_id = request.args.get('class_id')

@@ -34,6 +34,7 @@ CREATE TABLE Class
 (	name VARCHAR(100) NOT NULL,
 	class_id INTEGER NOT NULL,
 	department_id INTEGER NOT NULL,
+	class_num INTEGER NOT NULL,
 	PRIMARY KEY(class_id));
 
 CREATE TABLE Taken
@@ -43,6 +44,7 @@ CREATE TABLE Taken
 	student_id INTEGER NOT NULL,
 	class_id INTEGER NOT NULL,
 	department_id INTEGER NOT NULL,
+	difficulty FLOAT NOT NULL,
 	FOREIGN KEY(student_id) REFERENCES Student(student_id),
 	FOREIGN KEY(class_id) REFERENCES Class(class_id),
 	PRIMARY KEY(student_id,class_id,department_id));

@@ -1,5 +1,5 @@
 INSERT INTO Department VALUES
-('COMPSCI - Computer Science',0),
+('COMPSCI',0),
 ('ECON',1),
 ('PSYCH',2),
 ('RUSSIA',3),

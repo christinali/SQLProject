@@ -7,6 +7,7 @@ class Class(db.Model):
     name = db.Column('name', db.String(100))
     class_id = db.Column('class_id', db.Integer, primary_key=True)
     department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
+    class_num = db.Column('class_num', db.Integer)
     #booleans of whether or not the t-req is satisfied by this
     # cz = db.Column('cz', db.Integer)
     # ss = db.Column('ss', db.Integer)
@@ -41,6 +42,7 @@ class Taken(db.Model):
     class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     #TODO: This might be broken, idk if you can have a foreign key that is also nullable
     department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
+    difficulty = db.Column("difficulty", db.Float)
 
 class Professor(db.Model):
     __tablename__ = "professor"

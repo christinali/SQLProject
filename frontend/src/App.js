@@ -5,7 +5,8 @@ import Timeline from './scenes/Timeline';
 import Login from './scenes/Login';
 import GetInfo from './scenes/GetInfo';
 import Header from './scenes/Header';
-import Input from './scenes/Input';
+import Input from './scenes/forms/Input';
+
 import './styles/login.css';
 
 
@@ -26,7 +27,7 @@ class App extends Component {
                 case 1:
                   return <GetInfo logout={() => this.setState({screen: 0})}/>;
                 case 2:
-                  return <Input />
+                  return <Input exitToLogin={() => this.setState({screen: 0})}/>;
                 default:
                   return null;
               }

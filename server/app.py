@@ -59,10 +59,10 @@ def getClasses():
         return jsonify(getFullClasses())
 
 @app.route('/get-recommended-major', methods=['GET'])
-def getmajors():
+def getRecommendedMajorClasses():
     user_id = request.args.get('user_id')
     major = findUserMajor(user_id)
-    department_id = db.session.query(models.Department).filter_by(name=major).first().department_id
+    department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
     classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
     classList = list()
     for i,eachClass in enumerate(classesInMajor):
@@ -73,7 +73,17 @@ def getmajors():
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
+    classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
+
+
+@app.route('/get-all-majors', methods=['GET'])
+def getAllMajors():
+    majors = list()
+    alldeps = db.session.query(models.Department).all()
+    for dep in alldeps:
+        majors.append(dep.department_id)
+    return jsonify(majors)
 
 def getRating(class_id):
     takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
@@ -98,6 +108,8 @@ def getRating(class_id):
     total = 0
     for rating in ratings:
         total+=rating
+    if len(ratings)==0:
+        return 2.5
     return total/len(ratings)
 
 def getDifficulty(class_id):
@@ -123,26 +135,109 @@ def getDifficulty(class_id):
     total = 0
     for rating in difficulties:
         total+=rating
+    if len(difficulties)==0:
+        return 2.5
     return total/len(difficulties)
 
 def findUserMajor(user_id):
     student = db.session.query(models.Student).filter_by(student_id=user_id).first()
     return student.major
 
+requirements = {'cz':2, 'alp':2,'ns':2}
+requirements = ['cz', 'alp', 'ns']
+
+def getCompleted(user_id):
+    classesTaken = db.session.query(models.Taken).filter_by(student_id=user_id).all()
+    completed = dict()
+    for eachClass in classesTaken:
+        classItself = db.session.query(models.Class).filter_by(class_id=eachClass.class_id).first()
+        if classItself.alp == 1:
+            if 'alp' not in completed:
+                completed['alp']=0
+            completed['alp']+=1
+        if classItself.ns == 1:
+            if 'ns' not in completed:
+                completed['ns']=0
+            completed['ns']+=1
+        if classItself.cz == 1:
+            if 'cz' not in completed:
+                completed['cz']=0
+            completed['cz']+=1
+    return completed
+
+def getClassesWithReqs(needed):
+    classes = dict()
+    if 'alp' in needed:
+        currClasses = db.session.query(models.Class).filter_by(alp=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('alp')
+    if 'ns' in needed:
+        currClasses = db.session.query(models.Class).filter_by(ns=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('ns')
+    if 'cz' in needed:
+        currClasses = db.session.query(models.Class).filter_by(cz=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('cz')
+    return classes
+
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     user_id = request.args.get('user_id')
-    classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
+    completed = getCompleted(user_id)
+    needed = ['alp','cz','ns']
+    for key in completed:
+        if completed[key]>=2:
+            needed.remove(key)
     classList = list()
-    for i,eachClass in enumerate(classesInMajor):
+    classesWithReqs = getClassesWithReqs(needed)
+    for i,eachClass in enumerate(classesWithReqs.keys()):
         classList.append(dict())
-        classList[i]['dept'] = major
+        classList[i]['dept'] = eachClass.department_id
         classList[i]['overall'] = getRating(eachClass.class_id)
         classList[i]['difficulty'] = getDifficulty(eachClass.class_id)
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
+        classList[i]['satisfiesNeeded'] = classesWithReqs[eachClass]
+    classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
+
+def score(currClass):
+    score = 0
+    score += currClass['overall']
+    score-=currClass['difficulty']
+    if 'satisfiesNeeded' in currClass:
+        score+=len(currClass['satisfiesNeeded'])
+    return score
+
+def compareClasses(class1, class2):
+    return score(class2) - score(class1)
+
+def cmp_to_key(mycmp):
+    'Convert a cmp= function into a key= function'
+    class K:
+        def __init__(self, obj, *args):
+            self.obj = obj
+        def __lt__(self, other):
+            return mycmp(self.obj, other.obj) < 0
+        def __gt__(self, other):
+            return mycmp(self.obj, other.obj) > 0
+        def __eq__(self, other):
+            return mycmp(self.obj, other.obj) == 0
+        def __le__(self, other):
+            return mycmp(self.obj, other.obj) <= 0
+        def __ge__(self, other):
+            return mycmp(self.obj, other.obj) >= 0
+        def __ne__(self, other):
+            return mycmp(self.obj, other.obj) != 0
+    return K
 
 @app.route('/get-class-info', methods=['GET'])
 def getClassInfo():

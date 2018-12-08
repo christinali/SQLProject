@@ -34,6 +34,9 @@ class GetInfo extends Component {
         const currProf = this.state.currProf;
         return (
             <div>
+                <div>
+                  <button onClick={this.props.logout}>Log Out</button>
+                </div>
                 <label>id:
                     <input type="text" value={this.state.email} onChange={e => this.setState({id: e.target.value})} />
                 </label>

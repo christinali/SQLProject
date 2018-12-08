@@ -59,7 +59,7 @@ def getClasses():
         return jsonify(getFullClasses())
 
 @app.route('/get-recommended-major', methods=['GET'])
-def getmajors():
+def getRecommendedMajorClasses():
     user_id = request.args.get('user_id')
     major = findUserMajor(user_id)
     department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
@@ -75,6 +75,15 @@ def getmajors():
         classList[i]['num'] = eachClass.class_num
     classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
+
+
+@app.route('/get-all-majors', methods=['GET'])
+def getAllMajors():
+    majors = list()
+    alldeps = db.session.query(models.Department).all()
+    for dep in alldeps:
+        majors.append(dep.department_id)
+    return jsonify(majors)
 
 def getRating(class_id):
     takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()

@@ -26,7 +26,7 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen: 0}
+  state = {screen: 2}
 
   render() {
     return (

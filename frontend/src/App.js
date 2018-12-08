@@ -4,17 +4,28 @@ import './App.css';
 import Timeline from './scenes/Timeline';
 import Login from './scenes/Login';
 import GetInfo from './scenes/GetInfo';
-import './styles/login.css'
+import Header from './scenes/Header';
+import './styles/login.css';
+
 
 class App extends Component {
-    state = {login: false}
+  state = {screen: 0}
 
 
   render() {
     return (
         <div>
-            {this.state.login && <button onClick={() => this.setState({login: false})}>Log out</button>}
-            {this.state.login ? <GetInfo/> : <Login login={() => this.setState({login: true})}/>}
+            <Header headerText='Froz is a frontend legend'/>
+            {(()=> {
+              switch(this.state.screen) {
+                case 0:
+                  return <Login login={() => this.setState({screen: 1})}/>;
+                case 1:
+                  return <GetInfo logout={() => this.setState({screen: 0})}/>;
+                default:
+                  return null;
+              }
+            })()}
         </div>
     );
   }

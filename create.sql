@@ -1,6 +1,6 @@
 CREATE TABLE Department
 (    name VARCHAR(100) NOT NULL,
-    department_id INTEGER NOT NULL,
+    department_id VARCHAR(100) NOT NULL,
  PRIMARY KEY(department_id));
 
 CREATE TABLE Professor

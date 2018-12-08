@@ -1,6 +1,6 @@
 CREATE TABLE Department
 (    name VARCHAR(100) NOT NULL,
-    department_id INTEGER NOT NULL,
+    department_id VARCHAR(100) NOT NULL,
  PRIMARY KEY(department_id));
 
 CREATE TABLE Professor
@@ -13,6 +13,7 @@ CREATE TABLE Student
 	email VARCHAR(100) NOT NULL,
 	student_id INTEGER NOT NULL,
 	major VARCHAR(100) NOT NULL,
+	FOREIGN KEY(major) REFERENCES Department(department_id),
 	PRIMARY KEY(student_id));
 
 CREATE TABLE Comment
@@ -27,14 +28,21 @@ CREATE TABLE Comment
 CREATE TABLE Teaches
 (	class_id INTEGER NOT NULL,
 	professor_id INTEGER NOT NULL,
-	semester VARCHAR(4) NOT NULL,
+	semester VARCHAR(100) NOT NULL,
+	FOREIGN KEY(professor_id) REFERENCES Professor(professor_id),
 	PRIMARY KEY(class_id, professor_id));
 
 CREATE TABLE Class
 (	name VARCHAR(100) NOT NULL,
 	class_id INTEGER NOT NULL,
-	department_id INTEGER NOT NULL,
+	department_id VARCHAR(100) NOT NULL,
 	class_num INTEGER NOT NULL,
+	cz INTEGER NOT NULL,
+	ss INTEGER NOT NULL,
+	cci INTEGER NOT NULL,
+	alp INTEGER NOT NULL,
+	ns INTEGER NOT NULL,
+	FOREIGN KEY(department_id) REFERENCES Department(department_id),
 	PRIMARY KEY(class_id));
 
 CREATE TABLE Taken
@@ -43,8 +51,9 @@ CREATE TABLE Taken
 	comment_id INTEGER,
 	student_id INTEGER NOT NULL,
 	class_id INTEGER NOT NULL,
-	department_id INTEGER NOT NULL,
+	department_id VARCHAR(100) NOT NULL,
 	difficulty FLOAT NOT NULL,
+	FOREIGN KEY(department_id) REFERENCES Department(department_id),
 	FOREIGN KEY(student_id) REFERENCES Student(student_id),
 	FOREIGN KEY(class_id) REFERENCES Class(class_id),
 	PRIMARY KEY(student_id,class_id,department_id));

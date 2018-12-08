@@ -6,19 +6,21 @@ class Class(db.Model):
     __tablename__ = 'class'
     name = db.Column('name', db.String(100))
     class_id = db.Column('class_id', db.Integer, primary_key=True)
-    department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
+    department_id = db.Column('department_id', db.String(100), db.ForeignKey('department.department_id'), primary_key=True)
     class_num = db.Column('class_num', db.Integer)
     #booleans of whether or not the t-req is satisfied by this
-    # cz = db.Column('cz', db.Integer)
-    # ss = db.Column('ss', db.Integer)
-    # cci = db.Column('cci', db.Integer)
+    cz = db.Column('cz', db.Integer)
+    ss = db.Column('ss', db.Integer)
+    cci = db.Column('cci', db.Integer)
+    alp = db.Column('alp', db.Integer)
+    ns = db.Column('ns', db.Integer)
 
 class Student(db.Model):
     __tablename__ = 'student'
     name = db.Column('name', db.String(100))
     email = db.Column('email', db.String(100), nullable=True)
     student_id = db.Column('student_id', db.Integer, primary_key=True)
-    major = db.Column('major', db.String(100), db.ForeignKey('department.name'))
+    major = db.Column('major', db.String(100), db.ForeignKey('department.department_id'))
 
 class Comment(db.Model):
     __tablename__ = "comment"
@@ -30,8 +32,9 @@ class Comment(db.Model):
 
 class Department(db.Model):
     __tablename__ = 'department'
+    #TODO: Update department_id to be a string
     name = db.Column('name', db.String(100))
-    department_id = db.Column('department_id', db.Integer, primary_key=True)
+    department_id = db.Column('department_id', db.String(100), primary_key=True)
 
 class Taken(db.Model):
     __tablename__ = "taken"
@@ -41,7 +44,7 @@ class Taken(db.Model):
     student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.studentID'), primary_key=True)
     class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     #TODO: This might be broken, idk if you can have a foreign key that is also nullable
-    department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
+    department_id = db.Column('department_id', db.String(100), db.ForeignKey('department.department_id'), primary_key=True)
     difficulty = db.Column("difficulty", db.Float)
 
 class Professor(db.Model):
@@ -53,7 +56,7 @@ class Teaches(db.Model):
     __tablename__ = "teaches"
     class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     professor_id = db.Column('professor_id', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
-    semester = db.Column('semester', db.String(4))
+    semester = db.Column('semester', db.String(100))
 
 # class Drinker(db.Model):
 #     __tablename__ = 'drinker'

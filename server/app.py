@@ -62,7 +62,7 @@ def getClasses():
 def getmajors():
     user_id = request.args.get('user_id')
     major = findUserMajor(user_id)
-    department_id = db.session.query(models.Department).filter_by(name=major).first().department_id
+    department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
     classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
     classList = list()
     for i,eachClass in enumerate(classesInMajor):
@@ -98,6 +98,8 @@ def getRating(class_id):
     total = 0
     for rating in ratings:
         total+=rating
+    if len(ratings)==0:
+        return 2.5
     return total/len(ratings)
 
 def getDifficulty(class_id):
@@ -123,20 +125,67 @@ def getDifficulty(class_id):
     total = 0
     for rating in difficulties:
         total+=rating
+    if len(difficulties)==0:
+        return 2.5
     return total/len(difficulties)
 
 def findUserMajor(user_id):
     student = db.session.query(models.Student).filter_by(student_id=user_id).first()
     return student.major
 
+requirements = {'cz':2, 'alp':2,'ns':2}
+requirements = ['cz', 'alp', 'ns']
+
+def getCompleted(user_id):
+    classesTaken = db.session.query(models.Taken).filter_by(student_id=user_id).all()
+    completed = dict()
+    for eachClass in classesTaken:
+        classItself = db.session.query(models.Class).filter_by(class_id=eachClass.class_id).first()
+        if classItself.alp == 1:
+            if 'alp' not in completed:
+                completed['alp']=0
+            completed['alp']+=1
+        if classItself.ns == 1:
+            if 'ns' not in completed:
+                completed['ns']=0
+            completed['ns']+=1
+        if classItself.cz == 1:
+            if 'cz' not in completed:
+                completed['cz']=0
+            completed['cz']+=1
+    return completed
+
+def getClassesWithReqs(needed):
+    classes = set()
+    if 'alp' in needed:
+        app.logger.warning(needed)
+        currClasses = db.session.query(models.Class).filter_by(alp=1).all()
+        for currClass in currClasses:
+            app.logger.warning("nicenicenicenicenicenicenicenicenicenice")
+            classes.add(currClass)
+    if 'ns' in needed:
+        currClasses = db.session.query(models.Class).filter_by(ns=1).all()
+        for currClass in currClasses:
+            classes.add(currClass)
+    if 'cz' in needed:
+        currClasses = db.session.query(models.Class).filter_by(cz=1).all()
+        for currClass in currClasses:
+            classes.add(currClass)
+    return list(classes)
+
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     user_id = request.args.get('user_id')
-    classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
+    completed = getCompleted(user_id)
+    needed = ['alp','cz','ns']
+    for key in completed:
+        if completed[key]>=2:
+            needed.remove(key)
     classList = list()
-    for i,eachClass in enumerate(classesInMajor):
+    classesWithReqs = getClassesWithReqs(needed)
+    for i,eachClass in enumerate(classesWithReqs):
         classList.append(dict())
-        classList[i]['dept'] = major
+        classList[i]['dept'] = eachClass.department_id
         classList[i]['overall'] = getRating(eachClass.class_id)
         classList[i]['difficulty'] = getDifficulty(eachClass.class_id)
         classList[i]['name'] = eachClass.name

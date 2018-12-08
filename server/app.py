@@ -7,12 +7,17 @@ from flask_cors import CORS
 import models
 import forms
 import sys
+import math
 
 app = Flask(__name__)
 app.secret_key = 's3cr3t'
 app.config.from_object('config')
 db = SQLAlchemy(app, session_options={'autocommit': False})
 CORS(app)
+
+@app.route('/', methods=['GET'])
+def dontReach():
+    return '"DONT REACH" - Feroze'
 
 @app.route('/departments', methods=['GET'])
 def getAllDepartments():
@@ -61,7 +66,6 @@ def getmajors():
     classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
     ans = dict()
     for eachClass in classesInMajor:
-        goodness = 0
         ans[eachClass.name] = dict()
         ans[eachClass.name]['overallRating'] = getRatings(eachClass.class_id)
     for key in ans.keys():
@@ -73,11 +77,22 @@ def getmajors():
     return jsonify(ans)
 
 def getRatings(class_id):
-        takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
-        ratings = list()
-        for taken in takenTuples:
+    takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
+    notNull = db.session.query(models.Taken, models.Comment).filter_by(class_id=class_id).join().all()
+    totalUpvotes = 0
+    for comment in notNull:
+        totalUpvotes +=comment.Comment.upvotes
+    ratings = list()
+    for taken in takenTuples:
+        if taken.comment_id is not None:
+            #should probably optimize
+            comment = db.session.query(models.Comment).filter_by(comment_id=taken.comment_id).first()
+            numUpvotes = comment.upvotes
+            timesToAppend = int(math.log(1/(1-numUpvotes/totalUpvotes),2))
+            for i in range(timesToAppend):
                 ratings.append(taken.star_number)
-        return ratings
+        ratings.append(taken.star_number)
+    return ratings
 
 def findUserMajor(user_id):
     student = db.session.query(models.Student).filter_by(student_id=user_id).first()

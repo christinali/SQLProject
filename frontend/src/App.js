@@ -5,12 +5,12 @@ import Timeline from './scenes/Timeline';
 import Login from './scenes/Login';
 import GetInfo from './scenes/GetInfo';
 import Header from './scenes/Header';
+import Input from './scenes/Input';
 import './styles/login.css';
 
 
 class App extends Component {
-  state = {screen: 0}
-
+  state = {screen: 2}
 
   render() {
     return (
@@ -19,9 +19,14 @@ class App extends Component {
             {(()=> {
               switch(this.state.screen) {
                 case 0:
-                  return <Login login={() => this.setState({screen: 1})}/>;
+                  return <Login
+                            login={() => this.setState({screen: 1})}
+                            signup={() => this.setState({screen: 2})}
+                          />;
                 case 1:
                   return <GetInfo logout={() => this.setState({screen: 0})}/>;
+                case 2:
+                  return <Input />
                 default:
                   return null;
               }

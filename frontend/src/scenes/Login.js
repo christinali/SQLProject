@@ -43,7 +43,7 @@ export default class Login extends React.Component {
     .createUserWithEmailAndPassword(email, password)
     .then(async user => {
       if (user) {
-        this.props.login()
+        this.props.signup()
         alert("You signed up successfully")
       }
     })

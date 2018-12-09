@@ -1,0 +1,13 @@
+package chase;
+import java.util.*;
+
+public class Thing { 
+	public Thing() {
+		System.out.println("CONSTRUCTOR");
+	}
+	
+	public void test(String a) {
+		System.out.println(a);
+	}
+	
+} 

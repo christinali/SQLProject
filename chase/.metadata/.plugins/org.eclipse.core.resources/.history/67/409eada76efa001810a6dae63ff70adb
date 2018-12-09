@@ -1,0 +1,15 @@
+package chase;
+
+public class Main {
+	
+	public static void main(String[] args) throws SecurityException, ClassNotFoundException {
+		String[] t = new String[20];
+		String a1 = "Hello",a2 = "a",a3 = "b",a4 = "c";
+		String[] a = {a1, a2, a3, a4};
+		for (int i = 0; i < 3; i++) {
+			if (t.length > i) a[i] = t[i];
+			else a[i] = null;
+		}
+	}
+
+}

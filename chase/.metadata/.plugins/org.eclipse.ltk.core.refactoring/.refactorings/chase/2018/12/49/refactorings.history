@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;chase.Command.java&apos; to &apos;ClassInfo.java&apos;&#x0A;- Original project: &apos;chase&apos;&#x0A;- Original element: &apos;chase.Command.java&apos;&#x0A;- Renamed element: &apos;chase.ClassInfo.java&apos;" description="Rename compilation unit &apos;Command.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;chase{Command.java" name="ClassInfo.java" references="false" stamp="1544224838559" version="1.0"/>
+</session>

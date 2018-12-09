@@ -1,0 +1,26 @@
+package chase;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+
+public class Main {
+	
+	public static void main(String[] args) throws SecurityException, ClassNotFoundException, IOException {
+		ClassInfo myClassInfo = new ClassInfo();
+		myClassInfo.getClasses("COMPSCI%20-%20Computer%20Science");
+		myClassInfo.getClasses("BIOLOGY%20-%20Biology");
+
+		myClassInfo.printInfoMap();
+	}
+}

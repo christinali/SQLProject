@@ -1,0 +1,34 @@
+package chase;
+import java.util.*;
+
+import javax.swing.GroupLayout.Group;
+
+public class Thing { 
+	public Thing() {
+		System.out.println("CONSTRUCTOR");
+	}
+	
+	public void test(String type) throws SecurityException, ClassNotFoundException {
+		Object o;
+		o = Class.forName(type).getConstructors()[0];
+		System.out.println(o);
+//		switch(pack) {
+//        case "commands.":
+//            o = Class.forName(type).getConstructor(Map.class, Group.class).newInstance(currTurtles, currRoot);
+//            break;
+//        case "queries.":
+//            o = Class.forName(type).getConstructor(Map.class, Group.class).newInstance(currTurtles, currRoot);
+//            break;
+//        case "display.":
+//            o = Class.forName(type).getConstructor(Map.class, Scene.class).newInstance(currTurtles, scene);
+//            break;
+//        case "multiple.":
+//            o = Class.forName(type).getConstructor(Map.class).newInstance(currTurtles);
+//            break;
+//        default:
+//            o = Class.forName(type).getConstructor().newInstance();
+//    }
+
+	}
+	
+} 

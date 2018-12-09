@@ -1,0 +1,193 @@
+package chase;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+public class ClassInfo {
+	
+	Map<String, List<String>> infoMap;
+	BufferedWriter writer;
+	
+	public ClassInfo() throws IOException {
+		infoMap = new HashMap<>();
+	}
+	
+	public void getClasses(String courseName) throws SecurityException, ClassNotFoundException, IOException {
+		courseName = courseName.replaceAll(" ", "%20");
+		URL url = new URL("https://streamer.oit.duke.edu/curriculum/courses/subject/" + courseName + "?access_token=06dc44a04decbcd3059715709cccd542");
+		HttpURLConnection conn = (HttpURLConnection)
+		url.openConnection(); 
+		conn.setRequestMethod("GET"); 
+		conn.connect();
+		int responsecode = conn.getResponseCode(); 
+		if(responsecode != 200) {
+			throw new RuntimeException("HttpResponseCode: " +responsecode);
+		}
+		else {
+			Scanner sc = new Scanner(url.openStream());
+			String response = sc.nextLine();
+			String summary = response.split("course_summary")[1];
+			int count = 0;
+			for (String classInfo : summary.split("\\{")) {
+				if (classInfo.contains("crse_id\":\"") ) {
+					String offered = classInfo.split("ssr_crse_typoff_cd\":")[1].split(",\"ssr_crse_typoff_cd_lov_descr\"")[0].replaceAll("\"", "");
+					String num = classInfo.split("catalog_nbr\":\" ")[1].split("\",\"course_title_long")[0];
+					if (Integer.parseInt(num.replaceAll("\\s","").substring(0,1)) >= 5 || offered.contains("null")) {
+						continue;
+					}
+					List<String> info = new ArrayList<>();
+					count++;
+					String id = classInfo.split("crse_id\":\"")[1].split("\",\"crse_id_lov_descr\"")[0];
+					String title = classInfo.split("\"course_title_long\":\"")[1].split("\",\"ssr_crse_typoff_cd")[0];
+					info.add(num);
+					info.add(title);
+					info.add(offered);
+					getClassData(id, num, title, offered, courseName);
+					infoMap.put(id, info);
+				}
+			}
+			sc.close();
+		}
+		System.out.println(courseName + " DONE");
+	}
+	
+	public List<String> getClassData(String classId, String num, String title, String offered, String courseName) {
+		try {
+			URL url = new URL("https://streamer.oit.duke.edu/curriculum/courses/crse_id/" + classId + "/crse_offer_nbr/1?access_token=06dc44a04decbcd3059715709cccd542");
+			HttpURLConnection conn = (HttpURLConnection)
+			url.openConnection(); 
+			conn.setRequestMethod("GET"); 
+			conn.connect();
+			int responsecode = conn.getResponseCode(); 
+			if(responsecode != 200) {
+				throw new RuntimeException("HttpResponseCode: " +responsecode);
+			}
+			else {
+				Scanner sc = new Scanner(url.openStream());
+				String response = sc.nextLine();
+				System.out.println(classId);
+//				System.out.println(response.split("\"course_attributes\":")[1].split(",\"terms_offered\"")[0]);
+				String codes;
+				if (response.split("\"course_attributes\":")[1].split(",\"terms_offered\"")[0].indexOf("null") == -1) {
+					codes = getCourseAttributes(response);
+				} else {
+					codes = "0,0,0,0,0,0,0,0,0,0,0";
+				}
+				String[] classes = new String[] {title, classId, courseName, num,  codes};
+				writeToFile(String.join(",", classes));
+				sc.close();
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+//		System.out.println(classId + " DONE");
+		return null;
+	}
+	
+	public void getSemesterInfo(String response, String classes) {
+		String terms = response.split("\"term_offered\":\\[\\{")[1].split("}},\"@xmlns\"")[0];
+		List<String> sems = new ArrayList<>();
+		System.out.print("class: ");
+		for (String c : classes) {
+			System.out.print(c + ",");
+		}
+		System.out.println();
+		for (String term : terms.split("\\},\\{")) {
+			String semNum = term.split("strm\":\"")[1].split("\",\"strm_lov_descr\":\"")[0];
+			String semName = term.split("\"strm_lov_descr\":\"")[1].split("\",\"acad_career\"")[0];
+			sems.add(semNum + " - " + semName);
+			String[] prof = getSemesterProf(semNum, classId);
+			String[] teaches = new String[] {classId, prof[0], semName};
+			System.out.print("teaches: ");
+			for (String t : teaches) {
+				System.out.print(t + ",");
+			}
+			System.out.println();
+			System.out.print("prof: ");
+			System.out.println(prof[1] + "," + prof[0]);
+			System.out.println("\n");
+
+		}
+	}
+	
+
+	public String getCourseAttributes(String response) {
+		List<String> values = new ArrayList<>();
+		String value = "";
+		String[] codes = new String[] {"CZ", "SS", "CCI", "ALP", "NS", "QS", "EI", "FL", "R", "STS", "W"};
+		String[] attributeValues = new String[] {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"};
+		
+		String attributes = response.split("\"course_attribute\":")[1].split("},\"terms_offered\"")[0];
+		if (attributes.indexOf("\\},\\{") == -1) {
+			value = attributes.split("\"crse_attr_value\":\"")[1].split("\",\"crse_attr_value_lov_descr\"")[0];
+			for (int i = 0; i < codes.length; i++) {
+				if (codes[i].equals(value)) {
+					attributeValues[i] = "1";
+				}
+			}
+			values.add(value);
+		} else {
+			for (String attribute : attributes.split("\\},\\{")) {
+				value = attribute.split("\"crse_attr_value\":\"")[1].split("\",\"crse_attr_value_lov_descr\"")[0];
+				for (int i = 0; i < codes.length; i++) {
+					if (codes[i].equals(value)) {
+						attributeValues[i] = "1";
+					}
+				}
+			}
+		}
+		return String.join(",", attributeValues);
+	}
+	
+	public String[] getSemesterProf(String semesterId, String classId) throws IOException {
+		URL url = new URL("https://streamer.oit.duke.edu/curriculum/classes/strm/" + semesterId + "/crse_id/" + classId + "?access_token=06dc44a04decbcd3059715709cccd542");
+		HttpURLConnection conn = (HttpURLConnection)
+		url.openConnection(); 
+		conn.setRequestMethod("GET"); 
+		conn.connect();
+		int responsecode = conn.getResponseCode();
+		String[] prof = new String[2];
+		if(responsecode != 200) {
+			throw new RuntimeException("HttpResponseCode: " +responsecode);
+		}
+		else {
+			Scanner sc = new Scanner(url.openStream());
+			String response = sc.nextLine();
+			prof[0] = response.split("\"emplid\":\"")[1].split("\",\"instr_role\"")[0];
+			prof[1] = response.split("\"name_display\":\"")[1].split("\",\"last_name\":")[0];
+			sc.close();
+		}
+		return prof;
+	}
+	
+	public void writeToFile(String content) throws IOException {
+		content += "\n";
+		String path = "/Users/moboyle769/Documents/compsci316/project/sqlproject/testwrite.csv";
+	    Files.write(Paths.get(path), content.getBytes(), StandardOpenOption.APPEND);
+	}
+	
+	public void printInfoMap() {
+		for (String key : infoMap.keySet()) {
+			System.out.print(key + "\t");
+			for (String val : infoMap.get(key)) {
+				System.out.print(val + " ");
+			}
+			System.out.println("");
+		}
+	}
+
+}

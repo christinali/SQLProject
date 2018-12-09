@@ -1,0 +1,17 @@
+package chase;
+
+public class Main {
+	
+	public static void main(String[] args) throws SecurityException, ClassNotFoundException {
+		String[] t;
+		String a1,a2,a3,a4;
+        if(t.length > 0) a1 = t[0];
+        else a1 = null;
+        if(t.length > 1) a2 = t[1];
+        else a2 = null;
+        if(t.length > 2) a3 = t[2];
+        else a3 = null;
+
+	}
+
+}

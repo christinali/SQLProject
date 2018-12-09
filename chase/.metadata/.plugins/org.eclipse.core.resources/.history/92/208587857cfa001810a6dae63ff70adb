@@ -1,0 +1,117 @@
+package chase;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+
+public class Main {
+	
+	public static void main(String[] args) throws SecurityException, ClassNotFoundException, IOException {
+		ClassInfo myClassInfo = new ClassInfo();
+		String test = "ARABIC - Arabic\n" + 
+				"ARTHIST - Art History\n" + 
+				"BIOCHEM - Biochemistry\n" + 
+				"BIOLOGY - Biology\n" + 
+				"BME - Biomedical Engineering\n" + 
+				"CEE - Civil and Environmental Egr\n" + 
+				"CELLBIO - Cell Biology\n" + 
+				"CHEM - Chemistry\n" + 
+				"CHINESE - Chinese\n" + 
+				"CLST - Classical Studies\n" + 
+				"CMB - Cell and Molecular Biology\n" + 
+				"COMPSCI - Computer Science\n" + 
+				"CULANTH - Cultural Anthropology\n" + 
+				"DOCST - Documentary Studies\n" + 
+				"DRAMA - Drama\n" + 
+				"DUTCH - Dutch\n" + 
+				"ECE - Electrical &amp; Computer Egr\n" + 
+				"ECON - Economics\n" + 
+				"EDUC - Education\n" + 
+				"EGR - Engineering\n" + 
+				"ENERGY - Energy\n" + 
+				"ENGLISH - English\n" + 
+				"ENVIRON - Environment\n" + 
+				"EOS - Earth and Ocean Sciences\n" + 
+				"ETHICS - Study of Ethics\n" + 
+				"EVANTH - Evolutionary Anthropology\n" + 
+				"FINANCE - Finance\n" + 
+				"FRENCH - French\n" + 
+				"GERMAN - German\n" + 
+				"GLHLTH - Global Health\n" + 
+				"GREEK - Greek\n" + 
+				"GS - Graduate Studies\n" + 
+				"GSF - Gender Sexuality &amp; Feminist St\n" + 
+				"HEBREW - Hebrew\n" + 
+				"HINDI - Hindi\n" + 
+				"HISTORY - History\n" + 
+				"HTHPOL - Health Policy\n" + 
+				"HUNGARN - Hungarian\n" + 
+				"ICS - Internatl Comparative Studies\n" + 
+				"IND - Interdisciplinary\n" + 
+				"ITALIAN - Italian\n" + 
+				"JEWISHST - Jewish Studies\n" + 
+				"JPN - Japanese\n" + 
+				"KOREAN - Korean\n" + 
+				"LATAMER - Latin American Studies\n" + 
+				"LATIN - Latin\n" + 
+				"LINGUIST - Linguistics\n" + 
+				"LIT - Literature\n" + 
+				"LS - Liberal Studies\n" + 
+				"MANAGEMT - Management\n" + 
+				"MARKETNG - Marketing\n" + 
+				"MAT - Master of Arts in Teaching\n" + 
+				"MATH - Mathematics\n" + 
+				"ME - Mechanical Engr/Materials Sci\n" + 
+				"MGRECON - Economics\n" + 
+				"MPS - MPS\n" + 
+				"MUSIC - Music\n" + 
+				"NEURO - Neurology\n" + 
+				"NEUROBIO - Neurobiology\n" + 
+				"NEUROSCI - Neuroscience\n" + 
+				"PHIL - Philosophy\n" + 
+				"PHYASST - Physician Assistant Program\n" + 
+				"PHYSEDU - Physical Education\n" + 
+				"PHYSICS - Physics\n" + 
+				"PJMS - Policy Journalism and Media St\n" + 
+				"POE - Practice-Oriented Education\n" + 
+				"POLISH - Polish\n" + 
+				"POLSCI - Political Science\n" + 
+				"PORTUGUE - Portuguese\n" + 
+				"PPE - Philosophy, Politics, and Econ\n" + 
+				"PSC - Psychiatry\n" + 
+				"PSY - Psychology\n" + 
+				"PUBPOL - Public Policy\n" + 
+				"RELIGION - Religion\n" + 
+				"RESEARCH - Research\n" + 
+				"RIGHTS - Human Rights\n" + 
+				"ROMANIAN - Romanian\n" + 
+				"ROMLANG - Romance Languages\n" + 
+				"ROMST - Romance Studies\n" + 
+				"RON - Radiation Oncology\n" + 
+				"RUSSIAN - Russian\n" + 
+				"SOCENT - Social Entrepreneurship\n" + 
+				"SOCIOL - Sociology\n" + 
+				"SPANISH - Spanish\n" + 
+				"STA - Statistical Science\n" + 
+				"THEATRST - Theater Studies\n" + 
+				"THESIS - Thesis\n" + 
+				"VISUALST - Visual Studies\n" + 
+				"WRITING - Writing";
+		for (String a : test.split("\n")) {
+			myClassInfo.getClasses(a);
+		}
+//		myClassInfo.getClasses("COMPSCI - Computer Science");
+//		myClassInfo.getClasses("BIOLOGY - Biology");				
+		myClassInfo.printInfoMap();
+	}
+}

@@ -1,0 +1,69 @@
+package chase;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Thing {
+
+    public Thing() {
+
+        String csvFile = "/Users/moboyle769/Downloads/dataset/first_session.csv";
+        BufferedReader br = null;
+        String line = "";
+        String cvsSplitBy = ",";
+
+        try {
+
+            br = new BufferedReader(new FileReader(csvFile));
+            line = br.readLine();
+            int count = 0;
+            Map<String, ArrayList<String>> userToTime = new HashMap<>();
+            while ((line = br.readLine()) != null && count < 10000) {
+
+                // use comma as separator
+                String[] split = line.split(cvsSplitBy);
+                ArrayList<String> currTimeList;
+                if (userToTime.containsKey(split[1])) {
+                	currTimeList = userToTime.get(split[1]);
+                } else {
+                	currTimeList = new ArrayList<>();
+                }
+                currTimeList.add(split[5]);
+                userToTime.put(split[1], currTimeList);
+                try {
+                	Double num = Double.parseDouble(split[13]);
+                	if (num > 66) {
+//                    	System.out.println(num);
+                    }
+                } catch(NumberFormatException e) {
+                	
+                }
+                count++;
+            }
+            for (String s : userToTime.keySet()) {
+                System.out.println(s + ": " + userToTime.get(s));
+                
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+}

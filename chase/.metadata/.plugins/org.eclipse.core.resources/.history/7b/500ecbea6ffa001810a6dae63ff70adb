@@ -1,0 +1,35 @@
+package chase;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+
+public class Main {
+	
+	public static void main(String[] args) throws SecurityException, ClassNotFoundException, IOException {
+		URL url = new URL("https://streamer.oit.duke.edu/curriculum/classes/strm/1670%20-%202019%20Spring%20Term/crse_id/014361?crse_offer_nbr=1&access_token=06dc44a04decbcd3059715709cccd542");
+		HttpURLConnection conn = (HttpURLConnection)
+		url.openConnection(); 
+		conn.setRequestMethod("GET"); 
+		conn.connect();
+		int responsecode = conn.getResponseCode(); 
+		if(responsecode != 200)
+			throw new RuntimeException("HttpResponseCode: " +responsecode);
+			else {
+				Scanner sc = new Scanner(url.openStream());
+				String response = sc.nextLine();
+				sc.close();
+			}
+		}
+
+}

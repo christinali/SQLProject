@@ -1,0 +1,55 @@
+public CmdParser(Interpreter interp) {
+
+        isMakingList = false;
+
+        this.myErrors = ResourceBundle.getBundle("resources/Errors");
+
+        this.commandList = new LinkedList<>();
+        this.myTypes = new ArrayList<>();
+        this.myCommands = new ArrayList<>();
+
+        this.argProps = new Properties();
+        try {
+            argProps.load(new FileInputStream(ARGUMENTS_FILE_PATH));
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        //Move this somewhere else?
+        addPatterns(PROPERTIES_DIRECTORY_PATH + SYNTAX_PROPERTIES_FILE_NAME, myTypes);
+
+
+        this.resetCurrentInput("");
+        this.setLanguage(DEFAULT_LANGUAGE_FILE_NAME);
+        this.interpreter = interp;
+        this.myFactory = new CommandFactory(interpreter);
+    }
+
+    public CmdParser() {
+
+        isMakingList = false;
+
+        this.myErrors = ResourceBundle.getBundle("resources/Errors");
+
+        this.commandList = new LinkedList<>();
+        this.myTypes = new ArrayList<>();
+        this.myCommands = new ArrayList<>();
+
+        this.argProps = new Properties();
+        try {
+            argProps.load(new FileInputStream(ARGUMENTS_FILE_PATH));
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        //Move this somewhere else?
+        addPatterns(PROPERTIES_DIRECTORY_PATH + SYNTAX_PROPERTIES_FILE_NAME, myTypes);
+
+
+        this.resetCurrentInput("");
+        this.setLanguage(DEFAULT_LANGUAGE_FILE_NAME);
+        this.interpreter = new Interpreter();
+        this.myFactory = new CommandFactory(interpreter);
+    }

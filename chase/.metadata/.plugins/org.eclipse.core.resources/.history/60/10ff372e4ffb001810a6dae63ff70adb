@@ -1,0 +1,13 @@
+package chase;
+
+public class Scene {
+	
+	public Scene(String s1, Integer i) {
+		
+	}
+	
+	public Scene(String s1) {
+		
+	}
+
+}

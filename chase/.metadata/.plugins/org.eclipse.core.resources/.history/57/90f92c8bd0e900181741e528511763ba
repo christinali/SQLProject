@@ -1,0 +1,10 @@
+package chase;
+
+public class Main {
+	
+	public static void main(String[] args) throws SecurityException, ClassNotFoundException {
+		Thing t = new Thing();
+		t.test("chase.Scene");
+	}
+
+}

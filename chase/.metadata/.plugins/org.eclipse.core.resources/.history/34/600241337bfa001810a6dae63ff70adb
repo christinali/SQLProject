@@ -1,0 +1,108 @@
+package chase;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+
+public class Main {
+	
+	public static void main(String[] args) throws SecurityException, ClassNotFoundException, IOException {
+		ClassInfo myClassInfo = new ClassInfo();
+//		myClassInfo.getClasses("COMPSCI%20-%20Computer%20Science");
+//		myClassInfo.getClasses("BIOLOGY%20-%20Biology");
+		String test = "{'code': 'ARABIC', 'name': 'Arabic'}\n" + 
+				"{'code': 'ARTHIST', 'name': 'Art History'}\n" + 
+				"{'code': 'BIOCHEM', 'name': 'Biochemistry'}\n" + 
+				"{'code': 'BIOLOGY', 'name': 'Biology'}\n" + 
+				"{'code': 'BME', 'name': 'Biomedical Engineering'}\n" + 
+				"{'code': 'CEE', 'name': 'Civil and Environmental Egr'}\n" + 
+				"{'code': 'CELLBIO', 'name': 'Cell Biology'}\n" + 
+				"{'code': 'CHEM', 'name': 'Chemistry'}\n" + 
+				"{'code': 'CHILDPOL', 'name': 'Child Policy'}\n" + 
+				"{'code': 'CHINESE', 'name': 'Chinese'}\n" + 
+				"{'code': 'CLST', 'name': 'Classical Studies'}\n" + 
+				"{'code': 'CMB', 'name': 'Cell and Molecular Biology'}\n" + 
+				"{'code': 'COMPSCI', 'name': 'Computer Science'}\n" + 
+				"{'code': 'CULANTH', 'name': 'Cultural Anthropology'}\n" + 
+				"{'code': 'DOCST', 'name': 'Documentary Studies'}\n" + 
+				"{'code': 'DRAMA', 'name': 'Drama'}\n" + 
+				"{'code': 'DUTCH', 'name': 'Dutch'}\n" + 
+				"{'code': 'ECE', 'name': 'Electrical &amp; Computer Egr'}\n" + 
+				"{'code': 'ECON', 'name': 'Economics'}\n" + 
+				"{'code': 'EDUC', 'name': 'Education'}\n" + 
+				"{'code': 'EGR', 'name': 'Engineering'}\n" + 
+				"{'code': 'ENERGY', 'name': 'Energy'}\n" + 
+				"{'code': 'ENGLISH', 'name': 'English'}\n" + 
+				"{'code': 'ENVIRON', 'name': 'Environment'}\n" + 
+				"{'code': 'EOS', 'name': 'Earth and Ocean Sciences'}\n" + 
+				"{'code': 'ETHICS', 'name': 'Study of Ethics'}\n" + 
+				"{'code': 'EVANTH', 'name': 'Evolutionary Anthropology'}\n" + 
+				"{'code': 'FINANCE', 'name': 'Finance'}\n" + 
+				"{'code': 'FRENCH', 'name': 'French'}\n" + 
+				"{'code': 'GERMAN', 'name': 'German'}\n" + 
+				"{'code': 'GLHLTH', 'name': 'Global Health'}\n" + 
+				"{'code': 'GREEK', 'name': 'Greek'}\n" + 
+				"{'code': 'GSF', 'name': 'Gender Sexuality &amp; Feminist St'}\n" + 
+				"{'code': 'HEBREW', 'name': 'Hebrew'}\n" + 
+				"{'code': 'HINDI', 'name': 'Hindi'}\n" + 
+				"{'code': 'HISTORY', 'name': 'History'}\n" + 
+				"{'code': 'HTHPOL', 'name': 'Health Policy'}\n" + 
+				"{'code': 'HUNGARN', 'name': 'Hungarian'}\n" + 
+				"{'code': 'ITALIAN', 'name': 'Italian'}\n" + 
+				"{'code': 'JEWISHST', 'name': 'Jewish Studies'}\n" + 
+				"{'code': 'JPN', 'name': 'Japanese'}\n" + 
+				"{'code': 'KOREAN', 'name': 'Korean'}\n" + 
+				"{'code': 'LATAMER', 'name': 'Latin American Studies'}\n" + 
+				"{'code': 'LATIN', 'name': 'Latin'}\n" + 
+				"{'code': 'LINGUIST', 'name': 'Linguistics'}\n" + 
+				"{'code': 'LIT', 'name': 'Literature'}\n" + 
+				"{'code': 'MANAGEMT', 'name': 'Management'}\n" + 
+				"{'code': 'MARKETNG', 'name': 'Marketing'}\n" + 
+				"{'code': 'MATH', 'name': 'Mathematics'}\n" + 
+				"{'code': 'MGRECON', 'name': 'Economics'}\n" + 
+				"{'code': 'MUSIC', 'name': 'Music'}\n" + 
+				"{'code': 'NEURO', 'name': 'Neurology'}\n" + 
+				"{'code': 'NEUROBIO', 'name': 'Neurobiology'}\n" + 
+				"{'code': 'NEUROSCI', 'name': 'Neuroscience'}\n" + 
+				"{'code': 'PHIL', 'name': 'Philosophy'}\n" + 
+				"{'code': 'PHYASST', 'name': 'Physician Assistant Program'}\n" + 
+				"{'code': 'PHYSEDU', 'name': 'Physical Education'}\n" + 
+				"{'code': 'PHYSICS', 'name': 'Physics'}\n" + 
+				"{'code': 'PJMS', 'name': 'Policy Journalism and Media St'}\n" + 
+				"{'code': 'POE', 'name': 'Practice-Oriented Education'}\n" + 
+				"{'code': 'POLISH', 'name': 'Polish'}\n" + 
+				"{'code': 'POLSCI', 'name': 'Political Science'}\n" + 
+				"{'code': 'PORTUGUE', 'name': 'Portuguese'}\n" + 
+				"{'code': 'PPE', 'name': 'Philosophy, Politics, and Econ'}\n" + 
+				"{'code': 'PSY', 'name': 'Psychology'}\n" + 
+				"{'code': 'PUBPOL', 'name': 'Public Policy'}\n" + 
+				"{'code': 'RELIGION', 'name': 'Religion'}\n" + 
+				"{'code': 'RESEARCH', 'name': 'Research'}\n" + 
+				"{'code': 'RIGHTS', 'name': 'Human Rights'}\n" + 
+				"{'code': 'ROMANIAN', 'name': 'Romanian'}\n" + 
+				"{'code': 'ROMLANG', 'name': 'Romance Languages'}\n" + 
+				"{'code': 'ROMST', 'name': 'Romance Studies'}\n" + 
+				"{'code': 'RUSSIAN', 'name': 'Russian'}\n" + 
+				"{'code': 'SOCENT', 'name': 'Social Entrepreneurship'}\n" + 
+				"{'code': 'SOCIOL', 'name': 'Sociology'}\n" + 
+				"{'code': 'SPANISH', 'name': 'Spanish'}\n" + 
+				"{'code': 'STA', 'name': 'Statistical Science'}\n" + 
+				"{'code': 'THEATRST', 'name': 'Theater Studies'}\n" + 
+				"{'code': 'THESIS', 'name': 'Thesis'}\n" + 
+				"{'code': 'VISUALST', 'name': 'Visual Studies'}\n" + 
+				"{'code': 'WRITING', 'name': 'Writing'}";
+		System.out.println(test.split("\n").length);
+				
+		myClassInfo.printInfoMap();
+	}
+}

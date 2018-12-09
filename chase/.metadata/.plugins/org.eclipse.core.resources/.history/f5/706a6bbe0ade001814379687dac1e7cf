@@ -1,0 +1,9 @@
+package chase;
+import java.util.*;
+
+public class Thing { 
+	public Thing() {
+		System.out.println("YES");
+	}
+	
+} 

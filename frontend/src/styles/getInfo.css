@@ -1,0 +1,29 @@
+.Top3Recs {
+  background: #f2efe8 none repeat scroll 0 0;
+  border-radius: 30px;
+  margin: 30px auto 30px;
+  padding: 20px 25px 20px 25px;
+  font-size: 18px;
+}
+
+
+.TReqsAll {
+  display: flex;
+  flex-direction: row;
+}
+
+.TReqsComp {
+  border-radius: 30px;
+  border-style: groove;
+  border-width: 5px;
+  border-color: #000000;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+}
+
+.inner h2 { color:#444444; font-size:30px; margin:0 0 10px 0; font-weight: bold;}
+.inner p { color:#777777; font-size:18px; margin-bottom:20px; line-height:24px;}
+.name {font-size: 15px; margin: 0;}
+
+
+/*import './styles/getInfo.css';*/

@@ -36,11 +36,14 @@ export default class BasicInput extends React.Component {
         </FormGroup>
         <FormGroup controlId="gradyear" bsSize="large">
           <ControlLabel><p className='name'>Graduation Year: </p></ControlLabel>
-          <FormControl
-            value={this.state.gradyear}
-            onChange={this.handleChange}
-            type="text"
-          />
+          <FormControl componentClass="select"
+            onChange={this.handleChange}>
+              <option value="">...</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+          </FormControl>
         </FormGroup>
         <FormGroup controlId="major" bsSize="large">
           <ControlLabel><p className='name'>Major: </p></ControlLabel>

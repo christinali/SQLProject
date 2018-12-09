@@ -8,6 +8,7 @@ import models
 import forms
 import sys
 import math
+import csv
 
 app = Flask(__name__)
 app.secret_key = 's3cr3t'
@@ -15,9 +16,47 @@ app.config.from_object('config')
 db = SQLAlchemy(app, session_options={'autocommit': False})
 CORS(app)
 
+
+
 @app.route('/', methods=['GET'])
 def dontReach():
     return '"DONT REACH" - Feroze'
+    
+@app.route('/longclasses', methods=['GET'])
+def longclasses():
+    with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/classes.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        res = []
+        for line in csv_reader:
+            res.append(line)
+        return jsonify(res)
+        
+@app.route('/longprofs', methods=['GET'])
+def longprofs():
+    with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/profs.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        res = []
+        for line in csv_reader:
+            res.append(line)
+        return jsonify(res)
+        
+@app.route('/longteaches', methods=['GET'])
+def longteaches():
+    with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/teaches.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        res = []
+        for line in csv_reader:
+            res.append(line)
+        return jsonify(res)
+
+@app.route('/longdepts', methods=['GET'])
+def longdepts():
+    with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/departments.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        res = []
+        for line in csv_reader:
+            res.append(line)
+        return jsonify(res)
 
 @app.route('/departments', methods=['GET'])
 def getAllDepartments():

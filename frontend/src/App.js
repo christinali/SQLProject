@@ -36,7 +36,7 @@ class App extends Component {
 
   render() {
     return (
-        <div style={sectionStyle}>
+        <div>
             <Header headerText='Froz is a frontend legend'/>
             {(()=> {
               switch(this.state.screen) {

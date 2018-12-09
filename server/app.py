@@ -65,7 +65,14 @@ def getRecommendedMajorClasses():
     department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
     classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
     classList = list()
-    for i,eachClass in enumerate(classesInMajor):
+    takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
+    haveTaken = set()
+    for taken in takenAlready:
+        haveTaken.add(taken.class_id)
+    i = 0
+    for _,eachClass in enumerate(classesInMajor):
+        if eachClass.class_id in haveTaken:
+            continue
         classList.append(dict())
         classList[i]['dept'] = major
         classList[i]['overall'] = getRating(eachClass.class_id)
@@ -73,6 +80,7 @@ def getRecommendedMajorClasses():
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
+        i+=1
     classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
 
@@ -187,7 +195,6 @@ def getClassesWithReqs(needed):
             classes[currClass].append('cz')
     return classes
 
-#TODO: run a difference query so that you don't recommend classes people have taken already
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     user_id = request.args.get('user_id')
@@ -199,7 +206,14 @@ def gettreqs():
             needed.remove(key)
     classList = list()
     classesWithReqs = getClassesWithReqs(needed)
-    for i,eachClass in enumerate(classesWithReqs.keys()):
+    takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
+    haveTaken = set()
+    for taken in takenAlready:
+        haveTaken.add(taken.class_id)
+    i = 0
+    for _,eachClass in enumerate(classesWithReqs.keys()):
+        if eachClass.class_id in haveTaken:
+            continue
         classList.append(dict())
         classList[i]['dept'] = eachClass.department_id
         classList[i]['overall'] = getRating(eachClass.class_id)
@@ -208,6 +222,7 @@ def gettreqs():
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
         classList[i]['satisfiesNeeded'] = classesWithReqs[eachClass]
+        i+=1
         # temp = list()
         # for req in classList[i]['satisfiesNeeded']:
         #     if req not in completed or completed[req]==0:

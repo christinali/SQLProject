@@ -3,55 +3,66 @@ from app import db
 
 #TODO: Make everything lowercase rip
 class Class(db.Model):
-    __tablename__ = 'Class'
+    __tablename__ = 'class'
     name = db.Column('name', db.String(100))
-    classID = db.Column('classID', db.Integer, primary_key=True)
-    department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
+    class_id = db.Column('class_id', db.Integer, primary_key=True)
+    department_id = db.Column('department_id', db.String(100), db.ForeignKey('department.department_id'), primary_key=True)
+    class_num = db.Column('class_num', db.Integer)
     #booleans of whether or not the t-req is satisfied by this
     cz = db.Column('cz', db.Integer)
     ss = db.Column('ss', db.Integer)
     cci = db.Column('cci', db.Integer)
+    alp = db.Column('alp', db.Integer)
+    ns = db.Column('ns', db.Integer)
+    qs = db.Column('qs', db.Integer)
+    ei = db.Column('ei', db.Integer)
+    fl = db.Column('fl', db.Integer)
+    r = db.Column('r', db.Integer)
+    sts = db.Column('sts', db.Integer)
+    w = db.Column('w', db.Integer)
 
 class Student(db.Model):
-    __tablename__ = 'Student'
+    __tablename__ = 'student'
     name = db.Column('name', db.String(100))
     email = db.Column('email', db.String(100), nullable=True)
-    studentID = db.Column('studentID', db.Integer, primary_key=True)
-    major = db.Column('major', db.String(100), db.ForeignKey('department.name'))
+    student_id = db.Column('student_id', db.Integer, primary_key=True)
+    major = db.Column('major', db.String(100), db.ForeignKey('department.department_id'))
 
 class Comment(db.Model):
-    __tablename__ = "Comment"
+    __tablename__ = "comment"
     text = db.Column('text', db.String(10000))
     upvotes = db.Column('upvotes', db.Integer)
     downvotes = db.Column('downvotes', db.Integer)
-    studentID = db.Column('studentID', db.Integer, db.ForeignKey('student.studentID'))
-    commentID = db.Column('commentID', db.Integer, primary_key=True)
-    
+    student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.studentID'))
+    comment_id = db.Column('comment_id', db.Integer, primary_key=True)
+
 class Department(db.Model):
     __tablename__ = 'department'
+    #TODO: Update department_id to be a string
     name = db.Column('name', db.String(100))
-    department_id = db.Column('department_id', db.Integer, primary_key=True)
+    department_id = db.Column('department_id', db.String(100), primary_key=True)
 
 class Taken(db.Model):
-    __tablename__ = "Taken"
+    __tablename__ = "taken"
     semester = db.Column('semester', db.String(4))
-    starNumber = db.Column("starNumber", db.Float)
-    commentID = db.Column("commentID", db.Integer, nullable=True)
-    studentID = db.Column('studentID', db.Integer, db.ForeignKey('student.studentID'), primary_key=True)
-    classID = db.Column('classID', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
+    star_number = db.Column("star_number", db.Float)
+    comment_id = db.Column("comment_id", db.Integer, nullable=True)
+    student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.studentID'), primary_key=True)
+    class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     #TODO: This might be broken, idk if you can have a foreign key that is also nullable
-    department_id = db.Column('department_id', db.Integer, db.ForeignKey('department.department_id'), primary_key=True)
+    department_id = db.Column('department_id', db.String(100), db.ForeignKey('department.department_id'), primary_key=True)
+    difficulty = db.Column("difficulty", db.Float)
 
 class Professor(db.Model):
-    __tablename__ = "Professor"
+    __tablename__ = "professor"
     name = db.Column('name', db.String(100))
-    professorID = db.Column('professorID', db.Integer, primary_key=True)
+    professor_id = db.Column('professor_id', db.Integer, primary_key=True)
 
 class Teaches(db.Model):
-    __tablename__ = "Teaches"
-    classID = db.Column('classID', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
-    professorID = db.Column('professorID', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
-    semester = db.Column('semester', db.String(4))
+    __tablename__ = "teaches"
+    class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
+    professor_id = db.Column('professor_id', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
+    semester = db.Column('semester', db.String(100))
 
 # class Drinker(db.Model):
 #     __tablename__ = 'drinker'

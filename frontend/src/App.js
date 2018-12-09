@@ -7,6 +7,8 @@ import Header from './scenes/Header';
 import Input from './scenes/forms/Input';
 import firebase from 'firebase';
 import Background from './images/background_image.jpg';
+import Class from './scenes/Class';
+import Prof from './scenes/Prof';
 
 import './App.css';
 import './styles/login.css';
@@ -32,7 +34,7 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen:1, email: '', headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
+  state = {screen:3, email: '', headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
 
   render() {
     return (
@@ -55,6 +57,11 @@ class App extends Component {
                             exitToLogin={() => this.setState({screen: 0})}
                             app={this.app}
                             />;
+                case 3:
+                  return <Class />;
+                case 4:
+                  return <Prof />;
+
                 default:
                   return null;
               }

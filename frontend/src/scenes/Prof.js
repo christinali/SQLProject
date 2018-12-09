@@ -4,7 +4,7 @@ class Prof extends Component {
     render() {
         return (
             <div>
-
+              Salil is garbage
             </div>
         );
     }

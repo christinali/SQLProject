@@ -222,14 +222,21 @@ def gettreqs():
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
         classList[i]['satisfiesNeeded'] = classesWithReqs[eachClass]
-        i+=1
+        for req in classList[i]['satisfiesNeeded']:
+            if 'numNeeded' not in classList[i]:
+                    classList[i]['numNeeded']=dict()
+            if req not in completed or completed[req]==0:
+                classList[i]['numNeeded'][req] = 2
+            else:
+                classList[i]['numNeeded'][req]=1
+        #This implements weighting by the t-reqs you need more, but would also return alp twice to the frontend if you needed two alps
         # temp = list()
         # for req in classList[i]['satisfiesNeeded']:
         #     if req not in completed or completed[req]==0:
         #         temp.append(req)
-        #         app.logger.warning(req)
         # for t in temp:
         #     classList[i]['satisfiesNeeded'].append(t)
+        i+=1
     classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
 
@@ -237,8 +244,9 @@ def score(currClass):
     score = 0
     score += currClass['overall']
     score-=currClass['difficulty']
-    if 'satisfiesNeeded' in currClass:
-        score+=len(currClass['satisfiesNeeded'])
+    if 'numNeeded' in currClass:
+        for key in currClass['numNeeded'].keys():
+            score+=currClass['numNeeded'][key]
     return score
 
 def compareClasses(class1, class2):

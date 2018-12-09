@@ -15,6 +15,7 @@
     "react-dom": "^16.6.1",
     "react-plotly.js": "^2.2.0",
     "react-scripts": "2.1.1",
+    "react-select": "^2.1.2",
     "react-simple-checkbox": "^1.2.0",
     "react-star-ratings": "^2.3.0",
     "react-ui-cards": "^1.4.0"

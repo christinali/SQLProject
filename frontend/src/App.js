@@ -32,7 +32,7 @@ class App extends Component {
   render() {
     return (
         <div>
-            <Header headerText='Froz is a frontend legend'/>
+            <Header headerText='MISTAH MOHIPEEN is a frontend legend'/>
             {(()=> {
               switch(this.state.screen) {
                 case 0:

@@ -29,11 +29,11 @@ const Header = (props) => {
         <MenuItem eventKey={3.3}>Separated link</MenuItem>
       </NavDropdown>
     </Nav>
-    <Nav pullRight>
-      <NavItem eventKey={1} href="#">
-        Link Right
+    {props.loggedin && <Nav pullRight>
+      <NavItem eventKey={1} href="#" onClick={props.logout}>
+        Log Out
       </NavItem>
-    </Nav>
+    </Nav>}
   </Navbar.Collapse>
 </Navbar>
 

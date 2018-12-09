@@ -37,7 +37,7 @@ class App extends Component {
   render() {
     return (
         <div>
-            <Header headerText={this.state.headerText}/>
+            <Header headerText={this.state.headerText} logout={() => this.setState({screen:0})} loggedin={this.state.screen}/>
             {(()=> {
               switch(this.state.screen) {
                 case 0:

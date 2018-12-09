@@ -11,6 +11,7 @@
 
 .Top3Recs h2 {
   margin-top: 5px;
+  font-size:
 }
 
 .ReqsAll {
@@ -22,10 +23,15 @@
 .ReqsComp {
   border-radius: 30px;
   border-style: groove;
-  border-width: 5px;
+  border-width: 3px;
   border-color: #000000;
-  padding: 5px 20px 5px 20px;
-  margin: 20px;
+  padding: 5px 10px 5px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ReqsComp h3 {
+  margin-top:10px;
 }
 
 .Searcher {

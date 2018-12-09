@@ -32,7 +32,7 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen: 2, email: ''}
+  state = {screen: 1, email: ''}
 
   render() {
     return (

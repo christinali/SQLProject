@@ -1,19 +1,37 @@
 import React from 'react';
+import axios from 'axios';
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 
 export default class BasicInput extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {fieldValues: this.props.fieldValues, majors: ''};
+  }
   saveAndContinue = () => {
-    this.props.saveValues(this.state);
+    this.props.saveValues(this.state.fieldValues);
   }
 
   handleChange = event => {
+    let newfieldValues = this.state.fieldValues;
+    newfieldValues[event.target.id] = event.target.value;
     this.setState({
-      [event.target.id]: event.target.value
+      fieldValues: newfieldValues
     });
   };
-  state = this.props.fieldValues;
+
+  componentDidMount() {
+    axios.get('http://localhost:5000/get-class-info?class_id=1')
+        .then(res => {
+            console.log(res.data);
+            this.setState({majors: res.data});
+        })
+        .catch(e => console.log(e))
+  }
+
   render(){
+
+    const majors = this.state.majors;
     return(
       <div className="Login">
         <h2>Basic Input</h2>
@@ -47,11 +65,12 @@ export default class BasicInput extends React.Component {
         </FormGroup>
         <FormGroup controlId="major" bsSize="large">
           <ControlLabel><p className='name'>Major: </p></ControlLabel>
-          <FormControl
-            value={this.state.major}
-            onChange={this.handleChange}
-            type="text"
-          />
+          <FormControl componentClass="select"
+            onChange={this.handleChange}>
+            {Object.keys(majors).map(key => {
+              return <option value={key}>{key}</option>
+            })}
+          </FormControl>
         </FormGroup>
         <Button
           block

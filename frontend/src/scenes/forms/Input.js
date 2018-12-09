@@ -8,7 +8,7 @@ import ContactInfo from './ContactInfo';
 export default class Input extends React.Component {
 
   state = {
-    step: 1,
+    step: 2,
     fieldValues : {
       fname : '',
       lname: '',

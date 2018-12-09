@@ -1,36 +1,47 @@
 // Import libraries for making a component
 import React from 'react';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
 
 // Make a component
+const navbar = {background: '#f2efe8'};
 const Header = (props) => {
-	const { textStyle, viewStyle } = styles;
+
 
 	return (
-		<div style={viewStyle}>
-			<div style={textStyle}>{props.headerText}</div>
-		</div>
+		<Navbar style={navbar} collapseOnSelect pullLeft >
+  <Navbar.Header>
+    <Navbar.Brand>
+      <a href="#brand">{props.headerText}</a>
+    </Navbar.Brand>
+    <Navbar.Toggle />
+  </Navbar.Header>
+  <Navbar.Collapse>
+    <Nav>
+      <NavItem eventKey={1} href="#">
+        Link
+      </NavItem>
+      <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+        <MenuItem eventKey={3.1}>Action</MenuItem>
+        <MenuItem eventKey={3.2}>Another action</MenuItem>
+        <MenuItem eventKey={3.3}>Something else here</MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey={3.3}>Separated link</MenuItem>
+      </NavDropdown>
+    </Nav>
+    <Nav pullRight>
+      <NavItem eventKey={1} href="#">
+        Link Right
+      </NavItem>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+
 
 	);
 };
 
-const styles = {
-	viewStyle: {
-		backgroundColor: '#f2efe8',
-		justifyContent: 'center',
-		alignItems: 'center',
-		height: 60,
-		paddingTop: 15,
-		shadowColor: '#000',
-		shadowOffset: { width: 0, height: 2 },
-		elevation: 5,
-		position: 'relative'
-	},
-	textStyle: {
-		fontSize: 20,
-		fontWeight: 'bold'
-	}
-};
+
 
 // Make the component available to other parts of the app
 export default Header;

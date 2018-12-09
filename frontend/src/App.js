@@ -6,6 +6,7 @@ import GetInfo from './scenes/GetInfo';
 import Header from './scenes/Header';
 import Input from './scenes/forms/Input';
 import firebase from 'firebase';
+import Background from './images/background_image.jpg';
 
 import './App.css';
 import './styles/login.css';
@@ -20,6 +21,10 @@ const firebaseConfig = {
     messagingSenderId: "612693141535"
 };
 
+var sectionStyle = {
+
+  backgroundImage: `url(${Background})`
+};
 
 class App extends Component {
   constructor(props){
@@ -27,22 +32,24 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen: 1}
+  state = {screen: 2, email: ''}
 
   render() {
     return (
-        <div>
-            <Header headerText='MISTAH MOHIPEEN is a frontend legend'/>
+        <div style={sectionStyle}>
+            <Header headerText='Froz is a frontend legend'/>
             {(()=> {
               switch(this.state.screen) {
                 case 0:
                   return <Login
-                            login={() => this.setState({screen: 1})}
+                            login={(email) => this.setState({screen: 1, email: email})}
                             signup={() => this.setState({screen: 2})}
                             app={this.app}
                           />;
                 case 1:
-                  return <GetInfo logout={() => this.setState({screen: 0})}/>;
+                  return <GetInfo
+                          email={this.state.email}
+                          logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input
                             exitToLogin={() => this.setState({screen: 0})}

@@ -187,6 +187,7 @@ def getClassesWithReqs(needed):
             classes[currClass].append('cz')
     return classes
 
+#TODO: run a difference query so that you don't recommend classes people have taken already
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     user_id = request.args.get('user_id')

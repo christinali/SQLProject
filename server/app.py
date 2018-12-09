@@ -377,6 +377,28 @@ def cmp_to_key(mycmp):
             return mycmp(self.obj, other.obj) != 0
     return K
 
+
+@app.route('/get-classes-in-major', methods=['GET'])
+def getClassesInMajor():
+    major = request.args.get('major')
+    department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
+    classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
+    classList = list()
+    i = 0
+    for _,eachClass in enumerate(classesInMajor):
+        classList.append(dict())
+        classList[i]['dept'] = major
+        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
+        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
+        classList[i]['name'] = eachClass.name
+        classList[i]['id'] = eachClass.class_id
+        classList[i]['num'] = eachClass.class_num
+        classList[i]['treqs'] = returnAllTreqs(eachClass)
+        i+=1
+    return jsonify(classList)
+
+
+
 @app.route('/get-class-info', methods=['GET'])
 def getClassInfo():
     class_id = request.args.get('class_id')

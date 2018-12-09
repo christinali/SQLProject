@@ -10,13 +10,13 @@ class GetInfo extends React.Component {
             id: null, //whatever the user login id is
             currClass: null,
             currProf: null,
-            Treqs: null,
-            Majors: null,
-            allClasses: [],
-            allProfs: [],
-            query: null,
+            Treqs: null, //load with user ID
+            Majors: null, //load with user ID
+            allClasses: [], //load at start
+            allProfs: [], //load at start
+            query: '',
             resultOut: [],
-            searchCat: 'classname'
+            searchCat: 'classname' //default to searching by class name
         }
 
         this.getAllClasses();
@@ -74,7 +74,7 @@ class GetInfo extends React.Component {
     }
 
     getAllProfs() {
-        axios.get('http://localhost:5000/get-all-professors')
+        axios.get('http://localhost:5000/get-all-profs')
           .then(res => {
             this.setState({
               allProfs: res.data,
@@ -95,7 +95,7 @@ class GetInfo extends React.Component {
         if (this.state.searchCat === 'classname') {
           let resultCopy = this.state.allClasses;
           resultCopy = this.state.allClasses.filter(c => {
-            return c.name.toLowerCase().startsWith(result.target.value.toLowerCase());
+            return c.name.toLowerCase().includes(result.target.value.toLowerCase());
           })
           this.setState({
             query: result.target.value,
@@ -105,7 +105,7 @@ class GetInfo extends React.Component {
         else if (this.state.searchCat === 'prof') {
           let resultCopy = this.state.allProfs;
           resultCopy = this.state.allProfs.filter(c => {
-            return c.name.toLowerCase().startsWith(result.target.value.toLowerCase());
+            return c.name.toLowerCase().includes(result.target.value.toLowerCase());
           })
           this.setState({
             query: result.target.value,
@@ -113,9 +113,12 @@ class GetInfo extends React.Component {
           })
         }
         else if (this.state.searchCat === 'classid') {
-          let resultCopy = this.state.allProfs;
-          resultCopy = this.state.allProfs.filter(c => {
-            return c.name.toLowerCase().startsWith(result.target.value.toLowerCase());
+          let resultCopy = this.state.allClasses;
+          resultCopy = this.state.allClasses.filter(c => {
+            if (c.dept && c.num) {
+              let temp = c.dept.toLowerCase() + c.num;
+              return temp.includes(result.target.value.toLowerCase());
+            }
           })
           this.setState({
             query: result.target.value,

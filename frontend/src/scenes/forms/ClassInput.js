@@ -1,27 +1,39 @@
 import React from 'react';
+import axios from 'axios';
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 
 export default class ClassInput extends React.Component {
   handleChange = event => {
+    let newfieldValues = this.state.main;
+    newfieldValues[event.target.id] = event.target.value;
     this.setState({
-      [event.target.id]: event.target.value
+      main: newfieldValues
     });
   };
-  state = { major: '',
+  state = { main: {major: '',
             class: '',
             semester: '',
             year: '',
             overall: '',
             difficulty: '',
-            review: ''
+            review: ''},
+            majors: ''
   };
+  componentDidMount() {
+    axios.get('http://localhost:5000/get-all-majors')
+        .then(res => {
+            console.log(res.data);
+            this.setState({majors: res.data});
+        })
+        .catch(e => console.log(e))
+  }
   compress = () => {
     let fieldValues = this.props.fieldValues;
-    let gg = this.state;
+    let gg = this.state.main;
     fieldValues.classes.push(gg);
     this.props.saveValues(fieldValues);
-    this.setState({
+    this.setState({ main: {
       major: '',
       class: '',
       semester: '',
@@ -29,27 +41,28 @@ export default class ClassInput extends React.Component {
       overall: '',
       difficulty: '',
       review: ''
-
+    }
     });
   };
   render(){
+    const majors = this.state.majors;
+    
     return(
       <div className="Login">
       <h2>Add a Class</h2>
-      <FormGroup controlId="major" bsSize="large">
-        <ControlLabel><p className='name'>Class Major</p></ControlLabel>
-        <FormControl
-          autoFocus
-          type="text"
-          value={this.state.major}
-          onChange={this.handleChange}
-
-        />
-      </FormGroup>
+        <FormGroup controlId="major" bsSize="large">
+          <ControlLabel><p className='name'>Class Department </p></ControlLabel>
+          <FormControl componentClass="select"
+            onChange={this.handleChange}>
+            {Object.keys(majors).map(key => {
+              return <option value={key}>{key}</option>
+            })}
+          </FormControl>
+        </FormGroup>
       <FormGroup controlId="class" bsSize="large">
         <ControlLabel><p className='name'>Class Name </p></ControlLabel>
         <FormControl
-          value={this.state.class}
+          value={this.state.main.class}
           onChange={this.handleChange}
           type="text"
         />

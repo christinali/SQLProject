@@ -21,7 +21,7 @@ export default class BasicInput extends React.Component {
   };
 
   componentDidMount() {
-    axios.get('http://localhost:5000/get-class-info?class_id=1')
+    axios.get('http://localhost:5000/get-all-majors')
         .then(res => {
             console.log(res.data);
             this.setState({majors: res.data});

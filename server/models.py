@@ -14,6 +14,12 @@ class Class(db.Model):
     cci = db.Column('cci', db.Integer)
     alp = db.Column('alp', db.Integer)
     ns = db.Column('ns', db.Integer)
+    qs = db.Column('qs', db.Integer)
+    ei = db.Column('ei', db.Integer)
+    fl = db.Column('fl', db.Integer)
+    r = db.Column('r', db.Integer)
+    sts = db.Column('sts', db.Integer)
+    w = db.Column('w', db.Integer)
 
 class Student(db.Model):
     __tablename__ = 'student'

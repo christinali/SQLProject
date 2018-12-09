@@ -9,7 +9,7 @@ const Header = (props) => {
 
 
 	return (
-		<Navbar style={navbar} collapseOnSelect pullLeft >
+		<Navbar style={navbar} collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
       <a href="#brand">{props.headerText}</a>

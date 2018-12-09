@@ -26,6 +26,7 @@ def getAllDepartments():
 def getId():
     email = request.args.get('email')
     if (email):
+        #TODO: Get id associated with email
         return "0"
 
 @app.route('/create-user', methods=['GET', 'POST'])

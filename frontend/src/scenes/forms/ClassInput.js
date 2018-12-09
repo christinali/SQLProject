@@ -46,7 +46,7 @@ export default class ClassInput extends React.Component {
   };
   render(){
     const majors = this.state.majors;
-    
+
     return(
       <div className="Login">
       <h2>Add a Class</h2>
@@ -54,7 +54,7 @@ export default class ClassInput extends React.Component {
           <ControlLabel><p className='name'>Class Department </p></ControlLabel>
           <FormControl componentClass="select"
             onChange={this.handleChange}>
-            {Object.keys(majors).map(key => {
+            {majors.map(key => {
               return <option value={key}>{key}</option>
             })}
           </FormControl>

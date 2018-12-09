@@ -67,7 +67,7 @@ export default class BasicInput extends React.Component {
           <ControlLabel><p className='name'>Major: </p></ControlLabel>
           <FormControl componentClass="select"
             onChange={this.handleChange}>
-            {Object.keys(majors).map(key => {
+            {majors.map(key => {
               return <option value={key}>{key}</option>
             })}
           </FormControl>

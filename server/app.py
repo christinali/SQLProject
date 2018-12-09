@@ -258,7 +258,7 @@ def getProfInfo():
     return jsonify(getAllProfs()[int(prof_id)])
 
 @app.route('/get-all-profs', methods=['GET'])
-def getProfInfo():
+def getAllProfInfo():
     return jsonify(getAllProfs())
 
 @app.route('/get-all-classes', methods=['GET'])

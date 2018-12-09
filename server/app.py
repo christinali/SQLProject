@@ -191,9 +191,10 @@ def getClassesWithReqs(needed):
 def gettreqs():
     user_id = request.args.get('user_id')
     completed = getCompleted(user_id)
-    needed = ['alp','cz','ns']
+    needed = ['alp','alp', 'cz', 'cz','ns', 'ns']
     for key in completed:
         if completed[key]>=2:
+            needed.remove(key)
             needed.remove(key)
     classList = list()
     classesWithReqs = getClassesWithReqs(needed)
@@ -206,6 +207,13 @@ def gettreqs():
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
         classList[i]['satisfiesNeeded'] = classesWithReqs[eachClass]
+        # temp = list()
+        # for req in classList[i]['satisfiesNeeded']:
+        #     if req not in completed or completed[req]==0:
+        #         temp.append(req)
+        #         app.logger.warning(req)
+        # for t in temp:
+        #     classList[i]['satisfiesNeeded'].append(t)
     classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
 

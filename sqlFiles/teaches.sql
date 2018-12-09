@@ -1,3 +1,2 @@
-INSERT INTO Teaches VALUES
-(015744,1, '2014 Spring Term'),
-(002606,3, '2018 Fall Term');
+INSERT INTO Teaches 
+SELECT DISTINCT class_id1, professor_id1, semester1 FROM Teaches1;

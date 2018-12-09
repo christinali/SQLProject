@@ -4,8 +4,8 @@ CREATE TABLE Department
  PRIMARY KEY(department_id));
 
 CREATE TABLE Professor
-(	name VARCHAR(100) NOT NULL,
-	professor_id INTEGER NOT NULL,
+(	professor_id INTEGER NOT NULL,
+	name VARCHAR(100) NOT NULL,
 	PRIMARY KEY(professor_id));
 
 #CREATE TABLE Student

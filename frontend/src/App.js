@@ -36,13 +36,8 @@ class App extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
         <div style={sectionStyle}>
             <Header headerText='Froz is a frontend legend'/>
-=======
-        <div>
-            <Header headerText='MISTAH MOHIPEEN is a frontend legend'/>
->>>>>>> eeaed325c992379b68e9e6078bfce89042c8209c
             {(()=> {
               switch(this.state.screen) {
                 case 0:
@@ -53,7 +48,7 @@ class App extends Component {
                           />;
                 case 1:
                   return <GetInfo
-                          email={this.state.email} 
+                          email={this.state.email}
                           logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input

@@ -21,7 +21,7 @@ export default class BasicInput extends React.Component {
   };
 
   componentDidMount() {
-    axios.get('http://localhost:5000/get-class-info?class_id=1')
+    axios.get('http://localhost:5000/get-all-majors')
         .then(res => {
             console.log(res.data);
             this.setState({majors: res.data});
@@ -67,7 +67,7 @@ export default class BasicInput extends React.Component {
           <ControlLabel><p className='name'>Major: </p></ControlLabel>
           <FormControl componentClass="select"
             onChange={this.handleChange}>
-            {Object.keys(majors).map(key => {
+            {majors.map(key => {
               return <option value={key}>{key}</option>
             })}
           </FormControl>

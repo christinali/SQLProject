@@ -6,7 +6,7 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 export default class BasicInput extends React.Component {
   constructor(props){
     super(props);
-    this.state = {fieldValues: this.props.fieldValues, majors: ''};
+    this.state = {fieldValues: this.props.fieldValues, majors: []};
   }
   saveAndContinue = () => {
     this.props.saveValues(this.state.fieldValues);

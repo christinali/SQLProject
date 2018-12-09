@@ -18,7 +18,7 @@ export default class ClassInput extends React.Component {
             overall: '',
             difficulty: '',
             review: ''},
-            majors: ''
+            majors: []
   };
   componentDidMount() {
     axios.get('http://localhost:5000/get-all-majors')

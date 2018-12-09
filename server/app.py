@@ -80,7 +80,7 @@ def getRecommendedMajorClasses():
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
-        classList[i]['treqs'] = returnAllTreqs(eachClass)
+        classList[i]['satisfiesNeeded'] = returnAllTreqs(eachClass)
         i+=1
     classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)

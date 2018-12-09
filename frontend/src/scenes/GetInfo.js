@@ -9,7 +9,7 @@ class GetInfo extends React.Component {
         super();
         this.state = {
             id: null, //whatever the user login id is
-            email: '',
+            email: 'test@test.test', //replace with ''
             currClass: null,
             currProf: null,
             Treqs: null, //load with user ID
@@ -23,18 +23,20 @@ class GetInfo extends React.Component {
 
         this.getAllClasses();
         this.getAllProfs();
+
     }
 
     componentDidMount() {
         this.setState({
             email : this.props.email,
         })
+        this.getTReqs(this.props.email);
+        this.getMajors(this.props.email);
     }
 
-    getTReqs() {
-        axios.get('http://localhost:5000/get-recommended-treqs?user_id=' + this.state.id)
+    getTReqs(email) {
+        axios.get('http://localhost:5000/get-recommended-treqs?user_email=' + 'test@test.test') //replace with email
             .then(res => {
-                console.log(res.data);
                 this.setState({
                   Treqs: res.data,
                 })
@@ -42,10 +44,9 @@ class GetInfo extends React.Component {
             .catch(e => console.log(e))
     }
 
-    getMajors() {
-        axios.get('http://localhost:5000/get-recommended-major?user_id=' + this.state.id)
+    getMajors(email) {
+        axios.get('http://localhost:5000/get-recommended-major?user_email=' + 'test@test.test') //replace with email
             .then(res => {
-                console.log(res.data);
                 this.setState({
                   Majors: res.data,
                 })
@@ -156,10 +157,10 @@ class GetInfo extends React.Component {
                 <label>id:
                     <input type="text" value={this.state.id} onChange={e => this.setState({id: e.target.value})} />
                 </label>
-                <button onClick={() => this.getTReqs()}>Get Trecs</button>
-                <button onClick={() => this.getMajors()}>Get Majors</button>
-                <button onClick={() => this.getTReqs()}>Get Trecs</button>
-                <button onClick={() => this.getMajors()}>Get Majors</button>
+                <button onClick={() => this.getTReqs(this.state.email)}>Get Trecs</button>
+                <button onClick={() => this.getMajors(this.state.email)}>Get Majors</button>
+                <button onClick={() => this.getTReqs(this.state.email)}>Get Trecs</button>
+                <button onClick={() => this.getMajors(this.state.email)}>Get Majors</button>
 
                 <div className = 'Top3Recs'>
                     <h1> Top Treq Classes: </h1>

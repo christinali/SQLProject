@@ -32,17 +32,17 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen: 2, email: ''}
+  state = {screen:0, email: '', headerText: 'Froz is a frontend legend'}
 
   render() {
     return (
         <div>
-            <Header headerText='Froz is a frontend legend'/>
+            <Header headerText={this.state.headerText}/>
             {(()=> {
               switch(this.state.screen) {
                 case 0:
                   return <Login
-                            login={(email) => this.setState({screen: 1, email: email})}
+                            login={(email) => this.setState({screen: 1, email: email, headerText: "Welcome " + email + "!"})}
                             signup={() => this.setState({screen: 2})}
                             app={this.app}
                           />;

@@ -80,10 +80,36 @@ def getRecommendedMajorClasses():
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
+        classList[i]['treqs'] = returnAllTreqs(eachClass)
         i+=1
     classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
 
+def returnAllTreqs(eachClass):
+    allTreqs = list()
+    if eachClass.cz:
+        allTreqs.append("cz")
+    if eachClass.ss:
+        allTreqs.append("ss")
+    if eachClass.cci:
+        allTreqs.append("cci")
+    if eachClass.alp:
+        allTreqs.append("alp")
+    if eachClass.ns:
+        allTreqs.append("ns")
+    if eachClass.qs:
+        allTreqs.append("qs")
+    if eachClass.ei:
+        allTreqs.append("ei")
+    if eachClass.fl:
+        allTreqs.append("fl")
+    if eachClass.r:
+        allTreqs.append("r")
+    if eachClass.sts:
+        allTreqs.append("sts")
+    if eachClass.w:
+        allTreqs.append("w")
+    return allTreqs
 
 @app.route('/get-all-majors', methods=['GET'])
 def getAllMajors():
@@ -151,14 +177,23 @@ def findUserMajor(user_id):
     student = db.session.query(models.Student).filter_by(student_id=user_id).first()
     return student.major
 
-requirements = {'cz':2, 'alp':2,'ns':2}
-requirements = ['cz', 'alp', 'ns']
-
 def getCompleted(user_id):
     classesTaken = db.session.query(models.Taken).filter_by(student_id=user_id).all()
     completed = dict()
     for eachClass in classesTaken:
         classItself = db.session.query(models.Class).filter_by(class_id=eachClass.class_id).first()
+        if classItself.cz == 1:
+            if 'cz' not in completed:
+                completed['cz']=0
+            completed['cz']+=1
+        if classItself.ss == 1:
+            if 'ss' not in completed:
+                completed['ss']=0
+            completed['ss']+=1
+        if classItself.cci == 1:
+            if 'cci' not in completed:
+                completed['cci']=0
+            completed['cci']+=1
         if classItself.alp == 1:
             if 'alp' not in completed:
                 completed['alp']=0
@@ -167,14 +202,52 @@ def getCompleted(user_id):
             if 'ns' not in completed:
                 completed['ns']=0
             completed['ns']+=1
-        if classItself.cz == 1:
-            if 'cz' not in completed:
-                completed['cz']=0
-            completed['cz']+=1
+        if classItself.qs == 1:
+            if 'qs' not in completed:
+                completed['qs']=0
+            completed['qs']+=1
+        if classItself.ei == 1:
+            if 'ei' not in completed:
+                completed['ei']=0
+            completed['ei']+=1
+        if classItself.fl == 1:
+            if 'fl' not in completed:
+                completed['fl']=0
+            completed['fl']+=1
+        if classItself.r == 1:
+            if 'r' not in completed:
+                completed['r']=0
+            completed['r']+=1
+        if classItself.sts == 1:
+            if 'sts' not in completed:
+                completed['sts']=0
+            completed['sts']+=1
+        if classItself.w == 1:
+            if 'w' not in completed:
+                completed['w']=0
+            completed['w']+=1
     return completed
 
 def getClassesWithReqs(needed):
     classes = dict()
+    if 'cz' in needed:
+        currClasses = db.session.query(models.Class).filter_by(cz=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('cz')
+    if 'ss' in needed:
+        currClasses = db.session.query(models.Class).filter_by(ss=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('ss')
+    if 'cci' in needed:
+        currClasses = db.session.query(models.Class).filter_by(cci=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('cci')
     if 'alp' in needed:
         currClasses = db.session.query(models.Class).filter_by(alp=1).all()
         for currClass in currClasses:
@@ -187,26 +260,59 @@ def getClassesWithReqs(needed):
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('ns')
-    if 'cz' in needed:
-        currClasses = db.session.query(models.Class).filter_by(cz=1).all()
+    if 'qs' in needed:
+        currClasses = db.session.query(models.Class).filter_by(qs=1).all()
         for currClass in currClasses:
             if currClass not in classes:
                 classes[currClass] = list()
-            classes[currClass].append('cz')
+            classes[currClass].append('qs')
+    if 'ei' in needed:
+        currClasses = db.session.query(models.Class).filter_by(ei=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('ei')
+    if 'fl' in needed:
+        currClasses = db.session.query(models.Class).filter_by(fl=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('fl')
+    if 'r' in needed:
+        currClasses = db.session.query(models.Class).filter_by(r=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('r')
+    if 'sts' in needed:
+        currClasses = db.session.query(models.Class).filter_by(sts=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('sts')
+    if 'w' in needed:
+        currClasses = db.session.query(models.Class).filter_by(w=1).all()
+        for currClass in currClasses:
+            if currClass not in classes:
+                classes[currClass] = list()
+            classes[currClass].append('w')
     return classes
+
+
+def getNeededClasses(user_id):
+    completed = getCompleted(user_id)
+    needed = ['cz', 'ss','cci','alp','ns','qs','ei','fl','r','sts','w']
+    for key in completed:
+        if completed[key]>=2:
+            needed.remove(key)
+    return completed, getClassesWithReqs(needed)
 
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     user_id = request.args.get('user_id')
-    completed = getCompleted(user_id)
-    needed = ['alp','alp', 'cz', 'cz','ns', 'ns']
-    for key in completed:
-        if completed[key]>=2:
-            needed.remove(key)
-            needed.remove(key)
-    classList = list()
-    classesWithReqs = getClassesWithReqs(needed)
+    completed, classesWithReqs = getNeededClasses(user_id)
     takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
+    classList = list()
     haveTaken = set()
     for taken in takenAlready:
         haveTaken.add(taken.class_id)

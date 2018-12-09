@@ -42,7 +42,7 @@ def createUser():
     major = request.args.get('major')
     if (first and last and email and year and major):
         return "0"
-    
+
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():
     user_id = request.args.get('user_id')
@@ -51,7 +51,7 @@ def addClass():
     year = request.args.get('year')
     if (user_id and class_id and sem and year):
         return "Added"
-    
+
 @app.route('/get-curr-classes', methods=['GET'])
 def getClasses():
     user_id = request.args.get('user_id')
@@ -251,7 +251,7 @@ def cmp_to_key(mycmp):
 def getClassInfo():
     class_id = request.args.get('class_id')
     return jsonify(getFullClasses()[int(class_id)])
-    
+
 @app.route('/get-prof-info', methods=['GET'])
 def getProfInfo():
     prof_id = request.args.get('prof_id')
@@ -260,27 +260,27 @@ def getProfInfo():
 @app.route('/get-all-classes', methods=['GET'])
 def getAllClasses():
     return jsonify(getFullClasses())
-    
+
 @app.route('/get-all-reviews', methods=['GET'])
 def getReviews():
     class_id = request.args.get('class_id')
-    if (class_id): 
+    if (class_id):
         return jsonify(getAllReviews())
-        
+
 @app.route('/reviews/upvote', methods=['GET', 'POST'])
 def upvote():
     review_id = request.args.get('review_id')
-    if (review_id): 
+    if (review_id):
         curr = getAllReviews()[int(review_id)].get("up")
         return jsonify(int(curr) + 1)
-        
+
 @app.route('/reviews/downvote', methods=['GET', 'POST'])
 def downvote():
     review_id = request.args.get('review_id')
-    if (review_id): 
+    if (review_id):
         curr = getAllReviews()[int(review_id)].get("down")
         return jsonify(int(curr) + 1)
-    
+
 @app.route('/get-full-class', methods=['GET'])
 def getFullClass():
     class_id = request.args.get('class_id')

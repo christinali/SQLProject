@@ -9,8 +9,13 @@ class GetInfo extends React.Component {
             currClass: null,
             currProf: null,
             Treqs: null,
-            Majors: null
+            Majors: null,
+            allClasses: [],
+            query: null,
+            resultClasses: []
         }
+
+        this.getAllClasses();
     }
 
     getClass() {
@@ -53,95 +58,133 @@ class GetInfo extends React.Component {
             .catch(e => console.log(e))
     }
 
+    getAllClasses() {
+        axios.get('http://localhost:5000/get-all-classes')
+          .then(res => {
+            console.log(res.data);
+            this.setState({
+              allClasses: res.data,
+            })
+          })
+          .catch(e => console.log(e))
+    }
+
+    peruse(result) {
+      let resultCopy = this.state.allClasses;
+      resultCopy = this.state.allClasses.filter(c => {
+        return c.name.toLowerCase().startsWith(result.target.value.toLowerCase());
+      })
+      this.setState({
+        query: result.target.value,
+        resultClasses: resultCopy,
+      })
+      /*console.log(result);
+      var temp = this.state.allClasses;
+      if (temp && temp.name) {
+        temp = this.state.allClasses.filter(name => this.state.AllClasses.name.startsWith(this.state.query)
+      }
+      this.setState({
+        query: result.target.value,
+        resultClasses: temp
+      })*/
+        // var temp = this.state.allClasses;
+        // if (temp && temp.name) {
+        //   temp = temp.filter(name => temp.name.startsWith(this.state.search));
+        // }
+        // return temp;
+    }
+
+    splitTreqs(array) {
+      var res = "";
+      for (var i = 0; i < array.length; i++) {
+        res = res + " " + array[i];
+      }
+      return res;
+    }
+
     render() {
         const currClass = this.state.currClass;
         const currProf = this.state.currProf;
         const Treqs = this.state.Treqs;
         const Majors = this.state.Majors;
         return (
-            <div>
+            <div className = 'Overall'>
                 <div>
                   <button onClick={this.props.logout}>Log Out</button>
                 </div>
                 <label>id:
                     <input type="text" value={this.state.email} onChange={e => this.setState({id: e.target.value})} />
                 </label>
-                <button onClick={() => this.getTReqs()}>Get Treqs</button>
-                <button onClick={() => this.getClass()}>Get Class</button>
-                <button onClick={() => this.getProf()}>Get Prof</button>
+                <button onClick={() => this.getTReqs()}>Get Trecs</button>
+                <button onClick={() => this.getMajors()}>Get Majors</button>
+                <button onClick={() => this.getTReqs()}>Get Trecs</button>
+                <button onClick={() => this.getMajors()}>Get Majors</button>
 
                 <div className = 'Top3Recs'>
-                    <h2> Top 3 Recommended Classes: </h2>
-                    <div className = 'TReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
-                        {Treqs && <div className = 'TReqsComp'>
+                    <h2> Top Treq Classes: </h2>
+                    <div className = 'ReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
+                        {Treqs && Treqs[0] && <div className = 'ReqsComp'>
                             <h1> {Treqs[0].dept}{Treqs[0].num} - {Treqs[0].name} </h1>
                             <h2> Overall: {Treqs[0].overall} </h2>
                             <h2> Difficulty: {Treqs[0].difficulty} </h2>
-                            <h4> Treqs Satisfied: {Treqs[1].satisfiesNeeded} </h4>
+                            <h4> Treqs Satisfied: {this.splitTreqs(Treqs[0].satisfiesNeeded)} </h4>
                         </div>}
 
-                        {Treqs && <div className = 'TReqsComp'>
+                        {Treqs && Treqs[1] && <div className = 'ReqsComp'>
                             <h1> {Treqs[1].dept}{Treqs[1].num} - {Treqs[1].name} </h1>
                             <h2> Overall: {Treqs[1].overall} </h2>
                             <h2> Difficulty: {Treqs[1].difficulty} </h2>
-                            <h4> Treqs Satisfied: {Treqs[1].satisfiesNeeded} </h4>
+                            <h4> Treqs Satisfied: {this.splitTreqs(Treqs[1].satisfiesNeeded)} </h4>
                         </div>}
 
-                        {Treqs && <div className = 'TReqsComp'>
+                        {Treqs && Treqs[2] && <div className = 'ReqsComp'>
                             <h1> {Treqs[2].dept}{Treqs[2].num} - {Treqs[2].name} </h1>
                             <h2> Overall: {Treqs[2].overall} </h2>
                             <h2> Difficulty: {Treqs[2].difficulty} </h2>
-                            <h4> Treqs Satisfied: {Treqs[2].satisfiesNeeded} </h4>
+                            <h4> Treqs Satisfied: {this.splitTreqs(Treqs[2].satisfiesNeeded)} </h4>
                         </div>}
                     </div>
-                    {currClass && <div>
-                        <h1>Class Info:</h1>
-                        {Object.keys(currClass).map(key => {
-                            if (key === "nextSemProf") {
-                                return <div>
-                                    <h4>{key}</h4>
-                                    <ul>
-                                    {Object.keys(currClass[key]).map(secondkey => {
-                                        return <li>{secondkey} = {currClass[key][secondkey]}</li>
-                                    })}
-                                    </ul>
-                                </div>
-                            }
-                            else if (key === "comments" || key === "profs") {
-                                const arr = currClass[key];
-                                return <ol>
-                                    {arr.map(a => {
-                                        return <li>
-                                            {Object.keys(a).map(secondkey => {
-                                                return <p>{secondkey} = {a[secondkey]}</p>
-                                        })}
-                                        </li>
-                                    })}
-                                </ol>
-                            } else {
-                                return <h5>{key} = {currClass[key]}</h5>
-                            }
-                        })}
-                    </div>}
-                    {currProf && <div>
-                        <h1>Prof Info</h1>
-                        {Object.keys(currProf).map(key => {
-                            if (key === "nextSemClasses" || key === "topComments") {
-                                const arr = currProf[key];
-                                return <ol>
-                                    {arr.map(a => {
-                                        return <li>
-                                            {Object.keys(a).map(secondkey => {
-                                                return <p>{secondkey} = {a[secondkey]}</p>
-                                            })}
-                                        </li>
-                                    })}
-                                </ol>
-                            } else {
-                                return <h5>{key} = {currProf[key]}</h5>
-                            }
-                        })}
-                    </div>}
+                </div>
+                <div className = 'Searcher'>
+                  <h2> Search: </h2>
+                  <div className = 'TopRow'>
+                    <form>
+                      <textarea
+                        type="text"
+                        placeholder = 'Search for...'
+                        value = {this.state.query}
+                        onChange = {result => this.peruse(result)}
+                      />
+                    </form>
+                    <h4> Select Search Category </h4>
+                  </div>
+                  <div className = 'BottomRow'>
+                    {this.state.resultClasses.map((c, i) => {
+                      return <p key={i}>{c.name}</p>
+                    })}
+                  </div>
+                </div>
+                <div className = 'Top3Recs'>
+                    <h2> Top Major Classes: </h2>
+                    <div className = 'ReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
+                        {Majors && Majors[0] && <div className = 'ReqsComp'>
+                            <h1> {Majors[0].dept}{Majors[0].num} - {Treqs[0].name} </h1>
+                            <h2> Overall: {Majors[0].overall} </h2>
+                            <h2> Difficulty: {Majors[0].difficulty} </h2>
+                        </div>}
+
+                        {Majors && Majors[1] && <div className = 'ReqsComp'>
+                            <h1> {Majors[1].dept}{Majors[1].num} - {Majors[1].name} </h1>
+                            <h2> Overall: {Majors[1].overall} </h2>
+                            <h2> Difficulty: {Majors[1].difficulty} </h2>
+                        </div>}
+
+                        {Majors && Majors[2] && <div className = 'ReqsComp'>
+                            <h1> {Majors[2].dept}{Majors[2].num} - {Majors[2].name} </h1>
+                            <h2> Overall: {Majors[2].overall} </h2>
+                            <h2> Difficulty: {Majors[2].difficulty} </h2>
+                        </div>}
+                    </div>
                 </div>
             </div>
         );
@@ -149,3 +192,54 @@ class GetInfo extends React.Component {
 }
 
 export default GetInfo;
+
+/*
+{currClass && <div>
+    <h1>Class Info:</h1>
+    {Object.keys(currClass).map(key => {
+        if (key === "nextSemProf") {
+            return <div>
+                <h4>{key}</h4>
+                <ul>
+                {Object.keys(currClass[key]).map(secondkey => {
+                    return <li>{secondkey} = {currClass[key][secondkey]}</li>
+                })}
+                </ul>
+            </div>
+        }
+        else if (key === "comments" || key === "profs") {
+            const arr = currClass[key];
+            return <ol>
+                {arr.map(a => {
+                    return <li>
+                        {Object.keys(a).map(secondkey => {
+                            return <p>{secondkey} = {a[secondkey]}</p>
+                    })}
+                    </li>
+                })}
+            </ol>
+        } else {
+            return <h5>{key} = {currClass[key]}</h5>
+        }
+    })}
+</div>}
+{currProf && <div>
+    <h1>Prof Info</h1>
+    {Object.keys(currProf).map(key => {
+        if (key === "nextSemClasses" || key === "topComments") {
+            const arr = currProf[key];
+            return <ol>
+                {arr.map(a => {
+                    return <li>
+                        {Object.keys(a).map(secondkey => {
+                            return <p>{secondkey} = {a[secondkey]}</p>
+                        })}
+                    </li>
+                })}
+            </ol>
+        } else {
+            return <h5>{key} = {currProf[key]}</h5>
+        }
+    })}
+</div>}
+*/

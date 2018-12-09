@@ -32,11 +32,11 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen: 1, email: ''}
+  state = {screen: 2, email: ''}
 
   render() {
     return (
-        <div style={sectionStyle}>
+        <div>
             <Header headerText='Froz is a frontend legend'/>
             {(()=> {
               switch(this.state.screen) {

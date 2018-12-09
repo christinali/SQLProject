@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import Timeline from './scenes/Timeline';
 import Login from './scenes/Login';
 import GetInfo from './scenes/GetInfo';
@@ -8,7 +7,9 @@ import Header from './scenes/Header';
 import Input from './scenes/forms/Input';
 import firebase from 'firebase';
 
+import './App.css';
 import './styles/login.css';
+import './styles/getInfo.css';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDfXgvgX2_eyPam6O3eenzLTJHrwHc2tdc",
@@ -26,7 +27,7 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen: 2}
+  state = {screen: 1}
 
   render() {
     return (

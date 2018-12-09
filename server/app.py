@@ -75,8 +75,8 @@ def getRecommendedMajorClasses():
             continue
         classList.append(dict())
         classList[i]['dept'] = major
-        classList[i]['overall'] = getRating(eachClass.class_id)
-        classList[i]['difficulty'] = getDifficulty(eachClass.class_id)
+        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
+        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
@@ -216,8 +216,8 @@ def gettreqs():
             continue
         classList.append(dict())
         classList[i]['dept'] = eachClass.department_id
-        classList[i]['overall'] = getRating(eachClass.class_id)
-        classList[i]['difficulty'] = getDifficulty(eachClass.class_id)
+        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
+        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num

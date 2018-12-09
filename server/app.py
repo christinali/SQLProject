@@ -273,6 +273,10 @@ def getProfInfo():
     prof_id = request.args.get('prof_id')
     return jsonify(getAllProfs()[int(prof_id)])
 
+@app.route('/get-all-profs', methods=['GET'])
+def getAllProfInfo():
+    return jsonify(getAllProfs())
+
 @app.route('/get-all-classes', methods=['GET'])
 def getAllClasses():
     return jsonify(getFullClasses())

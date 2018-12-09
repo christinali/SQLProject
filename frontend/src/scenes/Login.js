@@ -18,7 +18,7 @@ export default class Login extends React.Component {
     .signInWithEmailAndPassword(email, password)
     .then(async user => {
       if (user) {
-        this.props.login()
+        this.props.login(this.state.email)
         alert("You logged in successfully")
       }
     })
@@ -60,7 +60,7 @@ export default class Login extends React.Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup controlId="password" bsSize="large" validationState={this.getValidationState()}>
+          <FormGroup controlId="password" bsSize="large">
             <ControlLabel><p className='name'>Password:</p></ControlLabel>
             <FormControl
               value={this.state.password}

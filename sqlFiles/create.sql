@@ -30,13 +30,13 @@ CREATE TABLE Teaches
 	professor_id INTEGER NOT NULL,
 	semester VARCHAR(100) NOT NULL,
 	FOREIGN KEY(professor_id) REFERENCES Professor(professor_id),
-	PRIMARY KEY(class_id, professor_id));
+	PRIMARY KEY(class_id, professor_id, semester));
 
 CREATE TABLE Class
 (	name VARCHAR(100) NOT NULL,
 	class_id INTEGER NOT NULL,
 	department_id VARCHAR(100) NOT NULL,
-	class_num INTEGER NOT NULL,
+	class_num VARCHAR(10) NOT NULL,
 	cz INTEGER NOT NULL,
 	ss INTEGER NOT NULL,
 	cci INTEGER NOT NULL,

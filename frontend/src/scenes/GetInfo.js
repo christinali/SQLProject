@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Select from 'react-select';
+
 
 class GetInfo extends React.Component {
     constructor() {
@@ -8,14 +10,17 @@ class GetInfo extends React.Component {
             id: null, //whatever the user login id is
             currClass: null,
             currProf: null,
-            Treqs: null,
-            Majors: null,
-            allClasses: [],
-            query: null,
-            resultClasses: []
+            Treqs: null, //load with user ID
+            Majors: null, //load with user ID
+            allClasses: [], //load at start
+            allProfs: [], //load at start
+            query: '',
+            resultOut: [],
+            searchCat: 'classname' //default to searching by class name
         }
 
         this.getAllClasses();
+        this.getAllProfs();
     }
 
     getClass() {
@@ -61,7 +66,6 @@ class GetInfo extends React.Component {
     getAllClasses() {
         axios.get('http://localhost:5000/get-all-classes')
           .then(res => {
-            console.log(res.data);
             this.setState({
               allClasses: res.data,
             })
@@ -69,29 +73,14 @@ class GetInfo extends React.Component {
           .catch(e => console.log(e))
     }
 
-    peruse(result) {
-      let resultCopy = this.state.allClasses;
-      resultCopy = this.state.allClasses.filter(c => {
-        return c.name.toLowerCase().startsWith(result.target.value.toLowerCase());
-      })
-      this.setState({
-        query: result.target.value,
-        resultClasses: resultCopy,
-      })
-      /*console.log(result);
-      var temp = this.state.allClasses;
-      if (temp && temp.name) {
-        temp = this.state.allClasses.filter(name => this.state.AllClasses.name.startsWith(this.state.query)
-      }
-      this.setState({
-        query: result.target.value,
-        resultClasses: temp
-      })*/
-        // var temp = this.state.allClasses;
-        // if (temp && temp.name) {
-        //   temp = temp.filter(name => temp.name.startsWith(this.state.search));
-        // }
-        // return temp;
+    getAllProfs() {
+        axios.get('http://localhost:5000/get-all-profs')
+          .then(res => {
+            this.setState({
+              allProfs: res.data,
+            })
+          })
+          .catch(e => console.log(e))
     }
 
     splitTreqs(array) {
@@ -102,11 +91,71 @@ class GetInfo extends React.Component {
       return res;
     }
 
+    peruse(result) {
+        if (this.state.searchCat === 'classname') {
+          let resultCopy = this.state.allClasses;
+          resultCopy = this.state.allClasses.filter(c => {
+            return c.name.toLowerCase().includes(result.target.value.toLowerCase());
+          })
+          this.setState({
+            query: result.target.value,
+            resultOut: resultCopy,
+          })
+        }
+        else if (this.state.searchCat === 'prof') {
+          let resultCopy = this.state.allProfs;
+          resultCopy = this.state.allProfs.filter(c => {
+            return c.name.toLowerCase().includes(result.target.value.toLowerCase());
+          })
+          this.setState({
+            query: result.target.value,
+            resultOut: resultCopy,
+          })
+        }
+        else if (this.state.searchCat === 'classid') {
+          let resultCopy = this.state.allClasses;
+          resultCopy = this.state.allClasses.filter(c => {
+            if (c.dept && c.num) {
+              let temp = c.dept.toLowerCase() + c.num;
+              return temp.includes(result.target.value.toLowerCase());
+            }
+          })
+          this.setState({
+            query: result.target.value,
+            resultOut: resultCopy,
+          })
+        }
+    }
+
+    changeCat = (newValue: any) => {
+      if (newValue) {
+        this.setState ({
+          searchCat: newValue.value
+        })
+      }
+      else {
+        this.setState ({
+          searchCat: ''
+        })
+      }
+    }
+
     render() {
         const currClass = this.state.currClass;
         const currProf = this.state.currProf;
         const Treqs = this.state.Treqs;
         const Majors = this.state.Majors;
+
+        const dropdownOptions = [
+          { value: 'classid', label: 'Class ID' },
+          { value: 'classname', label: 'Class Name' },
+          { value: 'prof', label: 'Professor' }
+        ];
+
+        const defaultOption = [
+          {value: 'classid', label: 'Class ID' }
+        ]
+
         return (
             <div className = 'Overall'>
                 <div>
@@ -148,21 +197,30 @@ class GetInfo extends React.Component {
                 <div className = 'Searcher'>
                   <h2> Search: </h2>
                   <div className = 'TopRow'>
-                    <form>
-                      <textarea
-                        type="text"
-                        placeholder = 'Search for...'
-                        value = {this.state.query}
-                        onChange = {result => this.peruse(result)}
-                      />
-                    </form>
-                    <h4> Select Search Category </h4>
-                  </div>
-                  <div className = 'BottomRow'>
-                    {this.state.resultClasses.map((c, i) => {
-                      return <p key={i}>{c.name}</p>
-                    })}
-                  </div>
+                      <form>
+                        <textarea
+                          type="text"
+                          placeholder = 'Enter search here...'
+                          value = {this.state.query}
+                          onChange = {result => this.peruse(result)}
+                        />
+                      </form>
+                      <div className = "dropDown">
+                          <Select
+                            isClearable
+                            onChange={this.changeCat}
+                            options = {dropdownOptions}
+                            placeholder = 'Search Category...'
+                          />
+                      </div>
+                    </div>
+                    <div className = 'BottomRow'>
+                      {this.state.resultOut.map((c, i) => {
+                        if (this.state.query.length > 0) {
+                          return <p key={i}>{c.name}</p>
+                        }
+                      })}
+                    </div>
                 </div>
                 <div className = 'Top3Recs'>
                     <h2> Top Major Classes: </h2>

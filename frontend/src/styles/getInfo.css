@@ -64,3 +64,10 @@
   margin-left: 20px;
   display: block;
 }
+
+.dropDown {
+  width: 40%;
+  margin-left: 10px;
+  height: 80%;
+  font-size: 15px;
+}

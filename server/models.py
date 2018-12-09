@@ -7,7 +7,7 @@ class Class(db.Model):
     name = db.Column('name', db.String(100))
     class_id = db.Column('class_id', db.Integer, primary_key=True)
     department_id = db.Column('department_id', db.String(100), db.ForeignKey('department.department_id'), primary_key=True)
-    class_num = db.Column('class_num', db.Integer)
+    class_num = db.Column('class_num', db.String(10))
     #booleans of whether or not the t-req is satisfied by this
     cz = db.Column('cz', db.Integer)
     ss = db.Column('ss', db.Integer)
@@ -62,7 +62,7 @@ class Teaches(db.Model):
     __tablename__ = "teaches"
     class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     professor_id = db.Column('professor_id', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
-    semester = db.Column('semester', db.String(100))
+    semester = db.Column('semester', db.String(100), primary_key=True)
 
 # class Drinker(db.Model):
 #     __tablename__ = 'drinker'

@@ -123,7 +123,8 @@ class GetInfo extends React.Component {
     changeCat = (newValue: any) => {
         if (newValue) {
             this.setState ({
-              searchCat: newValue.value
+              searchCat: newValue.value,
+              query: ''
             })
         }
         else {
@@ -146,14 +147,11 @@ class GetInfo extends React.Component {
         ];
 
         const defaultOption = [
-          {value: 'classid', label: 'Class ID' }
+          {value: 'classname', label: 'Class Name' }
         ]
 
         return (
             <div className = 'Overall'>
-                <div>
-                  <button onClick={this.props.logout}>Log Out</button>
-                </div>
                 <label>id:
                     <input type="text" value={this.state.id} onChange={e => this.setState({id: e.target.value})} />
                 </label>
@@ -239,17 +237,16 @@ class GetInfo extends React.Component {
                       </form>
                       <div className = "dropDown">
                           <Select
-                            isClearable
+                            defaultValue = {defaultOption}
                             onChange={this.changeCat}
                             options = {dropdownOptions}
-                            placeholder = 'Search Category...'
                           />
                       </div>
                     </div>
                     <div className = 'BottomRow'>
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
-                          return <p key={i}>{c.name}</p>
+                          return <p key={i}>{c.dept}{c.num} - {c.name}</p>
                         }
                       })}
                     </div>

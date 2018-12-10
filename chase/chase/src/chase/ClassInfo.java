@@ -200,19 +200,19 @@ public class ClassInfo {
 	
 	public void writeClasses(String content) throws IOException {
 		content += "\n";
-		String path = "/Users/moboyle769/Documents/compsci316/project/sqlproject/classes2.csv";
+		String path = "/Users/christinali/desktop/sqlproject/classes3.csv";
 	    Files.write(Paths.get(path), content.getBytes(), StandardOpenOption.APPEND);
 	}
 	
 	public void writeTeaches(String content) throws IOException {
 		content += "\n";
-		String path = "/Users/moboyle769/Documents/compsci316/project/sqlproject/teaches2.csv";
+		String path = "/Users/christinali/desktop/sqlproject/teaches3.csv";
 	    Files.write(Paths.get(path), content.getBytes(), StandardOpenOption.APPEND);
 	}
 	
 	public void writeProfs(String content) throws IOException {
 		content += "\n";
-		String path = "/Users/moboyle769/Documents/compsci316/project/sqlproject/profs2.csv";
+		String path = "/Users/christinali/desktop/sqlproject/profs3.csv";
 	    Files.write(Paths.get(path), content.getBytes(), StandardOpenOption.APPEND);
 	}
 	

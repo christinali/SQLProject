@@ -12,7 +12,8 @@ import Prof from './scenes/Prof';
 
 import './App.css';
 import './styles/login.css';
-import './styles/getInfo.css';
+import './styles/GetInfo.css';
+import './styles/Prof.css';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDfXgvgX2_eyPam6O3eenzLTJHrwHc2tdc",
@@ -34,7 +35,7 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen:3, email: '', headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
+  state = {screen:4, email: '', headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
 
   render() {
     return (

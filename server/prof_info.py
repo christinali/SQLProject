@@ -1,6 +1,6 @@
-class1 = {"id": "0", "name": "Compsci316 - Databases"}
+class1 = {"id": "0", "name": "Compsci316 - Databases", "classNum": "CS316"}
 
-class2 = {"id": "1", "name": "Compsci201 - Algorithms"}
+class2 = {"id": "1", "name": "Compsci201 - Algorithms", "classNum": "CS210"}
 
 comment1 = {"id": "0", "username": "Matthew O'Boyle", "up": 7, "down": 2, "comment": "Here's a comment", 
 "date": "2018-12-01", "overall": 4, "difficulty": 3.4, "grade": "B+","class":"Intro to Artificial Intelligence", "semester":"2014 Spring Term"} 

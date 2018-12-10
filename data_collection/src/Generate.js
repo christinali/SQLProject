@@ -22,10 +22,11 @@ class App extends Component {
         super();
         this.state = {
             className: '',
-            difficulty: 0,
-            quality: 0,
             sem: null,
             code: null,
+            nums: [0,0,0,0,0,0,0,0],
+            difficulty: [0,0,0,0,0,0,0,0],
+            quality: [0,0,0,0,0,0,0,0],
         }
         this.object = {};
     }
@@ -38,14 +39,34 @@ class App extends Component {
     }
 
     submit() {
-        this.submitToFirebase();
-        this.setState({
-            className: '',
-            difficulty: 0,
-            quality: 0,
-            sem: null,
+        const semesters = ["Freshman Fall", "Freshman Spring",
+            "Sophomore Fall", "Sophomore Spring",
+            "Junior Fall", "Junior Spring",
+            "Senior Fall", "Senior Spring"
+        ];
+        console.log(this.state.nums);
+        console.log(this.state.difficulty);
+        console.log(this.state.quality);
+        this.state.nums.map((num, i) => {
+            const obj = {
+                "class": this.state.className,
+                "code": this.state.code,
+                "difficulty": parseInt(this.state.difficulty[i]),
+                "quality": parseInt(this.state.quality[i]),
+                "sem": semesters[i]
+            }
+            console.log(obj);
+            app.database().ref(`data/`).push(obj);
+
         })
-        this.object = {};
+        // this.submitToFirebase();
+        // this.setState({
+        //     className: '',
+        //     difficulty: 0,
+        //     quality: 0,
+        //     sem: null,
+        // })
+        // this.object = {};
     }
 
     submitToFirebase() {
@@ -72,6 +93,30 @@ class App extends Component {
     updateClass(e) {
         this.object.class = e.target.value;
         this.setState({className: e.target.value})
+    }
+
+    updateNum(e, i) {
+        let numCopy = this.state.nums;
+        numCopy[i] = e.target.value;
+        this.setState({
+            nums: numCopy
+        })
+    }
+
+    updateDifficulty(e, i) {
+        let difficultyCopy = this.state.difficulty;
+        difficultyCopy[i] = e.target.value;
+        this.setState({
+            difficulty: difficultyCopy
+        })
+    }
+
+    updateQuality(e, i) {
+        let qualityCopy = this.state.quality;
+        qualityCopy[i] = e.target.value;
+        this.setState({
+            quality: qualityCopy
+        })
     }
 
     render() {
@@ -170,11 +215,10 @@ class App extends Component {
             sem = sem.split(",")[1];
             return {label: sem, value: sem};
         });
-        const semesters = ["Fall 14", "Spring 15",
-            "Fall 15", "Spring 16",
-            "Fall 16", "Spring 17",
-            "Fall 17", "Spring 18",
-            "Fall 18", "Spring 19"
+        const semesters = ["Freshman Fall", "Freshman Spring",
+            "Sophomore Fall", "Sophomore Spring",
+            "Junior Fall", "Junior Spring",
+            "Senior Fall", "Senior Spring"
         ];
         const options = semesters.map(sem => {
             return {label: sem, value: sem};
@@ -192,35 +236,14 @@ class App extends Component {
                 />
                 <h5>Class Number</h5>
                 <textarea value={this.state.className} onChange={e => this.updateClass(e)} />
-
-                <h5>When did you take this class?</h5>
-
-                <Select
-                    selectedValue={this.state.sem}
-                    name="colors"
-                    options={options}
-                    className="basic-multi-select"
-                    classNamePrefix="select"
-                    onChange={e => this.handleInputChange(e)}
-                />
-                <h5>Rate your difficulty</h5>
-                <StarRatings
-                    rating={this.state.difficulty}
-                    starRatedColor="blue"
-                    changeRating={rating => this.changeRating(rating, "difficulty")}
-                    numberOfStars={5}
-                    name='rating'
-                />
-                <br/>
-                <h5>Rate the quality of the class</h5>
-                <StarRatings
-                    rating={this.state.quality}
-                    starRatedColor="blue"
-                    changeRating={rating => this.changeRating(rating, "quality")}
-                    numberOfStars={5}
-                    name='rating'
-                />
-                <br/> <br/>
+                {semesters.map((sem, i) => {
+                    return <div>
+                        <p>{sem}</p>
+                        <label>Num</label><textarea value={this.state.nums[i]} onChange={e => this.updateNum(e, i)} />
+                        <label>Diff</label><textarea value={this.state.difficulty[i]} onChange={e => this.updateDifficulty(e, i)} />
+                        <label>Qual</label><textarea value={this.state.quality[i]} onChange={e => this.updateQuality(e, i)} />
+                    </div>
+                })}
                 <button onClick={() => this.submit()} style={{width: 100, height: 50}}>Submit</button>
             </div>
         );

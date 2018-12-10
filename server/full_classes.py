@@ -3085,7 +3085,7 @@ oldData = """
 {'code': 'VISUALST', 'name': 'Visual Studies'}
 {'code': 'WRITING', 'name': 'Writing'}
 """
-count = 0;
+count = 0
 for a in split:
     if ("<option" in a):
         a = a.split("\">")[1].split("</option>")[0]
@@ -3099,4 +3099,4 @@ for a in split:
         count += 1
         ignorespaces.append(a)
         
-print count
+print(count)

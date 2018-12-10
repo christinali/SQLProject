@@ -170,18 +170,16 @@ class App extends Component {
             sem = sem.split(",")[1];
             return {label: sem, value: sem};
         });
-        const semesters = ["Fall 14", "Spring 15",
-            "Fall 15", "Spring 16",
-            "Fall 16", "Spring 17",
-            "Fall 17", "Spring 18",
-            "Fall 18", "Spring 19"
+        const semesters = ["Freshman Fall", "Freshman Spring",
+            "Sophomore Fall", "Sophomore Spring",
+            "Junior Fall", "Junior Spring",
+            "Senior Fall", "Senior Spring"
         ];
         const options = semesters.map(sem => {
             return {label: sem, value: sem};
         });
         return (
             <div className="App">
-                <script type='text/javascript' src='https://tableau.oit.duke.edu/javascripts/api/viz_v1.js'/><div class='tableauPlaceholder' style='width: 1020px; height: 690px;'><object class='tableauViz' width='1020' height='690' style='display:none;'><param name='host_url' value='https%3A%2F%2Ftableau.oit.duke.edu%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;Student' /><param name='name' value='SACES&#47;All_courses' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
                 <h5>Class Department</h5>
                 <Select
                     selectedValue={this.state.code}

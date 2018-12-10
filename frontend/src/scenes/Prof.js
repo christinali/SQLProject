@@ -64,15 +64,15 @@ class Prof extends Component {
                             <div className = "classInfo">
                                 {currProf.nextSemClasses && currProf.nextSemClasses.map((c, i) => {
                                   if (c) {
-                                    return <p key={i}>{i+1}) {c.name}</p>
+                                    return <p key={i}>{i+1}) {c.dept}{c.classNum} - {c.name}</p>
                                   }
                                 })}
                             </div>
                             <h2> Previously Taught Classes: </h2>
                             <div className = "classInfo">
-                                {currProf.nextSemClasses && currProf.nextSemClasses.map((c, i) => {
+                                {currProf.prevClasses && currProf.prevClasses.map((c, i) => {
                                   if (c && i<3) {
-                                    return <p key={i}>{i+1}) {c.name}</p>
+                                    return <p key={i}>{i+1}) {c.dept}{c.classNum} - {c.name}</p>
                                   }
                                 })}
                             </div>
@@ -89,8 +89,8 @@ class Prof extends Component {
                                 <h3> Difficulty: {c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
-                                <h3> Course: CS290 </h3>
-                                <h4> Taken: Spring 2019 </h4>
+                                <h4> Class: {c.class[0].dept}{c.class[0].classNum} </h4>
+                                <h4> Semester: {c.semester} </h4>
                                 <h4> Grade Received: {c.grade} </h4>
                             </div>
                             <div className = "reviewContent">

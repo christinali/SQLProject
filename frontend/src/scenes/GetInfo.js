@@ -171,6 +171,7 @@ class GetInfo extends React.Component {
                                     rating={Treqs[0].overall}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h3> Difficulty:
@@ -178,6 +179,7 @@ class GetInfo extends React.Component {
                                     rating={Treqs[0].difficulty}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Treqs[0].satisfiesNeeded)} </h4>
@@ -191,6 +193,7 @@ class GetInfo extends React.Component {
                                     rating={Treqs[1].overall}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h3> Difficulty:
@@ -198,6 +201,7 @@ class GetInfo extends React.Component {
                                     rating={Treqs[1].difficulty}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Treqs[1].satisfiesNeeded)} </h4>
@@ -211,6 +215,7 @@ class GetInfo extends React.Component {
                                     rating={Treqs[2].overall}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h3> Difficulty:
@@ -218,6 +223,7 @@ class GetInfo extends React.Component {
                                     rating={Treqs[2].difficulty}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Treqs[2].satisfiesNeeded)} </h4>
@@ -262,6 +268,7 @@ class GetInfo extends React.Component {
                                     rating={Majors[0].overall}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h3> Difficulty:
@@ -269,6 +276,7 @@ class GetInfo extends React.Component {
                                     rating={Majors[0].difficulty}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Majors[0].satisfiesNeeded)} </h4>
@@ -282,6 +290,7 @@ class GetInfo extends React.Component {
                                     rating={Majors[1].overall}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h3> Difficulty:
@@ -289,6 +298,7 @@ class GetInfo extends React.Component {
                                     rating={Majors[1].difficulty}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Majors[1].satisfiesNeeded)} </h4>
@@ -302,6 +312,7 @@ class GetInfo extends React.Component {
                                     rating={Majors[2].overall}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h3> Difficulty:
@@ -309,6 +320,7 @@ class GetInfo extends React.Component {
                                     rating={Majors[2].difficulty}
                                     starDimension="22px"
                                     starSpacing="3px"
+                                    starRatedColor="#FF8C00"
                                 />
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Majors[2].satisfiesNeeded)} </h4>
@@ -369,23 +381,10 @@ getProf() {
         }
     })}
 </div>}
-{currProf && <div>
-    <h1>Prof Info</h1>
-    {Object.keys(currProf).map(key => {
-        if (key === "nextSemClasses" || key === "topComments") {
-            const arr = currProf[key];
-            return <ol>
-                {arr.map(a => {
-                    return <li>
-                        {Object.keys(a).map(secondkey => {
-                            return <p>{secondkey} = {a[secondkey]}</p>
-                        })}
-                    </li>
-                })}
-            </ol>
-        } else {
-            return <h5>{key} = {currProf[key]}</h5>
-        }
-    })}
-</div>}
+
+
+/*
+MAIN - FIGURE OUT HOW TO GET PROF ID AUTOMATICALLY
+1) need to make backend real
+2) need to link everything
 */

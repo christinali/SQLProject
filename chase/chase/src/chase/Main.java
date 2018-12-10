@@ -1,4 +1,3 @@
-package chase;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,53 +14,48 @@ import java.util.Scanner;
 
 
 public class Main {
-	
+
 	public static void main(String[] args) throws SecurityException, ClassNotFoundException, IOException {
-		ClassInfo myClassInfo = new ClassInfo();
-		String test = "" + 
-				"ICS\n" + 
-				"IND\n" + 
-				"ITALIAN\n" + 
-				"JEWISHST\n" + 
-				"JPN\n" + 
-				"KOREAN\n" + 
-				"LATAMER\n" + 
-				"LATIN\n" + 
-				"LINGUIST\n" + 
-				"LIT\n" + 
-				"LS\n" + 
-				"MANAGEMT\n" + 
-				"MARKETNG\n" + 
-				"MAT\n" + 
-				"MATH\n" + 
-				"ME\n" + 
-				"MGRECON\n" + 
-				"MPS\n" + 
-				"MUSIC\n" + 
-				"NEURO\n" + 
-				"NEUROBIO\n" + 
-				"NEUROSCI\n" + 
-				"PHIL\n" + 
-				"PHYASST\n" + 
-				"PHYSEDU\n" + 
-				"PHYSICS\n" + 
-				"PJMS\n" + 
-				"POE\n" + 
-				"POLISH\n" + 
-				"POLSCI\n" + 
-				"PORTUGUE\n" + 
-				"PPE\n" + 
-				"PSC\n" + 
-				"PSY\n" + 
+		chase.ClassInfo myClassInfo = new chase.ClassInfo();
+		String Matt = "" +
+				"ICS\n" +
+				"IND\n" +
+				"ITALIAN\n" +
+				"JEWISHST\n" +
+				"JPN\n" +
+				"KOREAN\n" +
+				"LATAMER\n" +
+				"LATIN\n" +
+				"LINGUIST\n" +
+				"LIT\n" +
+				"LS\n" +
+				"MANAGEMT\n" +
+				"MARKETNG\n" +
+				"MAT\n" +
+				"MATH\n" +
+				"ME\n" +
+				"MGRECON\n" +
+				"MPS\n" +
+				"MUSIC\n" +
+				"NEURO\n" +
+				"NEUROBIO\n" +
+				"NEUROSCI\n" +
+				"PHIL\n" +
+				"PHYASST\n" +
+				"PHYSEDU\n" +
+                "PHYSICS\n" +
+                "POLISH\n" +
+                "POLSCI\n" +
+                "PORTUGUE\n";
+		String Christina =
 				"PUBPOL\n" + 
 				"RELIGION\n" + 
 				"RESEARCH\n" + 
 				"RIGHTS\n" + 
 				"ROMANIAN\n" + 
 				"ROMLANG\n" + 
-				"ROMST\n" + 
-				"RON\n" + 
-				"RUSSIAN\n" + 
+				"ROMST\n" +
+				"RUSSIAN\n" +
 				"SOCENT\n" + 
 				"SOCIOL\n" + 
 				"SPANISH\n" + 
@@ -70,7 +64,7 @@ public class Main {
 				"THESIS\n" + 
 				"VISUALST\n" + 
 				"WRITING";
-		for (String a : test.split("\n")) {
+		for (String a : Christina.split("\n")) {
 			myClassInfo.getClasses(a);
 		}
 		

@@ -381,23 +381,10 @@ getProf() {
         }
     })}
 </div>}
-{currProf && <div>
-    <h1>Prof Info</h1>
-    {Object.keys(currProf).map(key => {
-        if (key === "nextSemClasses" || key === "topComments") {
-            const arr = currProf[key];
-            return <ol>
-                {arr.map(a => {
-                    return <li>
-                        {Object.keys(a).map(secondkey => {
-                            return <p>{secondkey} = {a[secondkey]}</p>
-                        })}
-                    </li>
-                })}
-            </ol>
-        } else {
-            return <h5>{key} = {currProf[key]}</h5>
-        }
-    })}
-</div>}
+
+
+/*
+MAIN - FIGURE OUT HOW TO GET PROF ID AUTOMATICALLY
+1) need to make backend real
+2) need to link everything
 */

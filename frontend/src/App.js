@@ -35,7 +35,12 @@ class App extends Component {
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
-  state = {screen:4, email: '', headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
+  //0 = Login
+  //1 = Home
+  //2 = Sign Up
+  //3 = ClassInfo
+  //4 = ProfInfo
+  state = {screen:4 , email: '', headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
 
   render() {
     return (

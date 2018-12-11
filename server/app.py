@@ -9,19 +9,20 @@ import forms
 import sys
 import math
 import csv
+from sqlalchemy.sql import exists
 
 app = Flask(__name__)
 app.secret_key = 's3cr3t'
 app.config.from_object('config')
 db = SQLAlchemy(app, session_options={'autocommit': False})
 CORS(app)
-
+lastIds = [i for i in range(10)]
 
 
 @app.route('/', methods=['GET'])
 def dontReach():
     return '"DONT REACH" - Feroze'
-    
+
 @app.route('/longclasses', methods=['GET'])
 def longclasses():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/classes.csv') as csv_file:
@@ -30,7 +31,7 @@ def longclasses():
         for line in csv_reader:
             res.append(line)
         return jsonify(res)
-        
+
 @app.route('/longprofs', methods=['GET'])
 def longprofs():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/profs.csv') as csv_file:
@@ -39,7 +40,7 @@ def longprofs():
         for line in csv_reader:
             res.append(line)
         return jsonify(res)
-        
+
 @app.route('/longteaches', methods=['GET'])
 def longteaches():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/teaches.csv') as csv_file:
@@ -70,37 +71,54 @@ def getAllDepartments():
 def getId():
     email = request.args.get('email')
     if (email):
-        #TODO: Get id associated with email
-        return "0"
+        return db.session.query(models.Student).filter_by(email=email).first().student_id
 
 @app.route('/create-user', methods=['GET', 'POST'])
 def createUser():
-    first = request.args.get('first')
-    last = request.args.get('last')
+    name = request.args.get('name')
     email = request.args.get('email')
     year = request.args.get('year')
     major = request.args.get('major')
-    if (first and last and email and year and major):
-        return "0"
+    year = year[-1]
+    year = int(year)
+    if (name and email and year and major):
+        while db.session.query(models.Student).filter_by(student_id=lastIds[year]).first():
+            lastIds[year]+=10
+        newUser = models.Student(name=name, email=email, student_id=lastIds[year], major=major)
+        db.session.add(newUser)
+        db.session.commit()
+        lastIds[year]+=10
+        return "Successfully created new user"
+    return "Need to give name, user, year, and major, but not all inputs were given"
 
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():
-    user_id = db.session.query(models.Student).filter_by(email=request.args.get('user_email')).first().student_id
+    user_id = request.args.get('user_id')
     class_id = request.args.get('class_id')
-    sem = request.args.get('sem')
-    year = request.args.get('year')
-    if (user_id and class_id and sem and year):
-        return "Added"
+    department_id = db.session.query(models.Class).select(class_id=class_id).first().department_id
+    semester = request.args.get('semester')
+    star_number = request.args.get('star_number')
+    comment_id = request.args.get('comment_id')
+    difficulty = request.args.get('difficulty')
+    if (user_id and class_id and department_id and semester and star_number and difficulty):
+        if not comment_id:
+            newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty)
+        else:
+            newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty,comment_id=comment_id)
+        db.session.add(newTaken)
+        db.session.commit()
+        return "Success!"
+    return "Failure"
 
 @app.route('/get-curr-classes', methods=['GET'])
 def getClasses():
-    user_id = db.session.query(models.Student).filter_by(email=request.args.get('user_email')).first().student_id
+    user_id = request.args.get('user_id')
     if (user_id):
         return jsonify(getFullClasses())
 
 @app.route('/get-recommended-major', methods=['GET'])
 def getRecommendedMajorClasses():
-    user_id = db.session.query(models.Student).filter_by(email=request.args.get('user_email')).first().student_id
+    user_id = request.args.get('user_id')
     major = findUserMajor(user_id)
     department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
     classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
@@ -349,13 +367,17 @@ def getNeededClasses(user_id):
 
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
-    user_id = db.session.query(models.Student).filter_by(email=request.args.get('user_email')).first().student_id
+    user_id = request.args.get('user_id')
     completed, classesWithReqs = getNeededClasses(user_id)
     takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
     classList = list()
     haveTaken = set()
+    similarList = dict()
     for taken in takenAlready:
         haveTaken.add(taken.class_id)
+        others = db.session.query(models.Taken).filter(models.Taken.student_id != user_id ).all()
+        for other in others:
+            similarList[other.student_id] += (other.star_number-3)*(taken.star_number-3)
     i = 0
     for _,eachClass in enumerate(classesWithReqs.keys()):
         if eachClass.class_id in haveTaken:

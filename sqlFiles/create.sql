@@ -18,7 +18,7 @@ CREATE TABLE Student
 	email VARCHAR(100) NOT NULL,
 	student_id INTEGER NOT NULL,
 	major VARCHAR(100) NOT NULL,
-	FOREIGN KEY(major) REFERENCES Department(department_id),
+	-- FOREIGN KEY(major) REFERENCES Department(department_id),
 	PRIMARY KEY(student_id));
 
 CREATE TABLE Comment
@@ -27,7 +27,7 @@ CREATE TABLE Comment
 	downvotes INTEGER NOT NULL,
 	student_id INTEGER NOT NULL,
 	comment_id INTEGER NOT NULL,
-	FOREIGN KEY(student_id) REFERENCES Student(student_id),
+	-- FOREIGN KEY(student_id) REFERENCES Student(student_id),
 	PRIMARY KEY(comment_id));
 
 CREATE TABLE Teaches
@@ -37,14 +37,14 @@ CREATE TABLE Teaches
   average_quality INTEGER,
   average_difficulty INTEGER,
   num_reviews INTEGER,
-	FOREIGN KEY(professor_id) REFERENCES Professor(professor_id),
+	-- FOREIGN KEY(professor_id) REFERENCES Professor(professor_id),
 	PRIMARY KEY(class_id, professor_id, semester));
 
 CREATE TABLE Teaches1
 (	class_id1 INTEGER NOT NULL,
 	professor_id1 INTEGER NOT NULL,
 	semester1 VARCHAR(100) NOT NULL,
-	FOREIGN KEY(professor_id1) REFERENCES Professor(professor_id));
+	-- FOREIGN KEY(professor_id1) REFERENCES Professor(professor_id));
 
 CREATE TABLE Class
 (	name VARCHAR(100) NOT NULL,
@@ -62,7 +62,7 @@ CREATE TABLE Class
 	r INTEGER NOT NULL,
 	sts INTEGER NOT NULL,
 	w INTEGER NOT NULL,
-	FOREIGN KEY(department_id) REFERENCES Department(department_id),
+	-- FOREIGN KEY(department_id) REFERENCES Department(department_id),
 	PRIMARY KEY(class_id));
 
 CREATE TABLE Taken
@@ -72,25 +72,29 @@ CREATE TABLE Taken
 	student_id INTEGER NOT NULL,
 	class_id INTEGER NOT NULL,
 	difficulty FLOAT NOT NULL,
-	FOREIGN KEY(student_id) REFERENCES Student(student_id),
-	FOREIGN KEY(class_id) REFERENCES Class(class_id),
+	-- FOREIGN KEY(student_id) REFERENCES Student(student_id),
+	-- FOREIGN KEY(class_id) REFERENCES Class(class_id),
 	PRIMARY KEY(student_id,class_id,semester));
 
-CREATE OR REPLACE FUNCTION update_average_quality()
-    RETURNS trigger AS
-  $BODY$
-  BEGIN
-   IF NEW.star_number <> OLD.star_number THEN
-   INSERT INTO professor(professor_id, name)
-   VALUES(7,'testing name');
-   END IF;
+  CREATE TABLE emp (
+      empname text,
+      salary integer,
+      last_date timestamp,
+      last_user text
+  );
 
-   RETURN NEW;
-  END;
-  $BODY$
+  CREATE FUNCTION update_average() RETURNS trigger AS $emp_stamp$
+      BEGIN
+          -- Check that empname and salary are given
+          IF NEW.star_number IS NULL THEN
+              RAISE EXCEPTION 'empname cannot be null';
+          END IF;
 
-CREATE TRIGGER update_quality
-    BEFORE UPDATE
-    ON taken
-    FOR EACH ROW
-    EXECUTE PROCEDURE update_average_quality();
+          -- Remember who changed the payroll when
+          INSERT INTO professor1 VALUES(NEW.star_number, 'testing');
+          RETURN NEW;
+      END;
+  $emp_stamp$ LANGUAGE plpgsql;
+
+  CREATE TRIGGER test_trigger BEFORE INSERT OR UPDATE ON taken
+      FOR EACH ROW EXECUTE PROCEDURE update_average();

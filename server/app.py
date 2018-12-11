@@ -41,6 +41,14 @@ def longprofs():
             res.append(line)
         return jsonify(res)
 
+@app.route('/test', methods=['GET'])
+def test():
+    ins = db.insert(models.Professor).values(professor_id='123456789', name='Testing test test')
+    print(ins)
+
+
+
+
 @app.route('/longteaches', methods=['GET'])
 def longteaches():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/teaches.csv') as csv_file:

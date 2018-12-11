@@ -14,6 +14,8 @@ import './App.css';
 import './styles/login.css';
 import './styles/GetInfo.css';
 import './styles/Prof.css';
+import './styles/Class.css';
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyDfXgvgX2_eyPam6O3eenzLTJHrwHc2tdc",
@@ -40,7 +42,7 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
-  state = {screen:1, email: '', currProf: null, headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
+  state = {screen:1, email: '', currProf: null, currClass: null, headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
 
   render() {
     return (
@@ -58,6 +60,7 @@ class App extends Component {
                   return <GetInfo
                           email={this.state.email}
                           changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                          changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
                           logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input

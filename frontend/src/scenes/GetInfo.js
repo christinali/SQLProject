@@ -23,7 +23,6 @@ class GetInfo extends React.Component {
 
         this.getAllClasses();
         this.getAllProfs();
-
     }
 
     componentDidMount() {
@@ -162,7 +161,10 @@ class GetInfo extends React.Component {
                 <button onClick={() => this.props.changeProf("1")}>Change prof</button>
 
                 <div className = 'Top3Recs'>
-                    <h1> Top Treq Classes: </h1>
+                    <div className = 'RecsTopRow'>
+                        <h1> Top Treq Classes </h1>
+                        <div className = 'RecsTopRowRemaining'> Remaining TReqs: 2 CCI, NS, FL </div>
+                    </div>
                     <div className = 'ReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
                         {Treqs && Treqs[0] && <div className = 'ReqsComp'>
                             <h2> {Treqs[0].dept}{Treqs[0].num} - {Treqs[0].name} </h2>
@@ -254,7 +256,7 @@ class GetInfo extends React.Component {
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
                           if (this.state.searchCat === 'classname' || this.state.searchCat === 'classid') {
-                            return <p className = "SearchClass" key={i}>{c.dept}{c.num} - {c.name}</p>
+                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}>{c.dept}{c.num} - {c.name}</button>
                           }
                           else {
                             return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.id} {c.name} </button>
@@ -264,7 +266,7 @@ class GetInfo extends React.Component {
                     </div>
                 </div>
                 <div className = 'Top3Recs'>
-                    <h1> Top Major Classes: </h1>
+                    <h1> Top Major Classes </h1>
                     <div className = 'ReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
                         {Majors && Majors[0] && <div className = 'ReqsComp'>
                             <h2> {Majors[0].dept}{Majors[0].num} - {Majors[0].name} </h2>

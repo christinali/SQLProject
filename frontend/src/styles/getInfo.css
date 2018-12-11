@@ -10,9 +10,24 @@
   float: left;
 }
 
-.Top3Recs h2 {
+.RecsTopRow {
+  padding-top: 5px;
+  display: flex;
+  position: relative;
+}
+
+.RecsTopRow h1 {
   margin-top: 5px;
-  font-size:
+  left: 0;
+  float: left;
+}
+
+.RecsTopRowRemaining {
+  font-size: 2vw;
+  margin-top: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 5;
 }
 
 .ReqsAll {
@@ -53,7 +68,7 @@
   margin-left: 10px;
 }
 
-button.SearchProf {
+button.SearchProf, button.SearchClass {
   color: blue;
   text-decoration: underline;
   background: none;

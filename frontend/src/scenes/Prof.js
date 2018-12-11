@@ -28,6 +28,11 @@ class Prof extends Component {
             .catch(e => console.log(e))
     }
 
+    upVote(id) {
+      axios.post('http://localhost:5000/reviews/upvote?review_id=' + id)
+          .then(res => console.log(res))
+    }
+
     render() {
         const currProf = this.state.currProf;
         const profComms = this.state.profComms;
@@ -93,6 +98,8 @@ class Prof extends Component {
                             </div>
                             <div className = "reviewContent">
                                 <h4> {c.comment} </h4>
+                                <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
+                                <button className = "downvotes"> &#x1f44e;{c.down} </button>
                             </div>
                         </div>
                       }

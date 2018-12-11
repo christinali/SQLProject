@@ -110,11 +110,43 @@ def addClass():
         return "Success!"
     return "Failure"
 
-@app.route('/get-curr-classes', methods=['GET'])
-def getClasses():
+@app.route('/get-past-classes', methods=['GET'])
+def getPastClasses():
     user_id = request.args.get('user_id')
-    if (user_id):
-        return jsonify(getFullClasses())
+    currentClasses = db.session.query(models.Taken).filter_by(student_id=user_id).all()
+    classList = list()
+    for i,eachClass in enumerate(currentClasses):
+        classList.append(dict())
+        classList[i]['dept'] = eachClass.department_id
+        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
+        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
+        classList[i]['name'] = eachClass.name
+        classList[i]['id'] = eachClass.class_id
+        classList[i]['num'] = eachClass.class_num
+    return jsonify(classList)
+
+
+@app.route('/get-curr-classes', methods=['GET'])
+def getCurrClasses():
+    semester = request.args.get('semester')
+    currentClasses = db.session.query(models.Teaches).filter_by(semester=semester).all()
+    currs = set()
+    for currClass in currentClasses:
+        currs.add(currClass.class_id)
+    currIds = list(currs)
+    currentClasses = list()
+    for currId in currIds:
+        currentClasses.append(db.session.query(models.Class).filter_by(class_id=currId).all())
+    classList = list()
+    for i,eachClass in enumerate(currentClasses):
+        classList.append(dict())
+        classList[i]['dept'] = eachClass.department_id
+        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
+        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
+        classList[i]['name'] = eachClass.name
+        classList[i]['id'] = eachClass.class_id
+        classList[i]['num'] = eachClass.class_num
+    return jsonify(classList)
 
 @app.route('/get-recommended-major', methods=['GET'])
 def getRecommendedMajorClasses():

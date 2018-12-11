@@ -121,7 +121,7 @@ def addClass():
     return "Failure"
 
 @app.route('/feroze-add-class', methods=['GET', 'POST'])
-def addClass():
+def addFakeClass():
     user_id = request.args.get('user_id')
     department_id = request.args.get('dept_id')
     class_num = request.args.get('class_num')

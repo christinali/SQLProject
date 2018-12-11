@@ -34,6 +34,9 @@ CREATE TABLE Teaches
 (	class_id INTEGER NOT NULL,
 	professor_id INTEGER NOT NULL,
 	semester VARCHAR(100) NOT NULL,
+  average_quality INTEGER,
+  average_difficulty INTEGER,
+  num_reviews INTEGER,
 	FOREIGN KEY(professor_id) REFERENCES Professor(professor_id),
 	PRIMARY KEY(class_id, professor_id, semester));
 
@@ -69,7 +72,25 @@ CREATE TABLE Taken
 	student_id INTEGER NOT NULL,
 	class_id INTEGER NOT NULL,
 	difficulty FLOAT NOT NULL,
-	FOREIGN KEY(department_id) REFERENCES Department(department_id),
 	FOREIGN KEY(student_id) REFERENCES Student(student_id),
 	FOREIGN KEY(class_id) REFERENCES Class(class_id),
-	PRIMARY KEY(student_id,class_id,department_id));
+	PRIMARY KEY(student_id,class_id,semester));
+
+CREATE OR REPLACE FUNCTION update_average_quality()
+    RETURNS trigger AS
+  $BODY$
+  BEGIN
+   IF NEW.star_number <> OLD.star_number THEN
+   INSERT INTO professor(professor_id, name)
+   VALUES(7,'testing name');
+   END IF;
+
+   RETURN NEW;
+  END;
+  $BODY$
+
+CREATE TRIGGER update_quality
+    BEFORE UPDATE
+    ON taken
+    FOR EACH ROW
+    EXECUTE PROCEDURE update_average_quality();

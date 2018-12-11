@@ -40,7 +40,7 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
-  state = {screen:4 , email: '', headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
+  state = {screen:1, email: '', currProf: null, headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
 
   render() {
     return (
@@ -57,6 +57,7 @@ class App extends Component {
                 case 1:
                   return <GetInfo
                           email={this.state.email}
+                          changeProf={prof => this.setState({screen: 4, currProf: prof})}
                           logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input
@@ -66,7 +67,10 @@ class App extends Component {
                 case 3:
                   return <Class />;
                 case 4:
-                  return <Prof />;
+                  return <Prof
+                          id={this.state.currProf}
+
+                  />;
 
                 default:
                   return null;

@@ -7,20 +7,18 @@ class Prof extends Component {
     constructor() {
         super();
         this.state = {
-            id: 1, //whatever the prof id is
             currProf: [],
             profComms: [],
         }
 
-        this.getProfInfo();
     }
 
     componentDidMount() {
         this.getProfInfo()
     }
 
-    getProfInfo(id) {
-        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 1) //replace with id
+    getProfInfo() {
+        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 1) //replace with this.props.id
             .then(res => {
                 this.setState({
                   currProf: res.data,
@@ -45,7 +43,7 @@ class Prof extends Component {
                             <h2> Overall:
                                 <StarRatings
                                     rating={currProf.overall}
-                                    starDimension="60px"
+                                    starDimension="40px"
                                     starSpacing="3px"
                                     starRatedColor="#FF8C00"
                                 />
@@ -53,7 +51,7 @@ class Prof extends Component {
                             <h2> Difficulty:
                                 <StarRatings
                                     rating={currProf.difficulty}
-                                    starDimension="60px"
+                                    starDimension="40px"
                                     starSpacing="3px"
                                     starRatedColor="#FF8C00"
                                 />

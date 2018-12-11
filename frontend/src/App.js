@@ -42,7 +42,7 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
-  state = {screen:3, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+  state = {screen:2, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
 
   render() {
     var name = 'main' + this.state.screen;

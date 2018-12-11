@@ -37,7 +37,7 @@ export default class ClassInput extends React.Component {
                 'user_id': fieldValues.user_id,
                 'dept_id': gg.major,
                 'class_num': gg.class,
-                'semester': gg.year + " " + gg.semester,
+                'semester': gg.year + " " + gg.semester + " Term",
                 'star_number': gg.overall,
                 'difficulty': gg.difficulty,
                 'comment_id': gg.review,

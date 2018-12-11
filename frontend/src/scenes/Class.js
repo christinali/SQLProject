@@ -99,8 +99,8 @@ class Class extends Component {
                                 <h3> Difficulty: {c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
-                                <h4> Prof: ProfNameHere </h4>
-                                <h4> Semester: SemNameHere </h4>
+                                <h4> Prof: {c.prof} </h4>
+                                <h4> Semester Taken: {c.semester} </h4>
                                 <h4> Grade Received: {c.grade} </h4>
                             </div>
                             <div className = "reviewContent">

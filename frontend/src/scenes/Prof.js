@@ -93,7 +93,7 @@ class Prof extends Component {
                             </div>
                             <div className = "reviewTarget">
                                 <h4> Class: {c.class[0].dept}{c.class[0].classNum} </h4>
-                                <h4> Semester: {c.semester} </h4>
+                                <h4> Semester Taken: {c.semester} </h4>
                                 <h4> Grade Received: {c.grade} </h4>
                             </div>
                             <div className = "reviewContent">

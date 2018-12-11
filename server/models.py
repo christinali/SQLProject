@@ -50,7 +50,6 @@ class Taken(db.Model):
     student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.studentID'), primary_key=True)
     class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     #TODO: This might be broken, idk if you can have a foreign key that is also nullable
-    department_id = db.Column('department_id', db.String(100), db.ForeignKey('department.department_id'), primary_key=True)
     difficulty = db.Column("difficulty", db.Float)
 
 class Professor(db.Model):

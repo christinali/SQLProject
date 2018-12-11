@@ -93,22 +93,32 @@ def createUser():
 
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():
-    user_id = request.args.gets('user_id')
+    user_id = request.args.get('user_id')
     class_id = request.args.get('class_id')
-    sem = request.args.get('sem')
-    year = request.args.get('year')
-    if (user_id and class_id and sem and year):
-        return "Added"
+    department_id = db.session.query(models.Class).select(class_id=class_id).first().department_id
+    semester = request.args.get('semester')
+    star_number = request.args.get('star_number')
+    comment_id = request.args.get('comment_id')
+    difficulty = request.args.get('difficulty')
+    if (user_id and class_id and department_id and semester and star_number and difficulty):
+        if not comment_id:
+            newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty)
+        else:
+            newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty,comment_id=comment_id)
+        db.session.add(newTaken)
+        db.session.commit()
+        return "Success!"
+    return "Failure"
 
 @app.route('/get-curr-classes', methods=['GET'])
 def getClasses():
-    user_id = request.args.gets('user_id')
+    user_id = request.args.get('user_id')
     if (user_id):
         return jsonify(getFullClasses())
 
 @app.route('/get-recommended-major', methods=['GET'])
 def getRecommendedMajorClasses():
-    user_id = request.args.gets('user_id')
+    user_id = request.args.get('user_id')
     major = findUserMajor(user_id)
     department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
     classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
@@ -357,13 +367,17 @@ def getNeededClasses(user_id):
 
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
-    user_id = request.args.gets('user_id')
+    user_id = request.args.get('user_id')
     completed, classesWithReqs = getNeededClasses(user_id)
     takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
     classList = list()
     haveTaken = set()
+    similarList = dict()
     for taken in takenAlready:
         haveTaken.add(taken.class_id)
+        others = db.session.query(models.Taken).filter(models.Taken.student_id != user_id ).all()
+        for other in others:
+            similarList[other.student_id] += other.star_number*taken.star_number
     i = 0
     for _,eachClass in enumerate(classesWithReqs.keys()):
         if eachClass.class_id in haveTaken:

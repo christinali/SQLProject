@@ -12,7 +12,7 @@ import Prof from './scenes/Prof';
 
 import './App.css';
 import './styles/login.css';
-import './styles/getInfo.css';
+import './styles/GetInfo.css';
 import './styles/Prof.css';
 import './styles/Class.css';
 

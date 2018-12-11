@@ -41,11 +41,7 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
-<<<<<<< HEAD
-  state = {screen:2, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
-=======
   state = {screen:4, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
->>>>>>> 3372995d7c6570383f95e203c52f9913ebf5a6a7
 
   render() {
     var name = 'main' + this.state.screen;

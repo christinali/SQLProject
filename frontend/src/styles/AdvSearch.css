@@ -10,9 +10,10 @@
 }
 
 .Advanced h2 {
-  margin-top: 3px;
+  margin-top: 10px;
   margin-left: 10px;
-  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .advDropDown {
@@ -20,5 +21,14 @@
   height: 50%;
   font-size: 15px;
   display: flex;
-  width: 100%;
+}
+
+.filter1 {
+  width: 150px;
+  padding-right: 20px;
+}
+
+.filter2 {
+  width: 240px;
+  padding-right: 20px;
 }

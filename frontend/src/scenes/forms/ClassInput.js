@@ -67,7 +67,7 @@ export default class ClassInput extends React.Component {
     axios.get('http://localhost:5000/get-classes-in-major?major=' + this.state.main.major)
         .then(res => {
             console.log(res.data);
-            this.setState({this.state.classes: res.data});
+            this.setState({classes: res.data});
         })
         .catch(e => console.log(e))
     const classes = this.state.classes;
@@ -88,7 +88,7 @@ export default class ClassInput extends React.Component {
           <FormControl componentClass="select"
             onChange={this.handleChange}>
             {classes.map(key => {
-              return <option value={key.name}>{key.dept + " " + key.id + ": " + key.name }</option>
+              return <option value={key.name}>{key.dept + " " + key.num + ": " + key.name }</option>
             })}
           </FormControl>
       </FormGroup>

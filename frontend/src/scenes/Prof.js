@@ -67,7 +67,7 @@ class Prof extends Component {
                             <div className = "classInfo">
                                 {currProf.nextSemClasses && currProf.nextSemClasses.map((c, i) => {
                                   if (c) {
-                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}>{c.id}) {c.dept}{c.classNum} - {c.name}</button>
+                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.classNum} - {c.name}</button>
                                   }
                                 })}
                             </div>
@@ -75,7 +75,7 @@ class Prof extends Component {
                             <div className = "classInfo">
                                 {currProf.prevClasses && currProf.prevClasses.map((c, i) => {
                                   if (c && i<3) {
-                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}>{c.id}) {c.dept}{c.classNum} - {c.name}</button>
+                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.classNum} - {c.name}</button>
                                   }
                                 })}
                             </div>

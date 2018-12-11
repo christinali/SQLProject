@@ -9,11 +9,13 @@ import firebase from 'firebase';
 import Background from './images/background_image.jpg';
 import Class from './scenes/Class';
 import Prof from './scenes/Prof';
+import AllRecs from './scenes/AllRecs';
 
 import './styles/app.css';
 import './styles/login.css';
 import './styles/getInfo.css';
 import './styles/ProfClass.css';
+import './styles/AllRecs.css';
 
 
 const firebaseConfig = {
@@ -41,7 +43,8 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
-  state = {screen:4, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+  //5 = All Recs
+  state = {screen:5, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
 
   render() {
     var name = 'main' + this.state.screen;
@@ -74,6 +77,10 @@ class App extends Component {
                             />;
                 case 4:
                   return <Prof
+                            changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            />;
+                case 5:
+                  return <AllRecs
                             changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
                             />;
 

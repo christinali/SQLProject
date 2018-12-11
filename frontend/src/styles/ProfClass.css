@@ -145,6 +145,8 @@ button.downvotes {
 }
 
 .classOffers {
+  background: none;
+  border: none;
   color: blue;
   text-decoration: underline;
 }

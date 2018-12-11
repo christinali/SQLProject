@@ -101,13 +101,15 @@ def createUser():
 
 @app.route('/feroze-create-user', methods=['GET', 'POST'])
 def createFeroze():
-    first = request.args.get('first')
-    last = request.args.get('last')
-    email = request.args.get('email')
-    year = request.args.get('grad_year') #2020
-    major = request.args.get('major')
-    if (first and last and email and year and major):
+    req_data = request.get_json()
+    first = req_data['first']
+    last = req_data['last']
+    email = req_data['email']
+    year = req_data['grad_year'] #2020
+    major = req_data['major']
+    if (first and last and email and year): ## this gets replaced by find user_id
         return "1"
+    return "0"
 
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():
@@ -130,16 +132,18 @@ def addClass():
 
 @app.route('/feroze-add-class', methods=['GET', 'POST'])
 def addFakeClass():
-    user_id = request.args.get('user_id')
-    department_id = request.args.get('dept_id')
-    class_num = request.args.get('class_num')
-    semester = request.args.get('semester') #'2013 Spring Term'
-    star_number = request.args.get('star_number')
-    comment_id = request.args.get('comment_id')
-    difficulty = request.args.get('difficulty')
+    req_data = request.get_json()
+
+    user_id = req_data['user_id']
+    department_id = req_data['dept_id']
+    class_num = req_data['class_num']
+    semester = req_data['semester'] #'2013 Spring Term'
+    star_number = req_data['star_number']
+    comment_id = req_data['comment_id']
+    difficulty = req_data['difficulty']
     if (user_id and department_id and class_num and semester and star_number and difficulty):
-        return 200
-    return 404
+        return '200'
+    return '404'
 
 @app.route('/get-curr-classes', methods=['GET'])
 def getClasses():
@@ -488,12 +492,77 @@ def getClassInfo():
 
 @app.route('/get-prof-info', methods=['GET'])
 def getProfInfo():
-    prof_id = request.args.get('prof_id')
-    return jsonify(getAllProfs()[int(prof_id)])
+    proof_id = request.args.get('prof_id')
+    #pro = db.session.query(models.Professor).filter_by(professor_id =id).first()
+   # oldClassesByProf = db.session.query(models.Teaches, models.Class).filter_by(professor_id = proof_id).all()
+
+
+    prevSem = list()
+    i=0 
+    for _, eachClass in enumerate(oldClassesByProf):
+        prevSem.append(dict())
+        prevSem[i]['class_num'] = eachClass.class_num
+    i+=1
+
+
+    i=0
+    difficultyList = list()
+    # for _, eachClass in enumerate(classesByProf):
+    #     difficultyList.append(dict())
+    #     difficultyList[i]['difficulty'] = eachClass.difficulty
+    #     i+=1
+
+    classesNextSem = list()
+    # i=0
+    # for _, eachClass in enumerate(classesByProf):
+    #     if eachClass.semester != "s19":
+    #         classesNextSem.append(dict())
+    # i+=1
+
+    retList = list()
+    #retList.append(pro.name) --> desn't work
+    retList.append()
+    retList.append(prof_id)
+    i = 0
+    # for _, eachClass in enumerate():
+    #     retList.append(dict())
+    #     #retList[i]['difficulty'] = getDifficulty(class_id)
+    #     i+=1
+
+    
+    # i=0    
+    # for _, eachClass in enumerate(classesPrevSem):
+    #     
+
+    # nextSem = list()
+    # i=0
+    # for _, eachClass in enumerate(classesNextSem):
+    #     i+=1
+
+    # retList.append(prevSem)
+    # retList.append(nextSem)
+    retList.append(difficulty)
+
+    return jsonify(retList)
+
+    #2019 spring term 
+    #previous classes: arrays from teaches with the same professor id's
+    # array of top comments from top comments in take 
+
+    #prof_id = request.args.get('prof_id')
+    #return jsonify(getAllProfs()[int(prof_id)])
 
 @app.route('/get-all-profs', methods=['GET'])
 def getAllProfInfo():
-    return jsonify(getAllProfs())
+    professors = db.session.query(models.Professor).all()
+    profList = list()
+    i = 0 
+    for _, eachProf in enumerate(professors):
+        profList.append(dict())
+        profList[i]['professor_id'] = eachProf.professor_id
+        profList[i]['name'] = eachProf.name
+        i+=1
+    return jsonify(profList)
 
 @app.route('/get-all-classes', methods=['GET'])
 def getAllClasses():

@@ -9,12 +9,13 @@ import firebase from 'firebase';
 import Background from './images/background_image.jpg';
 import Class from './scenes/Class';
 import Prof from './scenes/Prof';
+import AllRecs from './scenes/AllRecs';
 
 import './styles/app.css';
 import './styles/login.css';
 import './styles/getInfo.css';
-import './styles/Prof.css';
-import './styles/Class.css';
+import './styles/ProfClass.css';
+import './styles/AllRecs.css';
 
 
 const firebaseConfig = {
@@ -42,7 +43,8 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
-  state = {screen:3, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+  //5 = All Recs
+  state = {screen:0, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
 
   render() {
     var name = 'main' + this.state.screen;
@@ -63,6 +65,7 @@ class App extends Component {
                           email={this.state.email}
                           changeProf={prof => this.setState({screen: 4, currProf: prof})}
                           changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                          getMore={tempEmail => this.setState({screen: 5, email: tempEmail})}
                           logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input
@@ -70,12 +73,17 @@ class App extends Component {
                             app={this.app}
                             />;
                 case 3:
-                  return <Class />;
+                  return <Class
+                            changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                            />;
                 case 4:
                   return <Prof
-                          id={this.state.currProf}
-
-                  />;
+                            changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            />;
+                case 5:
+                  return <AllRecs
+                            changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            />;
 
                 default:
                   return null;

@@ -63,12 +63,11 @@ CREATE TABLE Class
 	PRIMARY KEY(class_id));
 
 CREATE TABLE Taken
-(	semester VARCHAR(4) NOT NULL,
+(	semester VARCHAR(20) NOT NULL,
 	star_number FLOAT NOT NULL,
 	comment_id INTEGER,
 	student_id INTEGER NOT NULL,
 	class_id INTEGER NOT NULL,
-	department_id VARCHAR(100) NOT NULL,
 	difficulty FLOAT NOT NULL,
 	FOREIGN KEY(department_id) REFERENCES Department(department_id),
 	FOREIGN KEY(student_id) REFERENCES Student(student_id),

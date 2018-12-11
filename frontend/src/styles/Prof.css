@@ -1,6 +1,8 @@
 .Overall {
-  background: #f2efe8 none repeat scroll 0 0;
+  background: none repeat scroll 0 0;
+  background-image: linear-gradient(to right, #fdfbfb, #ebedee);
   position: absolute;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
 }
 
@@ -19,6 +21,7 @@
 }
 
 .topLeft h1 {
+  text-decoration: bold;
   padding-left: 5px;
   font-size: 8vw;
   text-align: center;

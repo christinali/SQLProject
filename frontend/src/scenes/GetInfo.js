@@ -159,6 +159,7 @@ class GetInfo extends React.Component {
                 <button onClick={() => this.getMajors(this.state.email)}>Get Majors</button>
                 <button onClick={() => this.getTReqs(this.state.email)}>Get Trecs</button>
                 <button onClick={() => this.getMajors(this.state.email)}>Get Majors</button>
+                <button onClick={() => this.props.changeProf("1")}>Change prof</button>
 
                 <div className = 'Top3Recs'>
                     <h1> Top Treq Classes: </h1>
@@ -252,7 +253,12 @@ class GetInfo extends React.Component {
                     <div className = 'BottomRow'>
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
-                          return <p key={i}>{c.dept}{c.num} - {c.name}</p>
+                          if (this.state.searchCat === 'classname' || this.state.searchCat === 'classid') {
+                            return <p className = "SearchClass" key={i}>{c.dept}{c.num} - {c.name}</p>
+                          }
+                          else {
+                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.id} {c.name} </button>
+                          }
                         }
                       })}
                     </div>
@@ -387,4 +393,5 @@ getProf() {
 MAIN - FIGURE OUT HOW TO GET PROF ID AUTOMATICALLY
 1) need to make backend real
 2) need to link everything
+
 */

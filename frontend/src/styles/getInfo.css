@@ -5,6 +5,7 @@
   margin-left: 25px;
   padding: 5px 15px 5px 15px;
   font-size: 18px;
+  font-family: Garamond;
   width: 69%;
   float: left;
 }
@@ -50,6 +51,15 @@
 .Searcher h2 {
   margin-top: 3px;
   margin-left: 10px;
+}
+
+button.SearchProf {
+  color: blue;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
 }
 
 .TopRow {

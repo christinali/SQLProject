@@ -167,7 +167,7 @@ class GetInfo extends React.Component {
                     </div>
                     <div className = 'ReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
                         {Treqs && Treqs[0] && <div className = 'ReqsComp'>
-                            <h2> {Treqs[0].dept}{Treqs[0].num} - {Treqs[0].name} </h2>
+                            <button className = "classTitle"> {Treqs[0].dept}{Treqs[0].num} {Treqs[0].name} </button>
                             <br/>
                             <h3> Overall:
                                 <StarRatings
@@ -189,7 +189,7 @@ class GetInfo extends React.Component {
                         </div>}
 
                         {Treqs && Treqs[1] && <div className = 'ReqsComp'>
-                            <h2> {Treqs[1].dept}{Treqs[1].num} - {Treqs[1].name} </h2>
+                            <button className = "classTitle"> {Treqs[1].dept}{Treqs[1].num} {Treqs[1].name} </button>
                             <br/>
                             <h3> Overall:
                                 <StarRatings
@@ -211,7 +211,7 @@ class GetInfo extends React.Component {
                         </div>}
 
                         {Treqs && Treqs[2] && <div className = 'ReqsComp'>
-                            <h2> {Treqs[2].dept}{Treqs[2].num} - {Treqs[2].name} </h2>
+                            <button className = "classTitle"> {Treqs[2].dept}{Treqs[2].num} {Treqs[2].name} </button>
                             <br/>
                             <h3> Overall:
                                 <StarRatings
@@ -259,7 +259,7 @@ class GetInfo extends React.Component {
                             return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}>{c.dept}{c.num} - {c.name}</button>
                           }
                           else {
-                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.id} {c.name} </button>
+                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.name} </button>
                           }
                         }
                       })}
@@ -269,7 +269,7 @@ class GetInfo extends React.Component {
                     <h1> Top Major Classes </h1>
                     <div className = 'ReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
                         {Majors && Majors[0] && <div className = 'ReqsComp'>
-                            <h2> {Majors[0].dept}{Majors[0].num} - {Majors[0].name} </h2>
+                            <button className = "classTitle"> {Majors[0].dept}{Majors[0].num} {Majors[0].name} </button>
                             <br/>
                             <h3> Overall:
                                 <StarRatings
@@ -291,7 +291,7 @@ class GetInfo extends React.Component {
                         </div>}
 
                         {Majors && Majors[1] && <div className = 'ReqsComp'>
-                            <h2> {Majors[1].dept}{Majors[1].num} - {Majors[1].name} </h2>
+                            <button className = "classTitle"> {Majors[1].dept}{Majors[1].num} {Majors[1].name} </button>
                             <br/>
                             <h3> Overall:
                                 <StarRatings
@@ -313,7 +313,7 @@ class GetInfo extends React.Component {
                         </div>}
 
                         {Majors && Majors[2] && <div className = 'ReqsComp'>
-                            <h2> {Majors[2].dept}{Majors[2].num} - {Majors[2].name} </h2>
+                            <button className = "classTitle"> {Majors[2].dept}{Majors[2].num} {Majors[2].name} </button>
                             <br/>
                             <h3> Overall:
                                 <StarRatings

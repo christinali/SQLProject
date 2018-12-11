@@ -5,7 +5,7 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 
 export default class Login extends React.Component {
-  state = { email: '', password: '' };
+  state = { email: '', password: '', user_id: '' };
 
   handleSignup = () => {
     this.props.signup();
@@ -20,6 +20,7 @@ export default class Login extends React.Component {
       if (user) {
         this.props.login(this.state.email)
         alert("You logged in successfully")
+        
       }
     })
     .catch(e => {

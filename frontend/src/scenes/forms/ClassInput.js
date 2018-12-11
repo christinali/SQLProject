@@ -31,6 +31,23 @@ export default class ClassInput extends React.Component {
   compress = () => {
     let fieldValues = this.props.fieldValues;
     let gg = this.state.main;
+
+    let ret = {
+                'user_id': fieldValues.user_id,
+                'dept_id': gg.major,
+                'class_num': gg.class,
+                'semester': gg.year + " " + gg.semester,
+                'star_number': gg.overall,
+                'difficulty': gg.difficulty,
+                'comment_id': gg.review,
+    };
+
+    axios.post('http://localhost:5000/feroze-add-class', ret)
+        .then(res => {
+            console.log(res.data);
+        })
+        .catch(e => console.log(e))
+
     fieldValues.classes.push(gg);
     this.props.saveValues(fieldValues);
     this.setState({ main: {

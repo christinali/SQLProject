@@ -22,7 +22,7 @@ lastIds = [i for i in range(10)]
 @app.route('/', methods=['GET'])
 def dontReach():
     return '"DONT REACH" - Feroze'
-    
+
 @app.route('/longclasses', methods=['GET'])
 def longclasses():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/classes.csv') as csv_file:
@@ -31,7 +31,7 @@ def longclasses():
         for line in csv_reader:
             res.append(line)
         return jsonify(res)
-        
+
 @app.route('/longprofs', methods=['GET'])
 def longprofs():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/profs.csv') as csv_file:
@@ -40,7 +40,7 @@ def longprofs():
         for line in csv_reader:
             res.append(line)
         return jsonify(res)
-        
+
 @app.route('/longteaches', methods=['GET'])
 def longteaches():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/teaches.csv') as csv_file:
@@ -377,7 +377,7 @@ def gettreqs():
         haveTaken.add(taken.class_id)
         others = db.session.query(models.Taken).filter(models.Taken.student_id != user_id ).all()
         for other in others:
-            similarList[other.student_id] += other.star_number*taken.star_number
+            similarList[other.student_id] += (other.star_number-3)*(taken.star_number-3)
     i = 0
     for _,eachClass in enumerate(classesWithReqs.keys()):
         if eachClass.class_id in haveTaken:

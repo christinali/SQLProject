@@ -91,6 +91,18 @@ def createUser():
         return "Successfully created new user"
     return "Need to give name, user, year, and major, but not all inputs were given"
 
+@app.route('/feroze-create-user', methods=['GET', 'POST'])
+def createFeroze():
+    req_data = request.get_json()
+    first = req_data['first']
+    last = req_data['last']
+    email = req_data['email']
+    year = req_data['grad_year'] #2020
+    major = req_data['major']
+    if (first and last and email and year): ## this gets replaced by find user_id
+        return "1"
+    return "0"
+
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():
     user_id = request.args.get('user_id')
@@ -109,6 +121,21 @@ def addClass():
         db.session.commit()
         return "Success!"
     return "Failure"
+
+@app.route('/feroze-add-class', methods=['GET', 'POST'])
+def addFakeClass():
+    req_data = request.get_json()
+
+    user_id = req_data['user_id']
+    department_id = req_data['dept_id']
+    class_num = req_data['class_num']
+    semester = req_data['semester'] #'2013 Spring Term'
+    star_number = req_data['star_number']
+    comment_id = req_data['comment_id']
+    difficulty = req_data['difficulty']
+    if (user_id and department_id and class_num and semester and star_number and difficulty):
+        return '200'
+    return '404'
 
 @app.route('/get-curr-classes', methods=['GET'])
 def getClasses():

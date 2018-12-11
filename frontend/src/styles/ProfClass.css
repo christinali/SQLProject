@@ -168,7 +168,13 @@ button.downvotes {
 
 }
 
+<<<<<<< HEAD
 button.classOffers {
+=======
+.classOffers {
+  background: none;
+  border: none;
+>>>>>>> 88b3befdce96bb304ca8199302ab7763320e70df
   color: blue;
   text-decoration: underline;
   background: none;

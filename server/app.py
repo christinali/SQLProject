@@ -92,14 +92,14 @@ def createUser():
     return "Need to give name, user, year, and major, but not all inputs were given"
 
 @app.route('/feroze-create-user', methods=['GET', 'POST'])
-    def createFeroze():
-        first = request.args.get('first')
-        last = request.args.get('last')
-        email = request.args.get('email')
-        year = request.args.get('grad_year') #2020
-        major = request.args.get('major')
-        if (first and last and email and year and major):
-            return "1"
+def createFeroze():
+    first = request.args.get('first')
+    last = request.args.get('last')
+    email = request.args.get('email')
+    year = request.args.get('grad_year') #2020
+    major = request.args.get('major')
+    if (first and last and email and year and major):
+        return "1"
 
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():

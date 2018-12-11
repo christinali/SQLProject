@@ -14,6 +14,7 @@ class AdvSearch extends React.Component {
             currProf: null,
             allClasses: [], //load at start
             allProfs: [], //load at start
+            allMajors: [],
             query: '',
             resultOut: [],
             searchCat: 'classname' //default to searching by class name
@@ -21,6 +22,7 @@ class AdvSearch extends React.Component {
 
         this.getAllClasses();
         this.getAllProfs();
+        this.getAllMajors();
     }
 
     componentDidMount() {
@@ -29,6 +31,7 @@ class AdvSearch extends React.Component {
         })
         this.getAllClasses();
         this.getAllProfs();
+        this.getAllMajors();
     }
 
     getAllClasses() {
@@ -49,6 +52,27 @@ class AdvSearch extends React.Component {
             })
           })
           .catch(e => console.log(e))
+    }
+
+    getAllMajors() {
+      axios.get('http://localhost:5000/get-all-majors')
+          .then(res => {
+              this.setState({
+                allMajors: res.data,
+              });
+          })
+          .catch(e => console.log(e))
+    }
+
+    makeMajorOptions(array) {
+      var res = [];
+      if (array) {
+          for (var i = 0; i < array.length; i++) {
+            String temp = 'value: ' +array[i].toLowerCase() + ', ' + 'label: ' +array[i].toUpperCase();
+            res.append(temp)
+          }
+      }
+      return res;
     }
 
     peruse(result) {
@@ -104,8 +128,6 @@ class AdvSearch extends React.Component {
     render() {
         const currClass = this.state.currClass;
         const currProf = this.state.currProf;
-        const Treqs = this.state.Treqs;
-        const Majors = this.state.Majors;
 
         const dropdownOptions = [
           { value: 'classid', label: 'Class ID' },
@@ -119,6 +141,15 @@ class AdvSearch extends React.Component {
           { value: 'ns', label: 'NS' },
           { value: 'qs', label: 'QS' },
           { value: 'ss', label: 'SS' }
+        ];
+
+        const moiOptions = [
+          { value: 'cci', label: 'CCI' },
+          { value: 'ei', label: 'EI' },
+          { value: 'sts', label: 'STS' },
+          { value: 'fl', label: 'FL' },
+          { value: 'w', label: 'W' },
+          { value: 'r', label: 'R' }
         ];
 
         const defaultOption = [
@@ -139,17 +170,30 @@ class AdvSearch extends React.Component {
                         />
                       </form>
                       <div className = "advDropDown">
+                        <div className = "filter1">
                           <Select
                             defaultValue = {defaultOption}
                             onChange={this.changeCat}
                             options = {dropdownOptions}
                           />
+                        </div>
+                        <div className = "filter2">
                           <Select
                             isMulti
                             options={aokOptions}
                             className = "basic-multi-select"
                             classNamePrefix = "select"
+
                           />
+                        </div>
+                        <div className = "filter2">
+                          <Select
+                            isMulti
+                            options={moiOptions}
+                            className = "basic-multi-select"
+                            classNamePrefix = "select"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div className = 'BottomRow'>

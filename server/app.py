@@ -468,7 +468,22 @@ def getAllProfInfo():
 
 @app.route('/get-all-classes', methods=['GET'])
 def getAllClasses():
-    return jsonify(getFullClasses())
+    user_id = request.args.get('user_id')
+    currClasses = db.session.query(models.Class).all()
+    classList = list()
+    haveTaken = set()
+    similarList = dict()
+    i = 0
+    for _,eachClass in enumerate(currClasses):
+        classList.append(dict())
+        classList[i]['dept'] = eachClass.department_id
+        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
+        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
+        classList[i]['name'] = eachClass.name
+        classList[i]['id'] = eachClass.class_id
+        classList[i]['num'] = eachClass.class_num
+        i+=1
+    return jsonify(classList)
 
 @app.route('/get-all-reviews', methods=['GET'])
 def getReviews():

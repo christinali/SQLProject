@@ -49,7 +49,7 @@ export default class Login extends React.Component {
       <div className="Login">
           <div className="inner">
             <h2>Welcome to Our App!</h2>
-            <p>Please enter your email and password to login, or click sign up below!</p>
+            <p>Please enter your email and password to login, or click sign up below.</p>
           </div>
           <FormGroup controlId="email" bsSize="large">
             <ControlLabel><p className='name'>Email:</p></ControlLabel>

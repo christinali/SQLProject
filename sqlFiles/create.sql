@@ -85,6 +85,7 @@ CREATE TABLE Taken
       BEGIN
           UPDATE teaches
           SET average_quality = CASE WHEN average_quality IS NULL THEN NEW.star_number ELSE ((average_quality * num_reviews) + NEW.star_number) / (num_reviews + 1) END,
+          average_difficulty = CASE WHEN average_difficulty IS NULL THEN NEW.difficulty ELSE ((average_difficulty * num_reviews) + NEW.difficulty) / (num_reviews + 1) END,
           num_reviews = CASE WHEN num_reviews IS NULL THEN 1 ELSE num_reviews + 1 END
                 WHERE NEW.class_id = class_id and NEW.semester = semester
                 ;

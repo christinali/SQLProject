@@ -259,10 +259,10 @@ class GetInfo extends React.Component {
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
                           if (this.state.searchCat === 'classname' || this.state.searchCat === 'classid') {
-                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.id} {c.dept}{c.num} - {c.name}</button>
+                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}</button>
                           }
                           else {
-                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.id} {c.name} </button>
+                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.name} </button>
                           }
                         }
                       })}

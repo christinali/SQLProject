@@ -10,13 +10,14 @@ import Background from './images/background_image.jpg';
 import Class from './scenes/Class';
 import Prof from './scenes/Prof';
 import AllRecs from './scenes/AllRecs';
+import AdvSearch from './scenes/AdvSearch';
 
 import './styles/app.css';
 import './styles/login.css';
 import './styles/getInfo.css';
 import './styles/ProfClass.css';
 import './styles/AllRecs.css';
-
+import './styles/AdvSearch.css';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDfXgvgX2_eyPam6O3eenzLTJHrwHc2tdc",
@@ -44,7 +45,7 @@ class App extends Component {
   //3 = ClassInfo
   //4 = ProfInfo
   //5 = All Recs
-  state = {screen:0, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+  state = {screen:6, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
 
   render() {
     var name = 'main' + this.state.screen;
@@ -84,7 +85,9 @@ class App extends Component {
                   return <AllRecs
                             changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
                             />;
-
+                case 6:
+                  return <AdvSearch
+                            />;
                 default:
                   return null;
               }

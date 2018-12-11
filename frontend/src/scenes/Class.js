@@ -18,7 +18,7 @@ class Class extends Component {
     }
 
     getClassInfo() {
-        axios.get('http://localhost:5000/get-class-info?class_id=' + 1) //replace with this.props.id
+        axios.get('http://localhost:5000/get-class-info?class_id=' + 1)
             .then(res => {
                 this.setState({
                   currClass: res.data,
@@ -44,8 +44,10 @@ class Class extends Component {
 
         return (
             <div className="Overall">
+                {this.props.id}
                 <div className = "topRow">
                     <div className = "topLeft">
+                        <h1> {currClass.dept}{currClass.num}: </h1>
                         <h1> {currClass.name} </h1>
                     </div>
                     <div className = "topRight">
@@ -97,8 +99,8 @@ class Class extends Component {
                                 <h3> Difficulty: {c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
-                                <h4> Prof: ProfNameHere </h4>
-                                <h4> Semester: SemNameHere </h4>
+                                <h4> Prof: {c.prof} </h4>
+                                <h4> Semester Taken: {c.semester} </h4>
                                 <h4> Grade Received: {c.grade} </h4>
                             </div>
                             <div className = "reviewContent">

@@ -13,8 +13,7 @@ import Prof from './scenes/Prof';
 import './styles/app.css';
 import './styles/login.css';
 import './styles/getInfo.css';
-import './styles/Prof.css';
-import './styles/Class.css';
+import './styles/ProfClass.css';
 
 
 const firebaseConfig = {
@@ -42,7 +41,11 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
+<<<<<<< HEAD
   state = {screen:2, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+=======
+  state = {screen:4, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+>>>>>>> 3372995d7c6570383f95e203c52f9913ebf5a6a7
 
   render() {
     var name = 'main' + this.state.screen;
@@ -70,12 +73,13 @@ class App extends Component {
                             app={this.app}
                             />;
                 case 3:
-                  return <Class />;
+                  return <Class
+                            changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                            />;
                 case 4:
                   return <Prof
-                          id={this.state.currProf}
-
-                  />;
+                            changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            />;
 
                 default:
                   return null;

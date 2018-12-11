@@ -82,19 +82,20 @@ class Prof extends Component {
                         </div>
                     </div>
                 </div>
-                <h2 className = 'TSR'> Top Student Reviews: </h2>
+                <h2 className = 'TSR'> <strong>Top Student Reviews: </strong></h2>
                     {profComms && profComms.map((c, i) => {
                       if (c) {
+                        if (i % 2) {
                         return <div className = "botRow">
                             <div className = "reviewInfo">
                                 <h4> {c.date} </h4>
-                                <h3> Overall: {c.overall} </h3>
-                                <h3> Difficulty: {c.difficulty} </h3>
+                                <h3> <strong>Overall: </strong>{c.overall} </h3>
+                                <h3> <strong>Difficulty:</strong>{c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
-                                <h4> Class: {c.class[0].dept}{c.class[0].classNum} </h4>
-                                <h4> Semester Taken: {c.semester} </h4>
-                                <h4> Grade Received: {c.grade} </h4>
+                                <h4> <strong>Class: </strong>{c.class[0].dept}{c.class[0].classNum} </h4>
+                                <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
+                                <h4> <strong>Grade Received: </strong>{c.grade} </h4>
                             </div>
                             <div className = "reviewContent">
                                 <h4> {c.comment} </h4>
@@ -102,6 +103,26 @@ class Prof extends Component {
                                 <button className = "downvotes"> &#x1f44e;{c.down} </button>
                             </div>
                         </div>
+                      }
+                      else {
+                        return <div className = "botRow2">
+                            <div className = "reviewInfo">
+                                <h4> {c.date} </h4>
+                                <h3> <strong>Overall: </strong>{c.overall} </h3>
+                                <h3> <strong>Difficulty:</strong>{c.difficulty} </h3>
+                            </div>
+                            <div className = "reviewTarget">
+                                <h4> <strong>Class: </strong>{c.class[0].dept}{c.class[0].classNum} </h4>
+                                <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
+                                <h4> <strong>Grade Received: </strong>{c.grade} </h4>
+                            </div>
+                            <div className = "reviewContent">
+                                <h4> {c.comment} </h4>
+                                <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
+                                <button className = "downvotes"> &#x1f44e;{c.down} </button>
+                            </div>
+                        </div>
+                      }
                       }
                   })}
             </div>

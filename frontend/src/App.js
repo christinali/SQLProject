@@ -10,9 +10,9 @@ import Background from './images/background_image.jpg';
 import Class from './scenes/Class';
 import Prof from './scenes/Prof';
 
-import './App.css';
+import './styles/app.css';
 import './styles/login.css';
-import './styles/GetInfo.css';
+import './styles/getInfo.css';
 import './styles/Prof.css';
 import './styles/Class.css';
 
@@ -42,20 +42,22 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
-  state = {screen:1, email: '', currProf: null, currClass: null, headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
+  state = {screen:3, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
 
   render() {
+    var name = 'main' + this.state.screen;
+    console.log(name);
     return (
-        <div>
+        <div className={name}>
             <Header headerText={this.state.headerText} logout={() => this.setState({screen:0})} loggedin={this.state.screen}/>
             {(()=> {
               switch(this.state.screen) {
                 case 0:
-                  return <Login
+                  return <div ><Login
                             login={(email) => this.setState({screen: 1, email: email, headerText: "Welcome " + email + "!"})}
                             signup={() => this.setState({screen: 2})}
                             app={this.app}
-                          />;
+                          /></div>;
                 case 1:
                   return <GetInfo
                           email={this.state.email}

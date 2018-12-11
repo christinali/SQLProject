@@ -151,7 +151,7 @@ class GetInfo extends React.Component {
 
         return (
             <div className = 'Overall'>
-                <label>id:
+                <label className="idsearch">id:
                     <input type="text" value={this.state.id} onChange={e => this.setState({id: e.target.value})} />
                 </label>
                 <button onClick={() => this.getTReqs(this.state.email)}>Get Trecs</button>

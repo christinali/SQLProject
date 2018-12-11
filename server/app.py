@@ -41,6 +41,14 @@ def longprofs():
             res.append(line)
         return jsonify(res)
 
+@app.route('/test', methods=['GET'])
+def test():
+    ins = db.insert(models.Professor).values(professor_id='123456789', name='Testing test test')
+    print(ins)
+
+
+
+
 @app.route('/longteaches', methods=['GET'])
 def longteaches():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/teaches.csv') as csv_file:
@@ -484,12 +492,77 @@ def getClassInfo():
 
 @app.route('/get-prof-info', methods=['GET'])
 def getProfInfo():
-    prof_id = request.args.get('prof_id')
-    return jsonify(getAllProfs()[int(prof_id)])
+    proof_id = request.args.get('prof_id')
+    #pro = db.session.query(models.Professor).filter_by(professor_id =id).first()
+   # oldClassesByProf = db.session.query(models.Teaches, models.Class).filter_by(professor_id = proof_id).all()
+
+
+    prevSem = list()
+    i=0 
+    for _, eachClass in enumerate(oldClassesByProf):
+        prevSem.append(dict())
+        prevSem[i]['class_num'] = eachClass.class_num
+    i+=1
+
+
+    i=0
+    difficultyList = list()
+    # for _, eachClass in enumerate(classesByProf):
+    #     difficultyList.append(dict())
+    #     difficultyList[i]['difficulty'] = eachClass.difficulty
+    #     i+=1
+
+    classesNextSem = list()
+    # i=0
+    # for _, eachClass in enumerate(classesByProf):
+    #     if eachClass.semester != "s19":
+    #         classesNextSem.append(dict())
+    # i+=1
+
+    retList = list()
+    #retList.append(pro.name) --> desn't work
+    retList.append()
+    retList.append(prof_id)
+    i = 0
+    # for _, eachClass in enumerate():
+    #     retList.append(dict())
+    #     #retList[i]['difficulty'] = getDifficulty(class_id)
+    #     i+=1
+
+    
+    # i=0    
+    # for _, eachClass in enumerate(classesPrevSem):
+    #     
+
+    # nextSem = list()
+    # i=0
+    # for _, eachClass in enumerate(classesNextSem):
+    #     i+=1
+
+    # retList.append(prevSem)
+    # retList.append(nextSem)
+    retList.append(difficulty)
+
+    return jsonify(retList)
+
+    #2019 spring term 
+    #previous classes: arrays from teaches with the same professor id's
+    # array of top comments from top comments in take 
+
+    #prof_id = request.args.get('prof_id')
+    #return jsonify(getAllProfs()[int(prof_id)])
 
 @app.route('/get-all-profs', methods=['GET'])
 def getAllProfInfo():
-    return jsonify(getAllProfs())
+    professors = db.session.query(models.Professor).all()
+    profList = list()
+    i = 0 
+    for _, eachProf in enumerate(professors):
+        profList.append(dict())
+        profList[i]['professor_id'] = eachProf.professor_id
+        profList[i]['name'] = eachProf.name
+        i+=1
+    return jsonify(profList)
 
 @app.route('/get-all-classes', methods=['GET'])
 def getAllClasses():

@@ -8,7 +8,7 @@ import ContactInfo from './ContactInfo';
 export default class Input extends React.Component {
 
   state = {
-    step: 1,
+    step: 0,
     fieldValues : {
       fname : '',
       lname: '',
@@ -40,7 +40,7 @@ export default class Input extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div >
       {(()=> {
         switch(this.state.step) {
           case 0:

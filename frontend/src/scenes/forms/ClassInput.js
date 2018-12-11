@@ -18,7 +18,7 @@ export default class ClassInput extends React.Component {
             overall: '',
             difficulty: '',
             review: ''},
-            majors: []
+            majors: [], classes: []
   };
   componentDidMount() {
     axios.get('http://localhost:5000/get-all-majors')
@@ -27,6 +27,7 @@ export default class ClassInput extends React.Component {
             this.setState({majors: res.data});
         })
         .catch(e => console.log(e))
+
   }
   compress = () => {
     let fieldValues = this.props.fieldValues;
@@ -63,7 +64,13 @@ export default class ClassInput extends React.Component {
   };
   render(){
     const majors = this.state.majors;
-
+    axios.get('http://localhost:5000/get-classes-in-major?major=' + this.state.main.major)
+        .then(res => {
+            console.log(res.data);
+            this.setState({this.state.classes: res.data});
+        })
+        .catch(e => console.log(e))
+    const classes = this.state.classes;
     return(
       <div className="Login">
       <h2>Add a Class</h2>
@@ -78,11 +85,12 @@ export default class ClassInput extends React.Component {
         </FormGroup>
       <FormGroup controlId="class" bsSize="large">
         <ControlLabel><p className='name'>Class Name </p></ControlLabel>
-        <FormControl
-          value={this.state.main.class}
-          onChange={this.handleChange}
-          type="text"
-        />
+          <FormControl componentClass="select"
+            onChange={this.handleChange}>
+            {classes.map(key => {
+              return <option value={key.name}>{key.dept + " " + key.id + ": " + key.name }</option>
+            })}
+          </FormControl>
       </FormGroup>
       <FormGroup controlId="semester" bsSize="large">
         <ControlLabel><p className='name'>Semester Taken </p></ControlLabel>

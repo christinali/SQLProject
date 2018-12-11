@@ -86,6 +86,10 @@
   padding-left: 5px;
 }
 
+.profInfo {
+  text-align: center;
+}
+
 .botRow {
   /* background-color: #ffff00; */
   padding: 5px 25px 5px 25px;
@@ -164,7 +168,9 @@ button.downvotes {
 
 }
 
-.classOffers {
+button.classOffers {
   color: blue;
   text-decoration: underline;
+  background: none;
+  border: none;
 }

@@ -9,13 +9,14 @@ import forms
 import sys
 import math
 import csv
+from sqlalchemy.sql import exists
 
 app = Flask(__name__)
 app.secret_key = 's3cr3t'
 app.config.from_object('config')
 db = SQLAlchemy(app, session_options={'autocommit': False})
 CORS(app)
-
+lastIds = [i for i in range(10)]
 
 
 @app.route('/', methods=['GET'])
@@ -74,13 +75,21 @@ def getId():
 
 @app.route('/create-user', methods=['GET', 'POST'])
 def createUser():
-    first = request.args.get('first')
-    last = request.args.get('last')
+    name = request.args.get('name')
     email = request.args.get('email')
     year = request.args.get('year')
     major = request.args.get('major')
-    if (first and last and email and year and major):
-        return "0"
+    year = year[-1]
+    year = int(year)
+    if (name and email and year and major):
+        while db.session.query(models.Student).filter_by(student_id=lastIds[year]).first():
+            lastIds[year]+=10
+        newUser = models.Student(name=name, email=email, student_id=lastIds[year], major=major)
+        db.session.add(newUser)
+        db.session.commit()
+        lastIds[year]+=10
+        return "Successfully created new user"
+    return "Need to give name, user, year, and major, but not all inputs were given"
 
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():

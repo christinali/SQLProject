@@ -44,7 +44,7 @@ class App extends Component {
   //3 = ClassInfo
   //4 = ProfInfo
   //5 = All Recs
-  state = {screen:5, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+  state = {screen:0, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
 
   render() {
     var name = 'main' + this.state.screen;
@@ -65,6 +65,7 @@ class App extends Component {
                           email={this.state.email}
                           changeProf={prof => this.setState({screen: 4, currProf: prof})}
                           changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                          getMore={tempEmail => this.setState({screen: 5, email: tempEmail})}
                           logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input

@@ -18,7 +18,7 @@ class Prof extends Component {
     }
 
     getProfInfo() {
-        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 1) //replace with this.props.id
+        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 1) //replace with this.props.currProf
             .then(res => {
                 this.setState({
                   currProf: res.data,

@@ -18,7 +18,7 @@ class Class extends Component {
     }
 
     getClassInfo() {
-        axios.get('http://localhost:5000/get-class-info?class_id=' + 1)
+        axios.get('http://localhost:5000/get-class-info?class_id=' + 1) //this.props.currClass
             .then(res => {
                 this.setState({
                   currClass: res.data,

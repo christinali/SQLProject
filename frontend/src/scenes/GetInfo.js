@@ -9,7 +9,7 @@ class GetInfo extends React.Component {
         super();
         this.state = {
             id: null, //whatever the user login id is
-            email: 'test@test.test', //replace with ''
+            email: '', //replace with ''
             currClass: null,
             currProf: null,
             Treqs: null, //load with user ID
@@ -34,7 +34,7 @@ class GetInfo extends React.Component {
     }
 
     getTReqs(email) {
-        axios.get('http://localhost:5000/get-recommended-treqs?user_email=' + 'test@test.test') //replace with email
+        axios.get('http://localhost:5000/get-recommended-treqs?user_email=' + email) //replace with email
             .then(res => {
                 this.setState({
                   Treqs: res.data,
@@ -44,7 +44,7 @@ class GetInfo extends React.Component {
     }
 
     getMajors(email) {
-        axios.get('http://localhost:5000/get-recommended-major?user_email=' + 'test@test.test') //replace with email
+        axios.get('http://localhost:5000/get-recommended-major?user_email=' + email) //replace with email
             .then(res => {
                 this.setState({
                   Majors: res.data,
@@ -233,7 +233,7 @@ class GetInfo extends React.Component {
                         </div>}
                     </div>
                     <div className = "RecsBotRow">
-                        <button className = "MoreRecs"> More Recommended Classes... </button>
+                        <button className = "MoreRecs" onClick={() => this.props.getMore(this.state.email)}> More Recommended Classes... </button>
                     </div>
                 </div>
                 <div className = 'Searcher'>
@@ -259,10 +259,10 @@ class GetInfo extends React.Component {
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
                           if (this.state.searchCat === 'classname' || this.state.searchCat === 'classid') {
-                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}>{c.dept}{c.num} - {c.name}</button>
+                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.id} {c.dept}{c.num} - {c.name}</button>
                           }
                           else {
-                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.name} </button>
+                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.id} {c.name} </button>
                           }
                         }
                       })}

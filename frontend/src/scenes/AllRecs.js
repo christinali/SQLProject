@@ -9,7 +9,7 @@ class AllRecs extends React.Component {
         super();
         this.state = {
             id: null, //whatever the user login id is
-            email: 'test@test.test', //replace with ''
+            email: '', //replace with ''
             currClass: null,
             currProf: null,
             Treqs: null, //load with user ID
@@ -31,7 +31,7 @@ class AllRecs extends React.Component {
     }
 
     getTReqs(email) {
-        axios.get('http://localhost:5000/get-recommended-treqs?user_email=' + 'test@test.test') //replace with email
+        axios.get('http://localhost:5000/get-recommended-treqs?user_email=' + email) //replace with email
             .then(res => {
                 this.setState({
                   Treqs: res.data,
@@ -41,7 +41,7 @@ class AllRecs extends React.Component {
     }
 
     getMajors(email) {
-        axios.get('http://localhost:5000/get-recommended-major?user_email=' + 'test@test.test') //replace with email
+        axios.get('http://localhost:5000/get-recommended-major?user_email=' + email) //replace with email
             .then(res => {
                 this.setState({
                   Majors: res.data,
@@ -104,7 +104,7 @@ class AllRecs extends React.Component {
                         {Majors && Majors.map((c, i) => {
                           if (c && i<10) {
                             return <div className = 'recResults'>
-                              <button className = "classTitle" onClick={() => this.props.changeClass(c.id)}> ({i+1}) {c.dept}{c.num} {c.name} </button>
+                              <button className = "classTitle" onClick={() => this.props.changeClass(c.id)}> ({i+1}) {c.dept}{c.num} - {c.name} </button>
                               <br/>
                               <h3> Overall:
                                   <StarRatings

@@ -104,6 +104,8 @@ button.SearchProf, button.SearchClass {
 .BottomRow {
   margin-left: 20px;
   display: block;
+  max-height: 400px;
+  overflow: scroll;
 }
 
 .dropDown {
@@ -111,8 +113,6 @@ button.SearchProf, button.SearchClass {
   margin-left: 10px;
   height: 50%;
   font-size: 15px;
-  overflow: auto;
-  overflow: scroll;
 }
 
 .Overall {

@@ -164,11 +164,7 @@ button.downvotes {
 
 }
 
-button.classOffers {
+.classOffers {
   color: blue;
   text-decoration: underline;
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
 }

@@ -47,7 +47,13 @@ class App extends Component {
   state = {screen:0, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
 
   render() {
-    var name = 'main' + this.state.screen;
+    if (this.state.screen == 0 || this.state.screen == 2) {
+      var name = 'main0';
+    }
+    else {
+      var name = 'lmao';
+    }
+
     console.log(name);
     return (
         <div className={name}>

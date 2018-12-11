@@ -1,681 +1,4011 @@
-INSERT INTO Class VALUES
-('Media Arabic I: Arabic in Media and Documentary Film','000527','ARABIC','281','0','0','0',0,0,0,0,1,0,0,0)
-,('Media Arabic II','021898','ARABIC','283','0','0','0',0,0,0,0,1,0,0,0)
-,('Levantine Arabic: Dardasha Shamiyyah','022530','ARABIC','287','0','0','1',0,0,0,0,0,0,0,0)
-,('Conversational Egyptian Arabic','023314','ARABIC','288','0','0','1',0,0,0,0,0,0,0,0)
-,('Duke Administered Study Abroad: Special Topics in Arabic','022670','ARABIC','290A','0','0','0',0,0,0,0,0,0,0,0)
-,('Arabic Dialect in Music','021899','ARABIC','295','0','0','0',0,0,0,0,1,0,0,0)
-,('Dardasha Arabiyyah: Moroccan Dialect and Culture','023291','ARABIC','296A','0','0','1',0,0,0,0,0,0,0,0)
-,('Advanced Levantine Arabic Language and Culture','024424','ARABIC','304','0','0','1',0,0,0,0,0,0,0,0)
-,('Advanced Arabic','000516','ARABIC','305','0','0','1',0,0,0,0,0,0,0,0)
-,('Advanced Arabic','000517','ARABIC','306','0','0','0',0,0,0,0,1,0,0,0)
-,('Literary Islam','022878','ARABIC','328S','0','0','1',0,0,0,0,0,0,0,0)
-,('Independent Study','000526','ARABIC','391','0','0','0',0,0,0,0,0,0,0,0)
-,('Issues in Arabic Language and Literature I','000524','ARABIC','407','0','0','1',0,0,0,0,0,0,0,0)
-,('Issues in Arabic Language and Literature II','000525','ARABIC','408','0','0','0',0,0,0,0,1,0,0,0)
-,('Classical Arabic Language \u0026 Literature','021900','ARABIC','489','0','0','0',0,0,0,0,1,0,0,0)
-,('Introduction to the History of Art','000536','ARTHIST','101D','0','0','1',0,0,0,0,0,0,0,0)
-,('Introduction to World Art History from 1200 to the Present','000538','ARTHIST','102D','0','0','1',0,0,0,0,0,0,0,0)
-,('Introduction to the History of Art','000538','ARTHIST','102D','0','0','1',0,0,0,0,0,0,0,0)
-,('Exploring Art and Architecture - Foundations and Histories','023565','ARTHIST','104','0','0','0',1,0,0,0,0,0,0,0)
-,('Medieval Cultures','006622','ARTHIST','121','0','0','1',0,0,0,0,0,0,0,0)
-,('Renaissance Cultures','006623','ARTHIST','152','0','0','1',0,0,0,0,0,0,0,0)
-,('History of Pre-Modern Architecture','025249','ARTHIST','184D','0','0','1',0,0,0,0,0,0,0,0)
-,('The Languages of Art','019809','ARTHIST','185FS','0','0','1',0,0,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Special Topics in Art History','000534','ARTHIST','190A','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Art History','018085','ARTHIST','190FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Art History','017188','ARTHIST','190S','0','0','0',0,0,0,0,0,0,0,0)
-,('Etruscans: Myth Archaeology and Civilization','023827','ARTHIST','196','0','0','0',1,0,0,0,0,0,0,0)
-,('Imagining Europe: Arts Culture Politics','011802','ARTHIST','202','0','0','0',0,1,0,0,0,0,0,0)
-,('The Aegean Bronze Age','002786','ARTHIST','205','0','0','1',0,0,0,0,0,0,0,0)
-,('Early Greek Archaeology: From the Fall of Mycenae to the Persian Wars','002762','ARTHIST','206','0','0','1',0,0,0,0,0,0,0,0)
-,('Classical Greek Archaeology Archaic to Classical','002763','ARTHIST','207','0','0',1,0,0,0,0,0,0,0,0)
-,('Art and Archaeology of Ancient Athens','015846','ARTHIST','208','0','0','1',0,0,0,0,0,0,0,0)
-,('The Art of Greece and Rome','000563','ARTHIST','210','0','0','1',0,0,0,0,0,0,0,0)
-,('Feminist Art from the 1970s to the Present','023316','ARTHIST','213S','0','0','1',0,0,0,0,0,0,0,0)
-,('Representations of Women in the Classical World','000546','ARTHIST','215S','0','0','1',0,0,0,0,0,0,0,0)
-,('Representing Women in the Classical World','000546','ARTHIST','215S','0','0','1',0,0,0,0,0,0,0,0)
-,('Museum Theory and Practice','017082','ARTHIST','220','0','0','0',0,0,0,0,0,1,0,0)
-,('Museum Theory and Practice','017082','ARTHIST','220','0','0','0',0,0,0,0,0,1,0,0)
-,('The Museum Object: Art and Artifact on Display','024143','ARTHIST','221S','0','0','0',1,0,0,0,0,0,0,0)
-,('History and Theory of Curatorial Practice','024153','ARTHIST','222S','0','0','0',1,0,0,0,0,0,0,0)
-,('Medieval Architecture','000551','ARTHIST','226','0','0','1',0,0,0,0,0,0,0,0)
-,('Contemporary Performance','021055','ARTHIST','229','0','0','0',0,0,0,0,0,1,0,0)
-,('History of Art Markets','000587','ARTHIST','231','0','0','0',0,0,0,0,0,1,0,0)
-,('History of Art Markets','024401','ARTHIST','231D','0','0','0',0,0,0,0,0,1,0,0)
-,('Japanese Art','1600 to the Present','000616','ARTHIST','232','0','0',1,0,0,0,0,0,0,0)
-,('Japanese Architecture','013522','ARTHIST','234','0','0','1',0,0,0,0,0,0,0,0)
-,('Science Fiction Film','006449','ARTHIST','238','0','0','1',0,0,0,0,0,0,0,0)
-,('Roman Archaeology: Origins to Empire','023216','ARTHIST','246','0','0','1',0,0,0,0,0,0,0,0)
-,('Introduction to Modern Latin American Art and Visual Culture','021653','ARTHIST','250D','0','0','1',0,0,0,0,0,0,0,0)
-,('Art and Christianity: A History of Christian Visual Culture','024371','ARTHIST','251','0','0','0',0,0,0,0,0,0,0,0)
-,('Renaissance Architecture: A European Perspective','023222','ARTHIST','254','0','0','0',1,0,0,0,0,0,0,0)
-,('Art in Renaissance Italy','015180','ARTHIST','255','0','0','1',0,0,0,0,0,0,0,0)
-,('Renaissance and Baroque Art History','000577','ARTHIST','255A','0','0','1',0,0,0,0,0,0,0,0)
-,('Art in Renaissance Italy','024712','ARTHIST','255FS','0','0','1',0,0,0,0,0,0,0,0)
-,('Italian Baroque Art','024159','ARTHIST','256','0','0','1',0,0,0,0,0,0,0,0)
-,('Renaissance Architecture in Italy: Brunelleschi to Michelangelo','000585','ARTHIST','258','0','0','0',0,0,0,0,0,0,0,0)
-,('Renaissance Architecture in Italy: Brunelleschi to Michelangelo','020236','ARTHIST','258FS','0','0','0',1,0,0,0,0,0,0,0)
-,('French Art and Visual Culture in the Early Modern Period','000589','ARTHIST','260','0','0','1',0,0,0,0,0,0,0,0)
-,('The Contemporary Art Market','003297','ARTHIST','261','0','0','0',0,0,0,0,0,1,0,0)
-,('History of Netherlandish Art in a European Context','000592','ARTHIST','262A','0','0','1',0,0,0,0,0,0,0,0)
-,('History of Netherlandish Art in a European Context','000593','ARTHIST','263A','0','0','1',0,0,0,0,0,0,0,0)
-,('Drawing Foundations in Early Modern Europe','025272','ARTHIST','265','0','0','0',0,0,0,0,0,0,0,0)
-,('Drawing Foundations in Early Modern Europe','025272','ARTHIST','265','0','0','0',0,0,0,0,0,0,0,0)
-,('Art \u0026 Architecture in Early Modern France','023889','ARTHIST','268','0','0','1',0,0,0,0,0,0,0,0)
-,('Reconstructing Ancient Worlds','022171','ARTHIST','275LS','0','0','1',0,0,0,0,0,0,0,0)
-,('European Art 1760-1850','000595','ARTHIST','278','0','0','1',0,0,0,0,0,0,0,0)
-,('European Art 1850-1900','000600','ARTHIST','279','0','0','1',0,0,0,0,0,0,0,0)
-,('European Art 1900-1945','000601','ARTHIST','280','0','0','1',0,0,0,0,0,0,0,0)
-,('African American Art','000610','ARTHIST','283','0','0','1',0,0,0,0,0,0,0,0)
-,('The Political History of Modern Architecture: From Revolution through Neoliberalism','025018','ARTHIST','284','0','0','1',0,0,0,0,0,0,0,0)
-,('Modern Architecture','017530','ARTHIST','285','0','0','1',0,0,0,0,0,0,0,0)
-,('Modern Architecture','016047','ARTHIST','285D','0','0','1',0,0,0,0,0,0,0,0)
-,('Contemporary Architecture','024110','ARTHIST','286','0','0','1',0,0,0,0,0,0,0,0)
-,('Russian Art and Politics: 1800-Present','009676','ARTHIST','287','0','0','1',0,0,0,0,0,0,0,0)
-,('Dada and Surrealism','000626','ARTHIST','288','0','0','1',0,0,0,0,0,0,0,0)
-,('Soviet Art after Stalin: 1956-1991','020168','ARTHIST','289S','0','0','1',0,0,0,0,0,0,0,0)
-,('Special Topics in Art History','021438','ARTHIST','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Medieval Art and Architecture','000569','ARTHIST','290-1','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Italian Art and Architecture','000570','ARTHIST','290A-1','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Art History','023238','ARTHIST','290S','0','0','0',0,0,0,0,0,0,0,0)
-,('Berlin: Architecture','Art and the City','1871-Present','000629','ARTHIST','296A','0',0,1,0,0,0,0,0,0)
-,('History of Impressionism','000621','ARTHIST','298','0','0','1',0,0,0,0,0,0,0,0)
-,('History of Photography','1839 to the Present','000638','ARTHIST','303','0','0',1,0,0,0,0,0,0,0)
-,('Cubism and Culture','000637','ARTHIST','304','0','0','1',0,0,0,0,0,0,0,0)
-,('Virtual Museums: Theories and Methods of 21st-Century Museums','022830','ARTHIST','305L','0','0','0',0,0,0,0,0,1,0,0)
-,('Museum Internship I','002789','ARTHIST','310','0','0','0',1,0,0,0,0,0,0,0)
-,('Museum Internship II','021771','ARTHIST','311','0','0','0',1,0,0,0,0,0,0,0)
-,('Mapping History with Geographic Information Systems','024150','ARTHIST','315','0','0','0',0,0,0,0,0,0,1,0)
-,('The Body in Art in Early Modern Europe: Power and Limits of Corporeal Representations','025000','ARTHIST','317','0','0','1',0,0,0,0,0,0,0,0)
-,('Netherlandish Art and Visual Culture in the Seventeenth and Eighteenth Centuries','000586','ARTHIST','337','0','0','1',0,0,0,0,0,0,0,0)
-,('Classical Sculpture','022780','ARTHIST','340S','0','0','0',0,0,0,0,0,0,0,1)
-,('Art','Cultural Identity','Social Change: Political History of Cont Spanish Art: Goya to Global Society','024352','ARTHIST','341A','0',0,1,0,0,0,0,0,0)
-,('Conservation and Management of the Material Heritage','025494','ARTHIST','343SA','0','0','1',0,0,0,0,0,0,0,0)
-,('African Art: From Royal Court to Contemporary Marketplace','025254','ARTHIST','345','0','0','1',0,0,0,0,0,0,0,0)
-,('Roman Coinage: The Materiality of an Ancient Economy','023208','ARTHIST','347','0','0','1',0,0,0,0,0,0,0,0)
-,('Representing the Artist in Film and Popular Culture','022769','ARTHIST','350','0','0','0',0,0,0,0,0,0,0,0)
-,('Digital Art History I: New Representational Technologies','023537','ARTHIST','354SL','0','0','0',0,0,0,0,0,0,0,0)
-,('Global Art Since 1945','000602','ARTHIST','381D','0','0','1',0,0,0,0,0,0,0,0)
-,('Global Art Since 1945','024658','ARTHIST','381S','0','0','1',0,0,0,0,0,0,0,0)
-,('The Black Atlantic','000608','ARTHIST','383','0','0','1',0,0,0,0,0,0,0,0)
-,('Special Topics in Art History','021311','ARTHIST','390','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Renaissance Art','000573','ARTHIST','390-1','0','0','0',0,0,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Advanced Special Topics in Art History','000594','ARTHIST','390A','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Art History','016844','ARTHIST','390S','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Art History and Digital Visualization','022017','ARTHIST','390SL','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study','024780','ARTHIST','391','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study','024960','ARTHIST','392','0','0','0',0,0,0,0,0,0,0,0)
-,('Research Independent Study','025021','ARTHIST','393','0','0','0',0,0,0,0,0,0,0,0)
-,('Research Independent Study','025022','ARTHIST','394','0','0','0',0,0,0,0,0,0,0,0)
-,('Art History Methodology and Theory','025036','ARTHIST','395S','0','0','0',1,0,0,0,0,0,0,0)
-,('From the Art of the Pleasure Quarters to Tokyo Pop','023525','ARTHIST','432S','0','0','1',0,0,0,0,0,0,0,0)
-,('Photography in the Americas: War','Tourism','Art','and Protest','010104','ARTHIST','433S',0,0,1,0,0,0,0,0)
-,('Digital Art History II: New Representational Technologies Advanced','023543','ARTHIST','454SL','0','0','0',0,0,0,0,0,0,0,0)
-,('Curatorial Practicum: Exhibition Development and Design','023524','ARTHIST','455S','0','0','0',1,0,0,0,0,0,0,0)
-,('World War I and the History of Art \u0026 Architecture: Germany and Beyond','025273','ARTHIST','460S','0','0','1',0,0,0,0,0,0,0,0)
-,('Capstone in Art History','023523','ARTHIST','489S','0','0','0',0,0,0,1,0,0,0,0)
-,('Topics in Twentieth-Century Art (TOP)','014949','ARTHIST','490-2','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Contemporary Art','014950','ARTHIST','490-3','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics','020223','ARTHIST','490S','0','0','0',0,0,0,0,0,0,0,0)
-,('Honors Thesis Workshop','023527','ARTHIST','495S','0','0','0',0,0,0,0,0,1,0,0)
-,('Research Independent Study','022524','BIOCHEM','393','0','0','0',0,0,0,0,0,1,0,0)
-,('Applied Biochemistry','022820','BIOCHEM','401','0','0','0',0,1,0,0,0,0,0,0)
-,('General Biology','001448','BIOLOGY','20','0','0','0',0,0,0,0,0,0,0,0)
-,('Evolutionary Genomics: Who Are We','Where Have We Been','and Where Are We Going?','024138','BIOLOGY','128FS','0',0,0,0,0,0,0,0,0)
-,('Genomics of Host-Microbe Interactions: The Symbiotic Web','022215','BIOLOGY','148FS','0','0','0',0,0,0,0,0,1,0,0)
-,('Ecosystem Health and Human Well-Being','001459','BIOLOGY','153','0','0','0',0,0,0,0,0,0,1,0)
-,('AIDS and Other Emerging Diseases','012940','BIOLOGY','154','0','0','0',0,0,0,0,0,0,1,0)
-,('The Dynamic Oceans','001465','BIOLOGY','157','0','0','0',0,0,0,0,0,0,1,0)
-,('Plants and Human Use','001470','BIOLOGY','158','0','0','0',0,0,0,0,0,0,1,0)
-,('Plants of Duke Campus','021395','BIOLOGY','161','0','0','0',0,1,0,0,0,0,0,0)
-,('Evolution of Life','022930','BIOLOGY','162','0','0','0',0,0,0,0,0,0,1,0)
-,('Global Diseases','017088','BIOLOGY','180FS','0','0','0',0,0,0,0,0,0,1,0)
-,('Special Topics in Biology','023349','BIOLOGY','190','0','0','0',0,0,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Special Topics in Biology','001464','BIOLOGY','190A','0','0','0',0,0,0,0,0,0,0,0)
-,('Focus Program Topics in Biology','001472','BIOLOGY','190FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Modern Biology','017076','BIOLOGY','190S','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Biological Thinking','023577','BIOLOGY','199D','0','0','0',0,0,0,0,0,0,1,0)
-,('Gateway to Biology: Molecular Biology','020037','BIOLOGY','201L','0','0','0',0,0,0,0,0,0,1,0)
-,('Gateway to Biology: Molecular Biology','020037','BIOLOGY','201L','0','0','0',0,0,0,0,0,0,1,0)
-,('Gateway to Biology: Molecular Biology','021396','BIOLOGY','201LA','0','0','0',0,0,0,0,0,0,1,0)
-,('Gateway to Biology: Genetics and Evolution','001477','BIOLOGY','202L','0','0','0',0,0,0,0,0,0,1,0)
-,('Gateway to Biology: Genetics and Evolution','001477','BIOLOGY','202L','0','0','0',0,0,0,0,0,0,1,0)
-,('Gateway to Biology: Genetics and Evolution','023318','BIOLOGY','202LA','0','0','0',0,0,0,0,0,0,1,0)
-,('Marine Megafauna','017413','BIOLOGY','205','0','0','0',0,0,0,0,0,0,1,0)
-,('Organismal Diversity','020061','BIOLOGY','206L','0','0','0',0,1,0,0,0,0,0,0)
-,('Organismal Evolution','020271','BIOLOGY','207','0','0','0',0,1,0,0,0,0,0,0)
-,('The Ecology of Human Health','023578','BIOLOGY','209-1','0','0','0',0,0,0,0,0,0,1,0)
-,('Ecology for a Crowded Planet','001486','BIOLOGY','209D-2','0','0','0',0,0,0,0,0,0,1,0)
-,('General Microbiology','001478','BIOLOGY','212L','0','0','0',0,1,0,0,0,0,0,0)
-,('Cell Signaling and Diseases','001495','BIOLOGY','213D','0','0','0',0,1,0,0,0,0,0,0)
-,('Introduction to Mathematical Modeling in Biology','012941','BIOLOGY','215','0','0','0',0,0,0,0,0,1,0,0)
-,('Introduction to Modeling in Mathematical Biology','021046','BIOLOGY','215L','0','0','0',0,0,0,0,0,1,0,0)
-,('Biological Clocks: How Organisms Keep Time','023236','BIOLOGY','218','0','0','0',0,1,0,0,0,0,0,0)
-,('Biological Clocks: How Organisms Keep Time','023236','BIOLOGY','218','0','0','0',0,1,0,0,0,0,0,0)
-,('Cell Biology','001494','BIOLOGY','220','0','0','0',0,1,0,0,0,0,0,0)
-,('Developmental Biology: Development','Stem Cells','and Regeneration','024979','BIOLOGY','221D','0',0,0,0,1,0,0,0,0)
-,('Developmental Biology: Development','Stem Cells','and Regeneration','024979','BIOLOGY','221D','0',0,0,0,1,0,0,0,0)
-,('Cellular and Molecular Neurobiology','019566','BIOLOGY','223','0','0','0',0,0,0,0,0,0,0,0)
-,('Fundamentals of Neuroscience','008825','BIOLOGY','224D','0','0','0',0,0,0,0,0,0,1,0)
-,('Fundamentals of Neuroscience','008825','BIOLOGY','224D','0','0','0',0,0,0,0,0,0,1,0)
-,('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production','021346','BIOLOGY','228','0','0','0',0,0,0,0,0,0,1,0)
-,('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production','025259','BIOLOGY','228S','0','0','0',0,0,0,0,0,0,1,0)
-,('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production','025259','BIOLOGY','228S','0','0','0',0,0,0,0,0,0,1,0)
-,('Evolution of Animal Form','001496','BIOLOGY','248','0','0','0',0,0,0,0,0,1,0,0)
-,('Evolution of Animal Form','015485','BIOLOGY','248-1','0','0','0',0,1,0,0,0,0,0,0)
-,('Population Genetics','012942','BIOLOGY','250','0','0','0',0,1,0,0,0,0,0,0)
-,('Philosophy of Biology','014767','BIOLOGY','255','0','0','0',0,0,0,0,0,1,0,0)
-,('Genetics and Genomics of Human Variation','025438','BIOLOGY','260S','0','0','1',0,0,0,0,0,0,0,0)
-,('Race','Genomics','and Society','019367','BIOLOGY','261D','0',0,0,0,0,0,0,0,0)
-,('People','Plants and Pollution: Introduction to Urban Environments','020046','BIOLOGY','262','0','0',0,0,0,0,0,0,0,1)
-,('Biological Responses to Climate Change','021815','BIOLOGY','263','0','0','0',0,0,0,0,0,0,0,1)
-,('Biological Responses to Climate Change','021815','BIOLOGY','263','0','0','0',0,0,0,0,0,0,0,1)
-,('Behavioral Ecology and the Evolution of Animal Behavior','012500','BIOLOGY','267D','0','0','0',0,0,0,0,0,1,0,0)
-,('Conservation Biology and Policy','001483','BIOLOGY','270A','0','0','0',0,0,0,1,0,0,0,0)
-,('Analysis of Ocean Ecosystems','001498','BIOLOGY','272A','0','0','0',0,0,0,0,0,0,0,0)
-,('Marine Ecology','001504','BIOLOGY','273LA','0','0','0',0,0,0,0,0,1,0,0)
-,('Biology for Engineers: Informing Engineering Decisions','020455','BIOLOGY','275A','0','0','0',0,0,0,0,0,0,1,0)
-,('Comparative Physiology of Marine Animals','001520','BIOLOGY','278LA','0','0','0',0,0,0,0,0,1,0,0)
-,('Biodiversity of Alaska','023322','BIOLOGY','287A','0','0','0',0,0,0,0,0,0,1,0)
-,('Biogeography in an Australian Context','001475','BIOLOGY','288A','0','0','0',0,0,0,0,0,0,1,0)
-,('Topics in Biology','017256','BIOLOGY','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Seminar in Biology','001547','BIOLOGY','290S','0','0','0',0,0,0,0,0,0,0,0)
-,('Tutorial','023990','BIOLOGY','290T','0','0','0',0,0,0,0,0,0,0,0)
-,('Research Independent Study','021386','BIOLOGY','293A','0','0','0',0,0,0,0,0,1,0,0)
-,('Biological Data Analysis','021047','BIOLOGY','304','0','0','0',0,1,0,0,0,0,0,0)
-,('Primate Evolutionary Genetics','021772','BIOLOGY','310','0','0','0',0,0,0,0,0,1,0,0)
-,('Systems Biology: An Introduction for the Quantitative Sciences','018500','BIOLOGY','311','0','0','0',0,1,0,0,0,0,0,0)
-,('Coastal Watershed Science and Policy','023906','BIOLOGY','319A','0','0','0',0,0,0,0,0,0,1,0)
-,('Primate Sexuality','020458','BIOLOGY','321D','0','0','0',0,0,0,0,0,0,1,0)
-,('From Neurons to Brain','021050','BIOLOGY','322','0','0','0',0,1,0,0,0,0,0,0)
-,('Current Technologies in Genomics and Precision Medicine','025322','BIOLOGY','325','0','0','0',0,0,0,0,0,0,1,0)
-,('Principles of Animal Physiology','017112','BIOLOGY','329D','0','0','0',0,1,0,0,0,0,0,0)
-,('Principles of Animal Physiology','017112','BIOLOGY','329D','0','0','0',0,1,0,0,0,0,0,0)
-,('Principles of Animal Physiology','001521','BIOLOGY','329L','0','0','0',0,0,0,0,0,1,0,0)
-,('Comparative and Functional Anatomy of the Vertebrates','001482','BIOLOGY','330L','0','0','0',0,1,0,0,0,0,0,0)
-,('Drones in Marine Biology','Ecology','and Conservation','024645','BIOLOGY','335A','0',0,0,0,0,0,0,0,0)
-,('Drones in Marine Biology','Ecology','and Conservation','024178','BIOLOGY','335LA','0',0,0,0,0,0,0,0,0)
-,('Plant Communities of North Carolina','016051','BIOLOGY','341L','0','0','0',0,1,0,0,0,0,0,0)
-,('Plant Systematics and Evolution','001514','BIOLOGY','342L','0','0','0',0,0,0,0,0,0,1,0)
-,('Plant Diversity: A Field Approach','020059','BIOLOGY','344S','0','0','0',0,0,0,0,0,0,0,0)
-,('Symbiosis: From Organelles to Microbiomes','024350','BIOLOGY','346','0','0','0',0,0,0,0,0,1,0,0)
-,('Plants and People','025033','BIOLOGY','347L','0','0','0',0,0,0,0,0,0,1,0)
-,('Herpetology','025003','BIOLOGY','348LS','0','0','0',0,1,0,0,0,0,0,0)
-,('Complex Traits and Evolutionary Genetics','015486','BIOLOGY','350','0','0','0',0,0,0,0,0,0,0,0)
-,('Complex Traits and Evolutionary Genetics','015486','BIOLOGY','350','0','0','0',0,0,0,0,0,0,0,0)
-,('Field Ecology','019728','BIOLOGY','361LS','0','0','0',0,0,0,0,0,1,0,0)
-,('Advanced Experimental Physics','025137','BIOLOGY','364L','0','0','0',0,0,0,0,0,0,0,0)
-,('From Influenza A to Varicella Zoster: The Physiology','Ecology','and Evolution of Infectious Disease','019725','BIOLOGY','365','0',0,0,0,1,0,0,0,0)
-,('Deep-Sea Science and Environmental Management','025216','BIOLOGY','368A','0','0','0',0,0,0,0,0,1,0,0)
-,('Biological Oceanography','001489','BIOLOGY','369LA','0','0','0',0,0,0,0,0,1,0,0)
-,('Sensory Physiology and Behavior of Marine Animals','013593','BIOLOGY','373LA','0','0','0',0,0,0,0,0,1,0,0)
-,('Biology and Conservation of Sea Turtles','016480','BIOLOGY','375A','0','0','0',0,0,0,0,0,0,1,0)
-,('Biology and Conservation of Sea Turtles','001499','BIOLOGY','375LA','0','0','0',0,0,0,0,0,0,1,0)
-,('Marine Mammals','001500','BIOLOGY','376A','0','0','0',0,0,0,0,0,0,1,0)
-,('Marine Invertebrate Zoology','001535','BIOLOGY','377LA','0','0','0',0,0,0,0,0,1,0,0)
-,('Integrative Neuroscience Laboratory','021061','BIOLOGY','385L','0','0','0',0,0,0,0,0,1,0,0)
-,('Duke-Administered Study Abroad: Advanced Special Topics in Biology','001479','BIOLOGY','390A','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study: Advanced Topics','024306','BIOLOGY','391','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study: Advanced Topics','024315','BIOLOGY','391A','0','0','0',0,0,0,0,0,0,0,0)
-,('Sensory Signal Transduction','015265','BIOLOGY','412S','0','0','0',0,0,0,0,0,1,0,0)
-,('Experiments in Developmental and Molecular Genetics','017426','BIOLOGY','414LS','0','0','0',0,0,0,0,0,1,0,0)
-,('Developmental and Stem Cell Biology Colloquium','012703','BIOLOGY','415S','0','0','0',0,1,0,0,0,0,0,0)
-,('Developmental and Stem Cell Biology Colloquium','012703','BIOLOGY','415S','0','0','0',0,1,0,0,0,0,0,0)
-,('Experimenting With','and Writing About','Molecules and Cells','001540','BIOLOGY','416L','0',0,0,0,0,0,0,0,1)
-,('Genetic Engineering and Biotechnology','012704','BIOLOGY','417S','0','0','0',0,0,0,0,0,0,1,0)
-,('Genetic Engineering and Biotechnology','012704','BIOLOGY','417S','0','0','0',0,0,0,0,0,0,1,0)
-,('Introduction to Biophysics','015222','BIOLOGY','418','0','0','0',0,0,0,0,0,0,0,0)
-,('The Cell Cycle: Principles of Control','022142','BIOLOGY','419S','0','0','0',0,1,0,0,0,0,0,0)
-,('Cancer Genetics','018528','BIOLOGY','420','0','0','0',0,0,0,0,0,1,0,0)
-,('Biology of Nervous System Diseases','020040','BIOLOGY','421S','0','0','0',0,0,0,0,0,0,0,0)
-,('Biophysics II','023846','BIOLOGY','425','0','0','0',0,0,0,0,0,0,0,0)
-,('Visual Processing','020485','BIOLOGY','426S','0','0','0',0,1,0,0,0,0,0,0)
-,('Current Topics in Sensory Biology','020753','BIOLOGY','427S','0','0','0',0,1,0,0,0,0,0,0)
-,('How Organisms Move','024680','BIOLOGY','429S','0','0','0',0,1,0,0,0,0,0,0)
-,('How Organisms Move','024680','BIOLOGY','429S','0','0','0',0,1,0,0,0,0,0,0)
-,('Human Embryology: Reproductive Biology in the 21st Century','017853','BIOLOGY','431S','0','0','0',0,0,0,1,0,0,0,0)
-,('Climate Change in the Marine Environment','022956','BIOLOGY','445A','0','0','0',0,0,0,1,0,0,0,0)
-,('Genomics of Adaptation: A Modern Look at Evolution','023233','BIOLOGY','450S','0','0','0',0,1,0,0,0,0,0,0)
-,('Genomics of Adaptation: A Modern Look at Evolution','023233','BIOLOGY','450S','0','0','0',0,1,0,0,0,0,0,0)
-,('Genes \u0026 Development','020752','BIOLOGY','452S','0','0','0',0,1,0,0,0,0,0,0)
-,('Gene-Environment Interaction: Genes in an Ecological Context','021049','BIOLOGY','453S','0','0','0',0,1,0,0,0,0,0,0)
-,('Gene-Environment Interaction: Genes in an Ecological Context','021049','BIOLOGY','453S','0','0','0',0,1,0,0,0,0,0,0)
-,('Physiological Genetics of Disease','023280','BIOLOGY','454S','0','0','0',0,0,0,0,0,1,0,0)
-,('Special Topics Seminar','001623','BIOLOGY','490S','0','0','0',0,0,0,0,0,0,0,0)
-,('Tutorial','001545','BIOLOGY','490T','0','0','0',0,0,0,0,0,0,0,0)
-,('Tutorial (Topics)','021453','BIOLOGY','490TA','0','0','0',0,0,0,0,0,0,0,0)
-,('Tutorial (Topics)','021449','BIOLOGY','490TA-1','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study: Advanced Topics','023989','BIOLOGY','491','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study: Advanced Topics','024185','BIOLOGY','491A','0','0','0',0,0,0,0,0,0,0,0)
-,('Scientific Arguments: Writing an Undergraduate Thesis','019042','BIOLOGY','495','0','0','0',0,0,0,0,0,0,0,1)
-,('Medical Instrumentation in the Developing World (GE)','022675','BME','195FS','0','0','0',0,0,0,0,0,0,1,0)
-,('Global Women''s Health Technologies','025173','BME','230L','0','0','0',0,0,0,0,0,0,1,0)
-,('Quantitative Physiology with Biostatistical Applications','021163','BME','244L','0','0','0',0,0,0,0,0,0,0,0)
-,('Safety of Medical Devices (GE)','001642','BME','255','0','0','0',0,0,0,0,0,0,0,0)
-,('Modeling Cellular and Molecular Systems','013022','BME','260L','0','0','0',0,0,0,0,0,0,0,0)
-,('Signals and Systems','001649','BME','271','0','0','0',0,0,0,0,0,0,0,0)
-,('Signals and Systems','024781','BME','271A','0','0','0',0,0,0,0,0,0,0,0)
-,('Intermediate Topics (GE)','018682','BME','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Intermediate Topics with Lab (GE)','023013','BME','290L','0','0','0',0,0,0,0,0,0,0,0)
-,('Bioelectricity (AC or GE)','001656','BME','301L','0','0','0',0,0,0,0,0,0,0,0)
-,('Fundamentals of Biomaterials and Biomechanics (AC or GE)','018813','BME','302L','0','0','0',0,0,0,0,0,0,0,0)
-,('Modern Diagnostic Imaging Systems (AC or GE)','001690','BME','303L','0','0','0',0,0,0,0,0,0,0,0)
-,('Transport Phenomena in Biological Systems (AC or GE','BB)','001666','BME','307','0','0',0,0,0,0,0,0,0,0)
-,('Transport Phenomena in Biological Systems (AC or GE','BB)','001666','BME','307','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Medical Instrumentation','015631','BME','354L','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics Seminar in BME','025016','BME','390S','0','0','0',0,0,0,0,0,0,0,0)
-,('Biomechanics and Vehicle Safety Engineering (DR)','021644','BME','432L','0','0','0',0,0,0,0,0,0,0,0)
-,('Biophotonic Instrumentation (DR)','017418','BME','436L','0','0','0',0,0,0,0,0,0,0,0)
-,('Devices for People with Disabilities (DR)','001700','BME','460L','0','0','0',0,0,0,0,0,0,0,0)
-,('Design for the Developing World (DR)','017434','BME','462L','0','0','0',0,0,0,0,0,0,0,0)
-,('Medical Instrument Design (DR)','001702','BME','464L','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Biomedical Engineering Design (DR)','022072','BME','490L','0','0','0',0,0,0,0,0,0,0,0)
-,('Engineering the Planet','025320','CEE','132L','0','0','0',0,0,0,0,0,0,1,0)
-,('Introduction to Environmental Engineering and Science','003749','CEE','160L','0','0','0',0,0,0,0,0,0,1,0)
-,('Special Topics in Civil and Environmental Engineering','002123','CEE','190','0','0','0',0,0,0,0,0,0,0,0)
-,('Uncertainty Design and Optimization','002114','CEE','201L','0','0','0',0,0,0,0,0,0,0,0)
-,('Practical Methods in Civil Engineering','016875','CEE','205','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Civil and Environmental Engineering','023506','CEE','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study in Civil and Environmental Engineering','023546','CEE','291','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study in Civil and Environmental Engineering','023547','CEE','292','0','0','0',0,0,0,0,0,0,0,0)
-,('Research Independent Study in Civil and Environmental Engineering','023532','CEE','293','0','0','0',0,0,0,0,0,1,0,0)
-,('Research Independent Study in Civil and Environmental Engineering','023533','CEE','294','0','0','0',0,0,0,0,0,1,0,0)
-,('Fluid Mechanics','002107','CEE','301L','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Soil Mechanics','002122','CEE','302L','0','0','0',0,0,0,0,0,0,0,0)
-,('Transport Phenomena in Biological Systems (AC or GE','BB)','001666','CEE','307','0','0',0,0,0,0,0,0,0,0)
-,('Architectural Engineering I','002127','CEE','311','0','0','0',0,0,0,0,0,0,1,0)
-,('Engineering Sustainable Design and the Global Community','019092','CEE','315','0','0','0',0,0,0,0,0,0,0,0)
-,('Engineering Sustainable Design and the Global Community: Structural Focus','022961','CEE','315-20','0','0','0',0,0,0,0,0,0,1,0)
-,('Engineering Sustainable Design and the Global Community: Environmental Focus','022962','CEE','315-60','0','0','0',0,0,0,0,0,0,1,0)
-,('Transportation Engineering','002104','CEE','316','0','0','0',0,0,0,0,0,0,0,0)
-,('Hydrologic and Environmental Data Analysis','022832','CEE','365','0','0','0',0,0,0,0,0,0,0,0)
-,('Research Independent Study in Civil and Environmental Engineering','023541','CEE','393','0','0','0',0,0,0,0,0,1,0,0)
-,('Research Independent Study in Civil and Environmental Engineering','013111','CEE','394','0','0','0',0,0,0,0,0,1,0,0)
-,('Architectural Engineering II','002128','CEE','411','0','0','0',0,0,0,0,0,0,1,0)
-,('Matrix Structural Analysis','002116','CEE','421L','0','0','0',0,0,0,0,0,0,0,0)
-,('Concrete and Composite Structures','002118','CEE','422L','0','0','0',0,0,0,0,0,0,0,0)
-,('Metallic Structures','002120','CEE','423L','0','0','0',0,0,0,0,0,0,0,0)
-,('Analytical and Computational Solid Mechanics','015242','CEE','425','0','0','0',0,0,0,0,0,0,0,0)
-,('Integrated Structural Design','002129','CEE','429','0','0','0',0,0,0,0,0,0,0,0)
-,('Chemical Principles in Environmental Engineering','002105','CEE','461L','0','0','0',0,0,0,0,0,0,0,0)
-,('Biological Principles in Environmental Engineering','002111','CEE','462L','0','0','0',0,0,0,0,0,0,0,0)
-,('Water Resources Engineering','002109','CEE','463L','0','0','0',0,0,0,0,0,0,0,0)
-,('Integrated Environmental Design','014620','CEE','469','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Civil and Environmental Engineering','002124','CEE','490','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study in Civil and Environmental Engineering','002130','CEE','491','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study in Civil and Environmental Engineering','002131','CEE','492','0','0','0',0,0,0,0,0,0,0,0)
-,('Research Independent Study in Civil and Environmental Engineering','013112','CEE','493','0','0','0',0,0,0,0,0,1,0,0)
-,('Research Independent Study in Civil and Environmental Engineering','013113','CEE','494','0','0','0',0,0,0,0,0,1,0,0)
-,('Core Concepts in Chemistry','019342','CHEM','101DL','0','0','0',0,1,0,0,0,0,0,0)
-,('Honors Chemistry: Core Concepts in Context','019344','CHEM','110DL','0','0','0',0,1,0,0,0,0,0,0)
-,('Honors Chemistry: Core Concepts in Context (Lab)','019406','CHEM','110L9','0','0','0',0,0,0,0,0,0,0,0)
-,('The Chemistry and Physics of Cooking','024635','CHEM','130L','0','0','0',0,1,0,0,0,0,0,0)
-,('Chemistry Outreach: Sharing Chemistry with the Community','018705','CHEM','180','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Chemistry','018809','CHEM','190FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Chemistry','016746','CHEM','190S','0','0','0',0,0,0,0,0,0,0,0)
-,('Organic Chemistry I','002333','CHEM','201DL','0','0','0',0,0,0,0,0,0,1,0)
-,('Organic Chemistry I at the Duke Marine Lab','025178','CHEM','201DLA','0','0','0',0,0,0,0,0,0,1,0)
-,('Organic Chemistry Laboratory','013597','CHEM','201L9','0','0','0',0,0,0,0,0,0,0,0)
-,('Organic Chemistry II','002338','CHEM','202L','0','0','0',0,0,0,0,0,0,1,0)
-,('Modern Applications of Chemical Principles','019343','CHEM','210DL','0','0','0',0,1,0,0,0,0,0,0)
-,('Special Topics In Chemistry','016776','CHEM','290S','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Research Independent Study','018704','CHEM','295','0','0','0',0,0,0,0,0,0,0,1)
-,('Elements of Physical Chemistry','002350','CHEM','301','0','0','0',0,1,0,0,0,0,0,0)
-,('Physical Chemistry Laboratory','002357','CHEM','301L','0','0','0',0,0,0,0,0,0,0,1)
-,('How Does Biology Work? The Physical and Chemical Underpinnings of Biological Nanomachines','002363','CHEM','302','0','0','0',0,0,0,0,0,0,0,0)
-,('Physical Chemistry I','002358','CHEM','310','0','0','0',0,1,0,0,0,0,0,0)
-,('Physical Chemistry I Laboratory','002360','CHEM','310L','0','0','0',0,0,0,0,0,0,0,1)
-,('Physical Chemistry II','002359','CHEM','311','0','0','0',0,1,0,0,0,0,0,0)
-,('Physical Chemistry II Laboratory','002361','CHEM','311L','0','0','0',0,0,0,0,0,0,0,1)
-,('Analytical Chemistry','002327','CHEM','401','0','0','0',0,1,0,0,0,0,0,0)
-,('Analytical Chemistry Laboratory','002331','CHEM','401L','0','0','0',0,1,0,0,0,0,0,0)
-,('Inorganic Chemistry','002323','CHEM','410','0','0','0',0,1,0,0,0,0,0,0)
-,('Advanced Laboratory Techniques','002364','CHEM','420L','0','0','0',0,1,0,0,0,0,0,0)
-,('Graduation with Distinction in Chemistry','018033','CHEM','496','0','0','0',0,0,0,0,0,0,0,0)
-,('Multi-Method Approaches to Social and Policy Research','019065','CHILDPOL','241','0','0','0',0,0,0,0,0,1,0,0)
-,('Multi-Method Approaches to Social and Policy Research','022758','CHILDPOL','241A','0','0','0',0,0,0,0,0,1,0,0)
-,('Child Policy Research','017911','CHILDPOL','250S','0','0','0',0,0,0,0,0,1,0,0)
-,('Selected Child Policy Research Topics','018255','CHILDPOL','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Research Independent Study','021101','CHILDPOL','393','0','0','0',0,0,0,0,0,1,0,0)
-,('Multidisciplinary Approaches to Contemporary Children''s Issues','017869','CHILDPOL','495S','0','0','0',0,0,0,0,0,1,0,0)
-,('First-Year Chinese in Review I','023683','CHINESE','105','0','0','0',0,0,0,0,1,0,0,0)
-,('First-Year Chinese in Review II','023270','CHINESE','106','0','0','0',0,0,0,0,1,0,0,0)
-,('Intermediate-Mid Chinese','024121','CHINESE','205','0','0','0',0,0,0,0,1,0,0,0)
-,('Intensive Progress in Chinese','002419','CHINESE','223A','0','0','0',0,0,0,0,1,0,0,0)
-,('Intensive Progress in Chinese','002420','CHINESE','224A','0','0','0',0,0,0,0,1,0,0,0)
-,('Advanced Chinese II','002425','CHINESE','306','0','0','1',0,0,0,0,0,0,0,0)
-,('Business and Interculturality in the Chinese Society','024376','CHINESE','321S','0','0','1',0,0,0,0,0,0,0,0)
-,('Business and Interculturality in Chinese Society','024763','CHINESE','321SA','0','0','1',0,0,0,0,0,0,0,0)
-,('Advanced Progress in Chinese','002422','CHINESE','325A','0','0','1',0,0,0,0,0,0,0,0)
-,('Advanced Progress in Chinese','002423','CHINESE','326A','0','0','1',0,0,0,0,0,0,0,0)
-,('Modern Chinese Society and Culture through New Media','024690','CHINESE','331D','0','0','1',0,0,0,0,0,0,0,0)
-,('Chinese Translation and Interpretation','023534','CHINESE','332','0','0','1',0,0,0,0,0,0,0,0)
-,('Classical Chinese in the Modern Context I','017083','CHINESE','371S','0','0','0',0,0,0,0,1,0,0,0)
-,('Independent Study','002452','CHINESE','391','0','0','0',0,0,0,0,0,0,0,0)
-,('Issues in Chinese Language and Society II','002443','CHINESE','408S','0','0','1',0,0,0,0,0,0,0,0)
-,('The Culture of Business and Economics in Chinese','024749','CHINESE','421SA','0','0','1',0,0,0,0,0,0,0,0)
-,('Intensive Advanced Chinese','002427','CHINESE','427A','0','0','1',0,0,0,0,0,0,0,0)
-,('Intensive Advanced Chinese','002428','CHINESE','428A','0','0','1',0,0,0,0,0,0,0,0)
-,('Chinese in the Humanities II','002448','CHINESE','436S','0','0','1',0,0,0,0,0,0,0,0)
-,('Aspects of Chinese Culture and Society','017943','CHINESE','456','0','0','1',0,0,0,0,0,0,0,0)
-,('Current Issues in Modern Chinese I','002430','CHINESE','473A','0','0','1',0,0,0,0,0,0,0,0)
-,('Current Issues in Modern Chinese II','002431','CHINESE','474A','0','0','1',0,0,0,0,0,0,0,0)
-,('Medieval Cultures','006622','CLST','121','0','0','1',0,0,0,0,0,0,0,0)
-,('Age of Warriors: Pre-Roman and Italian Archaeology','022462','CLST','141','0','0','1',0,0,0,0,0,0,0,0)
-,('Principles of Archaeology','002759','CLST','144','0','0','1',0,0,0,0,0,0,0,0)
-,('Classical Etymology: The Greek and Latin Roots of English','024705','CLST','151','0','0','1',0,0,0,0,0,0,0,0)
-,('Liberty and Equality: Ancient and Modern Perspectives','023434','CLST','170FS','0','0','1',0,0,0,0,0,0,0,0)
-,('Birth of the West: Thinking about the Greek Origins of Western Civilization','023828','CLST','171S','0','0','1',0,0,0,0,0,0,0,0)
-,('Greek Civilization','002723','CLST','181S','0','0','1',0,0,0,0,0,0,0,0)
-,('Roman Civilization','002726','CLST','182S','0','0','1',0,0,0,0,0,0,0,0)
-,('Ancient and Modern Liberty','018230','CLST','186FS','0','0','1',0,0,0,0,0,0,0,0)
-,('Ancient and Medieval Epic','002746','CLST','204','0','0','1',0,0,0,0,0,0,0,0)
-,('Ancient Myth','023292','CLST','208','0','0','1',0,0,0,0,0,0,0,0)
-,('Virtual Museums: Theories and Methods of 21st-Century Museums','022830','CLST','240L','0','0','0',0,0,0,0,0,1,0,0)
-,('Etruscans: Myth Archaeology and Civilization','023827','CLST','241','0','0',1,0,0,0,0,0,0,0)
-,('Representing Women in the Classical World','000546','CLST','243','0','0','1',0,0,0,0,0,0,0,0)
-,('Representations of Women in the Classical World','000546','CLST','243S','0','0','1',0,0,0,0,0,0,0,0)
-,('Roman Archaeology: Origins to Empire','023216','CLST','246','0','0','1',0,0,0,0,0,0,0,0)
-,('Art and Archaeology of Ancient Athens','015846','CLST','248','0','0','1',0,0,0,0,0,0,0,0)
-,('The Art of Greece and Rome','000563','CLST','250','0','0','1',0,0,0,0,0,0,0,0)
-,('Reconstructing Ancient Worlds','022171','CLST','252LS','0','0','1',0,0,0,0,0,0,0,0)
-,('Ancient Athletics','021993','CLST','262','0','0','1',0,0,0,0,0,0,0,0)
-,('Gender and Sexuality in the Ancient World','023442','CLST','266','0','0','1',0,0,0,0,0,0,0,0)
-,('History of Ancient Philosophy','007701','CLST','271','0','0','1',0,0,0,0,0,0,0,0)
-,('Democracy: Ancient and Modern','021996','CLST','275','0','0','1',0,0,0,0,0,0,0,0)
-,('Roman Political Thought and Its Modern Legacy','024659','CLST','278','0','0','1',0,0,0,0,0,0,0,0)
-,('Greek History','002730','CLST','283','0','0','1',0,0,0,0,0,0,0,0)
-,('Roman History','002731','CLST','284','0','0','1',0,0,0,0,0,0,0,0)
-,('Special Topics in Classical Studies','002796','CLST','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Special Topics in Classical Studies','022386','CLST','290A','0','0','0',0,0,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Special Topics in Classical Studies','022387','CLST','290SA','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Landscape Archaeology and Cultural Landscapes','025251','CLST','299L','0','0','1',0,0,0,0,0,0,0,0)
-,('Drama of Greece and Rome','002747','CLST','304','0','0','1',0,0,0,0,0,0,0,0)
-,('Ancient Greek Notions of Justice','024634','CLST','312S','0','0','1',0,0,0,0,0,0,0,0)
-,('Self-Knowledge and the Pursuit of Wisdom','025280','CLST','316S','0','0','1',0,0,0,0,0,0,0,0)
-,('Mediterranean Cultures (Study Abroad)','002780','CLST','320A','0','0','1',0,0,0,0,0,0,0,0)
-,('The Historical Jesus','009235','CLST','322','0','0','1',0,0,0,0,0,0,0,0)
-,('Art and Archaeology','002782','CLST','341A-1','0','0','1',0,0,0,0,0,0,0,0)
-,('Political','Social','and Cultural Context','002783','CLST','341A-2','0',0,1,0,0,0,0,0,0)
-,('Conservation and Management of the Material Heritage','025494','CLST','343SA','0','0','1',0,0,0,0,0,0,0,0)
-,('Early Greek Archaeology: From the Fall of Mycenae to the Persian Wars','002762','CLST','344','0','0','1',0,0,0,0,0,0,0,0)
-,('Classical Greek Archaeology','Archaic to Classical','002763','CLST','348','0','0',1,0,0,0,0,0,0,0)
-,('The Aegean Bronze Age','002786','CLST','352','0','0','1',0,0,0,0,0,0,0,0)
-,('Roman Spectacle','000547','CLST','354','0','0','1',0,0,0,0,0,0,0,0)
-,('Roman Coinage: The Materiality of an Ancient Economy','023208','CLST','357','0','0','1',0,0,0,0,0,0,0,0)
-,('The History of the Book','023681','CLST','360','0','0','0',0,0,0,0,0,1,0,0)
-,('Ancient Political Theory','016472','CLST','374','0','0','0',0,0,0,1,0,0,0,0)
-,('Capstone Seminars in Classical Studies','002804','CLST','480S','0','0','1',0,0,0,0,0,0,0,0)
-,('Capstone Research Seminars in Classical Studies','024340','CLST','480S-1','0','0','1',0,0,0,0,0,0,0,0)
-,('Special Topics in Classical Studies','020001','CLST','490','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Computer Science','014361','COMPSCI','101L','0','0','0',0,0,1,0,0,0,0,0)
-,('Constructing Immersive Virtual Worlds','018862','COMPSCI','102S','0','0','0',0,0,0,0,0,0,0,0)
-,('Computing and the Brain','024408','COMPSCI','103L','0','0','0',0,0,0,0,0,0,0,0)
-,('Artificial Life','Culture','and Evolution','022020','COMPSCI','107FS','0',0,0,0,0,0,0,0,0)
-,('Information','Society \u0026 Culture: Bass Connections Gateway','022156','COMPSCI','110','0','0',0,0,0,0,0,0,0,1)
-,('Focus Program: Topics in Computer Science','022265','COMPSCI','190FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Computer Science','017545','COMPSCI','190S','0','0','0',0,0,0,0,0,0,0,0)
-,('Data Structures and Algorithms','002598','COMPSCI','201','0','0','0',0,0,1,0,0,0,0,0)
-,('Everything Data','023264','COMPSCI','216','0','0','0',0,0,1,0,0,0,0,0)
-,('Introduction to Computer Modeling','017878','COMPSCI','224','0','0','0',0,0,1,0,0,0,0,0)
-,('Discrete Math for Computer Science','015847','COMPSCI','230','0','0','0',0,0,1,0,0,0,0,0)
-,('Computer Science Education Research','024220','COMPSCI','249','0','0','0',0,0,0,0,0,0,0,0)
-,('Computer Architecture','017430','COMPSCI','250D','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Computational Genomics','015496','COMPSCI','260','0','0','0',0,1,0,0,0,0,0,0)
-,('Introduction to Artificial Intelligence','002625','COMPSCI','270','0','0','0',0,0,1,0,0,0,0,0)
-,('Logic and Its Applications','006921','COMPSCI','288','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Computer Science','002634','COMPSCI','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Computer Science','014925','COMPSCI','290S','0','0','0',0,0,0,0,0,0,0,0)
-,('Advanced Software Design and Implementation','002604','COMPSCI','308','0','0','0',0,0,1,0,0,0,0,0)
-,('Problem Solving Seminar','002618','COMPSCI','309S','0','0','0',0,0,1,0,0,0,0,0)
-,('Introduction to Database Systems','015744','COMPSCI','316','0','0','0',0,0,1,0,0,0,0,0)
-,('Mathematical Foundations of Computer Science','002616','COMPSCI','334','0','0','0',0,0,1,0,0,0,0,0)
-,('Technical and Social Analysis of Information and the Internet','014924','COMPSCI','342S','0','0','0',0,0,0,1,0,0,0,0)
-,('Computer Graphics','002612','COMPSCI','344','0','0','0',0,0,0,0,0,0,0,0)
-,('Computer Network Architecture','003619','COMPSCI','356','0','0','0',0,0,0,0,0,0,0,0)
-,('Elements of Machine Learning','025283','COMPSCI','371D','0','0','0',0,0,1,0,0,0,0,0)
-,('Delivering Software: From Concept to Client','021860','COMPSCI','408','0','0','0',0,0,0,0,0,1,0,0)
-,('Topological Data Analysis','021375','COMPSCI','434','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to High Dimensional Data Analysis','021376','COMPSCI','445','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Cultural Anthropology','001860','CULANTH','101','0','0','1',0,0,0,0,0,0,0,0)
-,('Introduction to Human Rights: Gateway for the Human Rights Certificate','023954','CULANTH','104D','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to African Studies (DS3 or DS4)','000082','CULANTH','105','0','0','1',0,0,0,0,0,0,0,0)
-,('The Documentary Experience: A Video Approach','008062','CULANTH','106S','0','0','0',0,0,0,0,0,1,0,0)
-,('Introduction to Sustainable Development','024136','CULANTH','107','0','0','1',0,0,0,0,0,0,0,0)
-,('Fantasy','Mass Media','and Popular Culture','001873','CULANTH','108','0',0,1,0,0,0,0,0,0)
-,('Enterprising Leadership and Civic Engagement','023568','CULANTH','113FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Anthropology and Film','001868','CULANTH','130','0','0','0',0,0,0,0,0,0,0,0)
-,('World Music: Aesthetic and Anthropological Approaches','007099','CULANTH','131','0','0','0',0,0,0,0,0,0,0,0)
-,('African Mbira Music: An Experiential Learning Class','017879','CULANTH','133S','0','0','1',0,0,0,0,0,0,0,0)
-,('Music','Social Life','and Scenes','007101','CULANTH','137','0',0,1,0,0,0,0,0,0)
-,('Israel/Palestine: Comparative Perspectives','023214','CULANTH','148','0','0','0',0,0,0,0,0,0,0,0)
-,('Anthropology of Food','024146','CULANTH','150','0','0','1',0,0,0,0,0,0,0,0)
-,('Borderline Humans: How Walls (and Bridges) Define Us','021552','CULANTH','153FS','0','0','1',0,0,0,0,0,0,0,0)
-,('Advertising and Society: Global Perspective (DS4)','001876','CULANTH','170','0','0','1',0,0,0,0,0,0,0,0)
-,('Business Anthropology: Anthropologists in the Workplace','025328','CULANTH','171','0','0','1',0,0,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Introductory Special Topics in Cultural Anthropology','001855','CULANTH','190A','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Focus','018299','CULANTH','190FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Topics in Cultural Anthropology','023825','CULANTH','190S','0','0','0',0,0,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Special Topics in Cultural Anthropology','023996','CULANTH','190SA','0','0','0',0,0,0,0,0,0,0,0)
-,('Comparative Approaches to Global Issues','002842','CULANTH','195','0','0','1',0,0,0,0,0,0,0,0)
-,('Patient and Research Participant Activism and Advocacy','025265','CULANTH','196FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Languages of the World','006285','CULANTH','202','0','0','1',0,0,0,0,0,0,0,0)
-,('Marxism and Society','001911','CULANTH','203','0','0','0',0,0,0,1,0,0,0,0)
-,('Anthropology of Law','001877','CULANTH','206','0','0','1',0,0,0,0,0,0,0,0)
-,('Anthropology of Sports','016388','CULANTH','207','0','0','1',0,0,0,0,0,0,0,0)
-,('The Anthropology of Race','012561','CULANTH','208','0','0','0',0,0,0,0,0,0,0,0)
-,('The Anthropology of Race','020772','CULANTH','208FS','0','0','1',0,0,0,0,0,0,0,0)
-,('Global Culture','001883','CULANTH','210','0','0','1',0,0,0,0,0,0,0,0)
-,('Language and Society','020504','CULANTH','212','0','0','0',0,0,0,0,0,0,0,0)
-,('Cyborgs','013840','CULANTH','213','0','0','1',0,0,0,0,0,0,0,0)
-,('Shamanism and Spirit Possession','021035','CULANTH','214S','0','0','1',0,0,0,0,0,0,0,0)
-,('Indian Civilization','020607','CULANTH','215S','0','0','1',0,0,0,0,0,0,0,0)
-,('Global Migration and Ethics','021780','CULANTH','216','0','0','0',0,0,0,1,0,0,0,0)
-,('Global Migration and Ethics','001978','CULANTH','216S','0','0','0',0,0,0,0,0,0,0,0)
-,('Political Economies of the Global Image','021331','CULANTH','217S','0','0','1',0,0,0,0,0,0,0,0)
-,('Anthropology and Global Health','021138','CULANTH','218S','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Performance Studies','023900','CULANTH','219S','0','0','1',0,0,0,0,0,0,0,0)
-,('Capoeira: Practice and Culture','022920','CULANTH','221SL','0','0','1',0,0,0,0,0,0,0,0)
-,('Sound in Social Life','021423','CULANTH','222S','0','0','1',0,0,0,0,0,0,0,0)
-,('Sound in Social Life','024805','CULANTH','222SA','0','0','1',0,0,0,0,0,0,0,0)
-,('Muslim Women Across the Ages','020896','CULANTH','224S','0','0','0',0,0,0,0,0,0,0,0)
-,('Anthropology and Psychology','001991','CULANTH','227','0','0','1',0,0,0,0,0,0,0,0)
-,('Gender and Language','009662','CULANTH','232','0','0','1',0,0,0,0,0,0,0,0)
-,('Farmworkers in North Carolina: Roots of Poverty','Roots of Change','014927','CULANTH','236S','0','0',0,0,0,0,0,0,0,0)
-,('Who Cares and Why: Social Activism and its Motivations','015530','CULANTH','239S','0','0','0',0,0,0,0,0,0,0,0)
-,('Migrant China','001888','CULANTH','241','0','0','1',0,0,0,0,0,0,0,0)
-,('Culture and Politics in Africa','000093','CULANTH','242','0','0','1',0,0,0,0,0,0,0,0)
-,('Culture and Politics in Latin America','001896','CULANTH','243','0','0','1',0,0,0,0,0,0,0,0)
-,('Human Rights in the Americas','023953','CULANTH','245S','0','0','0',0,0,0,0,0,0,0,0)
-,('Civil/Human Rights Activism: In the Spirit of Pauli Murray','020146','CULANTH','246S','0','0','0',0,0,0,0,0,0,0,0)
-,('The Arts and Human Rights','020266','CULANTH','248','0','0','0',0,0,0,0,0,0,0,0)
-,('Muslim World: Transformations and Continuities','001894','CULANTH','250','0','0','1',0,0,0,0,0,0,0,0)
-,('School Dropout and Educational Policy','022164','CULANTH','251S','0','0','1',0,0,0,0,0,0,0,0)
-,('Cultures and Politics of the America Borderlands','022141','CULANTH','254','0','0','1',0,0,0,0,0,0,0,0)
-,('Islamic Civilization I','009271','CULANTH','256','0','0','0',0,0,0,0,0,0,0,0)
-,('Islamic Civilization II','009272','CULANTH','257','0','0','1',0,0,0,0,0,0,0,0)
-,('Our Culinary Cultures','019057','CULANTH','258S','0','0','1',0,0,0,0,0,0,0,0)
-,('Music in South Asia','014340','CULANTH','259','0','0','1',0,0,0,0,0,0,0,0)
-,('Around the Bloc: Cold War Culture in the USSR and Eastern Europe','022997','CULANTH','259S','0','0','1',0,0,0,0,0,0,0,0)
-,('Race','Genomics','and Society','019367','CULANTH','261D','0',0,0,0,0,0,0,0,0)
-,('Race','Genomics','and Society','019367','CULANTH','261D','0',0,0,0,0,0,0,0,0)
-,('Documenting Black Experiences','020222','CULANTH','262S','0','0','0',0,0,0,0,0,0,0,0)
-,('Black Europe: Race','Ethnicity and Diaspora in Contemporary Europe','021218','CULANTH','263','0','0',1,0,0,0,0,0,0,0)
-,('Culture and Politics in Contemporary Europe: Citizenship','Migration','and National Belonging','012560','CULANTH','265','0',0,1,0,0,0,0,0,0)
-,('Black Gods and Kings: Priests and Practices of the Afro-Atlantic Religions','009281','CULANTH','269','0','0','1',0,0,0,0,0,0,0,0)
-,('Gender and Culture','001879','CULANTH','271','0','0','1',0,0,0,0,0,0,0,0)
-,('Advertising and Masculinity','013831','CULANTH','272S','0','0','1',0,0,0,0,0,0,0,0)
-,('The Middle East Through Film','023843','CULANTH','273','0','0','1',0,0,0,0,0,0,0,0)
-,('Sex/Gender - Nature/Nurture: Intersections of Biology and Society','022838','CULANTH','278','0','0','0',0,0,0,0,0,0,1,0)
-,('Ethics of Ethnography: In the Field and on the Page','025420','CULANTH','280S','0','0','0',0,0,0,1,0,0,0,0)
-,('Ritual','Performance','and Religion','023535','CULANTH','284','0',0,1,0,0,0,0,0,0)
-,('Current Issues in Anthropology','001946','CULANTH','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Special Topics in Cultural Anthropology','001864','CULANTH','290A','0','0','0',0,0,0,0,0,0,0,0)
-,('Current Issues in Anthropology','001947','CULANTH','290S','0','0','0',0,0,0,0,0,0,0,0)
-,('Anthropology of Childhood','024226','CULANTH','295S','0','0','1',0,0,0,0,0,0,0,0)
-,('Theoretical Foundations of Cultural Anthropology','001954','CULANTH','301','0','0','1',0,0,0,0,0,0,0,0)
-,('Fieldwork Methods: Cultural Analysis and Interpretation','015745','CULANTH','302','0','0','0',0,0,0,1,0,0,0,0)
-,('Theory Today: Introduction to the Study of Literature','020179','CULANTH','303S','0','0','0',0,0,0,0,0,0,0,0)
-,('White People: In Anthropological Perspective','024156','CULANTH','305S','0','0','0',0,0,0,0,0,0,0,0)
-,('Health','Culture','and the Latino Community','015778','CULANTH','306','0',0,0,0,0,0,0,0,0)
-,('Development and Africa','000041','CULANTH','307','0','0','1',0,0,0,0,0,0,0,0)
-,('BorderWork(s): At Home/On the Wall: between Belfast and Durham','021087','CULANTH','308T','0','0','1',0,0,0,0,0,0,0,0)
-,('Food and the Body','021793','CULANTH','309S','0','0','1',0,0,0,0,0,0,0,0)
-,('Conflict Analysis in Africa (Case Studies)','022147','CULANTH','310S','0','0','0',0,0,0,0,0,0,0,0)
-,('Dancing States of Mind: The Self','Social and Political Practice of Dance','024428','CULANTH','311S','0','0',0,0,0,0,0,0,1,0)
-,('War and Public Health in Africa','023220','CULANTH','312','0','0','0',0,0,0,0,0,0,0,0)
-,('Africa','Youth and Democracy','023659','CULANTH','315','0','0',1,0,0,0,0,0,0,0)
-,('Breakdancers','Vocaloids and Gamers: East Asian Youth Culture','023287','CULANTH','316S','0','0',1,0,0,0,0,0,0,0)
-,('The Modern Caribbean after Emancipation','021059','CULANTH','322','0','0','1',0,0,0,0,0,0,0,0)
-,('Pilgrimage','023566','CULANTH','327S','0','0','1',0,0,0,0,0,0,0,0)
-,('Narratives of Migration','025338','CULANTH','330S','0','0','1',0,0,0,0,0,0,0,0)
-,('Race in Durham','021344','CULANTH','332S','0','0','0',0,0,0,0,0,0,0,0)
-,('The Wire','020750','CULANTH','333S','0','0','1',0,0,0,0,0,0,0,0)
-,('The History of Hip-Hop','022531','CULANTH','335','0','0','1',0,0,0,0,0,0,0,0)
-,('Hollywood and Africa: Case Studies in Filmic Representation','023219','CULANTH','336','0','0','1',0,0,0,0,0,0,0,0)
-,('Anthropology and Public Policy','020831','CULANTH','340','0','0','0',0,0,0,1,0,0,0,0)
-,('Life and Death: Global Perspectives','021082','CULANTH','341','0','0','1',0,0,0,0,0,0,0,0)
-,('Displacements: Migration and Human Trafficking','022165','CULANTH','342','0','0','0',0,0,0,0,0,0,0,0)
-,('Themes in Chinese Culture and History','001935','CULANTH','343A','0','0','1',0,0,0,0,0,0,0,0)
-,('Troubling Pasts: Slavery','Genocide','and Terror','022157','CULANTH','344','0',0,1,0,0,0,0,0,0)
-,('Energy Futures and Environmental Justice','024154','CULANTH','345S','0','0','0',0,0,0,0,0,0,0,0)
-,('The Connection between Human Rights','Memory and How Societies Create Memorials','024194','CULANTH','346S','0','0',0,0,0,0,0,0,0,0)
-,('The University as a Culture: A Survivor''s Guide','024418','CULANTH','347S','0','0','0',0,0,0,0,0,0,0,0)
-,('Memory Bandits: Human Rights','Duke''s History and a Plan to Expand History-Telling','024468','CULANTH','347T','0','0',0,0,0,0,0,0,0,0)
-,('The Politics of Salsa: Music','Urban Spaces and Globalization','025215','CULANTH','348A','0','0',1,0,0,0,0,0,0,0)
-,('Anthropology of Money','024695','CULANTH','350','0','0','1',0,0,0,0,0,0,0,0)
-,('From Enlightenment Culture to Popular Culture','024651','CULANTH','352A','0','0','1',0,0,0,0,0,0,0,0)
-,('Global Apple: Life and Death and the Digital Revolution','025347','CULANTH','360S','0','0','0',0,0,0,1,0,0,0,0)
-,('Minor Japan','021854','CULANTH','364S','0','0','1',0,0,0,0,0,0,0,0)
-,('Mayas','Aztecs and Incas: The World According to the Indigenous People of Latin America','019872','CULANTH','367D','0','0',0,0,0,0,1,0,0,0)
-,('Mayas','Aztecs','and Incas: The World According to the Indigenous People of Latin America','020117','CULANTH','367S','0',0,0,0,0,0,1,0,0)
-,('Visualizing the Caribbean','022532','CULANTH','368','0','0','1',0,0,0,0,0,0,0,0)
-,('Transnational Muslims in Germany: Politics of Migration','Religion','and Culture','025261','CULANTH','382SA','0',0,1,0,0,0,0,0,0)
-,('Cities and City Life in Italy','014666','CULANTH','383','0','0','1',0,0,0,0,0,0,0,0)
-,('Cities and City Life in Italy','023934','CULANTH','383A','0','0','1',0,0,0,0,0,0,0,0)
-,('Back in the U.S.S.R.: Everyday Soviet Culture','1956-1989','009654','CULANTH','388S','0','0',1,0,0,0,0,0,0,0)
-,('Food','Culture','and Society','025246','CULANTH','389S','0',0,1,0,0,0,0,0,0)
-,('Duke-Administered Study Abroad: Special Topics in Cultural Anthropology','023347','CULANTH','390SA','0','0','0',0,0,0,0,0,0,0,0)
-,('Environment','Health','and Development in China','020240','CULANTH','395S','0',0,1,0,0,0,0,0,0)
-,('Health Policy in Transition: Challenges for China','020270','CULANTH','396AS','0','0','1',0,0,0,0,0,0,0,0)
-,('Language in Immigrant America','021084','CULANTH','397S','0','0','0',0,0,0,0,0,0,0,0)
-,('Global Russia','020278','CULANTH','399','0','0','1',0,0,0,0,0,0,0,0)
-,('Global Russia','023884','CULANTH','399A','0','0','1',0,0,0,0,0,0,0,0)
-,('Politics and Obligations of Memory','020049','CULANTH','403S','0','0','0',0,0,0,0,0,0,0,0)
-,('Surviving Globalization: The Global South and the Development Imagination','024244','CULANTH','409','0','0','1',0,0,0,0,0,0,0,0)
-,('Research in Human Rights','022361','CULANTH','414S','0','0','1',0,0,0,0,0,0,0,0)
-,('Interethnic Intimacies: Production and Consumption','022582','CULANTH','415S','0','0','1',0,0,0,0,0,0,0,0)
-,('The Middle East: From Facebook to Film','001955','CULANTH','417S','0','0','1',0,0,0,0,0,0,0,0)
-,('Global Environmentalism and the Politics of Nature','013132','CULANTH','419S','0','0','1',0,0,0,0,0,0,0,0)
-,('Myth','Ritual','Symbol','015488','CULANTH','422','0',0,1,0,0,0,0,0,0)
-,('Medical Anthropology','017935','CULANTH','424','0','0','0',0,0,0,1,0,0,0,0)
-,('Medical Anthropology','018531','CULANTH','424-1','0','0','1',0,0,0,0,0,0,0,0)
-,('Globalization and Anti-Globalization','016053','CULANTH','425','0','0','1',0,0,0,0,0,0,0,0)
-,('Gender and Sexuality in Latin America','015192','CULANTH','429','0','0','1',0,0,0,0,0,0,0,0)
-,('Global Tibet','021347','CULANTH','431S','0','0','1',0,0,0,0,0,0,0,0)
-,('Gender','Sex and Citizenship','020755','CULANTH','432S','0','0',0,0,0,0,0,0,0,0)
-,('The New Middle East','022461','CULANTH','433','0','0','1',0,0,0,0,0,0,0,0)
-,('Cultures of New Media','021120','CULANTH','434S','0','0','0',0,0,0,0,0,0,1,0)
-,('Techno-Orientalism: Asian/America','(Post)Human and Science Fiction','024757','CULANTH','438S','0','0',0,0,0,0,0,0,0,0)
-,('Games and Culture: Politics','Pleasure and Pedagogy','024157','CULANTH','440S','0','0',1,0,0,0,0,0,0,0)
-,('The Global Caribbean','024698','CULANTH','450S','0','0','1',0,0,0,0,0,0,0,0)
-,('Global Cities','021345','CULANTH','465S','0','0','1',0,0,0,0,0,0,0,0)
-,('Capstone: Research in Human Rights','025138','CULANTH','470S','0','0','0',0,0,0,0,0,0,0,0)
-,('Two Koreas: History','Society and Culture','017073','CULANTH','473','0','0',1,0,0,0,0,0,0,0)
-,('Living','Dying','Healing in Russia','024120','CULANTH','481','0',0,1,0,0,0,0,0,0)
-,('Special Topics','021753','CULANTH','490S','0','0','0',0,0,0,0,0,0,0,0)
-,('Latino/as in the Global South Capstone - Global/Local Contexts','020494','CULANTH','495S','0','0','1',0,0,0,0,0,0,0,0)
-,('Senior Seminar Distinction Program Sequence','001960','CULANTH','498S','0','0','0',0,0,0,0,0,1,0,0)
-,('Senior Seminar Distinction Program Sequence','001961','CULANTH','499S','0','0','0',0,0,0,0,0,0,0,1)
-,('Traditions in Documentary Studies','014970','DOCST','101','0','0','1',0,0,0,0,0,0,0,0)
-,('The Documentary Experience: A Video Approach','008062','DOCST','105S','0','0','0',0,0,0,0,0,1,0,0)
-,('History of Documentary Film','025329','DOCST','107A','0','0','1',0,0,0,0,0,0,0,0)
-,('Introduction to Oral History','016078','DOCST','110S','0','0','0',0,0,0,0,0,1,0,0)
-,('Documentary Writing: Creative Nonfiction Through Fieldwork','018287','DOCST','111S','0','0','0',0,0,0,0,0,1,0,0)
-,('Introduction to Black and White Photography','013815','DOCST','115S','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Digital Photography','023907','DOCST','119S','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Audio Documentary','016428','DOCST','135S','0','0','0',0,0,0,0,0,1,0,0)
-,('Borderline Humans: How Walls (and Bridges) Define Us','021552','DOCST','153FS','0','0','1',0,0,0,0,0,0,0,0)
-,('GTWY SEM: What Did Your Grandparents Do? A Global Exploration of Individual Life Histories','024386','DOCST','159S','0','0','1',0,0,0,0,0,0,0,0)
-,('Capturing the City: Documentary Photography in Berlin','023919','DOCST','171SA','0','0','1',0,0,0,0,0,0,0,0)
-,('Special Topics','021777','DOCST','190S','0','0','0',0,0,0,0,0,0,0,0)
-,('The Photobook: History \u0026 Practice','020128','DOCST','196FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Children and the Experience of Illness','015760','DOCST','202S','0','0','0',0,0,0,0,0,0,0,0)
-,('Documenting the Middle East: Community and Oral History','024709','DOCST','204FS','0','0','0',0,0,0,0,0,0,0,0)
-,('Medicine and the Vision of Documentary Photography','016079','DOCST','206S','0','0','0',0,0,0,0,0,0,0,0)
-,('Digital Documentary Photography: Education','Childhood','and Growth','024221','DOCST','209FS','0',0,0,0,0,0,1,0,0)
-,('Digital Documentary Photography: Education','Childhood','and Growth','017875','DOCST','209S','0',0,0,0,0,0,0,0,0)
-,('Documentary Photography and the Southern Culture Landscape','000977','DOCST','215S','0','0','1',0,0,0,0,0,0,0,0)
-,('Alternative Photographic Processes','016425','DOCST','218S','0','0','0',1,0,0,0,0,0,0,0)
-,('Visual Research and the American Dream','017089','DOCST','221S','0','0','0',0,0,0,0,0,1,0,0)
-,('The Photographic Portfolio','018222','DOCST','222S','0','0','0',0,0,0,0,0,0,0,0)
-,('Children''s Self Expression: Literacy Through Photography','013031','DOCST','224S','0','0','0',0,0,0,1,0,0,0,0)
-,('Sociology through Photography','016077','DOCST','227S','0','0','0',0,0,0,0,0,0,0,0)
-,('Small Town USA: Local Collaborations','018247','DOCST','230S','0','0','1',0,0,0,0,0,0,0,0)
-,('Color Photography: Fieldwork and Digital Color','017356','DOCST','236S','0','0','0',0,0,0,0,0,0,0,0)
-,('Dance for the Camera','020113','DOCST','242S','0','0','0',0,0,0,0,0,1,0,0)
-,('Introduction to Film Studies','003845','DOCST','264','0','0','0',0,0,0,0,0,0,0,0)
-,('Contemporary Documentary Film: Filmmakers and the Full Frame Documentary Film Festival','017078','DOCST','270','0','0','1',0,0,0,0,0,0,0,0)
-,('Public Policy Video','020829','DOCST','271S','0','0','0',0,0,0,0,0,0,0,0)
-,('Documentary and Policy: How Documentary Influences Policy','021119','DOCST','272S','0','0','0',0,0,0,0,0,0,0,0)
-,('The Middle East Through Film','023843','DOCST','274','0','0','1',0,0,0,0,0,0,0,0)
-,('The Documentary Essay: Exploration','Research','and the Peripatetic Tradition in Documentary Writing','022841','DOCST','275S','0',0,0,0,0,0,0,0,1)
-,('Writing American Politics','024716','DOCST','276S','0','0','0',0,0,0,1,0,0,0,0)
-,('Sound for Film and Video','004562','DOCST','277S','0','0','0',0,0,0,0,0,0,1,0)
-,('Producing Docu-Fiction','020227','DOCST','278S','0','0','0',0,0,0,0,0,0,0,0)
-,('Docu-Poetry: Real Life Truths Outside and Inside the Poetic Narrative','024155','DOCST','279S','0','0','0',0,0,0,1,0,0,0,0)
-,('Matters of Life and Death','021783','DOCST','280S','0','0','1',0,0,0,0,0,0,0,0)
-,('Visiting Filmmaker Master Course: Special Topics','020788','DOCST','285','0','0','0',0,0,0,0,0,0,0,0)
-,('Visiting Filmmaker Master Courses: Special Topics','018106','DOCST','285S','0','0','0',1,0,0,0,0,0,0,0)
-,('Editing for Film and Video','020226','DOCST','288S','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Documentary Studies','021081','DOCST','290','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Documentary Studies: Study Abroad','024815','DOCST','290A','0','0','0',0,0,0,0,0,0,0,0)
-,('Special Topics in Documentary Studies','014972','DOCST','290S','0','0','0',0,0,0,0,0,0,0,0)
-,('Arts Entrepreneurship','023901','DOCST','295S','0','0','0',0,0,0,0,0,0,0,0)
-,('History of Photography','1839 to the Present','000638','DOCST','303','0','0',1,0,0,0,0,0,0,0)
-,('The Short Audio Documentary','017152','DOCST','310S','0','0','0',0,0,0,0,0,1,0,0)
-,('Documentary Writing Workshop','021067','DOCST','311S','0','0','0',0,0,0,0,0,1,0,0)
-,('Documentary Video Production Workshop','023870','DOCST','312S','0','0','0',0,0,0,0,0,0,0,0)
-,('Activating the Archive: Archival Research as Documentary Practice','023605','DOCST','316S','0','0','0',0,0,0,1,0,0,0,0)
-,('Veterans Oral History Project','021903','DOCST','317S','0','0','0',0,0,0,0,0,0,0,0)
-,('Photo Workshop','022451','DOCST','318S','0','0','0',0,0,0,0,0,0,0,0)
-,('Advanced Documentary Photography','008132','DOCST','319S','0','0','0',0,0,0,0,0,0,0,0)
-,('Documenting Black Power: Writing the History of the African American Freedom Struggle','017407','DOCST','320S','0','0','0',0,0,0,0,0,0,0,0)
-,('Refugee Lives: Violence','Culture and Identity','023313','DOCST','321S','0','0',0,0,0,0,0,0,0,0)
-,('American Independent Cinema','022872','DOCST','322S','0','0','1',0,0,0,0,0,0,0,0)
-,('Documenting Black: Tales Along the Color Line','1865 - 2004','022121','DOCST','324S','0','0',1,0,0,0,0,0,0,0)
-,('The South in Black and White','017885','DOCST','326','0','0','0',0,0,0,0,0,0,0,0)
-,('Pilgrimage','023566','DOCST','327S','0','0','1',0,0,0,0,0,0,0,0)
-,('Historical Documentary Production','024422','DOCST','329S','0','0','0',0,0,0,1,0,0,0,0)
-,('Farmworkers in North Carolina: Roots of Poverty','Roots of Change','014927','DOCST','332S','0','0',0,0,0,0,0,0,0,0)
-,('Who Cares and Why: Social Activism and its Motivations','015530','DOCST','335S','0','0','0',0,0,0,0,0,0,0,0)
-,('Unraveling Paradise: Examining the Mythical Ideal Through Art and Documentary of the Caribbean','025058','DOCST','336S','0','0','1',0,0,0,0,0,0,0,0)
-,('Articles of Truth: Creating Culture through Multimedia','025074','DOCST','337S','0','0','1',0,0,0,0,0,0,0,0)
-,('Our Culinary Cultures','019057','DOCST','344S','0','0','1',0,0,0,0,0,0,0,0)
-,('Civil/Human Rights Activism: In the Spirit of Pauli Murray','020146','DOCST','347S','0','0','0',0,0,0,0,0,0,0,0)
-,('Documenting Black Experiences','020222','DOCST','350S','0','0','0',0,0,0,0,0,0,0,0)
-,('Documentary Biography','021781','DOCST','351S','0','0','0',0,0,0,0,0,1,0,0)
-,('Documentary Publishing from Gutenberg to the Web: The Vanishing Point Course','022529','DOCST','352S','0','0','1',0,0,0,0,0,0,0,0)
-,('Web Design and Narrative: Artists','Documentarians','Art Historians','and Entrepreneurs','023531','DOCST','354S',0,0,0,0,0,0,0,0)
-,('Documentary Engagement Through Field-Based Projects','018567','DOCST','355S','0','0','0',0,0,0,0,0,0,0,0)
-,('Magazine Journalism','012997','DOCST','356S','0','0','0',0,0,0,0,0,0,0,0)
-,('16mm Film Production','020225','DOCST','357S','0','0','0',0,0,0,0,0,0,0,0)
-,('Introduction to Global Los Angeles: An Interdisciplinary Survey','020567','DOCST','359A','0','0','0',0,0,0,0,0,0,0,0)
-,('Multimedia Documentary: Editing','Production','and Publication','018788','DOCST','360S','0',0,0,0,0,0,0,0,0)
-,('Photographic Memory: Photo Albums','Photobooks','\u0026 Zines','023871','DOCST','361S','0',0,0,0,0,0,0,0,0)
-,('Activism','Women','and Danger: Documenting Race','Gender and Activism in the American South','022549','DOCST','362S',0,0,0,0,0,0,0,0)
-,('The Autobiographical Impulse in Photography','023564','DOCST','363S','0','0','0',0,0,0,1,0,0,0,0)
-,('The Art of the Interview: Questions and Answers as a Tool of Journalistic Inquiry','023916','DOCST','364S','0','0','0',0,0,0,0,0,1,0,0)
-,('The Documentary Turn: Southern Culture','024102','DOCST','365S','0','0','0',0,0,0,1,0,0,0,0)
-,('Human Rights and Documentary: Aesthetics','Ethics','History','025095','DOCST','366S','0',0,0,0,0,0,0,0,0)
-,('Video Journalism','012996','DOCST','367S','0','0','0',0,0,0,0,0,0,0,0)
-,('Advanced Multimedia Production','024113','DOCST','369S','0','0','0',0,0,0,0,0,0,1,0)
-,('News as a Moral Battleground','014156','DOCST','371','0','0','0',0,0,0,0,0,0,0,0)
-,('Recycled Cinema','025281','DOCST','375S','0','0','0',0,0,0,0,0,0,0,0)
-,('Filming Art','024365','DOCST','451S','0','0','0',0,0,0,0,0,0,0,0)
-,('Advanced Documentary Filmmaking','016424','DOCST','470S','0','0','0',0,0,0,0,0,0,0,0)
-,('Archiving and Visualizing Asia: Politics and Poetics of Knowledge Production','025066','DOCST','476S','0','0','1',0,0,0,0,0,0,0,0)
-,('Capstone Seminar in Documentary Studies','015209','DOCST','480S','0','0','0',0,0,0,0,0,1,0,0)
-,('Special Topics in Documentary Studies','023982','DOCST','490','0','0','0',0,0,0,0,0,0,0,0)
-,('Independent Study in Documentary Studies','023158','DOCST','491','0','0','0',0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Arabic',000513,'ARABIC','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Media Arabic I: Arabic in Media and Documentary Film',000527,'ARABIC','281',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Media Arabic II',021898,'ARABIC','283',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Levantine Arabic: Dardasha Shamiyyah',022530,'ARABIC','287',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conversational Egyptian Arabic',023314,'ARABIC','288',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Administered Study Abroad: Special Topics in Arabic',022670,'ARABIC','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Arabic Dialect in Music',021899,'ARABIC','295',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dardasha Arabiyyah: Moroccan Dialect and Culture',023291,'ARABIC','296A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Levantine Arabic Language and Culture',024424,'ARABIC','304',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Arabic',000516,'ARABIC','305',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Arabic',000517,'ARABIC','306',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Literary Islam',022878,'ARABIC','328S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',000526,'ARABIC','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Arabic Language and Literature I',000524,'ARABIC','407',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Arabic Language and Literature II',000525,'ARABIC','408',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Arabic Language \u0026 Literature',021900,'ARABIC','489',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Art',000536,'ARTHIST','101D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to World Art History from 1200 to the Present',000538,'ARTHIST','102D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Art',000538,'ARTHIST','102D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Exploring Art and Architecture - Foundations and Histories',023565,'ARTHIST','104',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Cultures',006622,'ARTHIST','121',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Renaissance Cultures',006623,'ARTHIST','152',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Pre-Modern Architecture',025249,'ARTHIST','184D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Languages of Art',019809,'ARTHIST','185FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Art History',000534,'ARTHIST','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Art History',018085,'ARTHIST','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Art History',017188,'ARTHIST','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Etruscans: Myth Archaeology and Civilization',023827,'ARTHIST','196',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Imagining Europe: Arts Culture Politics',011802,'ARTHIST','202',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Aegean Bronze Age',002786,'ARTHIST','205',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Early Greek Archaeology: From the Fall of Mycenae to the Persian Wars',002762,'ARTHIST','206',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Greek Archaeology Archaic to Classical',002763,'ARTHIST','207',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art and Archaeology of Ancient Athens',015846,'ARTHIST','208',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Art of Greece and Rome',000563,'ARTHIST','210',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Feminist Art from the 1970s to the Present',023316,'ARTHIST','213S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Representations of Women in the Classical World',000546,'ARTHIST','215S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Representing Women in the Classical World',000546,'ARTHIST','215S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Museum Theory and Practice',017082,'ARTHIST','220',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Museum Theory and Practice',017082,'ARTHIST','220',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Museum Object: Art and Artifact on Display',024143,'ARTHIST','221S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History and Theory of Curatorial Practice',024153,'ARTHIST','222S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Architecture',000551,'ARTHIST','226',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Performance',021055,'ARTHIST','229',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Art Markets',000587,'ARTHIST','231',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Art Markets',024401,'ARTHIST','231D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Japanese Art 1600 to the Present',000616,'ARTHIST','232',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Japanese Architecture',013522,'ARTHIST','234',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Science Fiction Film',006449,'ARTHIST','238',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Archaeology: Origins to Empire',023216,'ARTHIST','246',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Modern Latin American Art and Visual Culture',021653,'ARTHIST','250D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art and Christianity: A History of Christian Visual Culture',024371,'ARTHIST','251',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Renaissance Architecture: A European Perspective',023222,'ARTHIST','254',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art in Renaissance Italy',015180,'ARTHIST','255',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Renaissance and Baroque Art History',000577,'ARTHIST','255A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art in Renaissance Italy',024712,'ARTHIST','255FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Baroque Art',024159,'ARTHIST','256',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Renaissance Architecture in Italy: Brunelleschi to Michelangelo',000585,'ARTHIST','258',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Renaissance Architecture in Italy: Brunelleschi to Michelangelo',020236,'ARTHIST','258FS',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French Art and Visual Culture in the Early Modern Period',000589,'ARTHIST','260',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Contemporary Art Market',003297,'ARTHIST','261',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Netherlandish Art in a European Context',000592,'ARTHIST','262A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Netherlandish Art in a European Context',000593,'ARTHIST','263A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drawing Foundations in Early Modern Europe',025272,'ARTHIST','265',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drawing Foundations in Early Modern Europe',025272,'ARTHIST','265',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art \u0026 Architecture in Early Modern France',023889,'ARTHIST','268',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reconstructing Ancient Worlds',022171,'ARTHIST','275LS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('European Art 1760-1850',000595,'ARTHIST','278',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('European Art 1850-1900',000600,'ARTHIST','279',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('European Art 1900-1945',000601,'ARTHIST','280',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African American Art',000610,'ARTHIST','283',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Political History of Modern Architecture: From Revolution through Neoliberalism',025018,'ARTHIST','284',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Architecture',017530,'ARTHIST','285',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Architecture',016047,'ARTHIST','285D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Architecture',024110,'ARTHIST','286',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Art and Politics: 1800-Present',009676,'ARTHIST','287',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dada and Surrealism',000626,'ARTHIST','288',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Soviet Art after Stalin: 1956-1991',020168,'ARTHIST','289S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Art History',021438,'ARTHIST','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Medieval Art and Architecture',000569,'ARTHIST','290-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Italian Art and Architecture',000570,'ARTHIST','290A-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Art History',023238,'ARTHIST','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Berlin: Architecture Art and the City 1871-Present',000629,'ARTHIST','296A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Impressionism',000621,'ARTHIST','298',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Photography 1839 to the Present',000638,'ARTHIST','303',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cubism and Culture',000637,'ARTHIST','304',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Virtual Museums: Theories and Methods of 21st-Century Museums',022830,'ARTHIST','305L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Museum Internship I',002789,'ARTHIST','310',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Museum Internship II',021771,'ARTHIST','311',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mapping History with Geographic Information Systems',024150,'ARTHIST','315',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Body in Art in Early Modern Europe: Power and Limits of Corporeal Representations',025000,'ARTHIST','317',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Netherlandish Art and Visual Culture in the Seventeenth and Eighteenth Centuries',000586,'ARTHIST','337',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Sculpture',022780,'ARTHIST','340S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art Cultural Identity Social Change: Political History of Cont Spanish Art: Goya to Global Society',024352,'ARTHIST','341A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conservation and Management of the Material Heritage',025494,'ARTHIST','343SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Art: From Royal Court to Contemporary Marketplace',025254,'ARTHIST','345',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Coinage: The Materiality of an Ancient Economy',023208,'ARTHIST','347',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Representing the Artist in Film and Popular Culture',022769,'ARTHIST','350',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Art History I: New Representational Technologies',023537,'ARTHIST','354SL',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Art Since 1945',000602,'ARTHIST','381D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Art Since 1945',024658,'ARTHIST','381S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Black Atlantic',000608,'ARTHIST','383',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Art History',021311,'ARTHIST','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Renaissance Art',000573,'ARTHIST','390-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Art History',000594,'ARTHIST','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Art History',016844,'ARTHIST','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Art History and Digital Visualization',022017,'ARTHIST','390SL',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',024780,'ARTHIST','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',024960,'ARTHIST','392',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',025021,'ARTHIST','393',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',025022,'ARTHIST','394',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art History Methodology and Theory',025036,'ARTHIST','395S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From the Art of the Pleasure Quarters to Tokyo Pop',023525,'ARTHIST','432S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Photography in the Americas: War Tourism Art and Protest',010104,'ARTHIST','433S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Art History II: New Representational Technologies Advanced',023543,'ARTHIST','454SL',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Curatorial Practicum: Exhibition Development and Design',023524,'ARTHIST','455S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World War I and the History of Art \u0026 Architecture: Germany and Beyond',025273,'ARTHIST','460S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone in Art History',023523,'ARTHIST','489S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Twentieth-Century Art (TOP)',014949,'ARTHIST','490-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Contemporary Art',014950,'ARTHIST','490-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics',020223,'ARTHIST','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Thesis Workshop',023527,'ARTHIST','495S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',022524,'BIOCHEM','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Applied Biochemistry',022820,'BIOCHEM','401',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('General Biology',001448,'BIOLOGY','20',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Evolutionary Genomics: Who Are We Where Have We Been and Where Are We Going?',024138,'BIOLOGY','128FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genomics of Host-Microbe Interactions: The Symbiotic Web',022215,'BIOLOGY','148FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ecosystem Health and Human Well-Being',001459,'BIOLOGY','153',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('AIDS and Other Emerging Diseases',012940,'BIOLOGY','154',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Dynamic Oceans',001465,'BIOLOGY','157',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Plants and Human Use',001470,'BIOLOGY','158',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Plants of Duke Campus',021395,'BIOLOGY','161',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Evolution of Life',022930,'BIOLOGY','162',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Diseases',017088,'BIOLOGY','180FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Biology',023349,'BIOLOGY','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Biology',001464,'BIOLOGY','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Topics in Biology',001472,'BIOLOGY','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Modern Biology',017076,'BIOLOGY','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Biological Thinking',023577,'BIOLOGY','199D',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway to Biology: Molecular Biology',020037,'BIOLOGY','201L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway to Biology: Molecular Biology',020037,'BIOLOGY','201L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway to Biology: Molecular Biology',021396,'BIOLOGY','201LA',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway to Biology: Genetics and Evolution',001477,'BIOLOGY','202L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway to Biology: Genetics and Evolution',001477,'BIOLOGY','202L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway to Biology: Genetics and Evolution',023318,'BIOLOGY','202LA',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Megafauna',017413,'BIOLOGY','205',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organismal Diversity',020061,'BIOLOGY','206L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organismal Evolution',020271,'BIOLOGY','207',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Ecology of Human Health',023578,'BIOLOGY','209-1',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ecology for a Crowded Planet',001486,'BIOLOGY','209D-2',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('General Microbiology',001478,'BIOLOGY','212L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cell Signaling and Diseases',001495,'BIOLOGY','213D',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Mathematical Modeling in Biology',012941,'BIOLOGY','215',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Modeling in Mathematical Biology',021046,'BIOLOGY','215L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Clocks: How Organisms Keep Time',023236,'BIOLOGY','218',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Clocks: How Organisms Keep Time',023236,'BIOLOGY','218',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cell Biology',001494,'BIOLOGY','220',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Developmental Biology: Development Stem Cells and Regeneration',024979,'BIOLOGY','221D',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Developmental Biology: Development Stem Cells and Regeneration',024979,'BIOLOGY','221D',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cellular and Molecular Neurobiology',019566,'BIOLOGY','223',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Neuroscience',008825,'BIOLOGY','224D',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Neuroscience',008825,'BIOLOGY','224D',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production',021346,'BIOLOGY','228',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production',025259,'BIOLOGY','228S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production',025259,'BIOLOGY','228S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Evolution of Animal Form',001496,'BIOLOGY','248',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Evolution of Animal Form',015485,'BIOLOGY','248-1',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Population Genetics',012942,'BIOLOGY','250',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Biology',014767,'BIOLOGY','255',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genetics and Genomics of Human Variation',025438,'BIOLOGY','260S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Genomics and Society',019367,'BIOLOGY','261D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('People Plants and Pollution: Introduction to Urban Environments',020046,'BIOLOGY','262',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Responses to Climate Change',021815,'BIOLOGY','263',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Responses to Climate Change',021815,'BIOLOGY','263',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Ecology and the Evolution of Animal Behavior',012500,'BIOLOGY','267D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conservation Biology and Policy',001483,'BIOLOGY','270A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Analysis of Ocean Ecosystems',001498,'BIOLOGY','272A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Ecology',001504,'BIOLOGY','273LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology for Engineers: Informing Engineering Decisions',020455,'BIOLOGY','275A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Physiology of Marine Animals',001520,'BIOLOGY','278LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biodiversity of Alaska',023322,'BIOLOGY','287A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biogeography in an Australian Context',001475,'BIOLOGY','288A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Biology',017256,'BIOLOGY','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminar in Biology',001547,'BIOLOGY','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tutorial',023990,'BIOLOGY','290T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',021386,'BIOLOGY','293A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Data Analysis',021047,'BIOLOGY','304',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Evolutionary Genetics',021772,'BIOLOGY','310',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Systems Biology: An Introduction for the Quantitative Sciences',018500,'BIOLOGY','311',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Coastal Watershed Science and Policy',023906,'BIOLOGY','319A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Sexuality',020458,'BIOLOGY','321D',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Neurons to Brain',021050,'BIOLOGY','322',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Technologies in Genomics and Precision Medicine',025322,'BIOLOGY','325',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Principles of Animal Physiology',017112,'BIOLOGY','329D',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Principles of Animal Physiology',017112,'BIOLOGY','329D',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Principles of Animal Physiology',001521,'BIOLOGY','329L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative and Functional Anatomy of the Vertebrates',001482,'BIOLOGY','330L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drones in Marine Biology Ecology and Conservation',024645,'BIOLOGY','335A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drones in Marine Biology Ecology and Conservation',024178,'BIOLOGY','335LA',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Plant Communities of North Carolina',016051,'BIOLOGY','341L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Plant Systematics and Evolution',001514,'BIOLOGY','342L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Plant Diversity: A Field Approach',020059,'BIOLOGY','344S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Symbiosis: From Organelles to Microbiomes',024350,'BIOLOGY','346',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Plants and People',025033,'BIOLOGY','347L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Herpetology',025003,'BIOLOGY','348LS',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Complex Traits and Evolutionary Genetics',015486,'BIOLOGY','350',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Complex Traits and Evolutionary Genetics',015486,'BIOLOGY','350',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Field Ecology',019728,'BIOLOGY','361LS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Experimental Physics',025137,'BIOLOGY','364L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Influenza A to Varicella Zoster: The Physiology Ecology and Evolution of Infectious Disease',019725,'BIOLOGY','365',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Deep-Sea Science and Environmental Management',025216,'BIOLOGY','368A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Oceanography',001489,'BIOLOGY','369LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sensory Physiology and Behavior of Marine Animals',013593,'BIOLOGY','373LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology and Conservation of Sea Turtles',016480,'BIOLOGY','375A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology and Conservation of Sea Turtles',001499,'BIOLOGY','375LA',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Mammals',001500,'BIOLOGY','376A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Invertebrate Zoology',001535,'BIOLOGY','377LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Integrative Neuroscience Laboratory',021061,'BIOLOGY','385L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Biology',001479,'BIOLOGY','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study: Advanced Topics',024306,'BIOLOGY','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study: Advanced Topics',024315,'BIOLOGY','391A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sensory Signal Transduction',015265,'BIOLOGY','412S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Experiments in Developmental and Molecular Genetics',017426,'BIOLOGY','414LS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Developmental and Stem Cell Biology Colloquium',012703,'BIOLOGY','415S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Developmental and Stem Cell Biology Colloquium',012703,'BIOLOGY','415S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Experimenting With and Writing About Molecules and Cells',001540,'BIOLOGY','416L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genetic Engineering and Biotechnology',012704,'BIOLOGY','417S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genetic Engineering and Biotechnology',012704,'BIOLOGY','417S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Biophysics',015222,'BIOLOGY','418',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Cell Cycle: Principles of Control',022142,'BIOLOGY','419S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cancer Genetics',018528,'BIOLOGY','420',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology of Nervous System Diseases',020040,'BIOLOGY','421S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biophysics II',023846,'BIOLOGY','425',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visual Processing',020485,'BIOLOGY','426S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Topics in Sensory Biology',020753,'BIOLOGY','427S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('How Organisms Move',024680,'BIOLOGY','429S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('How Organisms Move',024680,'BIOLOGY','429S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Embryology: Reproductive Biology in the 21st Century',017853,'BIOLOGY','431S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Climate Change in the Marine Environment',022956,'BIOLOGY','445A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genomics of Adaptation: A Modern Look at Evolution',023233,'BIOLOGY','450S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genomics of Adaptation: A Modern Look at Evolution',023233,'BIOLOGY','450S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genes \u0026 Development',020752,'BIOLOGY','452S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gene-Environment Interaction: Genes in an Ecological Context',021049,'BIOLOGY','453S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gene-Environment Interaction: Genes in an Ecological Context',021049,'BIOLOGY','453S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physiological Genetics of Disease',023280,'BIOLOGY','454S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics Seminar',001623,'BIOLOGY','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tutorial',001545,'BIOLOGY','490T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tutorial (Topics)',021453,'BIOLOGY','490TA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tutorial (Topics)',021449,'BIOLOGY','490TA-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study: Advanced Topics',023989,'BIOLOGY','491',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study: Advanced Topics',024185,'BIOLOGY','491A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Scientific Arguments: Writing an Undergraduate Thesis',019042,'BIOLOGY','495',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Instrumentation in the Developing World (GE)',022675,'BME','195FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Women''s Health Technologies',025173,'BME','230L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Quantitative Physiology with Biostatistical Applications',021163,'BME','244L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Safety of Medical Devices (GE)',001642,'BME','255',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modeling Cellular and Molecular Systems',013022,'BME','260L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Signals and Systems',001649,'BME','271',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Signals and Systems',024781,'BME','271A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Topics (GE)',018682,'BME','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Topics with Lab (GE)',023013,'BME','290L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bioelectricity (AC or GE)',001656,'BME','301L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Biomaterials and Biomechanics (AC or GE)',018813,'BME','302L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Diagnostic Imaging Systems (AC or GE)',001690,'BME','303L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transport Phenomena in Biological Systems (AC or GE BB)',001666,'BME','307',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transport Phenomena in Biological Systems (AC or GE BB)',001666,'BME','307',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Medical Instrumentation',015631,'BME','354L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics Seminar in BME',025016,'BME','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biomechanics and Vehicle Safety Engineering (DR)',021644,'BME','432L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biophotonic Instrumentation (DR)',017418,'BME','436L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Devices for People with Disabilities (DR)',001700,'BME','460L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Design for the Developing World (DR)',017434,'BME','462L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Instrument Design (DR)',001702,'BME','464L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Biomedical Engineering Design (DR)',022072,'BME','490L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering the Planet',025320,'CEE','132L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Environmental Engineering and Science',003749,'CEE','160L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Civil and Environmental Engineering',002123,'CEE','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Uncertainty Design and Optimization',002114,'CEE','201L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Practical Methods in Civil Engineering',016875,'CEE','205',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Civil and Environmental Engineering',023506,'CEE','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study in Civil and Environmental Engineering',023546,'CEE','291',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study in Civil and Environmental Engineering',023547,'CEE','292',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Civil and Environmental Engineering',023532,'CEE','293',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Civil and Environmental Engineering',023533,'CEE','294',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fluid Mechanics',002107,'CEE','301L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Soil Mechanics',002122,'CEE','302L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transport Phenomena in Biological Systems (AC or GE BB)',001666,'CEE','307',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Architectural Engineering I',002127,'CEE','311',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community',019092,'CEE','315',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community: Structural Focus',022961,'CEE','315-20',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community: Environmental Focus',022962,'CEE','315-60',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transportation Engineering',002104,'CEE','316',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hydrologic and Environmental Data Analysis',022832,'CEE','365',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Civil and Environmental Engineering',023541,'CEE','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Civil and Environmental Engineering',013111,'CEE','394',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Architectural Engineering II',002128,'CEE','411',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Matrix Structural Analysis',002116,'CEE','421L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Concrete and Composite Structures',002118,'CEE','422L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Metallic Structures',002120,'CEE','423L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Analytical and Computational Solid Mechanics',015242,'CEE','425',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Integrated Structural Design',002129,'CEE','429',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chemical Principles in Environmental Engineering',002105,'CEE','461L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Principles in Environmental Engineering',002111,'CEE','462L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Water Resources Engineering',002109,'CEE','463L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Integrated Environmental Design',014620,'CEE','469',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Civil and Environmental Engineering',002124,'CEE','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study in Civil and Environmental Engineering',002130,'CEE','491',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study in Civil and Environmental Engineering',002131,'CEE','492',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Civil and Environmental Engineering',013112,'CEE','493',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Civil and Environmental Engineering',013113,'CEE','494',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Core Concepts in Chemistry',019342,'CHEM','101DL',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Chemistry: Core Concepts in Context',019344,'CHEM','110DL',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Chemistry: Core Concepts in Context (Lab)',019406,'CHEM','110L9',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Chemistry and Physics of Cooking',024635,'CHEM','130L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chemistry Outreach: Sharing Chemistry with the Community',018705,'CHEM','180',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Chemistry',018809,'CHEM','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Chemistry',016746,'CHEM','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organic Chemistry I',002333,'CHEM','201DL',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organic Chemistry I at the Duke Marine Lab',025178,'CHEM','201DLA',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organic Chemistry Laboratory',013597,'CHEM','201L9',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organic Chemistry II',002338,'CHEM','202L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Applications of Chemical Principles',019343,'CHEM','210DL',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics In Chemistry',016776,'CHEM','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Research Independent Study',018704,'CHEM','295',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elements of Physical Chemistry',002350,'CHEM','301',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physical Chemistry Laboratory',002357,'CHEM','301L',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('How Does Biology Work? The Physical and Chemical Underpinnings of Biological Nanomachines',002363,'CHEM','302',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physical Chemistry I',002358,'CHEM','310',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physical Chemistry I Laboratory',002360,'CHEM','310L',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physical Chemistry II',002359,'CHEM','311',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physical Chemistry II Laboratory',002361,'CHEM','311L',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Analytical Chemistry',002327,'CHEM','401',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Analytical Chemistry Laboratory',002331,'CHEM','401L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Inorganic Chemistry',002323,'CHEM','410',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Laboratory Techniques',002364,'CHEM','420L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Graduation with Distinction in Chemistry',018033,'CHEM','496',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multi-Method Approaches to Social and Policy Research',019065,'CHILDPOL','241',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multi-Method Approaches to Social and Policy Research',022758,'CHILDPOL','241A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Child Policy Research',017911,'CHILDPOL','250S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Child Policy Research Topics',018255,'CHILDPOL','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',021101,'CHILDPOL','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multidisciplinary Approaches to Contemporary Children''s Issues',017869,'CHILDPOL','495S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('First-Year Chinese in Review I',023683,'CHINESE','105',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('First-Year Chinese in Review II',023270,'CHINESE','106',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate-Mid Chinese',024121,'CHINESE','205',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Progress in Chinese',002419,'CHINESE','223A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Progress in Chinese',002420,'CHINESE','224A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Chinese II',002425,'CHINESE','306',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business and Interculturality in the Chinese Society',024376,'CHINESE','321S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business and Interculturality in Chinese Society',024763,'CHINESE','321SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Progress in Chinese',002422,'CHINESE','325A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Progress in Chinese',002423,'CHINESE','326A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Chinese Society and Culture through New Media',024690,'CHINESE','331D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinese Translation and Interpretation',023534,'CHINESE','332',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Chinese in the Modern Context I',017083,'CHINESE','371S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',002452,'CHINESE','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Chinese Language and Society II',002443,'CHINESE','408S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Culture of Business and Economics in Chinese',024749,'CHINESE','421SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Advanced Chinese',002427,'CHINESE','427A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Advanced Chinese',002428,'CHINESE','428A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinese in the Humanities II',002448,'CHINESE','436S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aspects of Chinese Culture and Society',017943,'CHINESE','456',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Issues in Modern Chinese I',002430,'CHINESE','473A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Issues in Modern Chinese II',002431,'CHINESE','474A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Cultures',006622,'CLST','121',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Age of Warriors: Pre-Roman and Italian Archaeology',022462,'CLST','141',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Principles of Archaeology',002759,'CLST','144',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Etymology: The Greek and Latin Roots of English',024705,'CLST','151',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Liberty and Equality: Ancient and Modern Perspectives',023434,'CLST','170FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Birth of the West: Thinking about the Greek Origins of Western Civilization',023828,'CLST','171S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Greek Civilization',002723,'CLST','181S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Civilization',002726,'CLST','182S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient and Modern Liberty',018230,'CLST','186FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient and Medieval Epic',002746,'CLST','204',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Myth',023292,'CLST','208',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Virtual Museums: Theories and Methods of 21st-Century Museums',022830,'CLST','240L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Etruscans: Myth Archaeology and Civilization',023827,'CLST','241',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Representing Women in the Classical World',000546,'CLST','243',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Representations of Women in the Classical World',000546,'CLST','243S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Archaeology: Origins to Empire',023216,'CLST','246',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art and Archaeology of Ancient Athens',015846,'CLST','248',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Art of Greece and Rome',000563,'CLST','250',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reconstructing Ancient Worlds',022171,'CLST','252LS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Athletics',021993,'CLST','262',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Sexuality in the Ancient World',023442,'CLST','266',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Ancient Philosophy',007701,'CLST','271',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Democracy: Ancient and Modern',021996,'CLST','275',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Political Thought and Its Modern Legacy',024659,'CLST','278',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Greek History',002730,'CLST','283',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman History',002731,'CLST','284',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Classical Studies',002796,'CLST','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Classical Studies',022386,'CLST','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Classical Studies',022387,'CLST','290SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Landscape Archaeology and Cultural Landscapes',025251,'CLST','299L',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drama of Greece and Rome',002747,'CLST','304',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Greek Notions of Justice',024634,'CLST','312S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Self-Knowledge and the Pursuit of Wisdom',025280,'CLST','316S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mediterranean Cultures (Study Abroad)',002780,'CLST','320A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Historical Jesus',009235,'CLST','322',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art and Archaeology',002782,'CLST','341A-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Social and Cultural Context',002783,'CLST','341A-2',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conservation and Management of the Material Heritage',025494,'CLST','343SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Early Greek Archaeology: From the Fall of Mycenae to the Persian Wars',002762,'CLST','344',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Greek Archaeology Archaic to Classical',002763,'CLST','348',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Aegean Bronze Age',002786,'CLST','352',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Spectacle',000547,'CLST','354',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Coinage: The Materiality of an Ancient Economy',023208,'CLST','357',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History of the Book',023681,'CLST','360',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Political Theory',016472,'CLST','374',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminars in Classical Studies',002804,'CLST','480S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Research Seminars in Classical Studies',024340,'CLST','480S-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Classical Studies',020001,'CLST','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Computer Science',014361,'COMPSCI','101L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Constructing Immersive Virtual Worlds',018862,'COMPSCI','102S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computing and the Brain',024408,'COMPSCI','103L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Artificial Life Culture and Evolution',022020,'COMPSCI','107FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Information Society \u0026 Culture: Bass Connections Gateway',022156,'COMPSCI','110',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program: Topics in Computer Science',022265,'COMPSCI','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Computer Science',017545,'COMPSCI','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Data Structures and Algorithms',002598,'COMPSCI','201',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Everything Data',023264,'COMPSCI','216',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Computer Modeling',017878,'COMPSCI','224',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Discrete Math for Computer Science',015847,'COMPSCI','230',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computer Science Education Research',024220,'COMPSCI','249',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computer Architecture',017430,'COMPSCI','250D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Computational Genomics',015496,'COMPSCI','260',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Artificial Intelligence',002625,'COMPSCI','270',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Logic and Its Applications',006921,'COMPSCI','288',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Computer Science',002634,'COMPSCI','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Computer Science',014925,'COMPSCI','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Software Design and Implementation',002604,'COMPSCI','308',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Problem Solving Seminar',002618,'COMPSCI','309S',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Database Systems',015744,'COMPSCI','316',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematical Foundations of Computer Science',002616,'COMPSCI','334',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Technical and Social Analysis of Information and the Internet',014924,'COMPSCI','342S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computer Graphics',002612,'COMPSCI','344',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computer Network Architecture',003619,'COMPSCI','356',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elements of Machine Learning',025283,'COMPSCI','371D',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Delivering Software: From Concept to Client',021860,'COMPSCI','408',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topological Data Analysis',021375,'COMPSCI','434',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to High Dimensional Data Analysis',021376,'COMPSCI','445',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cultural Anthropology',001860,'CULANTH','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'CULANTH','104D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to African Studies (DS3 or DS4)',000082,'CULANTH','105',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Experience: A Video Approach',008062,'CULANTH','106S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Sustainable Development',024136,'CULANTH','107',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fantasy Mass Media and Popular Culture',001873,'CULANTH','108',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Enterprising Leadership and Civic Engagement',023568,'CULANTH','113FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Film',001868,'CULANTH','130',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World Music: Aesthetic and Anthropological Approaches',007099,'CULANTH','131',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Mbira Music: An Experiential Learning Class',017879,'CULANTH','133S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music Social Life and Scenes',007101,'CULANTH','137',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Israel/Palestine: Comparative Perspectives',023214,'CULANTH','148',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Food',024146,'CULANTH','150',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Borderline Humans: How Walls (and Bridges) Define Us',021552,'CULANTH','153FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advertising and Society: Global Perspective (DS4)',001876,'CULANTH','170',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business Anthropology: Anthropologists in the Workplace',025328,'CULANTH','171',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Introductory Special Topics in Cultural Anthropology',001855,'CULANTH','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Focus',018299,'CULANTH','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Cultural Anthropology',023825,'CULANTH','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Cultural Anthropology',023996,'CULANTH','190SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Approaches to Global Issues',002842,'CULANTH','195',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Patient and Research Participant Activism and Advocacy',025265,'CULANTH','196FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Languages of the World',006285,'CULANTH','202',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marxism and Society',001911,'CULANTH','203',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Law',001877,'CULANTH','206',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Sports',016388,'CULANTH','207',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Anthropology of Race',012561,'CULANTH','208',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Anthropology of Race',020772,'CULANTH','208FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Culture',001883,'CULANTH','210',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Society',020504,'CULANTH','212',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cyborgs',013840,'CULANTH','213',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shamanism and Spirit Possession',021035,'CULANTH','214S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Indian Civilization',020607,'CULANTH','215S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Migration and Ethics',021780,'CULANTH','216',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Migration and Ethics',001978,'CULANTH','216S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economies of the Global Image',021331,'CULANTH','217S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Global Health',021138,'CULANTH','218S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Performance Studies',023900,'CULANTH','219S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capoeira: Practice and Culture',022920,'CULANTH','221SL',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound in Social Life',021423,'CULANTH','222S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound in Social Life',024805,'CULANTH','222SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Women Across the Ages',020896,'CULANTH','224S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Psychology',001991,'CULANTH','227',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Language',009662,'CULANTH','232',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Farmworkers in North Carolina: Roots of Poverty Roots of Change',014927,'CULANTH','236S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Who Cares and Why: Social Activism and its Motivations',015530,'CULANTH','239S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Migrant China',001888,'CULANTH','241',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Culture and Politics in Africa',000093,'CULANTH','242',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Culture and Politics in Latin America',001896,'CULANTH','243',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in the Americas',023953,'CULANTH','245S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Civil/Human Rights Activism: In the Spirit of Pauli Murray',020146,'CULANTH','246S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Arts and Human Rights',020266,'CULANTH','248',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim World: Transformations and Continuities',001894,'CULANTH','250',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('School Dropout and Educational Policy',022164,'CULANTH','251S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cultures and Politics of the America Borderlands',022141,'CULANTH','254',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Civilization I',009271,'CULANTH','256',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Civilization II',009272,'CULANTH','257',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Our Culinary Cultures',019057,'CULANTH','258S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music in South Asia',014340,'CULANTH','259',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Around the Bloc: Cold War Culture in the USSR and Eastern Europe',022997,'CULANTH','259S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Genomics and Society',019367,'CULANTH','261D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Genomics and Society',019367,'CULANTH','261D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black Experiences',020222,'CULANTH','262S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Black Europe: Race Ethnicity and Diaspora in Contemporary Europe',021218,'CULANTH','263',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Culture and Politics in Contemporary Europe: Citizenship Migration and National Belonging',012560,'CULANTH','265',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Black Gods and Kings: Priests and Practices of the Afro-Atlantic Religions',009281,'CULANTH','269',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Culture',001879,'CULANTH','271',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advertising and Masculinity',013831,'CULANTH','272S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Middle East Through Film',023843,'CULANTH','273',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex/Gender - Nature/Nurture: Intersections of Biology and Society',022838,'CULANTH','278',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics of Ethnography: In the Field and on the Page',025420,'CULANTH','280S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ritual Performance and Religion',023535,'CULANTH','284',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Issues in Anthropology',001946,'CULANTH','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Cultural Anthropology',001864,'CULANTH','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Issues in Anthropology',001947,'CULANTH','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Childhood',024226,'CULANTH','295S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theoretical Foundations of Cultural Anthropology',001954,'CULANTH','301',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fieldwork Methods: Cultural Analysis and Interpretation',015745,'CULANTH','302',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory Today: Introduction to the Study of Literature',020179,'CULANTH','303S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('White People: In Anthropological Perspective',024156,'CULANTH','305S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Health Culture and the Latino Community',015778,'CULANTH','306',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Development and Africa',000041,'CULANTH','307',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('BorderWork(s): At Home/On the Wall: between Belfast and Durham',021087,'CULANTH','308T',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food and the Body',021793,'CULANTH','309S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conflict Analysis in Africa (Case Studies)',022147,'CULANTH','310S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dancing States of Mind: The Self Social and Political Practice of Dance',024428,'CULANTH','311S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War and Public Health in Africa',023220,'CULANTH','312',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Africa Youth and Democracy',023659,'CULANTH','315',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Breakdancers Vocaloids and Gamers: East Asian Youth Culture',023287,'CULANTH','316S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Caribbean after Emancipation',021059,'CULANTH','322',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pilgrimage',023566,'CULANTH','327S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Narratives of Migration',025338,'CULANTH','330S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race in Durham',021344,'CULANTH','332S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Wire',020750,'CULANTH','333S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History of Hip-Hop',022531,'CULANTH','335',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hollywood and Africa: Case Studies in Filmic Representation',023219,'CULANTH','336',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Public Policy',020831,'CULANTH','340',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Life and Death: Global Perspectives',021082,'CULANTH','341',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Displacements: Migration and Human Trafficking',022165,'CULANTH','342',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Themes in Chinese Culture and History',001935,'CULANTH','343A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Troubling Pasts: Slavery Genocide and Terror',022157,'CULANTH','344',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Energy Futures and Environmental Justice',024154,'CULANTH','345S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Connection between Human Rights Memory and How Societies Create Memorials',024194,'CULANTH','346S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The University as a Culture: A Survivor''s Guide',024418,'CULANTH','347S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Memory Bandits: Human Rights Duke''s History and a Plan to Expand History-Telling',024468,'CULANTH','347T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Politics of Salsa: Music Urban Spaces and Globalization',025215,'CULANTH','348A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Money',024695,'CULANTH','350',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Enlightenment Culture to Popular Culture',024651,'CULANTH','352A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Apple: Life and Death and the Digital Revolution',025347,'CULANTH','360S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Minor Japan',021854,'CULANTH','364S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mayas Aztecs and Incas: The World According to the Indigenous People of Latin America',019872,'CULANTH','367D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mayas Aztecs and Incas: The World According to the Indigenous People of Latin America',020117,'CULANTH','367S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visualizing the Caribbean',022532,'CULANTH','368',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Muslims in Germany: Politics of Migration Religion and Culture',025261,'CULANTH','382SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cities and City Life in Italy',014666,'CULANTH','383',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cities and City Life in Italy',023934,'CULANTH','383A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Back in the U.S.S.R.: Everyday Soviet Culture 1956-1989',009654,'CULANTH','388S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food Culture and Society',025246,'CULANTH','389S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Cultural Anthropology',023347,'CULANTH','390SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment Health and Development in China',020240,'CULANTH','395S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Health Policy in Transition: Challenges for China',020270,'CULANTH','396AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language in Immigrant America',021084,'CULANTH','397S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',020278,'CULANTH','399',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',023884,'CULANTH','399A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Obligations of Memory',020049,'CULANTH','403S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Surviving Globalization: The Global South and the Development Imagination',024244,'CULANTH','409',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research in Human Rights',022361,'CULANTH','414S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Interethnic Intimacies: Production and Consumption',022582,'CULANTH','415S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Middle East: From Facebook to Film',001955,'CULANTH','417S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Environmentalism and the Politics of Nature',013132,'CULANTH','419S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Myth Ritual Symbol',015488,'CULANTH','422',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Anthropology',017935,'CULANTH','424',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Anthropology',018531,'CULANTH','424-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Anti-Globalization',016053,'CULANTH','425',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Sexuality in Latin America',015192,'CULANTH','429',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Tibet',021347,'CULANTH','431S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Sex and Citizenship',020755,'CULANTH','432S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The New Middle East',022461,'CULANTH','433',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cultures of New Media',021120,'CULANTH','434S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Techno-Orientalism: Asian/America (Post)Human and Science Fiction',024757,'CULANTH','438S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Games and Culture: Politics Pleasure and Pedagogy',024157,'CULANTH','440S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Global Caribbean',024698,'CULANTH','450S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Cities',021345,'CULANTH','465S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone: Research in Human Rights',025138,'CULANTH','470S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Two Koreas: History Society and Culture',017073,'CULANTH','473',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Living Dying Healing in Russia',024120,'CULANTH','481',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics',021753,'CULANTH','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latino/as in the Global South Capstone - Global/Local Contexts',020494,'CULANTH','495S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Seminar Distinction Program Sequence',001960,'CULANTH','498S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Seminar Distinction Program Sequence',001961,'CULANTH','499S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Traditions in Documentary Studies',014970,'DOCST','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Experience: A Video Approach',008062,'DOCST','105S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Documentary Film',025329,'DOCST','107A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Oral History',016078,'DOCST','110S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Writing: Creative Nonfiction Through Fieldwork',018287,'DOCST','111S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Black and White Photography',013815,'DOCST','115S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Digital Photography',023907,'DOCST','119S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Audio Documentary',016428,'DOCST','135S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Borderline Humans: How Walls (and Bridges) Define Us',021552,'DOCST','153FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('GTWY SEM: What Did Your Grandparents Do? A Global Exploration of Individual Life Histories',024386,'DOCST','159S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capturing the City: Documentary Photography in Berlin',023919,'DOCST','171SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics',021777,'DOCST','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Photobook: History \u0026 Practice',020128,'DOCST','196FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Children and the Experience of Illness',015760,'DOCST','202S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting the Middle East: Community and Oral History',024709,'DOCST','204FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medicine and the Vision of Documentary Photography',016079,'DOCST','206S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Documentary Photography: Education Childhood and Growth',024221,'DOCST','209FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Documentary Photography: Education Childhood and Growth',017875,'DOCST','209S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Photography and the Southern Culture Landscape',000977,'DOCST','215S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Alternative Photographic Processes',016425,'DOCST','218S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visual Research and the American Dream',017089,'DOCST','221S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Photographic Portfolio',018222,'DOCST','222S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Children''s Self Expression: Literacy Through Photography',013031,'DOCST','224S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology through Photography',016077,'DOCST','227S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Small Town USA: Local Collaborations',018247,'DOCST','230S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Color Photography: Fieldwork and Digital Color',017356,'DOCST','236S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dance for the Camera',020113,'DOCST','242S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Film Studies',003845,'DOCST','264',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Documentary Film: Filmmakers and the Full Frame Documentary Film Festival',017078,'DOCST','270',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Policy Video',020829,'DOCST','271S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary and Policy: How Documentary Influences Policy',021119,'DOCST','272S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Middle East Through Film',023843,'DOCST','274',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Essay: Exploration Research and the Peripatetic Tradition in Documentary Writing',022841,'DOCST','275S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing American Politics',024716,'DOCST','276S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound for Film and Video',004562,'DOCST','277S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Producing Docu-Fiction',020227,'DOCST','278S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Docu-Poetry: Real Life Truths Outside and Inside the Poetic Narrative',024155,'DOCST','279S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Matters of Life and Death',021783,'DOCST','280S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visiting Filmmaker Master Course: Special Topics',020788,'DOCST','285',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visiting Filmmaker Master Courses: Special Topics',018106,'DOCST','285S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Editing for Film and Video',020226,'DOCST','288S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Documentary Studies',021081,'DOCST','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Documentary Studies: Study Abroad',024815,'DOCST','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Documentary Studies',014972,'DOCST','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Arts Entrepreneurship',023901,'DOCST','295S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Photography 1839 to the Present',000638,'DOCST','303',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Short Audio Documentary',017152,'DOCST','310S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Writing Workshop',021067,'DOCST','311S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Video Production Workshop',023870,'DOCST','312S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Activating the Archive: Archival Research as Documentary Practice',023605,'DOCST','316S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Veterans Oral History Project',021903,'DOCST','317S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Photo Workshop',022451,'DOCST','318S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Documentary Photography',008132,'DOCST','319S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black Power: Writing the History of the African American Freedom Struggle',017407,'DOCST','320S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugee Lives: Violence Culture and Identity',023313,'DOCST','321S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Independent Cinema',022872,'DOCST','322S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black: Tales Along the Color Line 1865 - 2004',022121,'DOCST','324S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The South in Black and White',017885,'DOCST','326',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pilgrimage',023566,'DOCST','327S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Historical Documentary Production',024422,'DOCST','329S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Farmworkers in North Carolina: Roots of Poverty Roots of Change',014927,'DOCST','332S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Who Cares and Why: Social Activism and its Motivations',015530,'DOCST','335S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Unraveling Paradise: Examining the Mythical Ideal Through Art and Documentary of the Caribbean',025058,'DOCST','336S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Articles of Truth: Creating Culture through Multimedia',025074,'DOCST','337S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Our Culinary Cultures',019057,'DOCST','344S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Civil/Human Rights Activism: In the Spirit of Pauli Murray',020146,'DOCST','347S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black Experiences',020222,'DOCST','350S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Biography',021781,'DOCST','351S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Publishing from Gutenberg to the Web: The Vanishing Point Course',022529,'DOCST','352S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Web Design and Narrative: Artists Documentarians Art Historians and Entrepreneurs',023531,'DOCST','354S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Engagement Through Field-Based Projects',018567,'DOCST','355S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Magazine Journalism',012997,'DOCST','356S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('16mm Film Production',020225,'DOCST','357S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Global Los Angeles: An Interdisciplinary Survey',020567,'DOCST','359A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multimedia Documentary: Editing Production and Publication',018788,'DOCST','360S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Photographic Memory: Photo Albums Photobooks \u0026 Zines',023871,'DOCST','361S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Activism Women and Danger: Documenting Race Gender and Activism in the American South',022549,'DOCST','362S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Autobiographical Impulse in Photography',023564,'DOCST','363S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Art of the Interview: Questions and Answers as a Tool of Journalistic Inquiry',023916,'DOCST','364S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Turn: Southern Culture',024102,'DOCST','365S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights and Documentary: Aesthetics Ethics History',025095,'DOCST','366S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Video Journalism',012996,'DOCST','367S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Multimedia Production',024113,'DOCST','369S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('News as a Moral Battleground',014156,'DOCST','371',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Recycled Cinema',025281,'DOCST','375S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Filming Art',024365,'DOCST','451S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Documentary Filmmaking',016424,'DOCST','470S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Archiving and Visualizing Asia: Politics and Poetics of Knowledge Production',025066,'DOCST','476S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar in Documentary Studies',015209,'DOCST','480S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Documentary Studies',023982,'DOCST','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study in Documentary Studies',023158,'DOCST','491',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Electrical and Computer Engineering',017124,'ECE','110L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Electrical and Computer Engineering - Lab',017450,'ECE','110L9',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Microelectronic Devices and Circuits',017428,'ECE','230L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Microelectronic Devices and Circuits-Lab',017427,'ECE','230L9',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computer Architecture',017430,'ECE','250D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fields and Waves: Fundamentals of Information Propagation',017432,'ECE','270DL',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Electromagnetic Fields',017432,'ECE','270L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Signals and Systems',017448,'ECE','280L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Electrical and Computer Engineering',022547,'ECE','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Projects in Electrical and Computer Engineering',024701,'ECE','291',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Projects in Electrical and Computer Engineering',024702,'ECE','292',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Thermal Physics',013746,'ECE','311',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Microelectronic Devices',018611,'ECE','330L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Microelectronic Circuits',003628,'ECE','331L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Optics and Photonics',003704,'ECE','340L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Solar Cells',024000,'ECE','341L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Systems',003614,'ECE','350L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computer Network Architecture',003619,'ECE','356',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Electric Vehicle Project',014093,'ECE','363L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Performance and Technology: Composition Workshop',013819,'ECE','364',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Random Signals and Noise',022218,'ECE','380',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Digital Signal Processing',014379,'ECE','381',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Linear Control Systems',003606,'ECE','382',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Robotics and Automation',003607,'ECE','383',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Projects in Electrical and Computer Engineering',003646,'ECE','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Projects in Electrical and Computer Engineering',003647,'ECE','392',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Power Electronic Circuits for Energy Conversion',024982,'ECE','431',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sensors and Sensor Interface Design',016469,'ECE','449',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Software for Maintainability',023297,'ECE','458',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Embedded Systems',016163,'ECE','459',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ocean Engineering',024252,'ECE','461',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Digital Communication Systems',014541,'ECE','483',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Audio and Acoustic Signal Processing',021870,'ECE','485',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Wireless Communication Systems',003642,'ECE','486',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Image and Multidimensional Processing',003645,'ECE','488',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Robot System Design',024981,'ECE','489',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Electrical and Computer Engineering',022252,'ECE','490D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Electrical and Computer Engineering',022251,'ECE','490L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Projects in Electrical and Computer Engineering',003648,'ECE','493',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Projects in Electrical and Computer Engineering',003649,'ECE','494',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Electrical and Computer Engineering',003650,'ECE','495',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Electrical and Computer Engineering',003651,'ECE','496',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('ECE Professional Development',023594,'ECE','499',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economic Principles',003261,'ECON','101',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economic Principles',022525,'ECON','101D',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Economic and Business Cultures',022172,'ECON','111D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Corporate Citizenship',023561,'ECON','112FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Political Economy',020020,'ECON','119',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Financial Accounting',003273,'ECON','174',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics In Economics',021884,'ECON','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Administered Study Abroad: Special Topics in Economics',021867,'ECON','190AS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Topics in Economics',003275,'ECON','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Economics',022055,'ECON','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Microeconomics I',014831,'ECON','201D',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Microeconomics II',014832,'ECON','205D',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Econometrics',003292,'ECON','208D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Macroeconomics',014833,'ECON','210D',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Systems Optimization and Economics',003775,'ECON','212',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Follow the Ruble: Money in Russian Literature and Culture',024691,'ECON','213',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Business History',014653,'ECON','222D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Legal Issues for the Performing Arts',022807,'ECON','223S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Non-Profit Cultural Institutions',022579,'ECON','247S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial and Ethnic Economic Inequality: A Cross National Perspective',020131,'ECON','248',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare \u0026 Financial Markets: Why This Time is Never Different',023908,'ECON','255S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Practical Financial Markets',023983,'ECON','256',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of a United Europe',003268,'ECON','260A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Life Within Capitalism: A History of its Values Measures and Struggles',022572,'ECON','270',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Basic Finance and Investments',013123,'ECON','271',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Financial and Managerial Accounting',003335,'ECON','274',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Building and Sustaining a Successful Enterprise',023869,'ECON','281A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Denial Faith Reason: Sustainability and Survival',022548,'ECON','285',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics In Economics',021883,'ECON','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Economics',022069,'ECON','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Economics',022067,'ECON','290AS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Topics in Economics',019797,'ECON','290FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intellectual Property and Innovation: Law Policy \u0026 Entrepreneurship',022929,'ECON','295',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Discovering Education and Human Development I: How Social Scientists Learn from Data',023620,'ECON','298D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Economic History',003284,'ECON','302',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The International Economy 1850-Present: From Globalization to Globalization',014318,'ECON','304',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of International Financial and Monetary Crises',020604,'ECON','305',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of International Financial and Monetary Crises',024341,'ECON','305A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economic History and Modernization of the Islamic Middle East',018757,'ECON','306',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Understanding Financial Bubbles and Crises',024342,'ECON','307A',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Money',024695,'ECON','309',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Monetary Markets 4000BC-2000AD',020592,'ECON','310S',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Economic Thought',003301,'ECON','311',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adam Smith and the System of Natural Liberty',003300,'ECON','312',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adam Smith and the System of Natural Liberty',020769,'ECON','312S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Uses of Economics',013557,'ECON','313',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History of Modern Macroeconomics from Keynes to the Present',003323,'ECON','314S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Modern Economics',020643,'ECON','316',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Modern Economics',003342,'ECON','316S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Innovation Entrepreneurs \u0026 VCs',020584,'ECON','317S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economic Science Studies',013122,'ECON','318S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Philosophy and Methodology of Economics',015837,'ECON','319',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Deglobalization',024652,'ECON','320A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art and Markets',017360,'ECON','321S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Crime and Economics',020595,'ECON','322S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of Creative Goods',014806,'ECON','322SA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Microfinance',020596,'ECON','323',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Finance',021603,'ECON','324A',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Decision Making in Business',020606,'ECON','327S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Regulation and Deregulation in Public Utilities',020590,'ECON','328',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Malpractice',020800,'ECON','329S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economic and Political History of the European Union',024905,'ECON','330A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of the Energiewende in Germany',022105,'ECON','331SA',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Time Series for Financial Analysis',020583,'ECON','332S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Private Equity',025149,'ECON','333',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Health Economics',003313,'ECON','334',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of Global Health',023223,'ECON','335',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of the Public Sector',020501,'ECON','338',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Economics and Policy',003322,'ECON','339',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Contemporary Art Market',003297,'ECON','343',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Art Markets',000587,'ECON','344',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Art Markets',024401,'ECON','344D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Urban Economics',003299,'ECON','345',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Economic Development',020757,'ECON','347',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women in the Economy',013824,'ECON','348',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Financial Institutions',003307,'ECON','353',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Financial Institutions',023213,'ECON','353A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Financial Institutions',025386,'ECON','353S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Trade',003324,'ECON','355',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Trade',022455,'ECON','355A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Prisoner''s Dilemma and Distributive Justice',016959,'ECON','361',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Prisoner''s Dilemma and Distributive Justice',024380,'ECON','361D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Psychology for Economists',020801,'ECON','362',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Trade: Research Frontiers',020802,'ECON','362S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Finance: A Taxonomy of Money Mistakes',022466,'ECON','368',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Finance: A Taxonomy of Money Mistakes',024177,'ECON','368A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('People and Poverty: Policymaking in Theory and in Practice',024751,'ECON','369',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Capital Markets',021348,'ECON','370',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Capital Markets',021981,'ECON','370A',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Labor and Family Economics',020586,'ECON','371',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Finance',020042,'ECON','372',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Corporate Finance',003334,'ECON','373',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('New Ventures Operating Plan',020587,'ECON','374S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of Entrepreneurship',021118,'ECON','375',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of Entrepreneurship',023206,'ECON','375A',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Financial Markets in the Global Economy',020791,'ECON','376A',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of Financial Derivatives \u0026 Financial Engineering',025341,'ECON','377',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of Financial Derivatives \u0026 Financial Engineering',020566,'ECON','377A',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Financial Risk Management',020589,'ECON','378',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Emerging Markets: Finance Trade Institutions and the World Economy',021349,'ECON','379',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Inside Hedge Funds',023790,'ECON','381S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics Philosophy and Economics Capstone',008459,'ECON','389',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Economics',003347,'ECON','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Economics',003276,'ECON','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Economics',015504,'ECON','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Methods: Energy Markets and Environmental Impacts',021927,'ECON','431',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Methods: Energy Markets/Environmental Impacts',021382,'ECON','431S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Justice: The Economics of Race Place and Pollution',023544,'ECON','432S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of Wages and Employment',003311,'ECON','433',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Immigration',024199,'ECON','434A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of Education',024976,'ECON','435S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Finance',003339,'ECON','438',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Development Economics: Theory Evidence and Policy',017355,'ECON','442',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Development Economics: Theory Evidence and Policy',017355,'ECON','442',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economic Growth',000588,'ECON','452',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Finance',017084,'ECON','455',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('How Markets Work: Theory Evidence and Empirical Tools',021350,'ECON','461',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Economics',020486,'ECON','462',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law and Economics',003333,'ECON','463',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Competitive Strategy and Industrial Organization',003340,'ECON','464',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Market Power and Public Policy',023225,'ECON','465',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Financial Markets and Investment',003314,'ECON','471',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Financial Markets and Investments',021980,'ECON','471A',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Goodner Equity Research Project',024750,'ECON','472S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Corporate Finance Theory: Governance Incentives and Valuation',022877,'ECON','473',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Empirical Asset Pricing',024356,'ECON','476',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fixed Income Markets and Quantitative Methods',020790,'ECON','477',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Junior Research Workshop in Finance',017114,'ECON','480S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Senior Research Workshop in Finance',017411,'ECON','486S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Economics',003348,'ECON','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Economics',022054,'ECON','490A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Economics',022064,'ECON','490AS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Economics',015505,'ECON','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',025352,'ECON','494',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Seminar I',003349,'ECON','495S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Seminar II',017300,'ECON','496S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social and Philosophical Foundations of Education',003513,'EDUC','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social and Philosophical Foundations of Education',024432,'EDUC','101S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pursuit of Equality: Rethinking Schools - Lens of Social Justice',020823,'EDUC','111FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',023540,'EDUC','112FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Enterprising Leadership and Civic Engagement',023568,'EDUC','113FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics',018453,'EDUC','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Engaged Citizenship and Social Change (Gateway Course)',023957,'EDUC','201S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Documentary Photography: Education Childhood and Growth',024221,'EDUC','209FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Documentary Photography: Education Childhood and Growth',017875,'EDUC','209S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Power and Identity: From Ali to Kaepernick',024711,'EDUC','220',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marxism and Society',001911,'EDUC','239',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Educational Psychology',003519,'EDUC','240',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Promising Paradigms: Issues and Innovations in American Classrooms',020170,'EDUC','241',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Children Schools and Society',015755,'EDUC','243S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Children''s Self Expression: Literacy Through Photography',013031,'EDUC','244S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Literacy Writing Tutoring',019060,'EDUC','255S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Student Activism Storytelling and Community Change',023962,'EDUC','259S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Peer Academic Advising',023094,'EDUC','261S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The 21st Century Student: Open Knowledge and Education Innovation',024696,'EDUC','262',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Leadership and the Changing Landscape of Health Care',024160,'EDUC','275S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',024414,'EDUC','277S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Learning Outcomes Assessment: Understanding and Using Evidence to Guide Teaching Learning \u0026 Policy',024351,'EDUC','289S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics',003532,'EDUC','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Education',003512,'EDUC','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics',013030,'EDUC','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Freshman-Sophomore Tutorials (TOP)',015773,'EDUC','290T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Discovering Education and Human Development I: How Social Scientists Learn from Data',023620,'EDUC','298D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('De/Re/Segregation in Education: A Case of Back to the Future?',024416,'EDUC','303S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues of Education and Immigration',016899,'EDUC','307S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('School Dropout and Educational Policy',022164,'EDUC','310S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Infancy Early Childhood and Educational Programs',003521,'EDUC','321S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Legal Issues in Education',013029,'EDUC','333S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Class and the Rise of the American Charter School',023949,'EDUC','338S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Asians in American Higher Education: Trends and Issues',024109,'EDUC','345S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The University as a Culture: A Survivor''s Guide',024418,'EDUC','347S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Durham',020459,'EDUC','356S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Educational Leadership In and Beyond the Classroom',020060,'EDUC','363',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Exceptional Learners: Policies and Practices',020199,'EDUC','366',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Crisis Communications and Higher Education',003150,'EDUC','385S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Junior-Senior Tutorials (Topics)',003548,'EDUC','390T-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Junior-Senior Tutorials',010897,'EDUC','390T-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',003559,'EDUC','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',003558,'EDUC','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Teaching Practices in Elementary Mathematics and Science',017353,'EDUC','407S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Teaching Practices in Elementary Language Arts and Social Studies',003516,'EDUC','408S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Curriculum',003517,'EDUC','409S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research/Reflective Practice Elementary Education',013027,'EDUC','410S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Education: Practicum',003520,'EDUC','420',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Education: Internship',003520,'EDUC','420',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Education: Practicum',022267,'EDUC','420-1',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Education: Internship',022267,'EDUC','420-1',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and the Professions',003526,'EDUC','430S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Reconstruction to No Child Left Behind: The Challenges of Reform in a Nation Divided',023325,'EDUC','446S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Education',003514,'EDUC','490A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics',003562,'EDUC','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Teaching Practices in Secondary Education',019576,'EDUC','495',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Secondary School Issues: Pedagogy Culture and Methods',003557,'EDUC','496S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminar in Secondary School Teaching',003569,'EDUC','497S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Secondary Education: Practicum',003570,'EDUC','498',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Secondary Education: Internship',003570,'EDUC','498',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Secondary Education: Practicum',022459,'EDUC','498-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Secondary Education: Internship',022459,'EDUC','498-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Design and Communication',025290,'EGR','101L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computational Methods in Engineering',003765,'EGR','103L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mapping Engineering onto Biology',018002,'EGR','112',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mapping Engineering into Biology',018305,'EGR','112FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Structural Engineering',003751,'EGR','120L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering the Planet',017425,'EGR','160FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Engineering',022217,'EGR','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Engineering',021866,'EGR','190AS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Engineering with Lab Component',024710,'EGR','190L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mechanics of Solids',003768,'EGR','201L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mechanics of Solids (1/2)',020309,'EGR','201L-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mechanics of Solids (2/2)',020310,'EGR','201L-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Communication',003781,'EGR','206',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dynamics',003777,'EGR','244L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Disasters: Science and Policy',018265,'EGR','260',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Disasters: Reasons Response and Recovery',018264,'EGR','261',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Systems Optimization and Economics',003775,'EGR','305',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics in Professions: Scientific Personal and Organizational Frameworks',015356,'EGR','350S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Smart Home Technology Development',020366,'EGR','355',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Projects in Engineering',023172,'EGR','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Energy',024379,'ENERGY','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Seminar in Energy: Special Topics',025263,'ENERGY','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Energy',024663,'ENERGY','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Energy Generation Delivery Conversion and Efficiency',022007,'ENERGY','310',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Energy',023821,'ENERGY','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Energy',024885,'ENERGY','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Connections in Energy: Interdisciplinary Team Projects',022390,'ENERGY','395',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Connections in Energy: Interdisciplinary Team Projects',022391,'ENERGY','395-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Connections in Energy: Interdisciplinary Team Projects',022397,'ENERGY','396',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Connections in Energy: Interdisciplinary Team Projects',022396,'ENERGY','396-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Creative Writing',003824,'ENGLISH','110S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Writing: Creative Nonfiction Through Fieldwork',018287,'ENGLISH','111S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Representative American Writers',003819,'ENGLISH','171',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Ethics of Democracy',024783,'ENGLISH','173FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Ethics of Democracy',023517,'ENGLISH','173S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Film Studies',003845,'ENGLISH','181',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Readings in Genre',013691,'ENGLISH','184S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reading Thematically',019825,'ENGLISH','186S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Language and Literature',023126,'ENGLISH','190-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in English',003820,'ENGLISH','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Seminar: Topics on Literature',003813,'ENGLISH','190FS-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Seminar: Topics on Linguistics',020115,'ENGLISH','190FS-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in English',023995,'ENGLISH','190SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Performing Science: Experimentation Collaboration and Artistry',025268,'ENGLISH','198FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Performance Studies',023900,'ENGLISH','202S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('English Historical Linguistics',003861,'ENGLISH','204',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Variety in Language: English in the United States',015766,'ENGLISH','206',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Criticism and the Arts',025335,'ENGLISH','208S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Creative Non-Fiction: Writing for Publication',022088,'ENGLISH','210SA',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Writing',021547,'ENGLISH','211S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Essay: Exploration Research and the Peripatetic Tradition in Documentary Writing',022841,'ENGLISH','213S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Writing Workshop',021067,'ENGLISH','214S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Scientific Writing',010358,'ENGLISH','219S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the Writing of Poetry',003844,'ENGLISH','220S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the Writing of Fiction',022093,'ENGLISH','221S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the Writing of Creative Non-Fiction',003842,'ENGLISH','222S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ready for Prime Time: Writing the Dramatic TV Episode',023326,'ENGLISH','224S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing the Movie. Introduction to the Theory and Practice of Writing for the Screen',021370,'ENGLISH','225S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dramatic Writing',003090,'ENGLISH','226S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adaptation',013134,'ENGLISH','227S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing the Musical Book',023913,'ENGLISH','228S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare',019383,'ENGLISH','235',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction',024104,'ENGLISH','244',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('English Literature of the Romantic Period',003883,'ENGLISH','245',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jane Austen',024412,'ENGLISH','246',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('British Literature: 1900 to 1945',003885,'ENGLISH','251',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Christianity in Film and Fiction',020445,'ENGLISH','254',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and the Novel in Modern India',023878,'ENGLISH','258',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Literature to 1820',003917,'ENGLISH','260',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African American Literature',003930,'ENGLISH','266',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of American Literature 1820-1860',003918,'ENGLISH','269',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of American Literature 1820-1860',025334,'ENGLISH','269S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of American Literature 1860 to 1915',003919,'ENGLISH','270',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of American Literature 1915 to 1960',003920,'ENGLISH','271',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transforming Fiction for Stage and Screen',022309,'ENGLISH','272SA',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Dramatic Monster: Horror on Stage and Screen',020517,'ENGLISH','274',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African American Literature',003931,'ENGLISH','276',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Novel Live!',023276,'ENGLISH','277',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Docu-Poetry: Real Life Truths Outside and Inside the Poetic Narrative',024155,'ENGLISH','279S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Apocalypse: Beat Generation Spirituality',021319,'ENGLISH','281',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Book Publishing \u0026 Marketing: A Case Study of the Romance Fiction Industry',022921,'ENGLISH','284S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Dreams American Movies',020269,'ENGLISH','288',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Language and Literature',023134,'ENGLISH','290-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Focus Topics in Writing',020019,'ENGLISH','290FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Language and Literature',023405,'ENGLISH','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Medieval and Early Modern Literature',003906,'ENGLISH','290S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Eighteenth and Nineteenth Century Lit',003908,'ENGLISH','290S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in English Literature: Modern and Contemporary',015291,'ENGLISH','290S-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Creative Writing',003857,'ENGLISH','290S-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Business of Art and Media',014159,'ENGLISH','310A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Internship in New York',016601,'ENGLISH','313A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Playmaking: Collaboration from Page to Stage',023912,'ENGLISH','316S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screenwriting',003094,'ENGLISH','317S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Expressing Immigrant Experience: The Russians',023880,'ENGLISH','318S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Narrative and Moral Crisis',023928,'ENGLISH','319S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Workshop in the Writing of Poetry',003853,'ENGLISH','320S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Workshop in the Writing of Fiction',022089,'ENGLISH','321S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Workshop in the Writing of Creative Non-Fiction',022090,'ENGLISH','322S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Late Medieval Literature and Culture',023211,'ENGLISH','331S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chaucer I',014200,'ENGLISH','332S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chaucer II',003911,'ENGLISH','333',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare: Comedies and Romances',015528,'ENGLISH','334',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare through 1600',003913,'ENGLISH','336',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare After 1600',003914,'ENGLISH','337',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Milton',003915,'ENGLISH','338',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Milton',023435,'ENGLISH','338S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Eighteenth-Century British Novel',003903,'ENGLISH','344',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Nineteenth-Century British Novel',003904,'ENGLISH','345',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Victorian Poetry',016034,'ENGLISH','346',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law and Literature: Race Matters',020483,'ENGLISH','350S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Idealistic Nature: The Literature Philosophy and Cognition of Ecology',024373,'ENGLISH','355',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Literature before the Civil War',021310,'ENGLISH','360',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Studies in American Literature Before the Civil War',021312,'ENGLISH','360S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Literature Civil War to First World War',021307,'ENGLISH','369',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Studies in American Literature 1860-1945',021493,'ENGLISH','370',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Studies in American Literature 1860-1945',021327,'ENGLISH','370S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Literature World War I to World War II',021308,'ENGLISH','371',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Studies in American Literature WWI-WWII',021544,'ENGLISH','371S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern American Poetry',015747,'ENGLISH','372S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Literature Cold War and After',021309,'ENGLISH','373',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Studies in American Literature Cold War and After',021487,'ENGLISH','373S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary American Writers',003921,'ENGLISH','374',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Popular Fictions',013886,'ENGLISH','375S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Novel',013856,'ENGLISH','377',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Novel',023234,'ENGLISH','377S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Beat Generation/Russian New Wave: Cultural Dissent in the Cold War',022834,'ENGLISH','378',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fictions That Mark the Moment',023652,'ENGLISH','379S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Popular Representations of Black Masculinity',024158,'ENGLISH','380',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Toni Morrison: Race Trauma and Redemption',024218,'ENGLISH','380S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History of Hip-Hop',022531,'ENGLISH','381',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Science Fiction Film',006449,'ENGLISH','386',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Biography',021781,'ENGLISH','386S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Asian American Theatre',003924,'ENGLISH','387',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Love Marriage Education: Theories About Women from Rousseau to Beauvoir',015467,'ENGLISH','388S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Independent Cinema',022872,'ENGLISH','389S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics: Single American Author',003926,'ENGLISH','390-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topic in an Individual African American Author',003932,'ENGLISH','390-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in African American Literary Genres',003937,'ENGLISH','390-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Genre',003947,'ENGLISH','390-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Film',017497,'ENGLISH','390-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in English',003912,'ENGLISH','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in a Single British Author',014807,'ENGLISH','390S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Language and Literature',021337,'ENGLISH','390S-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Society',020504,'ENGLISH','395',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language in Immigrant America',021084,'ENGLISH','396S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Narratives of Migration',025338,'ENGLISH','397S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Media Internship',024338,'ENGLISH','398',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Feature Writing Master Class',025108,'ENGLISH','408S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Workshop in the Writing of Poetry',003854,'ENGLISH','420S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Workshop in the Writing of Fiction',022091,'ENGLISH','421S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Workshop in the Writing of Creative Nonfiction',022092,'ENGLISH','422S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Language and Literature',003951,'ENGLISH','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literature and the Other Arts',003962,'ENGLISH','490-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Language and Literature',016439,'ENGLISH','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special topics in African American Literary Studies',003945,'ENGLISH','490S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tutorial (Area I II or III as determined by instructor)',003986,'ENGLISH','490T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Distinction Creative Writing Independent Study',003990,'ENGLISH','495',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Distinction Critical Research Independent Study',003989,'ENGLISH','497',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Distinction Critical Research Independent Study',003993,'ENGLISH','498',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Environmental Sciences and Policy',013857,'ENVIRON','102',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Israel/Palestine: Comparative Perspectives',023214,'ENVIRON','147',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genomics of Host-Microbe Interactions: The Symbiotic Web',022215,'ENVIRON','148FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Environmental Sciences and Policy',004063,'ENVIRON','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Environment',018296,'ENVIRON','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Environmental Science and Policy',022557,'ENVIRON','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Integrating Environmental Sciences and Policy',004065,'ENVIRON','201',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Megafauna',017413,'ENVIRON','205',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conserving the Variety of Life on Earth',017453,'ENVIRON','210D',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('United States Environmental Policy',008092,'ENVIRON','212',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethical Challenges in Environmental Conservation',018424,'ENVIRON','214S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment and Conflict: The Role of the Environment in Conflict and Peacebuilding',019016,'ENVIRON','216S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Restoration Ecology: Theory and Applications',021367,'ENVIRON','217',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Field Methods in Earth and Environmental Sciences',004659,'ENVIRON','226S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production',021346,'ENVIRON','228',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production',021346,'ENVIRON','228',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food and Fuel for a Growing Population: Nuts and Bolts of Plant Growth and Production',025259,'ENVIRON','228S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Energy and the Environment',017292,'ENVIRON','231',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Atmospheric Chemistry: From Air Pollution to Climate Change',017192,'ENVIRON','239',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biodiversity Issues and Field Methods',018742,'ENVIRON','240S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Theory and Practice of Sustainability',004143,'ENVIRON','245',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Disasters: Science and Policy',018265,'ENVIRON','260',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Disasters: Reasons Response and Recovery',018264,'ENVIRON','262',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Law and Policy',022879,'ENVIRON','265',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in the Environment: Spanish',023686,'ENVIRON','269T-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology for Engineers: Informing Engineering Decisions',020455,'ENVIRON','271A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Analysis of Ocean Ecosystems',001498,'ENVIRON','272A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Ecology',001504,'ENVIRON','273LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('People Plants and Pollution: Introduction to Urban Environments',020046,'ENVIRON','274',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Fisheries Conflicts: Exploring Local and Global Economic Ecological and Social Impacts',022003,'ENVIRON','275SA',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Denial Faith Reason: Sustainability and Survival',022548,'ENVIRON','276',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biodiversity of Alaska',023322,'ENVIRON','277A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Physiology of Marine Animals',001520,'ENVIRON','278LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound in the Sea: Introduction to Marine Bioacoustics',020062,'ENVIRON','280LA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conservation and Management of Protected Areas in South Africa',015878,'ENVIRON','281A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Policy',017491,'ENVIRON','286A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Conservation Service-Learning Course: Challenges at Sea',020163,'ENVIRON','287A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Environmental Science and Policy',021848,'ENVIRON','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Environmental Sciences and Policy',022131,'ENVIRON','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Impact Analysis',024411,'ENVIRON','305SA',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Barrier Island Ecology Geology and Policy',024599,'ENVIRON','307A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Forest Measurements',024628,'ENVIRON','310',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dendrology',024647,'ENVIRON','311',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Managing the Oceans to Solve Global Problems',025051,'ENVIRON','314',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aquaculture and the Environment',025321,'ENVIRON','319A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Coastal Watershed Science and Policy',023906,'ENVIRON','321A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hydrologic and Environmental Data Analysis',022832,'ENVIRON','322',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Justice: The Economics of Race Place and Pollution',023544,'ENVIRON','332S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drones in Marine Biology Ecology and Conservation',024645,'ENVIRON','335A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drones in Marine Biology Ecology and Conservation',024178,'ENVIRON','335LA',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Environmental Life Cycle Assessment: Applications to Food Systems',025247,'ENVIRON','338S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Energy Futures and Environmental Justice',024154,'ENVIRON','343S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Plant Diversity: A Field Approach',020059,'ENVIRON','344S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Environmental Politics',024257,'ENVIRON','348',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Science and Conservation Leadership',018741,'ENVIRON','350S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Satellite Remote Sensing',021351,'ENVIRON','358',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of GIS and Geospatial Analysis',017352,'ENVIRON','359',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Chemistry and Toxicology',013858,'ENVIRON','360',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Changing Oceans',020479,'ENVIRON','362S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Economics and Policy',003322,'ENVIRON','363',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community',019092,'ENVIRON','365',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community: Structural Focus',022961,'ENVIRON','365-20',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community: Environmental Focus',022962,'ENVIRON','365-60',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Regulatory State',021890,'ENVIRON','365D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Green Germany: World Leader in Environmental Policy',022574,'ENVIRON','366',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of the Energiewende in Germany',022105,'ENVIRON','367SA',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Oceanography',001489,'ENVIRON','369LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physical Oceanography',019669,'ENVIRON','370A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sensory Physiology and Behavior of Marine Animals',013593,'ENVIRON','373LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology and Conservation of Sea Turtles',016480,'ENVIRON','375A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology and Conservation of Sea Turtles',001499,'ENVIRON','375LA',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Invertebrate Zoology',001535,'ENVIRON','377LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Molecular Microbiology',020471,'ENVIRON','383LA',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Environmental Sciences and Policy',004079,'ENVIRON','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Environmental Sciences and Policy',021754,'ENVIRON','390-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Environmental Sciences and Policy',004064,'ENVIRON','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Environmental Sciences and Policy',016461,'ENVIRON','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Environmental Sciences and Policy',021752,'ENVIRON','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Environmental Science and Policy',021389,'ENVIRON','390SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',021923,'ENVIRON','391-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',021506,'ENVIRON','391A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',021503,'ENVIRON','393A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',004261,'ENVIRON','394',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',022143,'ENVIRON','394A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Israel Experience: Environment Science Technology and Innovation',021782,'ENVIRON','406',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Climate Change in the Marine Environment',022956,'ENVIRON','445A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ocean Engineering',024252,'ENVIRON','461',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematics of Dynamical Systems Describing Complex Environmental Phenomena: A Modern Crystal Ball?',024985,'ENVIRON','464',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone: Research in Human Rights',025138,'ENVIRON','470S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Data and Time Series Analysis in Marine Sciences',024224,'ENVIRON','476A',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Research in Environmental Sciences and Policy',025358,'ENVIRON','496',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Dynamic Earth',010977,'EOS','101',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Dynamic Oceans',001465,'EOS','102',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Surface of the Earth',016033,'EOS','203',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Surface of the Earth',016033,'EOS','203S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Field Methods in Earth and Environmental Sciences',004659,'EOS','226S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Meteoritics and Solar System History',021798,'EOS','230',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Energy and the Environment',017292,'EOS','231',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Atmospheric Chemistry: From Air Pollution to Climate Change',017192,'EOS','239',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Oceanography',001489,'EOS','273LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biodiversity of Alaska',023322,'EOS','287A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Waves Beaches and Coastline Dynamics',004650,'EOS','315',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Methods and Tools in Earth Science Research',022464,'EOS','321S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Methods and Tools in Earth Science Research',022457,'EOS','321S-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hydrologic and Environmental Data Analysis',022832,'EOS','322',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Landscape Hydrology',004658,'EOS','323',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Landscape Hydrology',004658,'EOS','323',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Anthropocene: The Next Epoch of Geologic History',015196,'EOS','325',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Warming',016035,'EOS','355',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Satellite Remote Sensing',021351,'EOS','358',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of GIS and Geospatial Analysis',017352,'EOS','359',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Changing Oceans',020479,'EOS','364S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Weather and Climate',020480,'EOS','365',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Ecology',001504,'EOS','374LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Invertebrate Zoology',001535,'EOS','377LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Earth and Ocean Sciences',021532,'EOS','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Earth and Ocean Sciences',021849,'EOS','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Earth and Ocean Sciences',021539,'EOS','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Earth and Ocean Sciences',023807,'EOS','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',021486,'EOS','391A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',021922,'EOS','393-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',021383,'EOS','393A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Field Exploration of the Geology of North Carolina',018588,'EOS','401',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Volcanology: Geology of Hawaii',016038,'EOS','402S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Geology and Natural History of the Yellowstone Region',004672,'EOS','403',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Geology of Tropical Marine Environments',013145,'EOS','404S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The American Southwest',004674,'EOS','405S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Israel Experience: Environment Science Technology and Innovation',021782,'EOS','406',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Capstone Experience',018251,'EOS','410S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Challenges of Living an Ethical Life',024969,'ETHICS','101',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Challenges of Living an Ethical Life',017925,'ETHICS','101D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Examined Life',024420,'ETHICS','111S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Private Wealth and Public Giving: A Modern History',023658,'ETHICS','123',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('On Suffering: How Science and Stories Shape Us',025220,'ETHICS','140FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Citizenship Patriotism \u0026 Identity',024646,'ETHICS','150FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Corporate Citizenship',023561,'ETHICS','160FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Liberty and Equality: Ancient and Modern Perspectives',023434,'ETHICS','170FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Ethics of Democracy',024783,'ETHICS','171FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Ethics of Democracy',023517,'ETHICS','171S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Perspectives on Citizenship',022718,'ETHICS','188FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Ethics (Focus Program)',020207,'ETHICS','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Ethics',023815,'ETHICS','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Beyond Disagreement and Cozy Consensus',023526,'ETHICS','194FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights and Legal Redress: Seeking Justice through Human Rights',024761,'ETHICS','195S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugees Rights and Resettlement',020151,'ETHICS','199FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Composing Oneself: Stress Identity and Wellness',024706,'ETHICS','205S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theories and Strategies of Social Change: Connections to the Pathways of Change Summer Program',024758,'ETHICS','211S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Resettling Refugees in Durham',024807,'ETHICS','215',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Arab Society and Culture in Film',018777,'ETHICS','221',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Philosophy and Theology an introduction',021328,'ETHICS','235S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Governance and Healthcare Innovation',023212,'ETHICS','250S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pursuit of Purpose: Exploring What to Be and Why',024295,'ETHICS','253S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('America in the World Economy: The Law Politics and Economics of U.S. Antitrust 1890-2015',023597,'ETHICS','255',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Moral Dilemmas in Philosophy and Literature',023927,'ETHICS','258',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('News as a Moral Battleground',014156,'ETHICS','259',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Happiness and the Virtuous Life',025128,'ETHICS','260S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Arts and Human Rights',020266,'ETHICS','261',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Migration and Ethics',021780,'ETHICS','262',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Migration and Ethics',001978,'ETHICS','262S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Applied and Environmental Ethics',007716,'ETHICS','265',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroethics',020466,'ETHICS','269',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business Ethics: The Debate Over Corporate Social Responsibility',018589,'ETHICS','270',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Life Within Capitalism: A History of its Values Measures and Struggles',022572,'ETHICS','271',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Democracy: Ancient and Modern',021996,'ETHICS','275',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Political Thought and Its Modern Legacy',024659,'ETHICS','276',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',024414,'ETHICS','277S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Denial Faith Reason: Sustainability and Survival',022548,'ETHICS','285',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Science',013592,'ETHICS','287',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Science',025362,'ETHICS','287S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethical Dimensions of Environmental Policy',025150,'ETHICS','288S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',023140,'ETHICS','291',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business and Human Rights Advocacy Lab',023281,'ETHICS','301S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics and Philosophy of Sport',023168,'ETHICS','315S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Self-Knowledge and the Pursuit of Wisdom',025280,'ETHICS','316S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics and Native American: American Indian Life and Literature',023872,'ETHICS','319',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Narrative and Moral Crisis',023928,'ETHICS','320S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organized Compassion: Global Health as Moral Enterprise',024998,'ETHICS','344S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Mysticism: Perso-Indian (Eastern) Traditions',009279,'ETHICS','373S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Watchdog Reporting in Politics',025332,'ETHICS','374S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugee Policy and Practice (DukeImmerse)',025103,'ETHICS','388S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Field Ethics (DukeImmerse)',025006,'ETHICS','389S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Ethics',025005,'ETHICS','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Ethics',023424,'ETHICS','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Ethics',023840,'ETHICS','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',022727,'ETHICS','493',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Ethics \u0026 Society Certificate',025050,'ETHICS','497S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Evolutionary Anthropology',019023,'EVANTH','101',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Special Topics',018089,'EVANTH','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Structures in an Evolutionary Framework',022720,'EVANTH','212FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genetics and Genomics of Human Variation',025438,'EVANTH','215S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Evolution',001315,'EVANTH','220',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Becoming Human',019380,'EVANTH','221S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bodies of Evidence: Introduction to Forensic Anthropology',015483,'EVANTH','230',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anatomy of the Lower Extremities',001326,'EVANTH','231L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Anatomy',001327,'EVANTH','235L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociobiology',001325,'EVANTH','246',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Ecology',001322,'EVANTH','253',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ecology and Adaptation of Hunters and Gatherers',001321,'EVANTH','257',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Cognitive Evolution',018842,'EVANTH','260',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the Evolution of Human Culture Behavior and Institutions',012574,'EVANTH','280',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Health in Evolutionary Perspective',022594,'EVANTH','285',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Health in Evolutionary Perspective',022594,'EVANTH','285D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Evolutionary Genetics',021772,'EVANTH','310',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Physiology and Anatomy: An Evolutionary Perspective',020457,'EVANTH','330',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Anatomy and Physiology',020457,'EVANTH','330L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Human Body',001317,'EVANTH','333L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Sexuality',020458,'EVANTH','341D',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Field Biology',001324,'EVANTH','344L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Ecology and the Evolution of Animal Behavior',012500,'EVANTH','347D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food For Thought: The Biology of Nutrition',017412,'EVANTH','355',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Conservation',001333,'EVANTH','359S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Evolution of Primate Social Cognition',013998,'EVANTH','363S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Disease Ecology and Global Health',022458,'EVANTH','385D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Disease Ecology and Global Health',025374,'EVANTH','385S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Issues in Evolutionary Anthropology',001329,'EVANTH','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Topics in Evolutionary Anthropology',001331,'EVANTH','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',014229,'EVANTH','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',001338,'EVANTH','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Current Topics in Evolutionary Anthropology',022927,'EVANTH','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Research in Evolutionary Anthropology',017358,'EVANTH','495S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary French 1',004417,'FRENCH','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary French 2',004419,'FRENCH','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Elementary French',004422,'FRENCH','111',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in Theory',021366,'FRENCH','201',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate French Language and Culture',004428,'FRENCH','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate French Language and Culture',004432,'FRENCH','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Intermediate French Language and Culture',004424,'FRENCH','212A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art \u0026 Architecture in Early Modern France',023889,'FRENCH','268',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: French Tutorial',021952,'FRENCH','270T-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Administered Study Abroad: Topics in French Studies',023272,'FRENCH','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced French Language/Writing Workshop',004435,'FRENCH','301',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced French Writing and Grammar',004435,'FRENCH','301S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cultural and Literary Perspectives',004434,'FRENCH','302S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French for Current Affairs',004440,'FRENCH','303S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French Composition and Translation',004445,'FRENCH','304',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reading Literature in French',004455,'FRENCH','306S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business and Culture in the Francophone World',004447,'FRENCH','321S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Displacement: Voix Francophones',022935,'FRENCH','325S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French for Freshmen and Sophomores',018250,'FRENCH','327S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marketing Qu\u00e9bec: Policy Marketing and Identity',021436,'FRENCH','328SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French Phonetics',004444,'FRENCH','329S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Acting French',016803,'FRENCH','330S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The French Short Story',016806,'FRENCH','332',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Free Speech: France-USA',004456,'FRENCH','335',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Creative Brain: Literature Arts \u0026 Cognition',022000,'FRENCH','342A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Expression',013130,'FRENCH','343A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aspects of Contemporary French Culture',004468,'FRENCH','345A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Deglobalization',024652,'FRENCH','350A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economic and Political History of the European Union',024905,'FRENCH','351A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Enlightenment Culture to Popular Culture',024651,'FRENCH','352A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The French Love Story',017443,'FRENCH','361',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The French Love Story - Preceptorial',021760,'FRENCH','361P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Paris: Capital of the Nineteenth Century',022207,'FRENCH','365',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in French Literature and Culture',004508,'FRENCH','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in French and/or Francophone Culture Abroad',004466,'FRENCH','390A-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in French Literature and/or Culture (in English)',014677,'FRENCH','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary French Fiction',004488,'FRENCH','410S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biography Life Writing Autofiction',023334,'FRENCH','411',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Laughing Through It All: French Comedy and Its Social/Political Contexts Middle Ages to the 21st C',023905,'FRENCH','412S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World War II and French Film',004492,'FRENCH','413',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comics and Culture: Images of Modern France in the Making',012964,'FRENCH','414S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern and Contemporary Art in France',024683,'FRENCH','416A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('De l\u2019Horrible Danger de la Lecture / On the Terrible Danger of Reading',023279,'FRENCH','420S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Surrealism: Aesthetics and Politics',023324,'FRENCH','425S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Imagining Europe: Arts Culture Politics',011802,'FRENCH','429',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Imagining Europe: Language Culture Politics Preceptorial',024925,'FRENCH','429P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Flaubert''s Brain: Neurohumanities',019407,'FRENCH','481',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Flaubert''s Brain: Neurohumanities Preceptorial',024346,'FRENCH','481P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Strange Masterpieces: Major Authors in French and Francophone Modernity',024978,'FRENCH','482S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening Europe',024679,'FRENCH','489S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening Europe Preceptorial',024684,'FRENCH','489SP',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Literature and Neuroscience',022249,'FRENCH','490-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Topics in French and/or Francophone Literature/Culture Abroad',004509,'FRENCH','490A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in French Literature',004472,'FRENCH','490S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('First-Year German I',004764,'GERMAN','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('First-Year German II',004766,'GERMAN','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive First-Year German',004771,'GERMAN','111',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive First-Year German',018856,'GERMAN','111A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in German Studies',025217,'GERMAN','190S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate German I',004775,'GERMAN','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate German II',004777,'GERMAN','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Conversation Practice',019025,'GERMAN','210',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Intermediate German',004779,'GERMAN','212A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Intermediate German for Engineers',017507,'GERMAN','213A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capturing the City: Documentary Photography in Berlin',023919,'GERMAN','222SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction',024104,'GERMAN','243',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Moral Dilemmas in Philosophy and Literature',023927,'GERMAN','250',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Vikings and Their Literature',004834,'GERMAN','261S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Romantic Fairy Tales: Literary and Folk Fairy Tales from Grimms to Disney',015319,'GERMAN','262',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Romantic Fairy Tales: Literary and Folk Fairy Tales from Grimms to Disney - Preceptorial in German',025009,'GERMAN','262P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Silent Film: An Introduction',021858,'GERMAN','268S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Film Noir',024152,'GERMAN','270',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Film Noir',021859,'GERMAN','270S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('German History Through Film',022541,'GERMAN','286',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('German Way of War',020470,'GERMAN','288',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in German Studies',021743,'GERMAN','290-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced German in Berlin',017301,'GERMAN','303AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced German I: Culture and Society',004796,'GERMAN','305S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced German II: Text and Context',004797,'GERMAN','306S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Conversation Practice',019024,'GERMAN','310',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intensive German Language and Culture',004799,'GERMAN','312AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intensive German',004826,'GERMAN','319AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Policy in Europe: Duke in Berlin',008342,'GERMAN','320A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of a United Europe',003268,'GERMAN','321A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Berlin: Architecture Art and the City 1871-Present',000629,'GERMAN','322A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dwarves Dragon-Slayers and Werewolves: Germanic Myths and Legends',025336,'GERMAN','323S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Projekt Theater: German Theater and Performance',020507,'GERMAN','334S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern German Theater and Drama',004819,'GERMAN','335S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Berlin in Literature and Culture',004827,'GERMAN','352AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Art in Berlin',022924,'GERMAN','354SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Germany Today: A European Superpower? Duke-in-Berlin',014221,'GERMAN','359A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of the Energiewende in Germany',022105,'GERMAN','362SA',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Green Germany: World Leader in Environmental Policy',022574,'GERMAN','364',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Frontier City Berlin: Facing History''s Great Challenges',017281,'GERMAN','366A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Devil''s Pact: Faust and the Faust Tradition',016403,'GERMAN','370',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Kafka and Cinema',023275,'GERMAN','372',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of Western Civilization: The German Tradition 1750-1930',012950,'GERMAN','375',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marx Nietzsche Freud',016847,'GERMAN','380',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Existentialist Imagination',020828,'GERMAN','385',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Germany Confronts Nazism and the Holocaust',017295,'GERMAN','387',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in German Studies',016379,'GERMAN','390-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in German Literature and Culture',016380,'GERMAN','390S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in German Studies',004850,'GERMAN','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in German Literature and Culture',023015,'GERMAN','390SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced German Cultural Studies',004830,'GERMAN','420A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('German Literature and Culture',004803,'GERMAN','430S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('German Politics and Society',020516,'GERMAN','435S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Captured! Stories of Entrapment in the 20th and 21st Centuries',025343,'GERMAN','443S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Uncanny German Canon from Goethe to Kafka',025327,'GERMAN','445S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World War I and the History of Art \u0026 Architecture: Germany and Beyond',025273,'GERMAN','460S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in German Studies',023196,'GERMAN','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Global Health',024464,'GLHLTH','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Global Health',022138,'GLHLTH','101D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('On Suffering: How Science and Stories Shape Us',025220,'GLHLTH','140FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Chinese Medicine',024180,'GLHLTH','142',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('AIDS and Other Emerging Diseases',012940,'GLHLTH','154',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Vulnerable Populations \u0026 Global Health',020164,'GLHLTH','171FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Technology for Health: Revolutions in Low Resource Settings',021630,'GLHLTH','173FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Medicine',022107,'GLHLTH','174',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('A Global Perspective on Provider-Patient Communication',024119,'GLHLTH','188FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('To Boldly Go! Global Health and the American Way of Engagement',023595,'GLHLTH','189FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Patient and Research Participant Activism and Advocacy',025265,'GLHLTH','196FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Global Health',024265,'GLHLTH','203',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Feminism',019376,'GLHLTH','208S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Feminism',019376,'GLHLTH','208S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Ethics: Policy Choice as Value Conflict',017949,'GLHLTH','210',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Global Health',018708,'GLHLTH','212',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Case Studies in Global Sexual and Reproductive Health',024398,'GLHLTH','215',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Performing Sexual Health: The Duke Sex Ed Squad',024759,'GLHLTH','216S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Global Health',021138,'GLHLTH','220S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Women''s Health Technologies',025173,'GLHLTH','230L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethical Dimensions of Environmental Policy',025150,'GLHLTH','248S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Genomics and Society',019367,'GLHLTH','258D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Psychology of Health Behavior Change',021361,'GLHLTH','261',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: Arabic Tutorial',021954,'GLHLTH','270T-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: Creole Tutorial',021953,'GLHLTH','270T-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: French Tutorial',021952,'GLHLTH','270T-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: Hindi Tutorial',021955,'GLHLTH','270T-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: Mandarin Tutorial',021956,'GLHLTH','270T-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: Spanish Tutorial',021957,'GLHLTH','270T-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: Swahili Tutorial',021958,'GLHLTH','270T-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Entrepreneurial Problem Solving in Global Health',024762,'GLHLTH','273S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',024414,'GLHLTH','277S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Global Health',024282,'GLHLTH','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Narratives of Living with HIV/AIDS',022174,'GLHLTH','302',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Systems',022205,'GLHLTH','303',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Health in Evolutionary Perspective',022594,'GLHLTH','304',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Health in Evolutionary Perspective',022594,'GLHLTH','304D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health: Social Determinants',023315,'GLHLTH','305',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Policy: Transforming Evidence into Action',023873,'GLHLTH','306',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Governance and Healthcare Innovation',023212,'GLHLTH','310S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War and Public Health in Africa',023220,'GLHLTH','312',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Primate Disease Ecology and Global Health',025374,'GLHLTH','315S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food and the Body',021793,'GLHLTH','320S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Anthropology',017935,'GLHLTH','321',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Anthropology',018531,'GLHLTH','321-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trauma and Global Mental Health in Haiti',022545,'GLHLTH','323',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Displacement: Voix Francophones',022935,'GLHLTH','325S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Health Culture and the Latino Community',015778,'GLHLTH','326',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of Global Health',023223,'GLHLTH','335',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Determinants of U.S. Health Disparities',009850,'GLHLTH','340',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics of Global Infectious Disease Control',022169,'GLHLTH','341',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organized Compassion: Global Health as Moral Enterprise',024998,'GLHLTH','345S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Epidemiology Focus on Global Health',019053,'GLHLTH','362',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Global Mental Health',022266,'GLHLTH','363',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Methods in Global Health',019019,'GLHLTH','371',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Ethics in Research',021914,'GLHLTH','373',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Research \u0026 Ethics',021914,'GLHLTH','373',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment Health and Development in China',020240,'GLHLTH','383S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health in Context: Sri Lanka',025323,'GLHLTH','383SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Global Health Studies',018549,'GLHLTH','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Global Health',022476,'GLHLTH','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics with Lab in Global Health Studies',023298,'GLHLTH','390L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics with Lab in Global Health Studies',024582,'GLHLTH','390L-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Global Health Studies',018532,'GLHLTH','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study in Global Health',019624,'GLHLTH','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study in Global Health',020407,'GLHLTH','391-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study in GH',021758,'GLHLTH','391-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Global Health',019630,'GLHLTH','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Global Health',023497,'GLHLTH','393-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Connections in Global Health: Interdisciplinary Team Projects',022392,'GLHLTH','395',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Connections in Global Health: Interdisciplinary Team Projects',022393,'GLHLTH','395-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Connections in Global Health: Interdisciplinary Team Projects',022395,'GLHLTH','396',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Connections in Global Health: Interdisciplinary Team Projects',022394,'GLHLTH','396-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: The Black Death and Medieval Society',020066,'GLHLTH','460S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Living Dying Healing in Russia',024120,'GLHLTH','481',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Graduation with Distinction in Global Health Thesis Preparation Couse',024141,'GLHLTH','495S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Graduation with Distinction in Global Health Thesis Preparation Course',024908,'GLHLTH','495S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Graduation with Distinction in Global Health 2',025274,'GLHLTH','496S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Capstone',018548,'GLHLTH','499',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Greek',004925,'GREEK','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Greek',004926,'GREEK','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive First-Year Greek',024353,'GREEK','111',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Greek',004932,'GREEK','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Greek',013076,'GREEK','203A-1',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Greek: Prose (Study Abroad)',018971,'GREEK','203A-2',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate Greek',013077,'GREEK','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Greek: Verse (Study Abroad)',018969,'GREEK','204A-2',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate Greek',013077,'GREEK','204S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Greek',013153,'GREEK','301A-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Greek',018968,'GREEK','301AS-2',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Greek Scholarship: G(r)eeks on Greek',024375,'GREEK','334S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Greek Novel',024633,'GREEK','344S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',021655,'GREEK','491',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Everyday Life',014779,'GSF','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fantasy Mass Media and Popular Culture',001873,'GSF','108',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Women Gender and Sexuality',022162,'GSF','115',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: The Global Sixties: Race Revolution Sexuality',022307,'GSF','160S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Women''s Studies',021987,'GSF','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Approaches to Global Issues',002842,'GSF','195',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('LGBTQ/Queer Cinema and Cultural Production',023563,'GSF','198',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Study of Sexualities (DS4)',010259,'GSF','202S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Science Technology Ethics and Masculinity in American Culture',023904,'GSF','205',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sexuality Bible Church and Controversy',023911,'GSF','207',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The French Love Story',017443,'GSF','208',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Women Across the Ages',020896,'GSF','209S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Digital Culture',018841,'GSF','210S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Feminist Art from the 1970s to the Present',023316,'GSF','213S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Israeli Cinema',018481,'GSF','214',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cyborgs',013840,'GSF','215',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Socialism',024724,'GSF','216',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Culture',001879,'GSF','217',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Bodies: Sex \u0026 Food',005464,'GSF','219',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Case Studies in Global Sexual and Reproductive Health',024398,'GSF','220',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Philosophy',007723,'GSF','222',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and the Political Process',010426,'GSF','225',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing American Politics',024716,'GSF','226S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Space-Body-Image',023910,'GSF','229S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women in the Economy',013824,'GSF','230',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Language',009662,'GSF','232',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African American Women and History',015288,'GSF','237',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women Gender and Sexuality in U.S. History',019105,'GSF','239',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women Gender and Sexuality in U.S. History',021373,'GSF','239D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Work and Organizations',014769,'GSF','241',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Book Publishing \u0026 Marketing: A Case Study of the Romance Fiction Industry',022921,'GSF','248S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economies of the Global Image',021331,'GSF','249S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Popular Fictions',013886,'GSF','252S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and Power in the Renaissance',025130,'GSF','258S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Actress: Celebrity and the Woman',018225,'GSF','260',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Sexuality in the Ancient World',023442,'GSF','266',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Animals and Ethics: Welfare Rights Utilitarianism and Beyond',018547,'GSF','270',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Art Since 1945',000602,'GSF','277D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Art Since 1945',024658,'GSF','277S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex/Gender - Nature/Nurture: Intersections of Biology and Society',022838,'GSF','278',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('European Art 1900-1945',000601,'GSF','281',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Women Writers',005741,'GSF','282',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Women''s Studies',010427,'GSF','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Women''s Studies',021961,'GSF','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Women''s Studies',010428,'GSF','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Women''s Studies',021960,'GSF','290SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex Work: The Politics of Sexual Labor',022166,'GSF','295S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Black Muslims: Race Religion \u0026 Culture',024465,'GSF','296S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory Today: Introduction to the Study of Literature',020179,'GSF','301S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Race and Ethnicity in Politics and Public Policy',021822,'GSF','303',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Activism Women and Danger: Documenting Race Gender and Activism in the American South',022549,'GSF','306S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hashtags Memes Digital Tribes',024200,'GSF','320',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hashtags Memes Digital Tribes',024708,'GSF','320S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex Politics and Feminist Philosophy',025340,'GSF','322',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Muslims in Germany: Politics of Migration Religion and Culture',025261,'GSF','323SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and Film: Directors of the Diaspora',025297,'GSF','339S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Feminist Activism: Social Movements',014782,'GSF','360S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Money Sex Power',016613,'GSF','361',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Popular Culture',016614,'GSF','362',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Popular Culture',014784,'GSF','362S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Interpreting Bodies: Identity and Beyond',014785,'GSF','363S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Gender and Sexuality',014812,'GSF','364S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Political Theory',017884,'GSF','365',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Love Marriage Education: Theories About Women from Rousseau to Beauvoir',015467,'GSF','365S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Nature Culture and Gender',024222,'GSF','366',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Sexuality and Human Rights',019780,'GSF','368',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Feminism',019376,'GSF','369S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Sexuality and the Image',020447,'GSF','371S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Men and Masculinities',023606,'GSF','374S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women in the Public Sphere: History Theory and Practice',015583,'GSF','385S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics of Sexuality',023909,'GSF','386S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Moral Panics Spectacle and Everyday Life: Social Anxieties and Minorities',025403,'GSF','387',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Women''s Studies',024011,'GSF','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Women''s Studies',024010,'GSF','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and the Law',021418,'GSF','401',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar - Globalization: Asia and Asian America',020148,'GSF','412S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Interethnic Intimacies: Production and Consumption',022582,'GSF','415S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('De l\u2019Horrible Danger de la Lecture / On the Terrible Danger of Reading',023279,'GSF','420S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Sexuality in Latin America',015192,'GSF','429',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Sex and Citizenship',020755,'GSF','432S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Techno-Orientalism: Asian/America (Post)Human and Science Fiction',024757,'GSF','438S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latino/as in the Global South Capstone - Global/Local Contexts',020494,'GSF','495S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Seminar in Women''s Studies',010437,'GSF','499S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Modern Hebrew',005032,'HEBREW','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biblical Hebrew I',009240,'HEBREW','171',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biblical Hebrew II',009241,'HEBREW','172',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Modern Hebrew',005033,'HEBREW','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Modern Hebrew',005034,'HEBREW','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Modern Hebrew',005037,'HEBREW','305S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Modern Hebrew',005039,'HEBREW','306S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',005044,'HEBREW','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Modern Hebrew',012504,'HEBREW','407S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Hindi',005048,'HINDI','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Hindi',005049,'HINDI','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Hindi',005053,'HINDI','203D',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Hindi',005054,'HINDI','204D',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: Hindi Tutorial',021955,'HINDI','270T-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Hindi',005056,'HINDI','305',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Hindi',005057,'HINDI','306',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',005061,'HINDI','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',025402,'HINDI','391-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Hindi Language and Society II',013010,'HINDI','407S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Hindi Language and Society II',013014,'HINDI','408S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Global History',005083,'HISTORY','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Approaches to Global Issues',002842,'HISTORY','103',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Old Worlds/New Histories 500-1500 CE',020130,'HISTORY','105',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Economic and Business Cultures',022172,'HISTORY','107D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Emotions and the Psychology of the Self',022159,'HISTORY','108',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Human Rights and Social Movements',022136,'HISTORY','109',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Law and Governance',023139,'HISTORY','110',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sexual Pleasure in the Modern World',024410,'HISTORY','112',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Medicine',022107,'HISTORY','113',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of War Military and Society',022168,'HISTORY','114',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of War Military and Society',022168,'HISTORY','114D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Women Gender and Sexuality',022162,'HISTORY','115',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Renaissance Cultures',006623,'HISTORY','116',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('A History of American Democracy: Everything You Need to Know about US History in One Semester',025054,'HISTORY','120',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Private Wealth and Public Giving: A Modern History',023658,'HISTORY','123',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Experience: A Video Approach',008062,'HISTORY','125S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Oral History',016078,'HISTORY','126S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Corporate Citizenship',023561,'HISTORY','127FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to African Studies (DS3 or DS4)',000082,'HISTORY','129',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Dreams and American Realities',015203,'HISTORY','130D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Pre-Modern Architecture',025249,'HISTORY','144D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Birth of the West: Thinking about the Greek Origins of Western Civilization',023828,'HISTORY','150S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: The Physicians in History',022204,'HISTORY','151S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: History at Sea',020036,'HISTORY','152S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Cultural Exchange in Continental Asia',021112,'HISTORY','153S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Torture in the Modern West',022233,'HISTORY','154S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: The United States and the Middle East',020025,'HISTORY','155S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Cold War America',024147,'HISTORY','156S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Empires in Historical Perspective',020208,'HISTORY','157S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Islam and Nationalism',020611,'HISTORY','158S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('GTWY SEM: What Did Your Grandparents Do? A Global Exploration of Individual Life Histories',024386,'HISTORY','159S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: The Global Sixties: Race Revolution Sexuality',022307,'HISTORY','160S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: How to Do History',023289,'HISTORY','161S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Asia in Global History',024133,'HISTORY','162S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Gandhi King Mandela',025250,'HISTORY','163S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar - Antisemitism: Ethnicity Race Religion Culture',020806,'HISTORY','164S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar - Anarchism and its Discontents',022109,'HISTORY','166S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Male and Female Soldiers in the World Wars',020028,'HISTORY','170S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: History of Intimacy: Family Friendship Romance',021794,'HISTORY','171S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: History of Calypso',024389,'HISTORY','172S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: We All Want to Change the World: Writing the History of Good Intentions',023235,'HISTORY','173S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Regime Change/U.S. Foreign Policy: Latin America and Beyond',020027,'HISTORY','174S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar - The United States and the World',005351,'HISTORY','175S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: The European Union: History and Prospects',023261,'HISTORY','176S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: The Meaning of Freedom in American History',020032,'HISTORY','177S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Capitalism \u0026 Its Critics',020035,'HISTORY','179S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar - Story-Telling Truth-Telling and History',021836,'HISTORY','180S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Native American History Through Autobiography',020030,'HISTORY','181S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: American Slavery and Freedom: The Rise and Destruction of Slavery in the US',024456,'HISTORY','182S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Civil Rights and Asian Americans',020070,'HISTORY','183S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: China at War',022874,'HISTORY','184S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Disease in the Premodern World',024195,'HISTORY','185S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Living Through the Great War',024403,'HISTORY','186S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Culture in Africa',024382,'HISTORY','187S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in History',024387,'HISTORY','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Focus Program',018086,'HISTORY','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in History',018710,'HISTORY','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study: Digital India Lab',022928,'HISTORY','191L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and History',021837,'HISTORY','201',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Socialism',024724,'HISTORY','202',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Global Health',024265,'HISTORY','203',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Africa',005186,'HISTORY','204',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('East Africa and the World',025061,'HISTORY','206',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('South Africa: Past and Future',019171,'HISTORY','208',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam in Asia',019709,'HISTORY','209S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Civilization I',009271,'HISTORY','210',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Civilization II',009272,'HISTORY','211',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Middle East',005287,'HISTORY','214',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shamanism and Spirit Possession',021035,'HISTORY','215S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern \u0026 Global India',005244,'HISTORY','218',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Indian Civilization',020607,'HISTORY','219S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('China from Antiquity to 1400',005346,'HISTORY','220',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Survey of Modern China 1800-Present',021631,'HISTORY','223',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Themes in Chinese Culture and History',001935,'HISTORY','224A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Women Across the Ages',020896,'HISTORY','225S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Emergence of Modern Japan',005258,'HISTORY','227',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinatowns: A Cultural History',021070,'HISTORY','228',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Men and Masculinities',023606,'HISTORY','229S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Greek History',002730,'HISTORY','230',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Athletics',021993,'HISTORY','231',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman History',002731,'HISTORY','233',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Democracy: Ancient and Modern',021996,'HISTORY','234',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cities and City Life in Italy',014666,'HISTORY','237',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cities and City Life in Italy',023934,'HISTORY','237A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Political Nonviolence',024458,'HISTORY','238S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Chinese Medicine',024180,'HISTORY','239',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Turkey: Muslim and Modern',020133,'HISTORY','239FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Cultures',006622,'HISTORY','241',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in the Americas',023953,'HISTORY','242S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of the Christian Church',009245,'HISTORY','243',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Christianity in Film and Fiction',020445,'HISTORY','244',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Bodies: Sex \u0026 Food',005464,'HISTORY','246',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('British Isles in the Middle Ages',005228,'HISTORY','247',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History and Culture of Iran',022875,'HISTORY','248',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Book Publishing \u0026 Marketing: A Case Study of the Romance Fiction Industry',022921,'HISTORY','248S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Feminism',019376,'HISTORY','249S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Green Germany: World Leader in Environmental Policy',022574,'HISTORY','250',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jewish History 1492 to the Present',014942,'HISTORY','251',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('America in the World Economy: The Law Politics and Economics of U.S. Antitrust 1890-2015',023597,'HISTORY','252',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dante''s Divine Comedy: Hell Purgatory and Paradise',018281,'HISTORY','253',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Expansion of Medieval Europe',020488,'HISTORY','254',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('German History Through Film',022541,'HISTORY','255',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History of the Renaissance in Europe 1250-1550',005281,'HISTORY','256',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion Reform and Violence in Early Modern Europe',005241,'HISTORY','257',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and Power in the Renaissance',025130,'HISTORY','258S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Reformation of the Sixteenth Century',009285,'HISTORY','259',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Magic Religion and Science since 1400',005266,'HISTORY','260',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Magic Religion and Science since 1400',021784,'HISTORY','260D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Germany Confronts Nazism and the Holocaust',017295,'HISTORY','261',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Political Thought and Its Modern Legacy',024659,'HISTORY','262',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Political History of Modern Architecture: From Revolution through Neoliberalism',025018,'HISTORY','263',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Madness and Society in Historical Perspective',005205,'HISTORY','265',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Soccer Politics',023209,'HISTORY','266D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Enlightenment: A Social Cultural and Intellectual Survey',011896,'HISTORY','267',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Enlightenment: A Social Cultural and Intellectual Survey',014941,'HISTORY','267D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of Western Civilization: The German Tradition 1750-1930',012950,'HISTORY','268',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tudor/Stuart Britain',005162,'HISTORY','269',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Britain and the British Empire in the Age of the American Revolution',020508,'HISTORY','270',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Britain',005163,'HISTORY','271',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genocide and Human Rights',022580,'HISTORY','272',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Spanish Civil War: History Literature and Popular Culture',010077,'HISTORY','273S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Russian Empire',020132,'HISTORY','275',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Tsars to Commissars: Russian Cultural History',005310,'HISTORY','276',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tolstoy and the Russian Experience',016076,'HISTORY','277',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Nationalism and Exile',005138,'HISTORY','278S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Foundations of Modern Terrorism',005137,'HISTORY','279',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Revolutionary Cinema',005278,'HISTORY','281',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Life Within Capitalism: A History of its Values Measures and Struggles',022572,'HISTORY','284',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Western Warfare since 1789',017351,'HISTORY','285',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Western Warfare Since 1789',022018,'HISTORY','285D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in the Twentieth Century',012973,'HISTORY','286',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of the World Wars',005193,'HISTORY','287',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of the World Wars',022469,'HISTORY','287D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('German Way of War',020470,'HISTORY','288',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Weimar and Nazi Germany',005234,'HISTORY','289',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in History',012051,'HISTORY','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jews and Muslims Judaism and Islam',023169,'HISTORY','294',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World War II and French Film',004492,'HISTORY','295',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Military in Germany and the United States',021117,'HISTORY','296',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Holocaust',021600,'HISTORY','297',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genocide in the Twentieth Century',005373,'HISTORY','298',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and Popular Culture in U.S. History',023215,'HISTORY','299',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Rise of Modern Science: Early Science through Newton',005302,'HISTORY','302',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Rise of Modern Science: Newton to Einstein',005303,'HISTORY','303',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Rise of Modern Science: Twentieth Century',005304,'HISTORY','304',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of International Financial and Monetary Crises',020604,'HISTORY','305',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Economic History',003284,'HISTORY','306',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Economic Thought',003301,'HISTORY','307',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adam Smith and the System of Natural Liberty',003300,'HISTORY','308',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adam Smith and the System of Natural Liberty',020769,'HISTORY','308S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Alexander Hamilton and His World',024388,'HISTORY','309',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History of Modern Macroeconomics from Keynes to the Present',003323,'HISTORY','309S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The International Economy 1850-Present: From Globalization to Globalization',014318,'HISTORY','310',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Men Women and Sports: Topics in US Sports History',023569,'HISTORY','311S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe''s Colonial Encounter 1492-1992: Political Economy and International Thought',005180,'HISTORY','312',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe''s Colonial Encounter 1492-1992',005180,'HISTORY','312',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Crime and the City from Dickens to The Wire',021134,'HISTORY','313',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Crime and the City from Dickens to The Wire',021786,'HISTORY','313D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('US Latin@ Histories',023528,'HISTORY','314S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Emergence of the Atlantic Basin to 1713',005329,'HISTORY','315',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Emergence of the Atlantic Basin',022959,'HISTORY','315S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Atlantic Slave Trade',005330,'HISTORY','316S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics and Native American: American Indian Life and Literature',023872,'HISTORY','317',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Caribbean 1492-1700',005211,'HISTORY','318',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War Slavery and Revolution in the Caribbean 1700-1800',005212,'HISTORY','319',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Caribbean after Emancipation',021059,'HISTORY','321',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('China and the Silk Roads World: 500-1500',023690,'HISTORY','323',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mexico Since Before Cortes',005295,'HISTORY','324',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Denial Faith Reason: Sustainability and Survival',022548,'HISTORY','325',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Colonial Latin America',005349,'HISTORY','326',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Afro-Brazilian Culture and History',005338,'HISTORY','327',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Brazil',022535,'HISTORY','328',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latin America Since Independence',005350,'HISTORY','329',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Contemporary Latin America',005237,'HISTORY','330',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economic and Political History of the European Union',024905,'HISTORY','331A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Illiberal Nondemocracies: Focus on Eastern Europe and Asia',025023,'HISTORY','331S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Engineering and Social Movements in Eastern Europe and Asia',023228,'HISTORY','333S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Frontier City Berlin: Facing History''s Great Challenges',017281,'HISTORY','334A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The University as a Culture: A Survivor''s Guide',024418,'HISTORY','334S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('United States Legal History',015818,'HISTORY','335',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('United States Legal History',022019,'HISTORY','335D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('North America to 1760',005172,'HISTORY','336',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Era of the American Revolution 1760-1815',005173,'HISTORY','337',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The New Nation: The United States 1800 to 1860',005174,'HISTORY','338',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race in Durham',021344,'HISTORY','339S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Civil War and Reconstruction: The United States 1850-1880',016026,'HISTORY','340',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Memory Bandits: Human Rights Duke''s History and a Plan to Expand History-Telling',024468,'HISTORY','340T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Africa before Colonialism',025337,'HISTORY','341S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Making of Modern America: The United States from 1898 to 1945',017283,'HISTORY','342',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Modern America: The United States from 1930 to present',016064,'HISTORY','343',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Modern America: The United States from 1930 to present',021788,'HISTORY','343D',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of U.S. Social Movements',020618,'HISTORY','344',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Historical Perspectives on Public Policy: The United States from 1945 to the Present',020016,'HISTORY','344D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('North American Environmental History',005189,'HISTORY','345',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Africans in America to the Civil War',005262,'HISTORY','346',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Americans Since the Civil War',005263,'HISTORY','347',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Civil Rights Movement',005319,'HISTORY','348',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African American Women and History',015288,'HISTORY','349',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Connection between Human Rights Memory and How Societies Create Memorials',024194,'HISTORY','350S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam in the Americas',005616,'HISTORY','351S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Immigrant Dreams U.S. Realities: Immigration Policy History',021816,'HISTORY','352',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Transition to Indignation: Social Movements in Spain 1977-2013',024406,'HISTORY','353A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race: A World History',022173,'HISTORY','354D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Activism Women and Danger: Documenting Race Gender and Activism in the American South',022549,'HISTORY','354S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Indian History to 1815',023536,'HISTORY','355',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black Power: Writing the History of the African American Freedom Struggle',017407,'HISTORY','356S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The South in Black and White',017885,'HISTORY','358',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Violent Jihad in the Twentieth Century - A Global History',024457,'HISTORY','359',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing American Politics',024716,'HISTORY','360S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('United States Political History 1789-1900',016065,'HISTORY','361',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('United States Political History 1900 to the Present',016404,'HISTORY','362',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Capitalism in the United States',021817,'HISTORY','363',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Business History',014653,'HISTORY','364D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Regulatory State',021890,'HISTORY','365D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Constitutional Law',008477,'HISTORY','366',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History of the Book',023681,'HISTORY','367',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Public Health in America',005376,'HISTORY','369',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Twentieth-Century American Medicine',018120,'HISTORY','370',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Feast and Famine: Food in Global History',022450,'HISTORY','371',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('France and Africa: The Politics and Culture of (Post-)Coloniality',025114,'HISTORY','372',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women Gender and Sexuality in U.S. History',019105,'HISTORY','374',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women Gender and Sexuality in U.S. History',021373,'HISTORY','374D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global History of Sexuality',022550,'HISTORY','377',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Culture Between Europe and the Middle East',025243,'HISTORY','378SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Catholic Tradition',009246,'HISTORY','380',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Veterans Oral History Project',021903,'HISTORY','381S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Durham',020459,'HISTORY','382S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Warfare in the Twentieth Century',005192,'HISTORY','383',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The People''s Republic of China 1949-Present',025145,'HISTORY','384',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('White People: In Anthropological Perspective',024156,'HISTORY','385S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Apartheid South Africa and the Struggles for Democracy',023888,'HISTORY','386S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Scientific Revolution',022759,'HISTORY','388S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Family Rights/Human Rights',023868,'HISTORY','389S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in History Lecture',005147,'HISTORY','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Madrid: Special Topics in History',005111,'HISTORY','390A-01',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in China: Special Topics in History',005115,'HISTORY','390A-02',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in France: Special Topics in History',005116,'HISTORY','390A-03',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Andes: Special Topics in History',005118,'HISTORY','390A-04',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Italy: Special Topics in History',005119,'HISTORY','390A-05',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Russia: Special Topics in History',005120,'HISTORY','390A-06',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Berlin: Special Topics in History',005122,'HISTORY','390A-08',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Istanbul: Special Topics in History',005124,'HISTORY','390A-10',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Vienna: Special Topics in History',005125,'HISTORY','390A-11',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Venice: Special Topics on History',005127,'HISTORY','390A-12',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in South Africa: Special Topics in History',015956,'HISTORY','390A-13',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Turkey: Special Topics',020868,'HISTORY','390A-14',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Study Abroad: Seminar on Historical Topics',005128,'HISTORY','390AS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in History Seminar',005160,'HISTORY','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Digital History and Humanities',023511,'HISTORY','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',020803,'HISTORY','391',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',020799,'HISTORY','392',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',005378,'HISTORY','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Post-1945 America',024699,'HISTORY','395S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial Justice in the 20th Century US and South Africa',023887,'HISTORY','396S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights and Documentary: Aesthetics Ethics History',025095,'HISTORY','398S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Obligations of Memory',020049,'HISTORY','403S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and the Law in U.S. History',024108,'HISTORY','404',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Historicizing Whiteness',020184,'HISTORY','411S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mayas Aztecs and Incas: The World According to the Indigenous People of Latin America',019872,'HISTORY','412D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research in Human Rights',022361,'HISTORY','414S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Critical Interventions in Middle East Studies and Policy',025055,'HISTORY','417S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biography Life Writing Autofiction',023334,'HISTORY','420',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Archiving and Visualizing Asia: Politics and Poetics of Knowledge Production',025066,'HISTORY','448S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('South African Life Histories',020213,'HISTORY','450S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: History of Zionism and the State of Israel',020212,'HISTORY','451S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World War I and the History of Art \u0026 Architecture: Germany and Beyond',025273,'HISTORY','452S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar - Globalization: Asia and Asian America',020148,'HISTORY','454S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Palestine and Arab-Israeli Conflict',021891,'HISTORY','455S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Intercolonial Relations in British America 1600-1763',020026,'HISTORY','456S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Maroon Societies in America',020209,'HISTORY','457S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Grassroots Politics \u0026 Social Movements',021818,'HISTORY','458S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Sex Celibacy and Purity in the Middle Ages',020214,'HISTORY','459S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: The Black Death and Medieval Society',020066,'HISTORY','460S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Clothing and U.S. History',020069,'HISTORY','461S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Heresy and Inquisition in the Middle Ages',020605,'HISTORY','462S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Medieval Communities',020072,'HISTORY','463S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Geopolitics of War and Empire in the Modern World',020477,'HISTORY','464S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: History of the U.S./Mexico Border 18th to 20th Centuries',020166,'HISTORY','465S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: The Militarization of the Western World',020490,'HISTORY','466S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Russia-USSR-Russia: History of Communism',020493,'HISTORY','467S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Literature \u0026 Terrorism',021791,'HISTORY','468S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Leadership in American History',020033,'HISTORY','470S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Latin American Left Turns: A New Politics for the 21st Century?',021855,'HISTORY','471S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Two Koreas: History Society and Culture',017073,'HISTORY','473',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: The United States and Europe in the Twentieth Century',022161,'HISTORY','473S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar - Madness and Society in Historical Perspective',022595,'HISTORY','474S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar Genocide: Race Religion and Violence in the Twentieth Century Europe',022533,'HISTORY','475S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: American Militarism',023682,'HISTORY','476S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Regulating American Business: Historical Perspectives',020067,'HISTORY','477S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Race and Power in World History',022523,'HISTORY','478S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Russia''s Path to Capitalism',023918,'HISTORY','479S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminars in Classical Studies',002804,'HISTORY','480S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: The Age of Jim Crow: Racial Segregation from Plessy (1896) to Brown (1954)',020073,'HISTORY','481S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: History of Torture',024354,'HISTORY','483S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: African Americans and the World',025060,'HISTORY','484S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Immigration Policy History',020492,'HISTORY','487S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone: Research in Human Rights',025138,'HISTORY','488S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Narrative History and Historical Fiction',022145,'HISTORY','489S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in History',023984,'HISTORY','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminars in Special Topics',005383,'HISTORY','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cultural Anthropology',001860,'ICS','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('AIDS and Other Emerging Diseases',012940,'ICS','103',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Film',001868,'ICS','104',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Migration and Human Rights in Korea: Local and Global Perspectives',025057,'ICS','105S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Latino/a Studies in the Global South',022918,'ICS','106',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fantasy Mass Media and Popular Culture',001873,'ICS','109',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'ICS','113D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Private Wealth and Public Giving: A Modern History',023658,'ICS','123',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam',009188,'ICS','160',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Gandhi King Mandela',025250,'ICS','163S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advertising and Society: Global Perspective (DS4)',001876,'ICS','169',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim World: Transformations and Continuities',001894,'ICS','170',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business Anthropology: Anthropologists in the Workplace',025328,'ICS','171',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: We All Want to Change the World: Writing the History of Good Intentions',023235,'ICS','173S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Selected Topics in International Comparative Studies',022719,'ICS','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in International Comparative Studies',021573,'ICS','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Approaches to Global Issues',002842,'ICS','195',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Culture',001879,'ICS','203',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Soccer Politics',023209,'ICS','204D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pigging Out: The Cultural Politics of Food',020263,'ICS','206',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Language',009662,'ICS','207',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Feminism',019376,'ICS','208S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Atlantic Slave Trade',005330,'ICS','209S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Languages of the World',006285,'ICS','210',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction',024104,'ICS','212',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Urban Politics and Policymaking',022239,'ICS','213S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dance and Religion in Asia and Africa',016405,'ICS','214',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Socialism',024724,'ICS','216',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern \u0026 Global India',005244,'ICS','218',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Art Since 1945',000602,'ICS','219D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Art Since 1945',024658,'ICS','219S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Africa before Colonialism',025337,'ICS','221S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Black Muslims: Race Religion \u0026 Culture',024465,'ICS','222S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Art: From Royal Court to Contemporary Marketplace',025254,'ICS','223',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Cognitive Science of Religion and Morality',018630,'ICS','224A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Culture Between Europe and the Middle East',025243,'ICS','225SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Black Atlantic',000608,'ICS','226',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment and Conflict: The Role of the Environment in Conflict and Peacebuilding',019016,'ICS','229S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Architecture',017530,'ICS','231',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Civil Society and Civic Engagement in the Arab World: Theories and Practices',023596,'ICS','233S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in the Twentieth Century',012973,'ICS','237',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Law',001877,'ICS','238',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Anthropology of Race',012561,'ICS','239',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in Theory',021366,'ICS','240',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Migration and Ethics',001978,'ICS','244S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound in Social Life',021423,'ICS','246S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound in Social Life',024805,'ICS','246SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Arts and Human Rights',020266,'ICS','248',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Are Things Getting Better? The Question of Progress in World Affairs',023845,'ICS','252D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jewish History 1492 to the Present',014942,'ICS','253',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spies Like Us: Screening Cold War Espionage',025331,'ICS','262',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War Slavery and Revolution in the Caribbean 1700-1800',005212,'ICS','263',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Graphic Asia: Visual Storytelling and Global Asian/American Networks',023632,'ICS','264',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ritual Performance and Religion',023535,'ICS','266',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theories of Liberal Democracy',008401,'ICS','267',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Africa',005186,'ICS','268',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advertising and Masculinity',013831,'ICS','273S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Men and Masculinities',023606,'ICS','274S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Left Right and Center: Competing Political Ideals',024657,'ICS','275S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Foundations of Modern Terrorism',005137,'ICS','276',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Muslims in Germany: Politics of Migration Religion and Culture',025261,'ICS','278SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Western Warfare since 1789',017351,'ICS','285',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of the World Wars',005193,'ICS','287',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trauma and Nostalgia: East European Film in the 21st Century',021215,'ICS','288S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Nationalism and Exile',005138,'ICS','289S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in International Comparative Studies',002843,'ICS','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in International Comparative Studies',016463,'ICS','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Narratives of Living with HIV/AIDS',022174,'ICS','295',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genocide in the Twentieth Century',005373,'ICS','298',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics of Global Infectious Disease Control',022169,'ICS','299',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Chinese Cities through Literature and Film',019055,'ICS','302',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Economic History',003284,'ICS','303',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of International Financial and Monetary Crises',020604,'ICS','305',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Africa and Arabia: Cultures Communities and Connections',024629,'ICS','306',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Financial Crises',023915,'ICS','307S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dancing States of Mind: The Self Social and Political Practice of Dance',024428,'ICS','309S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Poetic Cinema',012958,'ICS','311S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe''s Colonial Encounter 1492-1992: Political Economy and International Thought',005180,'ICS','312',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe''s Colonial Encounter 1492-1992',005180,'ICS','312',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Crime and the City from Dickens to The Wire',021786,'ICS','313D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('ICS Theories and Methods: Doing Global Research',023226,'ICS','314S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('East Africa and the World',025061,'ICS','316',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business and Human Rights Advocacy Lab',023281,'ICS','317S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visualizing the Caribbean',022532,'ICS','318',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Caribbean after Emancipation',021059,'ICS','319',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Movements and Social Media',021369,'ICS','320S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethnic Conflict',013579,'ICS','322',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Law and International Institutions',008461,'ICS','324',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Culture and Politics in Latin America',001896,'ICS','325',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Colonial Latin America',005349,'ICS','326',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Contemporary Latin America',005237,'ICS','327',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Money',024695,'ICS','328',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latin America Since Independence',005350,'ICS','329',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics in Violence',022212,'ICS','329S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Narratives of Migration',025338,'ICS','330S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Media',022767,'ICS','331S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Displacement: Voix Francophones',022935,'ICS','332S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Storyworlds: The Art Technology and Pleasure of Narrative',023237,'ICS','333S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization of Democracy',016070,'ICS','334',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinatowns: A Cultural History',021070,'ICS','336',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hollywood and Africa: Case Studies in Filmic Representation',023219,'ICS','337',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Revolution on Screen: Filming Conflict in the Middle East',023920,'ICS','338SL',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening the Holocaust: Jews WWII and World Cinema',020119,'ICS','341',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Troubling Pasts: Slavery Genocide and Terror',022157,'ICS','343',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Our Culinary Cultures',019057,'ICS','344S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Illiberal Nondemocracies: Focus on Eastern Europe and Asia',025023,'ICS','346S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial Justice in the 20th Century US and South Africa',023887,'ICS','351S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Photography 1839 to the Present',000638,'ICS','352',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Life and Death: Global Perspectives',021082,'ICS','353',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Latin America',022870,'ICS','354',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugee Policy and Practice (DukeImmerse)',025103,'ICS','355S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Interpreting Bodies: Identity and Beyond',014785,'ICS','360S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Violent Jihad in the Twentieth Century - A Global History',024457,'ICS','361',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Deglobalization',024652,'ICS','363A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('France and Africa: The Politics and Culture of (Post-)Coloniality',025114,'ICS','364',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Women Across the Ages',020896,'ICS','365S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Political Theory',017884,'ICS','367',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black Experiences',020222,'ICS','368S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Apple: Life and Death and the Digital Revolution',025347,'ICS','369S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam in Asia',019709,'ICS','370S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race: A World History',022173,'ICS','372D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Novel',023234,'ICS','377S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Mysticism: Perso-Indian (Eastern) Traditions',009279,'ICS','380S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Actress: Celebrity and the Woman',018225,'ICS','383',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Buddhism and Sexuality',021813,'ICS','389',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in International Comparative Studies',022672,'ICS','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in International Comparative Studies',002839,'ICS','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in International Comparative Studies',022671,'ICS','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in International Comparative Studies',023346,'ICS','390SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Society',020504,'ICS','395',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('BorderWork(s): At Home/On the Wall: between Belfast and Durham',021087,'ICS','395T',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language in Immigrant America',021084,'ICS','396S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Ethics: Policy Choice as Value Conflict',017949,'ICS','397',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',020278,'ICS','399',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',023884,'ICS','399A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Obligations of Memory',020049,'ICS','403S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Anti-Globalization',016053,'ICS','404',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Techno-Orientalism: Asian/America (Post)Human and Science Fiction',024757,'ICS','407S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Critical Interventions in Middle East Studies and Policy',025055,'ICS','408S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Surviving Globalization: The Global South and the Development Imagination',024244,'ICS','409',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Archiving and Visualizing Asia: Politics and Poetics of Knowledge Production',025066,'ICS','411S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar - Globalization: Asia and Asian America',020148,'ICS','412S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Interethnic Intimacies: Production and Consumption',022582,'ICS','415S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Middle East: From Facebook to Film',001955,'ICS','417S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Global Caribbean',024698,'ICS','418S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('City Stories Eastern Europe: Prague Warsaw Budapest Sarajevo',020795,'ICS','423S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Anthropology',017935,'ICS','424',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Anthropology',018531,'ICS','424-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Sexuality in Latin America',015192,'ICS','426',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Sex and Citizenship',020755,'ICS','428S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Tibet',021347,'ICS','431S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cultures of New Media',021120,'ICS','432S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Games and Culture: Politics Pleasure and Pedagogy',024157,'ICS','440S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economic Growth',000588,'ICS','452',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Photography in the Americas: War Tourism Art and Protest',010104,'ICS','459S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mayas Aztecs and Incas: The World According to the Indigenous People of Latin America',019872,'ICS','460D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mayas Aztecs and Incas: The World According to the Indigenous People of Latin America',020117,'ICS','460S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Cities',021345,'ICS','465S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cold War Texts: Politics Propaganda and Pop Culture',020519,'ICS','472S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening Europe',024679,'ICS','479S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone: Global Studies Seminar',018714,'ICS','489S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Seminar in Topics in International Comparative Studies',018293,'ICS','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Honors Seminar',018026,'ICS','495S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Honors Seminar',018027,'ICS','496S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Italian 1',005716,'ITALIAN','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian for Beginners',005720,'ITALIAN','101A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Italian 2',005718,'ITALIAN','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Elementary Italian',016599,'ITALIAN','111',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Accelerated Elementary Italian',005722,'ITALIAN','112',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Topics in Italian Literature and Culture',020139,'ITALIAN','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in Theory',021366,'ITALIAN','201',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Italian',005725,'ITALIAN','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate Italian',005727,'ITALIAN','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Accelerated Intermediate Italian',005723,'ITALIAN','213A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction',024104,'ITALIAN','220',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction Preceptorial',024219,'ITALIAN','220P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Problem of Love in Western Literature',022932,'ITALIAN','225',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Problem of Love in Western Literature - Preceptorial',024144,'ITALIAN','225P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Baroque Art',024159,'ITALIAN','256',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Renaissance Architecture in Italy: Brunelleschi to Michelangelo',000585,'ITALIAN','258',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Opera',007130,'ITALIAN','286S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Italian Language Literature or Culture',024003,'ITALIAN','290A-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Italian Culture: Language Literature Film',005729,'ITALIAN','301',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Italian Culture: Language Literature Film',005729,'ITALIAN','301S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italy 21st Century: Understanding Contemporary Italy Through Media Film and Literature',024717,'ITALIAN','302A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Conversations: Explore Italy and Italians through Media Film Literature',024345,'ITALIAN','302S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Sociolinguistics',015889,'ITALIAN','303S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Popular Culture',005742,'ITALIAN','322S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Poetry',005740,'ITALIAN','323S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Italian Culture',022546,'ITALIAN','327S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Italian Civilization',013913,'ITALIAN','331S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Italian Literature I',005736,'ITALIAN','332',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Italian Literature II',005738,'ITALIAN','333',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Major Italian Authors',015640,'ITALIAN','335',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aspects of Italian Literature',005745,'ITALIAN','340A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Cinema',016582,'ITALIAN','380',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Cinema - Preceptorial',018566,'ITALIAN','380P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Renaissance Cultures',006623,'ITALIAN','381',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aspects of Renaissance Culture - Preceptorial',018518,'ITALIAN','381P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Women Writers',005741,'ITALIAN','382',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cities and City Life in Italy',014666,'ITALIAN','383',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cities and City Life in Italy',023934,'ITALIAN','383A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('European Art 1900-1945',000601,'ITALIAN','384',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mafia at the Movies',023931,'ITALIAN','385',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mafia at the Movies Preceptorial',023932,'ITALIAN','385P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art in Renaissance Italy',015180,'ITALIAN','386',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art in Renaissance Italy',024712,'ITALIAN','386FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food Culture and Society',025246,'ITALIAN','388S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Italian Civilization',005749,'ITALIAN','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Italian Literature and Culture',005773,'ITALIAN','390A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Italian Language Literature or Culture',024002,'ITALIAN','390A-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Italian Studies',024897,'ITALIAN','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Italian Studies',021451,'ITALIAN','390SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Italian Studies: Preceptorial',024898,'ITALIAN','390SP',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dante''s Divine Comedy: Hell Purgatory and Paradise',018281,'ITALIAN','481',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dante''s Divine Comedy: Hell Purgatory and Paradise: Preceptorial',018274,'ITALIAN','481P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex Death and a Little Love: Boccaccio''s Decameron',021484,'ITALIAN','482SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Topics in Italian Literature and Culture',005758,'ITALIAN','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Modern Hebrew',005032,'JEWISHST','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biblical Hebrew I',009240,'JEWISHST','105',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biblical Hebrew II',009241,'JEWISHST','106',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Judaism',009186,'JEWISHST','140',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Judaism Through Film',022770,'JEWISHST','141',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Old Testament/Hebrew Bible',009220,'JEWISHST','145',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Israel/Palestine: Comparative Perspectives',023214,'JEWISHST','148',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Scripture: Judaism Christianity and Islam',025298,'JEWISHST','156',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics: Jewish Studies Focus Seminar',024593,'JEWISHST','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Modern Hebrew',005033,'JEWISHST','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Modern Hebrew',005034,'JEWISHST','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hinduism and Judaism: Culture Religion and Identity',025059,'JEWISHST','215S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Israeli Cinema',018481,'JEWISHST','241',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction',024104,'JEWISHST','243',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Israeli Culture',023207,'JEWISHST','245',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jewish History 1492 to the Present',014942,'JEWISHST','251',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jews and Muslims Judaism and Islam',023169,'JEWISHST','256',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Middle East',005287,'JEWISHST','258',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening the Holocaust: Jews WWII and World Cinema',020119,'JEWISHST','266',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fragmented Memories: Polish and Polish Jewish Culture Through Film',020242,'JEWISHST','269S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex and Gender in the Hebrew Bible',009233,'JEWISHST','271',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Jewish Studies',024399,'JEWISHST','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Modern Hebrew',005037,'JEWISHST','305S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Modern Hebrew',005039,'JEWISHST','306S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Andalusia: Muslim Jewish Christian Spain',023604,'JEWISHST','319S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Judaism Sectarianism and Early Christianity',009258,'JEWISHST','331',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Death and the Emergence of the Modern Self',022923,'JEWISHST','340S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Holocaust',021600,'JEWISHST','342',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Judaism',009261,'JEWISHST','345',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Zionism: Jewish and Christian Aspects',021321,'JEWISHST','350S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Germany Confronts Nazism and the Holocaust',017295,'JEWISHST','369',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Kafka and Cinema',023275,'JEWISHST','372',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Jewish Studies',017065,'JEWISHST','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Jewish Studies',017066,'JEWISHST','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Modern Hebrew',012504,'JEWISHST','407S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: History of Zionism and the State of Israel',020212,'JEWISHST','459S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Jewish Studies',023310,'JEWISHST','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Scholars Colloquium',023167,'JEWISHST','497S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Japanese',005801,'JPN','306',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Japanese Language and Society II',005810,'JPN','408S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Readings in Japanese Texts',022592,'JPN','451S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Classical Japanese (Bungo)',005816,'JPN','471S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Japanese (Kanbun)',021917,'JPN','472S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Korean',005821,'KOREAN','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Korean',005824,'KOREAN','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Korean',005827,'KOREAN','306S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in Korean Language and Society I',005828,'KOREAN','407S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Korean Politics and Society: Academic Reading and Writing',021537,'KOREAN','455S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Contemporary Latin America',005237,'LATAMER','230',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in the Americas',023953,'LATAMER','246S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Movements and Social Media',021369,'LATAMER','320S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visualizing the Caribbean',022532,'LATAMER','321',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('El cine pol\u00edtico en am\u00e9rica Latina',023603,'LATAMER','327',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Brazil',022535,'LATAMER','328',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Middle East and Latin America',024225,'LATAMER','330S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Unraveling Paradise: Examining the Mythical Ideal Through Art and Documentary of the Caribbean',025058,'LATAMER','336S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Displacements: Migration and Human Trafficking',022165,'LATAMER','343',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Latin America',022870,'LATAMER','349',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Latin American and Caribbean Culture and Society',019008,'LATAMER','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Surviving Globalization: The Global South and the Development Imagination',024244,'LATAMER','409',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Global Caribbean',024698,'LATAMER','450S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Latin American Left Turns: A New Politics for the 21st Century?',021855,'LATAMER','471S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Latin American and Caribbean Studies',021444,'LATAMER','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latino/as in the Global South Capstone - Global/Local Contexts',020494,'LATAMER','495S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar in Latin American Studies',006469,'LATAMER','498S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Latin',005832,'LATIN','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Latin',005833,'LATIN','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Latin',005836,'LATIN','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Latin: Caesar''s Civil War',013103,'LATIN','203A-1',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate Latin',013079,'LATIN','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Latin: Verse (Study Abroad)',018970,'LATIN','204A-2',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refresher Latin for First-Year Students',025342,'LATIN','251',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',024260,'LATIN','293',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Latin',013089,'LATIN','301A-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Latin',018972,'LATIN','301AS-2',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Catilinarian Conspiracy',023441,'LATIN','302S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Historians',025252,'LATIN','305S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy in Rome',023227,'LATIN','307S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ovid',024139,'LATIN','320S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Vergil',025256,'LATIN','322S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latin Lyric',025255,'LATIN','326S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Eleg',019177,'LATIN','328S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Lucretius: On the Nature of Things',025270,'LATIN','356S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latin of the Late Roman Republic',024142,'LATIN','360S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latin Panegyric: Praise and Blame in Latin Letters and Life',023436,'LATIN','362S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pliny and Martial',019175,'LATIN','368S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Autobiography: Augustine''s Confessions',025271,'LATIN','370S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Latin Literature',005864,'LATIN','390S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',021654,'LATIN','491',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Power of Poetry',021412,'LINGUIST','114FS',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Games and the Brain',022772,'LINGUIST','115FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('When the Head''s in Trouble: Language Lesions and Loss',022776,'LINGUIST','123FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advertising and Society: Global Perspective (DS4)',001876,'LINGUIST','170',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Linguistics',022774,'LINGUIST','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cognition Identity and Linguistic (Human) Rights',024685,'LINGUIST','195FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Individual Health Behavior and Health Education',022305,'LINGUIST','199FS',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Languages of the World',006285,'LINGUIST','202',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('English Historical Linguistics',003861,'LINGUIST','204',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and the Law',020134,'LINGUIST','205FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Variety in Language: English in the United States',015766,'LINGUIST','206',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Psychology of Language',008824,'LINGUIST','207',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Mind',007713,'LINGUIST','208',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Language',007710,'LINGUIST','209',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Neuroscience of Reading \u0026 Language Comprehension',021217,'LINGUIST','211FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law Ethics \u0026 Responsibility',021413,'LINGUIST','212FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Politics of Language',020152,'LINGUIST','213FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Human Language',017496,'LINGUIST','216S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language Thought and Culture',025248,'LINGUIST','217FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Identity',025257,'LINGUIST','218FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Symbolic Logic',007704,'LINGUIST','250',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Spanish Grammar',013025,'LINGUIST','301',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French Phonetics',004444,'LINGUIST','302S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Spanish Linguistics',010047,'LINGUIST','303',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French Composition and Translation',004445,'LINGUIST','304',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Sociolinguistics',015889,'LINGUIST','305S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Korean Sociolinguistics',019056,'LINGUIST','306S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bilingualism',014304,'LINGUIST','308S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spanish in the U.S.',023933,'LINGUIST','309S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Translating Spanish-English and English-Spanish',022213,'LINGUIST','310',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language Technologies and Culture Acquisition',015205,'LINGUIST','361',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Language',009662,'LINGUIST','364',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History Theory and Praxis of Translating Languages and Worlds',023917,'LINGUIST','384S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Linguistic Human Rights in the Americas',024655,'LINGUIST','389S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Linguistics',023148,'LINGUIST','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Spanish Linguistics',012925,'LINGUIST','390S-01',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language in Immigrant America',021084,'LINGUIST','396S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Narratives of Migration',025338,'LINGUIST','397S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Identity and Linguistic Rights in the Spanish Speaking Americas',024344,'LINGUIST','409S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Linguistics and Law (DS4)',016102,'LINGUIST','410S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Aging',024355,'LINGUIST','413',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language Development',025032,'LINGUIST','437S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Junior/Senior Seminar in Linguistics',006290,'LINGUIST','450S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Society',020504,'LINGUIST','451',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Politics: Eurasian Perspectives',020518,'LINGUIST','471S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cold War Texts: Politics Propaganda and Pop Culture',020519,'LINGUIST','472S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Multilingualism',023883,'LINGUIST','473AS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Multilingualism',020594,'LINGUIST','473S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Critical Discourse Analysis: Theory and Method',022521,'LINGUIST','480S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Linguistics',021828,'LINGUIST','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to African American Studies',000081,'LIT','102',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Film Studies',003845,'LIT','110',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literature',024502,'LIT','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics: Introduction to Literature',012974,'LIT','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Performing Science: Experimentation Collaboration and Artistry',025268,'LIT','198FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('LGBTQ/Queer Cinema and Cultural Production',023563,'LIT','199',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Global Cultural Studies',021642,'LIT','201',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Performance Studies',023900,'LIT','202S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Problem of Love in Western Literature',022932,'LIT','205',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Silent Film: An Introduction',021858,'LIT','208S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Indian Cinema',000028,'LIT','211',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World of Korean Cinema',016410,'LIT','212',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Japanese Cinema',000029,'LIT','213',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Cinema',016582,'LIT','215',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trauma and Nostalgia: East European Film in the 21st Century',021215,'LIT','216S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Israeli Cinema',018481,'LIT','217',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Film Noir',024152,'LIT','223',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Film Noir',021859,'LIT','223S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Storytelling',018035,'LIT','224S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Digital Storytelling',024132,'LIT','224SA',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spies Like Us: Screening Cold War Espionage',025331,'LIT','225',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Space-Body-Image',023910,'LIT','229S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Global Los Angeles: An Interdisciplinary Survey',020567,'LIT','230A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Korean Literature and Culture in Translation: Local and Global Connections',020160,'LIT','239S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Devil''s Pact: Faust and the Faust Tradition',016403,'LIT','240',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Around the Bloc: Cold War Culture in the USSR and Eastern Europe',022997,'LIT','241S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Existentialist Imagination',020828,'LIT','242',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Latino/a Studies in the Global South',022918,'LIT','243',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Latino/a Studies in the Global South',019142,'LIT','243S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction',024104,'LIT','244',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Poetry Desire \u0026 Religion',021086,'LIT','244S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dante''s Divine Comedy: Hell Purgatory and Paradise',018281,'LIT','245',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Flaubert''s Brain: Neurohumanities',019407,'LIT','246',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of Western Civilization: The German Tradition 1750-1930',012950,'LIT','247',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinese Literature and Culture in Translation',014627,'LIT','248S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Moral Dilemmas in Philosophy and Literature',023927,'LIT','250',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Alien America: Immigrant Experiences in Literature and Film',024130,'LIT','250FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Indigenous Journeys in South Asian Film and Literature',023929,'LIT','250S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Romantic Fairy Tales: Literary and Folk Fairy Tales from Grimms to Disney',015319,'LIT','252',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The French Love Story',017443,'LIT','262',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in Theory',021366,'LIT','273',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Imagining Europe: Arts Culture Politics',011802,'LIT','274',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Docu-Poetry: Real Life Truths Outside and Inside the Poetic Narrative',024155,'LIT','279S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marx Nietzsche Freud',016847,'LIT','280',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Apocalypse: Beat Generation Spirituality',021319,'LIT','281',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Existentialism',016066,'LIT','285',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('German History Through Film',022541,'LIT','286',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in National Cinema',017528,'LIT','290-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Literature',021313,'LIT','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literature',024366,'LIT','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in National Cinema',006319,'LIT','290S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Literature',021314,'LIT','290SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex Work: The Politics of Sexual Labor',022166,'LIT','295S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Revealing Histories: Polish Cinema',023655,'LIT','298S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory Today: Introduction to the Study of Literature',020179,'LIT','301S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hashtags Memes Digital Tribes',024200,'LIT','302',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hashtags Memes Digital Tribes',024708,'LIT','302S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reading Literature in French',004455,'LIT','306S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('States of Exile and Accented Cinemas',013901,'LIT','314S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Film Theory',006321,'LIT','316S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Independent Cinema',022872,'LIT','318S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics and Native American: American Indian Life and Literature',023872,'LIT','319',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Expressing Immigrant Experience: The Russians',023880,'LIT','319S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Movements and Social Media',021369,'LIT','320S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Literary Islam',022777,'LIT','328S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Facts and Narrative Representations',013884,'LIT','330S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Beat Generation/Russian New Wave: Cultural Dissent in the Cold War',022834,'LIT','331',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Movements in Age of Globalization',022824,'LIT','332',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economies of the Global Image',021331,'LIT','335S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('El cine pol\u00edtico en am\u00e9rica Latina',023603,'LIT','339',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Science Fiction',021426,'LIT','341D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Americans Mass Incarceration and Citizenship',022931,'LIT','343',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Popular Fictions',013886,'LIT','345S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Utopian Writing',015480,'LIT','346S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Novel',013856,'LIT','351',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Novel',023234,'LIT','351S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women Writers',006332,'LIT','360S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Apple: Life and Death and the Digital Revolution',025347,'LIT','361S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Love Marriage Education: Theories About Women from Rousseau to Beauvoir',015467,'LIT','365S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Germany Confronts Nazism and the Holocaust',017295,'LIT','369',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Fiction and Film',013007,'LIT','370S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Problems in Global Culture',006353,'LIT','371',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Problems in Global Culture',018510,'LIT','371S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Recycled Cinema',025281,'LIT','373S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Kafka and Cinema',023275,'LIT','377',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marxism and Society',001911,'LIT','380',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fictions That Mark the Moment',023652,'LIT','382S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History Theory and Praxis of Translating Languages and Worlds',023917,'LIT','384S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mafia at the Movies',023931,'LIT','385',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Moral Panics Spectacle and Everyday Life: Social Anxieties and Minorities',025403,'LIT','387',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literature',020520,'LIT','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literature and National Cultures Ethnicity Race',014276,'LIT','390-10',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Third World or Postcolonial Literature and Cultures',006375,'LIT','390-11',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Feminist Studies',006333,'LIT','390-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Gender and Sexuality',006335,'LIT','390-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in the Study of Literature in Relation to Other Disciplines',017328,'LIT','390-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in World Media',006409,'LIT','390A-12',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in World Literature and Culture',006411,'LIT','390A-13',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literary Genres',006363,'LIT','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literature and National Cultures Ethnicity Race',016466,'LIT','390S-10',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Third World or Postcolonial Literature and Cultures',017094,'LIT','390S-11',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literary Movements',006362,'LIT','390S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Individual Authors',006367,'LIT','390S-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Film',006329,'LIT','390S-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Feminist Studies',015208,'LIT','390S-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Gender and Sexuality',018509,'LIT','390S-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in the Study of Literature in Relation to Other Disciplines',006343,'LIT','390S-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Culture and the Arts',006342,'LIT','390S-8',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Science and Culture',006356,'LIT','390S-9',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literature',021454,'LIT','390SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cultures of New Media',021120,'LIT','412S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Interethnic Intimacies: Production and Consumption',022582,'LIT','415S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Strange Masterpieces: Major Authors in French and Francophone Modernity',024978,'LIT','416S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Critical Interventions in Middle East Studies and Policy',025055,'LIT','417S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biography Life Writing Autofiction',023334,'LIT','420',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Po\u00e9ticas de aqu\u00ed y de all\u00e1 / Thinking Language: Poetics from Here and There',024405,'LIT','420A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and the Law',021418,'LIT','430',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Imagining Justice: The U.S. and the Carceral Imagination',022146,'LIT','431',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Techno-Orientalism: Asian/America (Post)Human and Science Fiction',024757,'LIT','438S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Games and Culture: Politics Pleasure and Pedagogy',024157,'LIT','440S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marxism and Culture',015509,'LIT','471S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Archiving and Visualizing Asia: Politics and Poetics of Knowledge Production',025066,'LIT','476S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex Death and a Little Love: Boccaccio''s Decameron',021484,'LIT','482SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening Europe',024679,'LIT','489S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics Theory',021340,'LIT','490S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Literature',021551,'LIT','490S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Thesis I',014776,'LIT','495',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Thesis II',014777,'LIT','496',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Calculus II',020626,'MATH','22',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Laboratory Calculus and Functions I',006859,'MATH','105L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Laboratory Calculus and Functions II',006860,'MATH','106L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Laboratory Calculus I',006863,'MATH','111L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Laboratory Calculus II',006868,'MATH','112L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Calculus I',021388,'MATH','121',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Calculus I',021388,'MATH','121',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Calculus II',006866,'MATH','122',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Calculus II with Applications',006874,'MATH','122L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Calculus for Social Science Research',022208,'MATH','129',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Mathematical Modeling in Biology',022022,'MATH','161FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematics of Data Science',025284,'MATH','163FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cryptography and Society',023960,'MATH','165FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cryptography and Society',013033,'MATH','165S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematical Investigations in Genetics and Genomics',020827,'MATH','168S',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Math Everywhere: Mathematical Concepts and Reasoning in our Modern World',021094,'MATH','181',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematics of Finance',022021,'MATH','182FS',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Mathematics',023277,'MATH','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Mathematics',025295,'MATH','190L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminar on Special Topics in Mathematics',024378,'MATH','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',022059,'MATH','191',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multivariable Calculus for Economics',024681,'MATH','202',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multivariable Calculus for Economics',017601,'MATH','202D',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multivariable Calculus',006881,'MATH','212',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multivariable Calculus (Discussion)',022433,'MATH','212D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Linear Algebra and Differential Equations',015767,'MATH','216',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Matrices and Vector Spaces',024407,'MATH','218',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Matrices and Vector Spaces: Optional Discussion Section',025277,'MATH','218D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Matrices and Vector Spaces: Optional Lab Section',025277,'MATH','218L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Linear Algebra and Applications',006885,'MATH','221',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Multivariable Calculus',018121,'MATH','222',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Probability',006905,'MATH','230',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Applied Mathematics: Modeling Equations and Proofs',024427,'MATH','240',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Problem Solving Seminar',006913,'MATH','281S',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Mathematics',023734,'MATH','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cryptography',023874,'MATH','304',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Number Theory',021536,'MATH','305',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Number Theory',006901,'MATH','305S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Geometry',006897,'MATH','323S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Complex Analysis',006919,'MATH','333',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Introduction to Probability',021374,'MATH','340',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Statistics',010181,'MATH','342D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ordinary and Partial Differential Equations',015779,'MATH','353',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ordinary and Partial Differential Equations',024513,'MATH','353A',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Differential Equations',006902,'MATH','356',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematical Numerical Analysis',021543,'MATH','361',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematical Numerical Analysis',006917,'MATH','361S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Combinatorics',006898,'MATH','371',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Linear Programming and Game Theory',006899,'MATH','375',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Logic and Its Applications',006921,'MATH','388',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Mathematics',025493,'MATH','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',021546,'MATH','392',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',021519,'MATH','394',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Abstract Algebra',006896,'MATH','401',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Linear Algebra',024413,'MATH','403',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematical Cryptography',022836,'MATH','404',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topology',006934,'MATH','411',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topological Data Analysis',021375,'MATH','412',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Differential Geometry',006935,'MATH','421',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Real Analysis',006910,'MATH','431',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Calculus I',006910,'MATH','431',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Nonlinear Ordinary Differential Equations',006903,'MATH','451S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Partial Differential Equations',006904,'MATH','453',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to High Dimensional Data Analysis',021376,'MATH','465',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminar in Mathematical Modeling',006926,'MATH','476S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminar in Mathematical Modeling with a Focus on Writing',022522,'MATH','477S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Problem Solving',016960,'MATH','481S',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Mathematical Logic',006920,'MATH','487',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Mathematics',020793,'MATH','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminar in Mathematics',006927,'MATH','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',021541,'MATH','492',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',021507,'MATH','494',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Thermodynamics',006514,'ME','331L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fluid Mechanics',006524,'ME','336L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Control of Dynamic Systems',006522,'ME','344L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Failure Analysis and Prevention',006519,'ME','415L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Experimental Materials Science',016232,'ME','416',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mechanical Design',006528,'ME','421L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mechanical Systems Design',006534,'ME','424L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Analytical and Computational Solid Mechanics',015242,'ME','425',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ocean Engineering',024252,'ME','426',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Heat and Mass Transfer',006530,'ME','431L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Constructal Theory and Design',006537,'ME','438',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Robotics and Automation',003607,'ME','442',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Vibrations',015241,'ME','445',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Energy Engineering and the Environment',018370,'ME','461',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Electric Vehicle Project',014093,'ME','463',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Mechanical Engineering',006535,'ME','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Undergraduate Research Seminar Series',021231,'ME','499',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Class Piano',012977,'MUSIC','101-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Class Voice',012978,'MUSIC','101-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Class Guitar',012979,'MUSIC','101-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Djembe Class',017498,'MUSIC','101-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Class Improvisation',023522,'MUSIC','101-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Class Brass',021926,'MUSIC','101-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Piano',016260,'MUSIC','103-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Piano',016261,'MUSIC','103-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organ',007045,'MUSIC','103-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Harpsichord',007046,'MUSIC','103-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Violin',016262,'MUSIC','104-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Viola',016263,'MUSIC','104-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cello',016264,'MUSIC','104-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Double Bass',016265,'MUSIC','104-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Guitar',007048,'MUSIC','104-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Guitar',007049,'MUSIC','104-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Harp',015834,'MUSIC','104-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Flute',016266,'MUSIC','105-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Oboe',016267,'MUSIC','105-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Clarinet',016268,'MUSIC','105-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bassoon',016269,'MUSIC','105-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Saxophone',016270,'MUSIC','105-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Saxophone',020123,'MUSIC','105-6',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trumpet',016271,'MUSIC','106-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French Horn',016272,'MUSIC','106-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trombone',016273,'MUSIC','106-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tuba',016274,'MUSIC','106-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Percussion',016275,'MUSIC','107-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Djembe',016276,'MUSIC','107-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voice',007044,'MUSIC','108',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Vocal Diction',007022,'MUSIC','115S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Alexander Technique for Performing Musicians',024531,'MUSIC','116',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aspects of Performance',020442,'MUSIC','117',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music Sound and Style',012976,'MUSIC','120',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound for Film and Video',004562,'MUSIC','121S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Listening to Music: The European-American Tradition',007087,'MUSIC','125',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Acoustics and Music',007862,'MUSIC','126',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound Music and the Moving Image',014341,'MUSIC','129S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World Music: Aesthetic and Anthropological Approaches',007099,'MUSIC','130',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Dance Percussion',021056,'MUSIC','132L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Mbira Music: An Experiential Learning Class',017879,'MUSIC','133S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music Social Life and Scenes',007101,'MUSIC','137',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Jazz',018580,'MUSIC','140',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Jazz',007033,'MUSIC','140D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Rock',021427,'MUSIC','143',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Meet the Beatles and the 1960s',007114,'MUSIC','144',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hip-Hop/Rap Music Appreciation',020601,'MUSIC','145',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Motown and American Soul Music',025035,'MUSIC','146',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Music Theory (Advanced)',018776,'MUSIC','161',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Music Theory (Beginning)',018780,'MUSIC','161-1',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Composition: Explorations in Musical Time and Space',021435,'MUSIC','162S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Combo and Improvisation I',007034,'MUSIC','171',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Combo and Improvisation II',007035,'MUSIC','172',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Songwriter''s Vocabulary',007021,'MUSIC','176',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Music',022210,'MUSIC','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Seminar',007018,'MUSIC','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Music',007016,'MUSIC','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Piano',016277,'MUSIC','203-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Piano',016278,'MUSIC','203-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organ',007056,'MUSIC','203-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Harpsichord',007057,'MUSIC','203-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Violin',016279,'MUSIC','204-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Viola',016280,'MUSIC','204-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cello',016281,'MUSIC','204-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('String Bass',016282,'MUSIC','204-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Guitar',007059,'MUSIC','204-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Guitar',007060,'MUSIC','204-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Harp',015835,'MUSIC','204-7',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Flute',016283,'MUSIC','205-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Oboe',016284,'MUSIC','205-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Clarinet',016285,'MUSIC','205-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bassoon',016286,'MUSIC','205-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Saxophone',016287,'MUSIC','205-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Saxophone',020124,'MUSIC','205-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trumpet',016288,'MUSIC','206-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('French Horn',016289,'MUSIC','206-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trombone',016290,'MUSIC','206-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tuba',016291,'MUSIC','206-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Percussion',016292,'MUSIC','207-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Djembe',016293,'MUSIC','207-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voice',007055,'MUSIC','208',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Symphony Orchestra',007061,'MUSIC','210-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Wind Symphony',007063,'MUSIC','210-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marching Band',007064,'MUSIC','210-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jazz Ensemble',007065,'MUSIC','210-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Small Jazz Ensemble',007066,'MUSIC','210-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Collegium Musicum',007067,'MUSIC','211-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chamber Music',007068,'MUSIC','211-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Piano Ensemble',021393,'MUSIC','211-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Djembe Ensemble',014183,'MUSIC','212-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Afro-Cuban Percussion',015836,'MUSIC','212-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Opera Workshop',007072,'MUSIC','213-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chapel Choir',007073,'MUSIC','213-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chorale',007074,'MUSIC','213-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of Art (The Chicago Scene)',022593,'MUSIC','217SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Musical Theater Workshop: Performance',016610,'MUSIC','218',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Musical Theater Workshop: Creation',016611,'MUSIC','219',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing the Musical Book',023913,'MUSIC','220S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing About Music',014152,'MUSIC','221S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Radio: The Theater of the Mind',016608,'MUSIC','222S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music in South Asia',014340,'MUSIC','235',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Arts and Human Rights',020266,'MUSIC','238',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound in Social Life',021423,'MUSIC','239S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sound in Social Life',024805,'MUSIC','239SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Piano Music',007132,'MUSIC','241',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Opera',007130,'MUSIC','242S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Musicals',003074,'MUSIC','243',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hollywood Film Music',007133,'MUSIC','249',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bach and His Time',007112,'MUSIC','251',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mozart and His Time',007113,'MUSIC','252',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Beethoven and His Time',007111,'MUSIC','253',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music History I: Antiquity Through Renaissance',007119,'MUSIC','255S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music History II: 1600 through Mozart',007123,'MUSIC','256S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music History III: Beethoven through WWI',007122,'MUSIC','257',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music History IV: Post-WWI through the Present',023538,'MUSIC','258',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music and Modernism',007104,'MUSIC','259',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Electronic Music Composition',007118,'MUSIC','273S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computer Music',014148,'MUSIC','274S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Electronic Music and Video Workshop',021060,'MUSIC','275S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Composition I',007116,'MUSIC','281S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Composition I',018791,'MUSIC','281T',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music as Biology',024114,'MUSIC','288S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music and the Brain',023844,'MUSIC','289',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Music',022439,'MUSIC','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Music',007124,'MUSIC','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Music',022432,'MUSIC','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Music History',012764,'MUSIC','290S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Music Theory',007080,'MUSIC','290S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Ethnomusicology',007103,'MUSIC','290S-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Jazz',007108,'MUSIC','290S-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Arts Entrepreneurship',023901,'MUSIC','295S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing about Performance',024707,'MUSIC','305S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Thinking through the Body: Becoming an Ordinary Genius',025141,'MUSIC','314',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('stARTup Project',022596,'MUSIC','316SA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Instrumental Conducting',007090,'MUSIC','318',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Choral Conducting',007091,'MUSIC','319',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Politics of Salsa: Music Urban Spaces and Globalization',025215,'MUSIC','325A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Art of Performance',016247,'MUSIC','326S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The History of Hip-Hop',022531,'MUSIC','335',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Black Performance Tradition: Michael Jackson and Prince',022926,'MUSIC','336',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Hip-Hop Production',024327,'MUSIC','337S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music and Movement',018773,'MUSIC','342',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Composition II',018790,'MUSIC','381T',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Special Topics in Music',015780,'MUSIC','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Interpretation and Performance',007149,'MUSIC','390-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Special Topics in Music',007083,'MUSIC','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Music Topics Tutorial',023430,'MUSIC','390T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',007153,'MUSIC','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Study in Musical Performance',007141,'MUSIC','401',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Study in Music Performance',025427,'MUSIC','401-1',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory and Practice of Post-Tonal Music',007079,'MUSIC','463S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Counterpoint',007078,'MUSIC','465S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Composition',007125,'MUSIC','481T',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Topics in Music',007152,'MUSIC','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neurobiology of Mind',007212,'NEUROBIO','193FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visual Perception and the Brain',023230,'NEUROBIO','355S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Bases of Behavior (Team Based Learning)',024135,'NEUROSCI','102',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computing and the Brain',024408,'NEUROSCI','103L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Neuroscience of Reading \u0026 Language Comprehension',021217,'NEUROSCI','111FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Human Language',017496,'NEUROSCI','116S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('When the Head''s in Trouble: Language Lesions and Loss',022776,'NEUROSCI','123FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drugs and the Law',022130,'NEUROSCI','153FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Vision',022828,'NEUROSCI','155FS',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Games and the Brain',022772,'NEUROSCI','157FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Neuroscience',023649,'NEUROSCI','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neurobiology of Mind',007212,'NEUROSCI','193FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Neuroscience',008825,'NEUROSCI','201D',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Neuroscience: Foundations for the Neurological Sciences',025142,'NEUROSCI','202',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Brain and Behavior: Translating Neuroscience',008827,'NEUROSCI','211',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cognitive Neuroscience',008794,'NEUROSCI','212',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cognitive Neuroscience',025349,'NEUROSCI','212D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cellular and Molecular Neurobiology',019566,'NEUROSCI','223',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Science',013592,'NEUROSCI','237',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Science',025362,'NEUROSCI','237S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Flaubert''s Brain: Neurohumanities',019407,'NEUROSCI','241',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Creative Brain: Literature Arts \u0026 Cognition',022000,'NEUROSCI','242A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cultured Brain: Neuroscience of Perception and Action',023988,'NEUROSCI','245A',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Decision Neuroscience',008820,'NEUROSCI','258',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroethics',020466,'NEUROSCI','267',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Looking Inside the Disordered Brain',020495,'NEUROSCI','277',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex/Gender - Nature/Nurture: Intersections of Biology and Society',022838,'NEUROSCI','278',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social and Affective Neuroscience',020496,'NEUROSCI','280',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscientific Approaches to Social Behavior',008864,'NEUROSCI','281',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience of Movement and Athletic Performance',021824,'NEUROSCI','282',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music as Biology',024114,'NEUROSCI','288S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music and the Brain',023844,'NEUROSCI','289',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Neuroscience',022041,'NEUROSCI','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Administered Study Abroad: Special Topics in Neuroscience',021862,'NEUROSCI','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bioelectricity (AC or GE)',001656,'NEUROSCI','301L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Neurons to Brain',021050,'NEUROSCI','322',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Educational Neuroscience',022577,'NEUROSCI','340S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pharmacology: Drug Actions and Reactions',007788,'NEUROSCI','350',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroplasticity and Expertise',023875,'NEUROSCI','351S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social and Affective Neuroscience',020496,'NEUROSCI','352S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroplasticity and Disease: Molecules Cells and Circuits',024317,'NEUROSCI','353S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visual Perception and the Brain',023230,'NEUROSCI','355S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Neuroendocrinology',021304,'NEUROSCI','366S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Neuroimmunology: Brain and Behavior in Health and Disease',020075,'NEUROSCI','373',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Neuroscience Methods',020499,'NEUROSCI','376',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Perception and the Brain',008930,'NEUROSCI','378L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Functional Anatomy of the Human Brain',020039,'NEUROSCI','380L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sensory Physiology and Behavior of Marine Animals',013593,'NEUROSCI','381LA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Brain Waves and Cognition',008925,'NEUROSCI','383L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Integrative Neuroscience Laboratory',021061,'NEUROSCI','385L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Neuroscience',022149,'NEUROSCI','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Neuroscience',021440,'NEUROSCI','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience Independent Scholarship 1: Advanced Topics',025027,'NEUROSCI','391',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Aging',024355,'NEUROSCI','413',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology of Nervous System Diseases',020040,'NEUROSCI','421S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visual Processing',020485,'NEUROSCI','426S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Topics in Sensory Biology',020753,'NEUROSCI','427S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Multilingualism',023883,'NEUROSCI','438AS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Multilingualism',020594,'NEUROSCI','439S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience Service Learning: Brain Connections',023958,'NEUROSCI','444S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Autobiographical Memory',008952,'NEUROSCI','451S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience Applications for Everyday Decision Making',024713,'NEUROSCI','462S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cognitive Control and the Prefrontral Cortex',008954,'NEUROSCI','469S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cognitive Neuroscience of Memory',014982,'NEUROSCI','470S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Neuroscience',022150,'NEUROSCI','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study 1',019582,'NEUROSCI','493',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study 2',019581,'NEUROSCI','494',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study 3',021441,'NEUROSCI','495',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study 4',021442,'NEUROSCI','496',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Research in Neuroscience',022544,'NEUROSCI','499',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Research in Neuroscience',013796,'NEUROSCI','499S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Philosophy',007692,'PHIL','101',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Philosophy',007694,'PHIL','103S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Philosophy',007695,'PHIL','104S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Information Society \u0026 Culture: Bass Connections Gateway',022156,'PHIL','110',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Freedom and Moral Obligation',025242,'PHIL','124FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Logic',007696,'PHIL','150',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reason and Argument',022124,'PHIL','155',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics for Robertson Scholars',021959,'PHIL','163D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Beyond Disagreement and Cozy Consensus',023526,'PHIL','194FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Evolution and Human Nature',018812,'PHIL','197FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Puzzles of the Mind: Humans Animals and Machines',018259,'PHIL','198FS',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Modern Philosophy',007702,'PHIL','201',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aesthetics: The Philosophy of Art',007703,'PHIL','202',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Ancient Philosophy',007701,'PHIL','203',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Foundations of Scientific Reasoning',007705,'PHIL','204',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World Philosophy',023521,'PHIL','205',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Law',007707,'PHIL','206',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political and Social Philosophy',007708,'PHIL','207',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the Evolution of Human Culture Behavior and Institutions',012574,'PHIL','208',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Language',007710,'PHIL','209',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Knowledge and Certainty',007711,'PHIL','210',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Appearance and Reality',007712,'PHIL','211',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Mind',007713,'PHIL','212',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Applied and Environmental Ethics',007716,'PHIL','215',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Problems in Ethical Theory',007717,'PHIL','216',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Ethical Theory',007718,'PHIL','217',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics',007719,'PHIL','218',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophical Perspectives on Disability',024632,'PHIL','220',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Philosophy',007723,'PHIL','222',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Education',007725,'PHIL','224',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Sport',007727,'PHIL','226',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues in the History of Philosophy',015343,'PHIL','229',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Cognitive Science of Religion and Morality',018630,'PHIL','232A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Existentialism',007732,'PHIL','234',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Philosophy of Globalization',008442,'PHIL','237A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Problems in Philosophy of Science',014981,'PHIL','242',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Prisoner''s Dilemma and Distributive Justice',016959,'PHIL','246',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Prisoner''s Dilemma and Distributive Justice',024380,'PHIL','246D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Symbolic Logic',007704,'PHIL','250',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy and Neuroscience',018803,'PHIL','252',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in Theory and Practice',008456,'PHIL','262',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinese Philosophy',014329,'PHIL','263',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business Ethics: The Debate Over Corporate Social Responsibility',018589,'PHIL','270',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Love Marriage Education: Theories About Women from Rousseau to Beauvoir',015467,'PHIL','274S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Bioethics',021531,'PHIL','281',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Science Ethics \u0026 Democracy',020796,'PHIL','282',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Existentialist Imagination',020828,'PHIL','283',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Existentialism',016066,'PHIL','285',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marx Nietzsche Freud',016847,'PHIL','286',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Philosophy',007743,'PHIL','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminars in Philosophy',007744,'PHIL','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',014190,'PHIL','293',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Mathematics',007714,'PHIL','313S',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Biology',014767,'PHIL','314',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophy of Biology',014767,'PHIL','314',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Happiness and Freedom',021364,'PHIL','316',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Kant',007730,'PHIL','331',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Moral Psychology',024631,'PHIL','335',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Analytic Philosophy in the Twentieth Century',007734,'PHIL','338',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Philosophy and Methodology of Economics',015837,'PHIL','345',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Logic and Its Applications',006921,'PHIL','350',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroethics',020466,'PHIL','353',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visual Perception and the Brain',023230,'PHIL','355S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Scientific Revolution',022759,'PHIL','380S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Philosophy',007728,'PHIL','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Philosophical and Conceptual Problems of Entrepreneurship',022364,'PHIL','447',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Eastern \u0026 Western Conceptions of Human Nature Ethics \u0026 Politics',023242,'PHIL','463S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics Philosophy and Economics Capstone',008459,'PHIL','465',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminars in Philosophy',007745,'PHIL','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Distinction Seminar Program',020424,'PHIL','495S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Seminar on Big Questions in Physics',021997,'PHYSICS','131S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Seminar on Big Questions in Physics',022632,'PHYSICS','131S-1',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Physics of Sports',023529,'PHYSICS','133',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Astronomy',007884,'PHYSICS','134',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Acoustics and Music',007862,'PHYSICS','136',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physics Research and the Economy',015221,'PHYSICS','138S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Physics and Society: Nuclear Energy',025053,'PHYSICS','139S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('General Physics I',007880,'PHYSICS','141L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('General Physics I',021469,'PHYSICS','141LA',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('General Physics II',007882,'PHYSICS','142L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('General Physics II',021470,'PHYSICS','142LA',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Mechanics',015768,'PHYSICS','151L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Electricity Magnetism and Optics',016068,'PHYSICS','152L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Applications of Physics: A Modern Perspective',016416,'PHYSICS','153L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Frontiers of 21st Century Physics',024111,'PHYSICS','160',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Experimental Physics I',007865,'PHYSICS','161L',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Physics II',022840,'PHYSICS','162D',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Experimental Physics II',007868,'PHYSICS','162L',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Frontiers of Biophysics',020784,'PHYSICS','174',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Physics',022618,'PHYSICS','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Physics',022415,'PHYSICS','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Physics',022414,'PHYSICS','190S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Optics and Modern Physics',007891,'PHYSICS','264L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Electronics',007893,'PHYSICS','271L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Astrophysics',007888,'PHYSICS','305',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Optics and Photonics',003704,'PHYSICS','320L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Mechanics',007895,'PHYSICS','361',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Electricity and Magnetism',007896,'PHYSICS','362D',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Experimental Physics',025002,'PHYSICS','364L',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Experimental Physics',025137,'PHYSICS','365L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Physics',007886,'PHYSICS','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Biophysics',015222,'PHYSICS','414',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Biophysics',015222,'PHYSICS','414',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biophysics II',023846,'PHYSICS','415',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Physics Laboratory and Seminar',007909,'PHYSICS','417S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Quantum Mechanics I',007904,'PHYSICS','464',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Quantum Mechanics II',007905,'PHYSICS','465',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study: Advanced Topics',007913,'PHYSICS','491',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Polish',007974,'POLISH','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Polish',007979,'POLISH','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Polish',007980,'POLISH','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trauma and Nostalgia: East European Film in the 21st Century',021215,'POLISH','288S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Revealing Histories: Polish Cinema',023655,'POLISH','298S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Polish Composition and Readings',014462,'POLISH','301S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Polish Composition and Readings',014662,'POLISH','302S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Studies in Polish Literature',007984,'POLISH','305S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fragmented Memories: Polish and Polish Jewish Culture Through Film',020242,'POLISH','308S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Political Science',023876,'POLSCI','101',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Experience: A Video Approach',008062,'POLSCI','105S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to African Studies (DS3 or DS4)',000082,'POLSCI','108',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Approaches to Global Issues',002842,'POLSCI','110',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Voting to Protests: Introduction to Political Attitudes Groups and Behaviors',021542,'POLSCI','114D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Rules of Power: How Institutions Shape What Politics Deliver',021802,'POLSCI','115D',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The American Political System',008332,'POLSCI','116',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Democracy Development and Violence: Introduction to Comparative Politics',008334,'POLSCI','117',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Challenges of Living an Ethical Life',024969,'POLSCI','120',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Challenges of Living an Ethical Life',017925,'POLSCI','120D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Political Economy',020020,'POLSCI','145',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Economics',024419,'POLSCI','146',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Citizenship Patriotism \u0026 Identity',024646,'POLSCI','150FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Israel/Palestine: Comparative Perspectives',023214,'POLSCI','159',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Security Peace and Conflict',008337,'POLSCI','160D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Security Peace and Conflict',008336,'POLSCI','160S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Liberty and Equality: Ancient and Modern Perspectives',023434,'POLSCI','170FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Polarization in the US: Causes and Consequences',023518,'POLSCI','171FS',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial Attitudes and Racial Politics in the United States',023567,'POLSCI','172FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Political Philosophy',008397,'POLSCI','175',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Political Philosophy',014956,'POLSCI','175D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hierarchy and Spontaneous Order: The Nature of Freedom in Political and Economic Organizations (C-N)',018147,'POLSCI','180FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient and Modern Liberty',018230,'POLSCI','184FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Politics of Language',020152,'POLSCI','185FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Perspectives on Citizenship',022718,'POLSCI','188FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Machine Learning and Legislative Behavior',024601,'POLSCI','189FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Science',024752,'POLSCI','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in the Focus Program',022099,'POLSCI','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Science',023822,'POLSCI','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Freedom and Moral Obligation',025242,'POLSCI','195FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Opinion',008386,'POLSCI','201',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Film Race and Politics',021819,'POLSCI','202',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and the Political Process',010426,'POLSCI','203',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Ethnicity and Citizenship',022520,'POLSCI','204',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Racial and Ethnic Minorities in American Politics',018286,'POLSCI','205',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Racial and Ethnic Minorities in American Politics',014317,'POLSCI','205D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Values Institutions and Culture',018032,'POLSCI','206',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reason and Passion in Politics',021820,'POLSCI','207',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Constitutional Law',022317,'POLSCI','209D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Democracy: Ancient and Modern',021996,'POLSCI','211',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The American Presidency',008376,'POLSCI','212',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Engaged Citizenship and Social Change (Gateway Course)',023957,'POLSCI','213S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Media and Power in Washington',021888,'POLSCI','214SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Constitutional Law',008477,'POLSCI','215',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Government and Politics: Selected Countries',008390,'POLSCI','219',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('South Africa: Past and Future',019171,'POLSCI','221',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Arab Youths Revolution',021803,'POLSCI','222',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Inequality and Politics',024107,'POLSCI','224',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research in International Policy Issues',021505,'POLSCI','225S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The European Union: History Institutions and Policies',021515,'POLSCI','226',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethnic Conflict',013579,'POLSCI','227',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics of Authoritarian Regimes',024425,'POLSCI','228',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Institutions and Self Governance',024409,'POLSCI','229',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Networks in a Globalizing World',021804,'POLSCI','230',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Nuclear Weapons: US Foreign Policy and the Challenges of Global Proliferation',022837,'POLSCI','233',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Are Things Getting Better? The Question of Progress in World Affairs',023845,'POLSCI','234D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Urban Politics and Policymaking',022239,'POLSCI','235S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Research Seminar in Urban Politics and Policymaking',022238,'POLSCI','236S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Foreign Policy',025056,'POLSCI','237',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial Attitudes Racial Prejudice and Racial Politics',023571,'POLSCI','238',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Communication in a Changing Media Environment',022835,'POLSCI','239S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Psychology',008395,'POLSCI','240',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory and Practice: People Places and Policy Cases',021708,'POLSCI','240SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Persuasion',021533,'POLSCI','241S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Whose Democracy? Participation and Public Policy in the United States',021672,'POLSCI','241SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Campaigns and Elections',008415,'POLSCI','242',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Whose Democracy? Participation and Public Policy in the United States',020194,'POLSCI','243S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Constitutional Development and Interpretation II: Individual Rights',023654,'POLSCI','246',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Denial Faith Reason: Sustainability and Survival',022548,'POLSCI','249',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Politics of International Economic Relations: America in the World Economy',022827,'POLSCI','250',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Relations between Industrialized and Developing Countries',025146,'POLSCI','251S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Life Within Capitalism: A History of its Values Measures and Struggles',022572,'POLSCI','252',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('America in the World Economy: The Law Politics and Economics of U.S. Antitrust 1890-2015',023597,'POLSCI','255',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Frontier City Berlin: Facing History''s Great Challenges',017281,'POLSCI','260A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Holocaust',021600,'POLSCI','262',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Political History of Modern Architecture: From Revolution through Neoliberalism',025018,'POLSCI','263',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Democracy and Dysfunctional Politics',023205,'POLSCI','264S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to American Political Thought',008407,'POLSCI','265S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Distributive Justice',014617,'POLSCI','266',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Literature',008370,'POLSCI','268',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in Theory and Practice',008456,'POLSCI','272',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Middle East Through Film',023843,'POLSCI','273',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Left Right and Center: Competing Political Ideals',014153,'POLSCI','275',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Left Right and Center: Competing Political Ideals',024657,'POLSCI','275S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Documentary Film: Filmmakers and the Full Frame Documentary Film Festival',017078,'POLSCI','276',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Ethics of War: Self-Defense Humanitarian Intervention Terrorism and Law',022775,'POLSCI','277D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Political Thought and Its Modern Legacy',024659,'POLSCI','278',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Professionalism and Successful Internships in Political Science',025523,'POLSCI','279',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Semester Program: Florence',017198,'POLSCI','281A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Summer/Semester Program: Madrid',008353,'POLSCI','283A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Semester Program: Ecuador',017186,'POLSCI','284A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Summer/Semester Program: France',017185,'POLSCI','286A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Semester Program: Venice',017024,'POLSCI','287A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Political Science',008359,'POLSCI','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Independent Study Political Theory',019036,'POLSCI','291-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Independent Study Political Institutions',019020,'POLSCI','291-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Independent Study Security Peace and Conflict',019021,'POLSCI','291-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Independent Study Political Methodology',021385,'POLSCI','291-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Immigration',024199,'POLSCI','294A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Policy in Europe: Duke in Berlin',008342,'POLSCI','295A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Germany Today: A European Superpower? Duke-in-Berlin',014221,'POLSCI','296A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Philosophy of Globalization',008442,'POLSCI','297A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Themes in Chinese Culture and History',001935,'POLSCI','298A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment Health and Development in China',020240,'POLSCI','299S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Illiberal Nondemocracies: Focus on Eastern Europe and Asia',025023,'POLSCI','301S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Race and Ethnicity in Politics and Public Policy',021822,'POLSCI','303',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and the Libido',008493,'POLSCI','306S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law and Constitutional Reform in Russia and the Former Soviet Union',017437,'POLSCI','309',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Analysis for Public Policy-Making',008068,'POLSCI','310',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Polarization in America: Causes and Consequences',021806,'POLSCI','311',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Movements in Age of Globalization',022824,'POLSCI','313',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics of Political Violence',022539,'POLSCI','314S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Financial Crises',023915,'POLSCI','315S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Political Parties',008379,'POLSCI','316',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Corruption',024106,'POLSCI','317',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Corruption',024106,'POLSCI','317S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Congress and the President',008460,'POLSCI','318',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('US Comparative State Politics',008480,'POLSCI','319S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Deglobalization',024652,'POLSCI','320A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Law and International Institutions',008461,'POLSCI','321',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Regime Transitions: The Historical European and the Contemporary Global Experience',008412,'POLSCI','323',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinese Politics',008464,'POLSCI','324S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economic and Political History of the European Union',024905,'POLSCI','325A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics in Violence',022212,'POLSCI','329S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Quantitative Political Inquiry and Evaluation',022842,'POLSCI','330',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Prisoner''s Dilemma and Distributive Justice',016959,'POLSCI','331',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Prisoner''s Dilemma and Distributive Justice',024380,'POLSCI','331D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Games and Politics',008419,'POLSCI','332',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Democracy and Social Choice',023530,'POLSCI','333S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economic Political and Social Institutions',022453,'POLSCI','335S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial Justice in the 20th Century US and South Africa',023887,'POLSCI','336S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Apartheid South Africa and the Struggles for Democracy',023888,'POLSCI','337S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of South East Asia',022876,'POLSCI','338',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Regulatory State',021890,'POLSCI','340D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business and Human Rights Advocacy Lab',023281,'POLSCI','341S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Strategy and Politics',012093,'POLSCI','342',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Development',008445,'POLSCI','345',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business Politics and Economic Growth',013665,'POLSCI','346',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Domestic Politics',008420,'POLSCI','347',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Environmental Politics',024257,'POLSCI','348',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Latin America',022870,'POLSCI','349',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Political Economy',014929,'POLSCI','350',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economic History and Modernization of the Islamic Middle East',018757,'POLSCI','351',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('U.S. Policy in the Middle East',022831,'POLSCI','352S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization of Democracy',016070,'POLSCI','353',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics in the Developing World',008458,'POLSCI','354',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Health Care Systems',024197,'POLSCI','355',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Markets',021823,'POLSCI','356',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugee Policy and Practice (DukeImmerse)',025103,'POLSCI','357S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Public Policy',014632,'POLSCI','358',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Engineering and Social Movements in Eastern Europe and Asia',023228,'POLSCI','359S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Foreign Policy of the United States',008449,'POLSCI','365D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Politics of East Asia',024145,'POLSCI','366',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment and Conflict: The Role of the Environment in Conflict and Peacebuilding',019016,'POLSCI','367S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Conflict and Violence',008393,'POLSCI','369',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War and Peace',008423,'POLSCI','370',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marxism and Society',001911,'POLSCI','371',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex Politics and Feminist Philosophy',025340,'POLSCI','372',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law and Politics',008402,'POLSCI','373',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Watchdog Reporting in Politics',025332,'POLSCI','374S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of Western Civilization: The German Tradition 1750-1930',012950,'POLSCI','375',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marx Nietzsche Freud',016847,'POLSCI','378',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Violent Jihad in the Twentieth Century - A Global History',024457,'POLSCI','382',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Political Theory',017884,'POLSCI','383',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Inequality in Western Political Thought',024725,'POLSCI','384',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ambition and Politics',008452,'POLSCI','385',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theories of Liberal Democracy',008401,'POLSCI','386',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Political Theory',016472,'POLSCI','387',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Information Technology Ethics and Policy',013000,'POLSCI','388',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Theory',008512,'POLSCI','390-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Institutions',008513,'POLSCI','390-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Security Peace and Conflict',008514,'POLSCI','390-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Behavior and Identities',008515,'POLSCI','390-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Methodology',021445,'POLSCI','390-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Economy',021443,'POLSCI','390-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Theory',017123,'POLSCI','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Institutions',017116,'POLSCI','390S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Security Peace and Conflict',017122,'POLSCI','390S-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Behavior and Identities',017121,'POLSCI','390S-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Methodology',021387,'POLSCI','390S-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Political Economy',021545,'POLSCI','390S-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Independent Study in Political Theory',019032,'POLSCI','391-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Independent Study in Political Institutions',019033,'POLSCI','391-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Independent Study in Political Behavior and Identities',019035,'POLSCI','391-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Independent Study in Political Methodology',021392,'POLSCI','391-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Research Independent Study Political Theory',019028,'POLSCI','393-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Research Independent Study Political Institutions',019029,'POLSCI','393-2',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Research Independent Study Security Peace and Conflict',019030,'POLSCI','393-3',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Research Independent Study Political Behavior and Identities',019031,'POLSCI','393-4',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sophomore/Junior Research Independent Study Political Economy',021520,'POLSCI','393-6',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('South African Life Histories',020213,'POLSCI','406S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('U.S-Russia Relations: 1991-2016',023914,'POLSCI','415',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theories of War and Peace in Twentieth Century Europe',020469,'POLSCI','430S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinese Media and Popular Culture: Politics Ideology and Social Change',024697,'POLSCI','435S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Games and Culture: Politics Pleasure and Pedagogy',024157,'POLSCI','440S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Russia-USSR-Russia: History of Communism',020493,'POLSCI','445S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics Philosophy and Economics Capstone',008459,'POLSCI','449',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Wealth and Poverty of Nations: Prosperity and Distribution in the Long Run',022135,'POLSCI','468S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminars in Classical Studies',002804,'POLSCI','480S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Research Independent Study Political Theory',019037,'POLSCI','493-1',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Research Independent Study Political Institutions',019038,'POLSCI','493-2',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Research Independent Study in Security Peace and Conflict',019039,'POLSCI','493-3',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Research Independent Study in Political Behavior and Identities',019040,'POLSCI','493-4',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Research Independent Study in Political Methodology',021548,'POLSCI','493-5',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Policy Practicum for Duke in DC',021887,'POLSCI','494A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Seminar',023877,'POLSCI','495S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Latin American Left Turns: A New Politics for the 21st Century?',021855,'POLSCI','497S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Seminar in Political Methodology',008521,'POLSCI','497S-5',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Seminar in Political Economy',021511,'POLSCI','497S-6',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Portuguese I',009129,'PORTUGUE','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Portuguese II',009131,'PORTUGUE','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Accelerated Elementary Portuguese',013046,'PORTUGUE','112',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Portuguese',012990,'PORTUGUE','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Brazilian Portuguese',022167,'PORTUGUE','203A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate Portuguese',014667,'PORTUGUE','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Afro-Brazilian Culture and History',005338,'PORTUGUE','260',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Lusophone Literature and Culture',023775,'PORTUGUE','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Colloquial Portuguese',012653,'PORTUGUE','301S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Portuguese Culture',025326,'PORTUGUE','327S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Brazilian Literature',014668,'PORTUGUE','334S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Lusophone Literature and Culture',021846,'PORTUGUE','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cidanania Cultura e Participacao/Citizenship Culture and Participation',015849,'PORTUGUE','410S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Lusophone Literature and Culture',018605,'PORTUGUE','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Lusophone Literature and Culture',019186,'PORTUGUE','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Portuguese Tutorial',022046,'PORTUGUE','497T',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Psychology',008764,'PSY','101',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cognitive Psychology: Introduction and Survey',008768,'PSY','102',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Developmental Psychology: Introduction and Survey',008769,'PSY','103',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Developmental Psychology: Introduction and Survey',025245,'PSY','103D',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Psychology',008801,'PSY','104',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Abnormal Psychology',008805,'PSY','105',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Bases of Behavior: Introduction and Survey',008767,'PSY','106',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Bases of Behavior (Team Based Learning)',024135,'PSY','107',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computing and the Brain',024408,'PSY','113L',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Decision Science',023638,'PSY','141',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Vision',022828,'PSY','155FS',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Decoding Human Behavior',022821,'PSY','185FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Special Topics in Psychology',008765,'PSY','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus - Special Topics Seminars',014842,'PSY','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Administered Study Abroad: Special Topics in Psychology',023397,'PSY','190SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neurobiology of Mind',007212,'PSY','193FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Patient and Research Participant Activism and Advocacy',025265,'PSY','196FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Statistical Methods in Psychology',009825,'PSY','201L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Methods in Psychological Science',008776,'PSY','202',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Methods in Psychological Science',025339,'PSY','202L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Practicum',008778,'PSY','203',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Health Psychology and Behavior Change',008789,'PSY','205',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Alcohol: Brain Individual and Society',012993,'PSY','206',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Aspects of Health',008791,'PSY','208',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Stress and Coping',008790,'PSY','209',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Psychology of Obesity',025299,'PSY','210',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Psychology of Health Behavior Change',021361,'PSY','211',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Forensic Psychology',021825,'PSY','212',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Abnormal Psychology',020149,'PSY','213',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Abnormal Psychology',020149,'PSY','213',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Exercise and Mental Health',023562,'PSY','214',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Psychology of Gender',008785,'PSY','220',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Personality',008799,'PSY','221',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Self and Social Identities',024421,'PSY','223',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Psychology',008395,'PSY','225',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex/Gender - Nature/Nurture: Intersections of Biology and Society',022838,'PSY','226',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Psychology',001991,'PSY','227',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Relationships across the Lifespan',025025,'PSY','230',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Psychosocial Aspects of Human Development',005027,'PSY','236',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adolescence',008828,'PSY','239',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adolescence',025258,'PSY','239-1',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Educational Psychology',003519,'PSY','240',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Discovering Education and Human Development I: How Social Scientists Learn from Data',023620,'PSY','242D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Myths and Mysteries of Memory',008784,'PSY','250',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Psychology of Thinking',008809,'PSY','252',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Cognitive Evolution',018842,'PSY','255',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Psychology of Language',008824,'PSY','256',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cognitive Neuroscience',008794,'PSY','257',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cognitive Neuroscience',025349,'PSY','257D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Decision Neuroscience',008820,'PSY','258',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavior and Neurochemistry',008814,'PSY','273',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drugs Brain and Behavior',007789,'PSY','274',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Neuroscience',008825,'PSY','275D',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Brain and Behavior: Translating Neuroscience',008827,'PSY','276',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Looking Inside the Disordered Brain',020495,'PSY','277',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroethics',020466,'PSY','278',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Neuroimmunology: Brain and Behavior in Health and Disease',020075,'PSY','279',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social and Affective Neuroscience',020496,'PSY','280',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social and Affective Neuroscience',020496,'PSY','280S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscientific Approaches to Social Behavior',008864,'PSY','281',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience of Movement and Athletic Performance',021824,'PSY','282',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music as Biology',024114,'PSY','288S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Psychology - Seminar',021912,'PSY','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Brain Waves and Cognition',008925,'PSY','302L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Child Observation',008933,'PSY','304',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Methods in Social Psychology',008936,'PSY','305',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Methods in Clinical Psychology',008937,'PSY','306',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Perception and the Brain',008930,'PSY','308L',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Methods in Psychopathology and Psychotherapy',014606,'PSY','310',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Neuroscience Methods',020499,'PSY','313',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Coping with Catastrophic Events',008859,'PSY','317S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Psychology of Positive Emotion and Experience',017414,'PSY','318S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Personality and Individual Differences',008858,'PSY','321S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Motivation Science in Social Psychology',023210,'PSY','324S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Development from Childhood to Early Adulthood',008819,'PSY','325',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Develop Your Life: A Human Development and Human-Centered Design Approach',025075,'PSY','330S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Moral Development',024977,'PSY','335S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Processes among Peers',025300,'PSY','337S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Life Span Analysis of Social Relationships',008853,'PSY','339S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Educational Neuroscience',022577,'PSY','340S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroplasticity and Expertise',023875,'PSY','351S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroplasticity and Disease: Molecules Cells and Circuits',024317,'PSY','353S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visual Perception and the Brain',023230,'PSY','355S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Finance: A Taxonomy of Money Mistakes',022466,'PSY','368',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Finance: A Taxonomy of Money Mistakes',024177,'PSY','368A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Functional Anatomy of the Human Brain',020039,'PSY','375L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Behavioral Neuroendocrinology',021304,'PSY','376S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Psychology',008886,'PSY','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Great Ideas in Psychology',008919,'PSY','405S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Modern Psychology',008940,'PSY','407S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Disorders of Anxiety',021810,'PSY','411S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Psychology of Criminal Behavior',023902,'PSY','412S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Psychology of Consumers',008800,'PSY','425',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Psychology of Business',008829,'PSY','426',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Role of Race and Culture on Development',008860,'PSY','435S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Clinical Interventions with Children and Families',008847,'PSY','436S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language Development',025032,'PSY','437S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience Service Learning: Brain Connections',023958,'PSY','444S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Psychology of Trauma and Memory',020150,'PSY','450S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Autobiographical Memory',008952,'PSY','451S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mind Wandering and Inattention',025330,'PSY','453S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neurobiology of Learning and Memory',008861,'PSY','461S',0,0,0,0,1,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience Applications for Everyday Decision Making',024713,'PSY','462S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cognitive Control and the Prefrontral Cortex',008954,'PSY','469S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cognitive Neuroscience of Memory',014982,'PSY','470S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reward and Addiction',008845,'PSY','471S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Neurobiology of the Pain System: Its Function and Dysfunctions',008866,'PSY','473S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biological Psychology of Human Development',008855,'PSY','474S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biology of Nervous System Diseases',020040,'PSY','477S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Motivation Action Choice: Neural and Behavioral Mechanisms',022463,'PSY','478S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Administered Study Abroad: Special Topics in Psychology',021618,'PSY','490A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Psychology',023286,'PSY','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Distinction Thesis Workshop',018490,'PSY','496',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Research in Neuroscience',022544,'PSY','499',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Current Research in Neuroscience',013796,'PSY','499S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Information Society \u0026 Culture: Bass Connections Gateway',022156,'PUBPOL','110',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Undergraduate Internship',025279,'PUBPOL','125A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Policy Analysis',008051,'PUBPOL','155D',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of War Military and Society',022168,'PUBPOL','160',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of War Military and Society',022168,'PUBPOL','160D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Law and Governance',023139,'PUBPOL','161',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'PUBPOL','162D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the United States Health Care System',015334,'PUBPOL','165',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the United States Health Care System',015334,'PUBPOL','165',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Security Peace and Conflict',008337,'PUBPOL','166D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Citizenship Patriotism \u0026 Identity',024646,'PUBPOL','167FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Experience: A Video Approach',008062,'PUBPOL','170S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Civil Rights and Asian Americans',020070,'PUBPOL','175S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: The European Union: History and Prospects',023261,'PUBPOL','176S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Private Wealth and Public Giving: A Modern History',023658,'PUBPOL','177',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Israel/Palestine: Comparative Perspectives',023214,'PUBPOL','178',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Speaking: Policy Advocacy and Communication',008054,'PUBPOL','182',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',023540,'PUBPOL','183FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Synthetic Genomics: Science Policy and Ethics',021550,'PUBPOL','184FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drugs and the Law',022130,'PUBPOL','185FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethical Implications of Genetic and Genomic Research',023539,'PUBPOL','186FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Corporate Citizenship',023561,'PUBPOL','187FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Policy Special Topics Away',024167,'PUBPOL','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Introductory Special Topics in Public Policy',018094,'PUBPOL','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Public Policy',023930,'PUBPOL','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Patient and Research Participant Activism and Advocacy',025265,'PUBPOL','196FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Risks Rewards Rules and Tools: Science Law and Policy',025269,'PUBPOL','199FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environmental Policy in Europe: Duke in Berlin',008342,'PUBPOL','201A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law Culture and the Russian Legal Tradition',009647,'PUBPOL','202',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Philosophy of Globalization',008442,'PUBPOL','204A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Engaged Citizenship and Social Change (Gateway Course)',023957,'PUBPOL','206S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Development and Africa',000041,'PUBPOL','207',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Politics: Eurasian Perspectives',020518,'PUBPOL','208S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights and Legal Redress: Seeking Justice through Human Rights',024761,'PUBPOL','209S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Frontier City Berlin: Facing History''s Great Challenges',017281,'PUBPOL','210A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community',019092,'PUBPOL','211',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community: Structural Focus',022961,'PUBPOL','211-20',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community: Environmental Focus',022962,'PUBPOL','211-60',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Public Policy',014632,'PUBPOL','212',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law and Globalization in Emerging Markets',018191,'PUBPOL','214S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory and Practice: People Places and Policy Cases',021708,'PUBPOL','217SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conflict Analysis in Africa (Case Studies)',022147,'PUBPOL','218S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Regulatory State',021890,'PUBPOL','219D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Immigrant Dreams U.S. Realities: Immigration Policy History',021816,'PUBPOL','220',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',020278,'PUBPOL','223',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women in the Public Sphere: History Theory and Practice',015583,'PUBPOL','225S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Public Policy',020831,'PUBPOL','226',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics of Authoritarian Regimes',024425,'PUBPOL','228',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary and Policy: How Documentary Influences Policy',021119,'PUBPOL','228S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in Theory and Practice',008456,'PUBPOL','231',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Are Things Getting Better? The Question of Progress in World Affairs',023845,'PUBPOL','233D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Distributive Justice',014617,'PUBPOL','234S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Race and Ethnicity in Politics and Public Policy',021822,'PUBPOL','235',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and History',021837,'PUBPOL','236',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research in International Policy Issues',021505,'PUBPOL','237S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Media and Power in Washington',021888,'PUBPOL','238SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Politics of International Economic Relations: America in the World Economy',022827,'PUBPOL','240',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multi-Method Approaches to Social and Policy Research',019065,'PUBPOL','241',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Multi-Method Approaches to Social and Policy Research',022758,'PUBPOL','241A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Child Policy Research',017911,'PUBPOL','242S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Children Schools and Society',015755,'PUBPOL','243S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('School Dropout and Educational Policy',022164,'PUBPOL','244S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Promising Paradigms: Issues and Innovations in American Classrooms',020170,'PUBPOL','245',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Constitutional Development and Interpretation II: Individual Rights',023654,'PUBPOL','247',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Political Nonviolence',024458,'PUBPOL','248S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Life Within Capitalism: A History of its Values Measures and Struggles',022572,'PUBPOL','249',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law Ethics \u0026 Responsibility',021413,'PUBPOL','250FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Arts and Human Rights',020266,'PUBPOL','252',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Martin Luther King and the Prophetic Tradition',023545,'PUBPOL','253',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('America in the World Economy: The Law Politics and Economics of U.S. Antitrust 1890-2015',023597,'PUBPOL','254',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Innovation',023444,'PUBPOL','256',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare \u0026 Financial Markets: Why This Time is Never Different',023908,'PUBPOL','257S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women as Leaders',008081,'PUBPOL','259S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Leadership Policy and Change',008086,'PUBPOL','260',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Whose Democracy? Participation and Public Policy in the United States',021672,'PUBPOL','261SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Border Crossing: Leadership Value Conflicts and Public Life',019068,'PUBPOL','263',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Enterprising Leadership',008088,'PUBPOL','265S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Whose Democracy? Participation and Public Policy in the United States',020194,'PUBPOL','266S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Leading as a Social Entrepreneur',019116,'PUBPOL','267',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Animals and Ethics: Welfare Rights Utilitarianism and Beyond',018547,'PUBPOL','268',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Twentysomething Leadership',020759,'PUBPOL','269',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Participation and Leadership',013005,'PUBPOL','270',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Enterprise in Action',020198,'PUBPOL','271',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Entrepreneurship in Action',013841,'PUBPOL','271S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Historical Perspectives on Public Policy: The United States from 1945 to the Present',020016,'PUBPOL','272D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Public Policy: Spanish Tutorial',023653,'PUBPOL','273T-1',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',024414,'PUBPOL','274S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('United States Environmental Policy',008092,'PUBPOL','275',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Disasters: Science and Policy',018265,'PUBPOL','276',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Disasters: Reasons Response and Recovery',018264,'PUBPOL','277',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('North American Environmental History',005189,'PUBPOL','278',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment and Conflict: The Role of the Environment in Conflict and Peacebuilding',019016,'PUBPOL','279S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Science and Conservation Leadership',018741,'PUBPOL','280S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marine Policy',017491,'PUBPOL','281A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Engineering and Social Movements in Eastern Europe and Asia',023228,'PUBPOL','282S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics in an Unjust World',024105,'PUBPOL','283',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Denial Faith Reason: Sustainability and Survival',022548,'PUBPOL','284',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Urban Politics and Policymaking',022239,'PUBPOL','285S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Political History of Modern Architecture: From Revolution through Neoliberalism',025018,'PUBPOL','287',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('International Trade',003324,'PUBPOL','288',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Finance',003339,'PUBPOL','289',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Public Policy Topics',008150,'PUBPOL','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Policy Special Topics Away',024168,'PUBPOL','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Public Policy Topics',008151,'PUBPOL','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Selected Topics in Public Policy',023570,'PUBPOL','290T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics Tutorial Journalism \u0026 Media Studies',024054,'PUBPOL','291T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial and Ethnic Economic Inequality: A Cross National Perspective',020131,'PUBPOL','294',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Relations between Industrialized and Developing Countries',025146,'PUBPOL','295S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Authentic Leadership in Private Public and Not-for-Profit Organizations',025030,'PUBPOL','298',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Analysis for Public Policy-Making',008068,'PUBPOL','301',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Policy Choice as Value Conflict',008071,'PUBPOL','302D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Microeconomic Policy Tools',015570,'PUBPOL','303D',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Economics of the Public Sector',020501,'PUBPOL','304',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology of Money',024695,'PUBPOL','306',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Econometrics',003292,'PUBPOL','308D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Market Power and Public Policy',023225,'PUBPOL','310',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business and Human Rights Advocacy Lab',023281,'PUBPOL','311S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Managing the Oceans to Solve Global Problems',025051,'PUBPOL','314',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and the Law',021418,'PUBPOL','315',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Illiberal Nondemocracies: Focus on Eastern Europe and Asia',025023,'PUBPOL','317S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Policy: Transforming Evidence into Action',023873,'PUBPOL','324',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial Justice in the 20th Century US and South Africa',023887,'PUBPOL','326S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Apartheid South Africa and the Struggles for Democracy',023888,'PUBPOL','327S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('United States Racial/Ethnic Health Disparities: Social Determinants and Public Policy Implications',017291,'PUBPOL','328',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Ethics: Policy Choice as Value Conflict',017949,'PUBPOL','330',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Health Economics',003313,'PUBPOL','331',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War and Public Health in Africa',023220,'PUBPOL','333',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Health Care Systems',024197,'PUBPOL','335',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marketing Qu\u00e9bec: Policy Marketing and Identity',021436,'PUBPOL','337SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Class and the Rise of the American Charter School',023949,'PUBPOL','338S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('De/Re/Segregation in Education: A Case of Back to the Future?',024416,'PUBPOL','340S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Memory Bandits: Human Rights Duke''s History and a Plan to Expand History-Telling',024468,'PUBPOL','340T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Journalism in the Age of Data',025333,'PUBPOL','343',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of U.S. Social Movements',020618,'PUBPOL','344',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genocide and Human Rights',022580,'PUBPOL','345',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Family Rights/Human Rights',023868,'PUBPOL','346S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Connection between Human Rights Memory and How Societies Create Memorials',024194,'PUBPOL','347S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Science and Policy of Obesity',022844,'PUBPOL','348',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Environmental Politics',024257,'PUBPOL','349',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The University as a Culture: A Survivor''s Guide',024418,'PUBPOL','350S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economic and Political History of the European Union',024905,'PUBPOL','351A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('U.S-Russia Relations: 1991-2016',023914,'PUBPOL','352',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('U.S. Policy in the Middle East',022831,'PUBPOL','353S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics in the Developing World',008458,'PUBPOL','354',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Immigration',024199,'PUBPOL','355A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Globalization and Deglobalization',024652,'PUBPOL','356A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Watchdog Reporting in Politics',025332,'PUBPOL','357S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Apple: Life and Death and the Digital Revolution',025347,'PUBPOL','358S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Violent Jihad in the Twentieth Century - A Global History',024457,'PUBPOL','359',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Post-1945 America',024699,'PUBPOL','360S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Algorithms Journalism and the Public Interest',024417,'PUBPOL','361S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Legal Issues for the Performing Arts',022807,'PUBPOL','363S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Art of the Interview: Questions and Answers as a Tool of Journalistic Inquiry',023916,'PUBPOL','364S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Video Journalism',012996,'PUBPOL','365S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Magazine Journalism',012997,'PUBPOL','366S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('News Writing and Reporting',012998,'PUBPOL','367S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Journalism and War: Covering International Conflicts',022843,'PUBPOL','368S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Crash: The Intersection of Politics Policy and Media',022773,'PUBPOL','369S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Press the Presidency and Congress in a New Media Age',022996,'PUBPOL','370S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('News as a Moral Battleground',014156,'PUBPOL','371',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Information Technology Ethics and Policy',013000,'PUBPOL','372',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Information Policy and Ethics',013000,'PUBPOL','372',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intellectual Property: Law Policy and Practice',003296,'PUBPOL','373',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Documentary Film: Filmmakers and the Full Frame Documentary Film Festival',017078,'PUBPOL','374',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Policy Video',020829,'PUBPOL','375S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Foreign Policy of the United States',008449,'PUBPOL','376D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medicine and the Vision of Documentary Photography',016079,'PUBPOL','377S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Future of News and Accountability Journalism in the Digital Age',022778,'PUBPOL','378S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The First Amendment in the Digital Age',008079,'PUBPOL','379S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugee Policy and Practice (DukeImmerse)',025103,'PUBPOL','382S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Documentary Filmmaking',016424,'PUBPOL','383S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Democratization: Uses and Misuses of Ratings and Measurements',020220,'PUBPOL','384S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Crisis Communications and Higher Education',003150,'PUBPOL','385S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Culture Between Europe and the Middle East',025243,'PUBPOL','386SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black Experiences',020222,'PUBPOL','387S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights and Documentary: Aesthetics Ethics History',025095,'PUBPOL','388S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Small Town USA: Local Collaborations',018247,'PUBPOL','389S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Public Policy Studies',008057,'PUBPOL','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Children and the Experience of Illness',015760,'PUBPOL','395S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documentary Engagement Through Field-Based Projects',018567,'PUBPOL','396S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Documentary Photography',008132,'PUBPOL','398S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',023884,'PUBPOL','399A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Feature Writing Master Class',025108,'PUBPOL','408S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Leadership in International Relations',023765,'PUBPOL','409',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Policy Journalism and Media Studies Capstone Course',015643,'PUBPOL','410',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Historicizing Whiteness',020184,'PUBPOL','411S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Regulating American Business: Historical Perspectives',020067,'PUBPOL','412S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Immigration Policy History',020492,'PUBPOL','413S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research in Human Rights',022361,'PUBPOL','414S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Critical Reflection and Adaptive Leadership in Complex Systems',008077,'PUBPOL','415S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Critical Interventions in Middle East Studies and Policy',025055,'PUBPOL','417S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intellectual Property and Innovation: Law Policy \u0026 Entrepreneurship',022929,'PUBPOL','425',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Climate Change in the Marine Environment',022956,'PUBPOL','445A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Glasgow Seminar in Public Policy',008228,'PUBPOL','450AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cold War Texts: Politics Propaganda and Pop Culture',020519,'PUBPOL','472S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminars in Special Topics in Public Policy',021776,'PUBPOL','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Policy Practicum for Duke in DC',021887,'PUBPOL','493A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Project: Research Independent Study',022771,'PUBPOL','494',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Seminar',008155,'PUBPOL','495S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Seminar',008156,'PUBPOL','496S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Seminar Special Topics',022825,'PUBPOL','497S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Religious Studies',021080,'RELIGION','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biblical Hebrew I',009240,'RELIGION','105',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Biblical Hebrew II',009241,'RELIGION','106',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Sanskrit Language and Literature',021420,'RELIGION','107',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Sanskrit Language and Literature',021422,'RELIGION','108',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Self Society and Art in Modern Hinduism',009189,'RELIGION','110',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Buddhism',009190,'RELIGION','120',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Judaism',009186,'RELIGION','140',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Judaism Through Film',022770,'RELIGION','141',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Old Testament/Hebrew Bible',009220,'RELIGION','145',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Christianity',009187,'RELIGION','150',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Christian Theological Debates in their Historical and Cultural Contexts',021362,'RELIGION','151',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The New Testament',009225,'RELIGION','155',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Scripture: Judaism Christianity and Islam',025298,'RELIGION','156',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam',009188,'RELIGION','160',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Women across the Ages',020167,'RELIGION','165FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Japanese Religions: Buddhas Gods and Monsters',014649,'RELIGION','176',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Japanese Religions: Buddhas Kami and other Deities',014649,'RELIGION','176',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World Religions in American Life',016442,'RELIGION','178',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Migration and Human Rights in Korea: Local and Global Perspectives',025057,'RELIGION','180S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Seminars: Special Topics',013039,'RELIGION','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Film and Sacred Value: Spike Lee and Quentin Tarantino',024374,'RELIGION','201',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Myth',023292,'RELIGION','208',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Sanskrit',021421,'RELIGION','209',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Culture in Korea',020277,'RELIGION','211S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jews and Muslims Judaism and Islam',023169,'RELIGION','212',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shamanism and Spirit Possession',021035,'RELIGION','213S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Andalusia: Muslim Jewish Christian Spain',023604,'RELIGION','214S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hinduism and Judaism: Culture Religion and Identity',025059,'RELIGION','216S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Women Across the Ages',020896,'RELIGION','219S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religions of India',009265,'RELIGION','220',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classical Judaism Sectarianism and Early Christianity',009258,'RELIGION','231',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Prophecy and Prophets: Then and Now',018762,'RELIGION','232S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Community Media and Social Change in India',020866,'RELIGION','233SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Martin Luther King and the Prophetic Tradition',023545,'RELIGION','234',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion in American Life',009249,'RELIGION','237',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dance and Dance Theater of Asia',014644,'RELIGION','241',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dance and Religion in Asia and Africa',016405,'RELIGION','244',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Music in South Asia',014340,'RELIGION','246',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Hip Hop and Religion',023879,'RELIGION','248',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art and Christianity: A History of Christian Visual Culture',024371,'RELIGION','250',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and the Novel in Modern India',023878,'RELIGION','258',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medieval Christianity in Film and Fiction',020445,'RELIGION','261',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dante''s Divine Comedy: Hell Purgatory and Paradise',018281,'RELIGION','262',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Autobiography and Religious Identity',009316,'RELIGION','264S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Harry Potter and Religion',025017,'RELIGION','266S',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fragmented Memories: Polish and Polish Jewish Culture Through Film',020242,'RELIGION','269S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Black Gods and Kings: Priests and Practices of the Afro-Atlantic Religions',009281,'RELIGION','270',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex and Gender in the Hebrew Bible',009233,'RELIGION','271',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Astrology and Religion',024983,'RELIGION','273',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion \u0026 Politics: The Middle East Today',021329,'RELIGION','274FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Poetry Desire \u0026 Religion',021086,'RELIGION','275S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics in South Asia',018529,'RELIGION','277',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Epics of India: Ethics Politics and Performance Traditions',016787,'RELIGION','278S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gandhi: Image and Reflection',023323,'RELIGION','279',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Peace: Case Studies in Activism and Reconciliation',023650,'RELIGION','280S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Apocalypse: Beat Generation Spirituality',021319,'RELIGION','281',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Cognitive Science of Religion and Morality',018630,'RELIGION','281A',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History and Culture of Iran',022875,'RELIGION','283',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ritual Performance and Religion',023535,'RELIGION','284',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology of Religion',009840,'RELIGION','285',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Science',013592,'RELIGION','287',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Science',025362,'RELIGION','287S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Acts of Engagement',024174,'RELIGION','288',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Religion',009311,'RELIGION','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Religion',009312,'RELIGION','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Black Muslims: Race Religion \u0026 Culture',024465,'RELIGION','295S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern Buddhism in Asia and America',015474,'RELIGION','320S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Buddhist Ethics',015490,'RELIGION','321S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Buddhist Meditation in Transformation: Historical Scientific and Medical Perspectives',023608,'RELIGION','323',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Buddhist Meditation: Cultivation Practices and Psychology',017895,'RELIGION','323S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Literary Islam',022777,'RELIGION','326S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tibetan Buddhism: Culture Ethics Philosophy and Practice',021063,'RELIGION','327S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Buddhism and Sexuality',021813,'RELIGION','328',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Taoism and Mysticism',020502,'RELIGION','329S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Atheism and Buddhism',024148,'RELIGION','330S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics in the Hebrew Bible/Old Testament',022468,'RELIGION','331',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Book of Psalms: Reading Biblical Poetry Then and Now',022456,'RELIGION','332S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jewish History 1492 to the Present',014942,'RELIGION','340',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Holocaust',021600,'RELIGION','342',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Judaism',009261,'RELIGION','345',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Zionism: Jewish and Christian Aspects',021321,'RELIGION','349S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Non-Canonical Gospels',020760,'RELIGION','350S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Historical Jesus',009235,'RELIGION','351',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Life and Letters of Paul',009232,'RELIGION','352',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethical Issues in Early Christianity',015194,'RELIGION','353',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of the Christian Church',009245,'RELIGION','355',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Roman Catholic Tradition',009246,'RELIGION','356',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Reformation of the Sixteenth Century',009285,'RELIGION','358',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Classics of the Christian Theological Tradition',021814,'RELIGION','359S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Jesus in Film',023195,'RELIGION','360',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and Sexuality in the Christian Tradition',009250,'RELIGION','367',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Theology and Fiction of C. S. Lewis',009313,'RELIGION','368',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Qur''an Over Time',019794,'RELIGION','370FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Mysticism: Perso-Indian (Eastern) Traditions',009279,'RELIGION','373S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Philosophy and Theology an introduction',021328,'RELIGION','374S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Civilization I',009271,'RELIGION','375',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Civilization II',009272,'RELIGION','376',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Politics in Post-Revolutionary Iran',022536,'RELIGION','377S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam in Asia',019709,'RELIGION','378S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islamic Media',022767,'RELIGION','379S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim World: Transformations and Continuities',001894,'RELIGION','380',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Rumi: Mysticism and Poetry',023319,'RELIGION','381',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Muslims in Germany: Politics of Migration Religion and Culture',025261,'RELIGION','382SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam in the Americas',005616,'RELIGION','384S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Local Islams: Islamic Communities in the Area',016402,'RELIGION','386S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Ethics and Islamic Law: Issues and Debates',018565,'RELIGION','388S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Religion',009317,'RELIGION','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Junior-Senior Seminars',009326,'RELIGION','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Toni Morrison: Race Trauma and Redemption',024218,'RELIGION','399S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar Genocide: Race Religion and Violence in the Twentieth Century Europe',022533,'RELIGION','410S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('North Korea: Politics Economics and Culture',020751,'RELIGION','411S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Sex Celibacy and Purity in the Middle Ages',020214,'RELIGION','415S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in Islam',021861,'RELIGION','450S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Junior-Senior Seminars',009330,'RELIGION','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'RIGHTS','104D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pursuit of Equality: Rethinking Schools - Lens of Social Justice',020823,'RIGHTS','111FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',023540,'RIGHTS','112FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Enterprising Leadership and Civic Engagement',023568,'RIGHTS','113FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('World Music: Aesthetic and Anthropological Approaches',007099,'RIGHTS','130',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Israel/Palestine: Comparative Perspectives',023214,'RIGHTS','148',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Cold War America',024147,'RIGHTS','156S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugees Rights and Resettlement',020151,'RIGHTS','178FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Civil Rights and Asian Americans',020070,'RIGHTS','183S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Human Rights',025125,'RIGHTS','190',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Human Rights',025126,'RIGHTS','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Engaged Citizenship and Social Change (Gateway Course)',023957,'RIGHTS','201S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting the Middle East: Community and Oral History',024709,'RIGHTS','204FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Racial and Ethnic Minorities in American Politics',018286,'RIGHTS','205',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Anthropology of Race',012561,'RIGHTS','208',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Global Health',018708,'RIGHTS','212',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('United States Environmental Policy',008092,'RIGHTS','213',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Feminist Art from the 1970s to the Present',023316,'RIGHTS','213S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethical Challenges in Environmental Conservation',018424,'RIGHTS','214S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology of Racism in America',009813,'RIGHTS','215',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Migration and Ethics',001978,'RIGHTS','216S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Conflict Analysis in Africa (Case Studies)',022147,'RIGHTS','218S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War Slavery and Revolution in the Caribbean 1700-1800',005212,'RIGHTS','219',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Muslim Women Across the Ages',020896,'RIGHTS','219S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Global Health',021138,'RIGHTS','220S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Power and Identity: From Ali to Kaepernick',024711,'RIGHTS','221',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment and Conflict: The Role of the Environment in Conflict and Peacebuilding',019016,'RIGHTS','229S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Urban Politics and Policymaking',022239,'RIGHTS','235S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Research Seminar in Urban Politics and Policymaking',022238,'RIGHTS','236S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Political Nonviolence',024458,'RIGHTS','238S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women Gender and Sexuality in U.S. History',021373,'RIGHTS','239D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Who Cares and Why: Social Activism and its Motivations',015530,'RIGHTS','240S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in the Americas',023953,'RIGHTS','245S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Civil/Human Rights Activism: In the Spirit of Pauli Murray',020146,'RIGHTS','246S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Arts and Human Rights',020266,'RIGHTS','248',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Martin Luther King and the Prophetic Tradition',023545,'RIGHTS','249',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cultures and Politics of the America Borderlands',022141,'RIGHTS','254',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Student Activism Storytelling and Community Change',023962,'RIGHTS','259S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Genomics and Society',019367,'RIGHTS','261D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in Theory and Practice',008456,'RIGHTS','262',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Policy Video',020829,'RIGHTS','271S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Genocide and Human Rights',022580,'RIGHTS','272',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',024414,'RIGHTS','277S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gandhi: Image and Reflection',023323,'RIGHTS','279',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Religion and Peace: Case Studies in Activism and Reconciliation',023650,'RIGHTS','280S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Acts of Engagement',024174,'RIGHTS','288',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War and Gender in the Middle East',024103,'RIGHTS','289FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Human Rights',025123,'RIGHTS','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Human Rights',025124,'RIGHTS','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Black Muslims: Race Religion \u0026 Culture',024465,'RIGHTS','295S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Holocaust',021600,'RIGHTS','297',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business and Human Rights Advocacy Lab',023281,'RIGHTS','301S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Narratives of Living with HIV/AIDS',022174,'RIGHTS','302',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('De/Re/Segregation in Education: A Case of Back to the Future?',024416,'RIGHTS','303S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('White People: In Anthropological Perspective',024156,'RIGHTS','305S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fragmented Memories: Polish and Polish Jewish Culture Through Film',020242,'RIGHTS','308S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chinese Im/migration: Chinese Migrant Labor and Immigration to the US',020782,'RIGHTS','309',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African American Women and History',015288,'RIGHTS','310',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('War and Public Health in Africa',023220,'RIGHTS','312',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Movements in Age of Globalization',022824,'RIGHTS','313',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community',019092,'RIGHTS','315',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community: Structural Focus',022961,'RIGHTS','315-20',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Engineering Sustainable Design and the Global Community: Environmental Focus',022962,'RIGHTS','315-60',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Apartheid South Africa and the Struggles for Democracy',023888,'RIGHTS','316S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Veterans Oral History Project',021903,'RIGHTS','317S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('US Comparative State Politics',008480,'RIGHTS','319S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black Power: Writing the History of the African American Freedom Struggle',017407,'RIGHTS','320S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugee Lives: Violence Culture and Identity',023313,'RIGHTS','321S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Movements and Social Media',021369,'RIGHTS','323S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Displacement: Voix Francophones',022935,'RIGHTS','325S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The South in Black and White',017885,'RIGHTS','326',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Afro-Brazilian Culture and History',005338,'RIGHTS','327',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Brazil',022535,'RIGHTS','328',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics in Violence',022212,'RIGHTS','329S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Health Ethics: Policy Choice as Value Conflict',017949,'RIGHTS','330',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Prisoner''s Dilemma and Distributive Justice',016959,'RIGHTS','331',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Farmworkers in North Carolina: Roots of Poverty Roots of Change',014927,'RIGHTS','332S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Energy Futures and Environmental Justice',024154,'RIGHTS','334S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Free Speech: France-USA',004456,'RIGHTS','335',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race in Durham',021344,'RIGHTS','336S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Displacements: Migration and Human Trafficking',022165,'RIGHTS','339',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening the Holocaust: Jews WWII and World Cinema',020119,'RIGHTS','340',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics of Global Infectious Disease Control',022169,'RIGHTS','341',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of Modern America: The United States from 1930 to present',016064,'RIGHTS','343',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('History of U.S. Social Movements',020618,'RIGHTS','344',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('African Americans Mass Incarceration and Citizenship',022931,'RIGHTS','345',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Connection between Human Rights Memory and How Societies Create Memorials',024194,'RIGHTS','346S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Memory Bandits: Human Rights Duke''s History and a Plan to Expand History-Telling',024468,'RIGHTS','346T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The University as a Culture: A Survivor''s Guide',024418,'RIGHTS','347S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Civil Rights Movement',005319,'RIGHTS','348',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Racial Justice in the 20th Century US and South Africa',023887,'RIGHTS','349S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Documenting Black Experiences',020222,'RIGHTS','350S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Immigrant Dreams U.S. Realities: Immigration Policy History',021816,'RIGHTS','352',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race: A World History',022173,'RIGHTS','354D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Feminist Activism: Social Movements',014782,'RIGHTS','360S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Money Sex Power',016613,'RIGHTS','361',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Determinants of U.S. Health Disparities',009850,'RIGHTS','362',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Activism Women and Danger: Documenting Race Gender and Activism in the American South',022549,'RIGHTS','362S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Sexuality and Human Rights',019780,'RIGHTS','368',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transnational Feminism',019376,'RIGHTS','369S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('News as a Moral Battleground',014156,'RIGHTS','371',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam in the Americas',005616,'RIGHTS','374S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Warfare in the Twentieth Century',005192,'RIGHTS','383',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Inequality in Western Political Thought',024725,'RIGHTS','384',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics of Sexuality',023909,'RIGHTS','386S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Germany Confronts Nazism and the Holocaust',017295,'RIGHTS','387',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Journalism and War: Covering International Conflicts',022843,'RIGHTS','388S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Family Rights/Human Rights',023868,'RIGHTS','389S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Human Rights',025121,'RIGHTS','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Human Rights',025122,'RIGHTS','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Society',020504,'RIGHTS','395',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language in Immigrant America',021084,'RIGHTS','396S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and the Law',021418,'RIGHTS','401',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Obligations of Memory',020049,'RIGHTS','403S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Identity and Linguistic Rights in the Spanish Speaking Americas',024344,'RIGHTS','409S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Historicizing Whiteness',020184,'RIGHTS','411S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Sex and Citizenship',020755,'RIGHTS','428S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Spanish Civil War: History Literature and Popular Culture',010077,'RIGHTS','431S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Popular Culture and Political Repression in Spain and Latin America',010102,'RIGHTS','432S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone: Research in Human Rights',025138,'RIGHTS','470S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Human Rights',025120,'RIGHTS','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Human Rights',025119,'RIGHTS','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Romanian Language',023598,'ROMANIAN','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Romanian Language',023599,'ROMANIAN','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Romanian Language and Culture',012952,'ROMANIAN','111',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Intermediate Romanian',014678,'ROMANIAN','212',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Romance Studies',018282,'ROMST','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cognition Identity and Linguistic (Human) Rights',024685,'ROMST','195FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in Theory',021366,'ROMST','201',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in Theory - Preceptorial',021597,'ROMST','201P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Europe in Theory - Preceptorial',021597,'ROMST','201P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Imagining Europe: Arts Culture Politics',011802,'ROMST','202',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Imagining Europe: Language Culture Politics Preceptorial',024925,'ROMST','202P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Machiavellian Persuasion: Rhetoric from Plato''s Cave to Political ''Spin''',021530,'ROMST','203',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Problem of Love in Western Literature',022932,'ROMST','205',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Problem of Love in Western Literature - Preceptorial',024144,'ROMST','205P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction',024104,'ROMST','206',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern European Short Fiction Preceptorial',024219,'ROMST','206P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Identity',025257,'ROMST','207FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language Thought and Culture',025248,'ROMST','217FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Trauma and Global Mental Health in Haiti',022545,'ROMST','220',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capoeira: Practice and Culture',022920,'ROMST','235SL',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Creative Brain: Literature Arts \u0026 Cognition',022000,'ROMST','242A',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Baroque Art',024159,'ROMST','256',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and Power in the Renaissance',025130,'ROMST','258S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drawing Foundations in Early Modern Europe',025272,'ROMST','265',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Romance Studies',023202,'ROMST','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Administered Study Abroad: Topics in Romance Studies',023271,'ROMST','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Body in Art in Early Modern Europe: Power and Limits of Corporeal Representations',025000,'ROMST','317',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Andalusia: Muslim Jewish Christian Spain',023604,'ROMST','319S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Modern Caribbean after Emancipation',021059,'ROMST','321',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Romance Studies Literature and Culture',025324,'ROMST','327S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Romance Studies Literature and Culture Preceptorial',025325,'ROMST','327SP',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Representing Haiti',020506,'ROMST','345',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Soccer Politics',023209,'ROMST','362D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('France and Africa: The Politics and Culture of (Post-)Coloniality',025114,'ROMST','380',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('France and Africa: The Politics and Culture of (Post-)Coloniality Preceptorial',025118,'ROMST','380P',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food Culture and Society',025246,'ROMST','388S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Linguistic Human Rights in the Americas',024655,'ROMST','389S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Romance Studies',021805,'ROMST','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Romance Studies',023892,'ROMST','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',021755,'ROMST','393',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Romance Studies Health Humanities Lab Tutorial',009557,'ROMST','395T',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening Europe',024679,'ROMST','489S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screening Europe Preceptorial',024684,'ROMST','489SP',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Romance Studies',009561,'ROMST','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',025026,'ROMST','493',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Thesis',022047,'ROMST','495',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latino/as in the Global South Capstone - Global/Local Contexts',020494,'ROMST','495S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Russian I',009576,'RUSSIAN','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Russian I',025411,'RUSSIAN','101SA',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Russian II',009579,'RUSSIAN','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Russian II',025412,'RUSSIAN','102SA',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Russian Conversation',009583,'RUSSIAN','103',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Russian',009585,'RUSSIAN','111',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Accelerated Russian Language and Culture I',025383,'RUSSIAN','112A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Grief Work: End of Life Care in Russia and America',021357,'RUSSIAN','120FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',023540,'RUSSIAN','121FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Russian Culture',021452,'RUSSIAN','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Russian I',009591,'RUSSIAN','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Russian II',009593,'RUSSIAN','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Russian Conversation',009596,'RUSSIAN','205',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Empire''s Western Front: Russian and Polish Cultures',009625,'RUSSIAN','211S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law and Globalization in Emerging Markets',018191,'RUSSIAN','214S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Human Language',017496,'RUSSIAN','216S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Art and Politics: 1800-Present',009676,'RUSSIAN','217',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Language Studies in St. Petersburg',009623,'RUSSIAN','221A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Russian Media',009637,'RUSSIAN','223A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Tsars to Commissars: Russian Cultural History',005310,'RUSSIAN','276',1,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',024414,'RUSSIAN','277S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Russian Studies',023841,'RUSSIAN','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Russian Composition and Readings',009608,'RUSSIAN','301S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Russian Composition and Readings',009609,'RUSSIAN','302S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Studies in the Russian Language and Culture',009611,'RUSSIAN','307AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Russian Fairy Tale and Its Cultural Legacy',019018,'RUSSIAN','310',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Quest for Identity: Russian Literature and Culture 1800-1855',009650,'RUSSIAN','311',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Struggle for Justice and Faith: Russian Literature and Culture 1855-1900',009651,'RUSSIAN','312',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Russian Novel',013095,'RUSSIAN','313',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Devil in Russian Literature',013834,'RUSSIAN','314',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and Russian Literature',009656,'RUSSIAN','315',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Expressing Immigrant Experience: The Russians',023880,'RUSSIAN','317S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Follow the Ruble: Money in Russian Literature and Culture',024691,'RUSSIAN','318',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('End of Life in Russia and US',021394,'RUSSIAN','320S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The New Russia: Reflections of Post-Soviet Reality in Literature and Film',014673,'RUSSIAN','321',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women in Contemporary Russian Society',019873,'RUSSIAN','322S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dostoevsky',009665,'RUSSIAN','323',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tolstoy and the Russian Experience',016076,'RUSSIAN','325',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chekhov',009667,'RUSSIAN','327S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bunin: Mystery of the Russian Soul and Metaphysical Memory',016238,'RUSSIAN','328S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Beat Generation/Russian New Wave: Cultural Dissent in the Cold War',022834,'RUSSIAN','330',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Demons Rebels Madmen Fools: Non-Conformists in Russian Literature Culture and Film',025350,'RUSSIAN','331',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Reading Chekhov in Russian',024258,'RUSSIAN','340S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Eastern Europe in Transition: Markets Media and the Mafia',013009,'RUSSIAN','350',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law and Constitutional Reform in Russia and the Former Soviet Union',017437,'RUSSIAN','351',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Directing Chekhov',021353,'RUSSIAN','351S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Law Culture and the Russian Legal Tradition',009647,'RUSSIAN','353',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Soviet Art after Stalin: 1956-1991',020168,'RUSSIAN','355S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Russian Empire',020132,'RUSSIAN','356',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language Technologies and Culture Acquisition',015205,'RUSSIAN','361',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Languages of the World',006285,'RUSSIAN','362',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory and Practice of Translation',009640,'RUSSIAN','363',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Language',009662,'RUSSIAN','364',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam in Asia',019709,'RUSSIAN','370S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Fiction and Film',013007,'RUSSIAN','371S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Studies in Contemporary Russian Culture and Cognition',013008,'RUSSIAN','372',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Language and Culture through Film',013018,'RUSSIAN','373S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Language and Culture through Film II',013561,'RUSSIAN','374S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Culture in the Era of Terror: A Reexamination',009641,'RUSSIAN','380S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Russian Revolutionary Cinema',005278,'RUSSIAN','381',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Actress: Celebrity and the Woman',018225,'RUSSIAN','383',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Back in the U.S.S.R.: Everyday Soviet Culture 1956-1989',009654,'RUSSIAN','388S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Russian Culture',021868,'RUSSIAN','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',020278,'RUSSIAN','399',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',023884,'RUSSIAN','399A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Russian',009692,'RUSSIAN','401',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Russian',025384,'RUSSIAN','401A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Russian: Readings Translation and Syntax',009693,'RUSSIAN','402',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Russian: Readings Translation and Syntax',025385,'RUSSIAN','402A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Leadership in International Relations',023765,'RUSSIAN','410',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('U.S-Russia Relations: 1991-2016',023914,'RUSSIAN','415',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Soviet Life through the Camera''s Lens',020510,'RUSSIAN','433S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Multilingualism',023883,'RUSSIAN','438AS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Neuroscience and Multilingualism',020594,'RUSSIAN','439S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Living Dying Healing in Russia',024120,'RUSSIAN','481',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Russia',025416,'RUSSIAN','493A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study in Russia',025417,'RUSSIAN','494A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Honors Seminar',009620,'RUSSIAN','495S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Honors Seminar',009621,'RUSSIAN','496S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociological Inquiry',009780,'SOCIOL','110D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Social Problems',009781,'SOCIOL','111',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('On Suffering: How Science and Stories Shape Us',025220,'SOCIOL','140FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advertising and Society: Global Perspective (DS4)',001876,'SOCIOL','160',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business Anthropology: Anthropologists in the Workplace',025328,'SOCIOL','171',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Identity Action and Emotion',021355,'SOCIOL','176FS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Refugees Rights and Resettlement',020151,'SOCIOL','178FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Society the Self and the Natural World',016968,'SOCIOL','180S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Approaches to Global Issues',002842,'SOCIOL','195',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Patient and Research Participant Activism and Advocacy',025265,'SOCIOL','196FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Freedom and the Market',023679,'SOCIOL','197FS',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Race Power and Identity: From Ali to Kaepernick',024711,'SOCIOL','202',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('A-E. Comparative Sociology: Selected Areas',009804,'SOCIOL','210',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender and Global Health',018708,'SOCIOL','212',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology of Racism in America',009813,'SOCIOL','215',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Childhood in Social Perspective',009814,'SOCIOL','217',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex Gender and Society',009815,'SOCIOL','218',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Juvenile Delinquency',009816,'SOCIOL','219',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Causes of Crime',009817,'SOCIOL','220',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Eastern Europe in Transition: Markets Media and the Mafia',013009,'SOCIOL','221',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Punishment and Society',009819,'SOCIOL','222',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Data Analytics and Visualization for Business',025344,'SOCIOL','223S',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Development (D)',005026,'SOCIOL','224',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intimate Inequalities: The State of American Families',009839,'SOCIOL','225',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Visual Research and the American Dream',017089,'SOCIOL','228S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gender Work and Organizations',014769,'SOCIOL','229',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Sociology',022829,'SOCIOL','250',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Enlightenment Culture to Popular Culture',024651,'SOCIOL','252A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology of Immigration and Health',023830,'SOCIOL','255',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Psychosocial Aspects of Human Development',005027,'SOCIOL','260',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adulthood and Aging',009851,'SOCIOL','262',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aging and Health',009852,'SOCIOL','263',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Death and Dying',014324,'SOCIOL','264',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drug Use and Abuse: Getting High in the United States',023867,'SOCIOL','265',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Health Care Systems',024197,'SOCIOL','271',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Sociology',009792,'SOCIOL','290A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminar in Special Topics',009880,'SOCIOL','290S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Political Economy of Immigration',024199,'SOCIOL','294A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sex Work: The Politics of Sexual Labor',022166,'SOCIOL','295S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Discovering Education and Human Development I: How Social Scientists Learn from Data',023620,'SOCIOL','298D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Movements in Age of Globalization',022824,'SOCIOL','323',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The University as a Culture: A Survivor''s Guide',024418,'SOCIOL','324S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Methods of Social Research',009824,'SOCIOL','332',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Quantitative Analysis of Sociological Data',017456,'SOCIOL','333',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory and Society',017849,'SOCIOL','338',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Marxism and Society',001911,'SOCIOL','339',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The United States and the Asian Pacific Region',022137,'SOCIOL','341',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Displacements: Migration and Human Trafficking',022165,'SOCIOL','343',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Transition to Indignation: Social Movements in Spain 1977-2013',024406,'SOCIOL','346A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Asians in American Higher Education: Trends and Issues',024109,'SOCIOL','346S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Managing Networks: Research and Applications of Network Analysis to Business Organizations',024961,'SOCIOL','347',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sexuality and Society',009838,'SOCIOL','349',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology of Religion',009840,'SOCIOL','351',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology through Photography',016077,'SOCIOL','352S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Getting Rich: Financial Markets Household Finance and Wealth',015206,'SOCIOL','354',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organizations and Management',009844,'SOCIOL','355',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Organizations and Management in Global Capital Markets: an Ethical Perspective',018595,'SOCIOL','357',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Markets and Marketing',009847,'SOCIOL','358',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Sociology of Entrepreneurship',009848,'SOCIOL','359',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Apple: Life and Death and the Digital Revolution',025347,'SOCIOL','360S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Social Determinants of U.S. Health Disparities',009850,'SOCIOL','361',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Business Behaviors',021356,'SOCIOL','365',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Markets in the Global Economy',018480,'SOCIOL','366',0,1,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computational Social Science: Tools to Collect \u0026 Analyze Human Behavior Using Data from the Internet',024415,'SOCIOL','367S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Response to the Rise of China',023826,'SOCIOL','370S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pigging Out: The Cultural Politics of Food',020263,'SOCIOL','374',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Men and Masculinities',023606,'SOCIOL','375S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Food Culture and Society',025246,'SOCIOL','388S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Field Ethics (DukeImmerse)',025006,'SOCIOL','389S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Sociology',009883,'SOCIOL','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Sociology',023345,'SOCIOL','390SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Surviving Globalization: The Global South and the Development Imagination',024244,'SOCIOL','409',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intellectual Property and Innovation: Law Policy \u0026 Entrepreneurship',022929,'SOCIOL','425',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Women and the Professions',003526,'SOCIOL','430S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Global Caribbean',024698,'SOCIOL','450S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Politics: Eurasian Perspectives',020518,'SOCIOL','471S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Cold War Texts: Politics Propaganda and Pop Culture',020519,'SOCIOL','472S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Sociology',017906,'SOCIOL','490',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminar in Special Topics',009882,'SOCIOL','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Seminar: Special Topics',017438,'SOCIOL','490S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology Honors Seminar I',016088,'SOCIOL','495S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology Honors Seminar II',016089,'SOCIOL','496S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Sociology Internship',009884,'SOCIOL','499S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Spanish 1',010020,'SPANISH','101',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Elementary Spanish 2',010022,'SPANISH','102',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Elementary Spanish',010025,'SPANISH','111',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Latino/a Studies in the Global South',022918,'SPANISH','160',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Latino/a Studies in the Global South',019142,'SPANISH','160S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Topics in Spanish and Latin American Literature and Culture',021365,'SPANISH','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intermediate Spanish',010031,'SPANISH','203',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate Spanish',010035,'SPANISH','204',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate Spanish with Service-Learning',024343,'SPANISH','205',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Intermediate Spanish with Community Engagement',024874,'SPANISH','206',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Global Health: Spanish Tutorial',021957,'SPANISH','270T-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in Public Policy: Spanish Tutorial',023653,'SPANISH','271T',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voices in the Environment: Spanish',023686,'SPANISH','272T-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Spanish Studies',023201,'SPANISH','290',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Spanish Writing',010038,'SPANISH','301',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Spanish Grammar',013025,'SPANISH','302',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cultural Studies',013026,'SPANISH','303',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fundamentals of Spanish Linguistics',010047,'SPANISH','304',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spanish for Heritage Speakers',010039,'SPANISH','305',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Health Culture and the Latino Community',015778,'SPANISH','306',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Issues of Education and Immigration',016899,'SPANISH','307S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Latino/a Voices in Duke Durham and Beyond',018273,'SPANISH','308S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spanish in the U.S.',023933,'SPANISH','309S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Translating Spanish-English and English-Spanish',022213,'SPANISH','310',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Intensive Summer Spanish: Food Production and Consumption in NC and Peru',022868,'SPANISH','311',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Community-Based Research with Spanish-Speakers',022934,'SPANISH','312',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bridging Cultures: Latino Lives and Experiences in NC',022955,'SPANISH','313',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Aproximaciones a la Gastronom\u00eda de Espa\u00f1a: Pol\u00edtica Sociedad y Cultura',024292,'SPANISH','314A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language and Culture of Entrepreneurship in Latin America',025174,'SPANISH','315A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spanish for Freshmen and Sophomores',010053,'SPANISH','327S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Literature Film and Popular Culture',010049,'SPANISH','331S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Spanish Literature I',010050,'SPANISH','332',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Spanish Literature II',010051,'SPANISH','333',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Literature and the Arts in Modern Spain',010076,'SPANISH','333A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Spanish-American Literature',010054,'SPANISH','334',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Spanish-American Literature',010055,'SPANISH','335',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to US Latino/a Literature',024653,'SPANISH','336',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('El cine pol\u00edtico en am\u00e9rica Latina',023603,'SPANISH','339',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Communication Skills',010044,'SPANISH','340A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Art Cultural Identity Social Change: Political History of Cont Spanish Art: Goya to Global Society',024352,'SPANISH','341A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Transition to Indignation: Social Movements in Spain 1977-2013',024406,'SPANISH','342A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Decentering Spanish Otherness: Visual Culture and Coloniality in Contemporary Spain',024984,'SPANISH','343A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Politics of Salsa: Music Urban Spaces and Globalization',025215,'SPANISH','344A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Modern Latin American Art and Visual Culture',021653,'SPANISH','350D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Idea of Latin America',017405,'SPANISH','363D',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Spanish Studies',023060,'SPANISH','390',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Hispanic Civilization',010071,'SPANISH','390-4',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Spanish Studies',024798,'SPANISH','390S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topics in Spanish Linguistics',012925,'SPANISH','390S-5',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Identity and Linguistic Rights in the Spanish Speaking Americas',024344,'SPANISH','409S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spanish Literature of the Renaissance and the Baroque',010093,'SPANISH','410',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Golden Age Literature: Cervantes',010094,'SPANISH','411',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mayas Aztecs and Incas: The World According to the Indigenous People of Latin America',019872,'SPANISH','412D',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mayas Aztecs and Incas: The World According to the Indigenous People of Latin America',020117,'SPANISH','412S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Urban Fiction and Collective Imagination: Madrid Through Literature and Film',024369,'SPANISH','414A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spanish Cinema from the Transition to the Present',024404,'SPANISH','419A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Po\u00e9ticas de aqu\u00ed y de all\u00e1 / Thinking Language: Poetics from Here and There',024405,'SPANISH','420A',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Spanish Civil War: History Literature and Popular Culture',010077,'SPANISH','431S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Popular Culture and Political Repression in Spain and Latin America',010102,'SPANISH','432S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Photography in the Americas: War Tourism Art and Protest',010104,'SPANISH','433S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capitalism in the Modern City: Men Women and Money in 19th- and 21st-Century Madrid',010100,'SPANISH','434S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Nineteenth- and Twentieth-Century Spanish Literature',010100,'SPANISH','434S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mexicana Thought from North and South: Writing Art Film',010089,'SPANISH','435S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spain: Cultural Studies',010083,'SPANISH','441A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spain Circa 1898: The Crisis of the Bourgeois Order',018302,'SPANISH','441AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spain: Special Topics Abroad',018428,'SPANISH','490A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke in Andes: Special Topics',010088,'SPANISH','490AS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Spanish Literature',010086,'SPANISH','490S',0,0,0,0,0,0,0,1,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in US Latina/o Literatures and Cultural Studies',013131,'SPANISH','490S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Seminar',017602,'SPANISH','495AS',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Data Analysis and Statistical Inference',013019,'STA','101',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Data Analysis and Statistical Inference',024500,'STA','101A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Biostatistics',013023,'STA','102',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introductory Biostatistics',013023,'STA','102',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Biostatistics',024024,'STA','102A',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Data Analysis and Statistical Inference - Online',022029,'STA','104',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mathematics of Data Science',025284,'STA','115FS',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Data Science and Statistical Thinking',025001,'STA','199L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Regression Analysis',015479,'STA','210',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Probability',006905,'STA','230',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Introduction to Probability',021374,'STA','231',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Study Design: Design of Surveys and Causal Studies',024980,'STA','322',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Statistical Computing',023684,'STA','323D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Statistical Computing',023684,'STA','323D',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Machine Learning and Data Mining',024694,'STA','325L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Machine Learning and Data Mining',024694,'STA','325L',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Statistical Decision Analysis',017475,'STA','340',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Statistical Decision Analysis',017475,'STA','340',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Bayesian Inference and Modern Statistical Methods',017483,'STA','360',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Case Studies in the Practice of Statistics',023542,'STA','440',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Statistical Modeling of Spatial and Time Series Data',024112,'STA','444',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Statistical Modeling of Spatial and Time Series Data',024112,'STA','444',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Theory and Methods for the Analysis of Social Networks',024368,'STA','450L',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Statistical Consulting',017476,'STA','470S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Statistical Consulting',017476,'STA','470S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Computational Data Analysis',017478,'STA','471S',0,0,0,0,0,1,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Statistics',018024,'STA','490S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Independent Study',022617,'STA','493',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Seminar in Statistical Science I',017471,'STA','497S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research Seminar in Statistical Science I',017471,'STA','497S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Thesis Seminar',017485,'STA','498S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Honors Thesis Seminar',017485,'STA','498S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Communication Improvisation and Business',016105,'THEATRST','103S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Theater Today',020797,'THEATRST','115',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Acting',003103,'THEATRST','145S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke Administered Study Abroad: Special Topics in Theater Studies',003034,'THEATRST','190A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Focus Program Special Topics',022033,'THEATRST','190FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Reading Theater',018590,'THEATRST','190S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Theater Studies',022608,'THEATRST','190S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Art of Transformation: A Workshop in Movement and Theater',002982,'THEATRST','195FS',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Performing Science: Experimentation Collaboration and Artistry',025268,'THEATRST','198FS',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Performance Studies',023900,'THEATRST','202S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Performance and Social Change',018866,'THEATRST','204S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Radio: The Theater of the Mind',016608,'THEATRST','207S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Contemporary Performance',021055,'THEATRST','208',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dramatic Forms of Musical Theatre',024214,'THEATRST','209',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Musicals',003074,'THEATRST','210',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Musical Theater Workshop: Performance',016610,'THEATRST','211',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Musical Theater Workshop: Creation',016611,'THEATRST','212',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Internship in New York',016601,'THEATRST','214A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing the Musical Book',023913,'THEATRST','216S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Economics of Art (The Chicago Scene)',022593,'THEATRST','217SA',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Modern German Theater and Drama',004819,'THEATRST','223S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Acting French',016803,'THEATRST','225S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Drama of Greece and Rome',002747,'THEATRST','227',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ancient Myth',023292,'THEATRST','228',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Asian American Theatre',003924,'THEATRST','232',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dance and Dance Theater of Asia',014644,'THEATRST','233',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Improvisation',021428,'THEATRST','242',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Movement for the Theater',016471,'THEATRST','244S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Body in Art in Early Modern Europe: Power and Limits of Corporeal Representations',025000,'THEATRST','245',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare Studio',003105,'THEATRST','246S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Art of Public Speaking: The Natural Voice',003111,'THEATRST','248S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Directing',003117,'THEATRST','255S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Costume Design',003147,'THEATRST','261S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Scene Design',016863,'THEATRST','262S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Lighting Design',016612,'THEATRST','263S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Dreams American Movies',020269,'THEATRST','272',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Screenwriting',003094,'THEATRST','273S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Acting For the Camera',016771,'THEATRST','275S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Italian Cinema',016582,'THEATRST','276',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Dramatic Monster: Horror on Stage and Screen',020517,'THEATRST','277',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Film Studies',003845,'THEATRST','278',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Performing Sexual Health: The Duke Sex Ed Squad',024759,'THEATRST','279S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dramatic Writing',003090,'THEATRST','280S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Adaptation',013134,'THEATRST','282S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Transforming Fiction for Stage and Screen',022309,'THEATRST','282SA',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing about Performance',024707,'THEATRST','283S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ready for Prime Time: Writing the Dramatic TV Episode',023326,'THEATRST','285S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Dramatic Literature',014947,'THEATRST','290-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Acting',018473,'THEATRST','290-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Theater Studies Workshop',015204,'THEATRST','290-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Mainstage Production',014325,'THEATRST','290-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Dramatic Literature History Theory or Criticism',003085,'THEATRST','290S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Acting',014709,'THEATRST','290S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Theater Studies',017180,'THEATRST','290S-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Arts Management',013939,'THEATRST','290S-5',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Film',018283,'THEATRST','290S-6',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Independent Study',003190,'THEATRST','291',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Thinking through the Body: Becoming an Ordinary Genius',025141,'THEATRST','304',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Dancing States of Mind: The Self Social and Political Practice of Dance',024428,'THEATRST','309S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Non-Profit Cultural Institutions',022579,'THEATRST','310S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Legal Issues for the Performing Arts',022807,'THEATRST','311S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Arts Entrepreneurship',023901,'THEATRST','312S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('stARTup Project',022596,'THEATRST','316SA',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Professional Internship',003154,'THEATRST','317',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Professional Internship',003155,'THEATRST','318',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Chekhov',009667,'THEATRST','322S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Actress: Celebrity and the Woman',018225,'THEATRST','323',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare through 1600',003913,'THEATRST','336',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Shakespeare After 1600',003914,'THEATRST','337',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Solo Performance',016579,'THEATRST','340S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Advanced Acting: Contemporary Texts',003106,'THEATRST','345S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Voice and Body Gesture Theater',014710,'THEATRST','346S',0,0,0,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mainstage Production',023241,'THEATRST','350',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Directing Chekhov',021353,'THEATRST','351S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Performance and Technology: Composition Workshop',013819,'THEATRST','364',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Moving Image Practice',004559,'THEATRST','370S',0,0,0,0,0,0,0,0,0,1,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('American Independent Cinema',022872,'THEATRST','373S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Mafia at the Movies',023931,'THEATRST','375',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Playmaking: Collaboration from Page to Stage',023912,'THEATRST','380S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Duke-Administered Study Abroad: Advanced Special Topics in Theater Studies',022306,'THEATRST','390A',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Directing',003145,'THEATRST','390S-1',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Dramatic Writing',014775,'THEATRST','390S-2',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Design',021354,'THEATRST','390S-3',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in Performance Studies',003067,'THEATRST','390S-4',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Senior Colloquium',003188,'THEATRST','401S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Laughing Through It All: French Comedy and Its Social/Political Contexts Middle Ages to the 21st C',023905,'THEATRST','421S',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Tutorial',017503,'THEATRST','492T',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Academic Writing',012627,'WRITING','101',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Making Your Voice Heard: The Arts of Oral Communication Critical Speaking and Digital Rhetoric',024213,'WRITING','165S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Public Speaking: Policy Advocacy and Communication',008054,'WRITING','182',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics: Writing in the Disciplines',020272,'WRITING','190S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics: Writing in the Disciplines',022700,'WRITING','190SA',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Composing Oneself: Stress Identity and Wellness',024706,'WRITING','205S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Literacy Writing Tutoring',019060,'WRITING','255S',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Student Activism Storytelling and Community Change',023962,'WRITING','259S',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Composing the Internship Experience: Digital Rhetoric and Social Media Discourse',022573,'WRITING','270',0,0,0,0,0,0,0,0,0,0,1);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Ethics of Ethnography: In the Field and on the Page',025420,'WRITING','280S',0,0,0,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Writing about Performance',024707,'WRITING','305S',0,0,1,0,0,0,0,0,0,0,0);

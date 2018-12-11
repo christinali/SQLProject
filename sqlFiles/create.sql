@@ -34,8 +34,8 @@ CREATE TABLE Teaches
 (	class_id INTEGER NOT NULL,
 	professor_id INTEGER NOT NULL,
 	semester VARCHAR(100) NOT NULL,
-  average_quality INTEGER,
-  average_difficulty INTEGER,
+  average_quality FLOAT,
+  average_difficulty FLOAT,
   num_reviews INTEGER,
 	FOREIGN KEY(professor_id) REFERENCES Professor(professor_id),
 	PRIMARY KEY(class_id, professor_id, semester));
@@ -83,13 +83,14 @@ CREATE TABLE Taken
 
   CREATE FUNCTION update_average() RETURNS trigger AS $emp_stamp$
       BEGIN
-          -- Check that empname and salary are given
-          IF NEW.star_number IS NULL THEN
-              RAISE EXCEPTION 'empname cannot be null';
-          END IF;
+          UPDATE teaches
+          SET average_quality = CASE WHEN average_quality IS NULL THEN NEW.star_number ELSE ((average_quality * num_reviews) + NEW.star_number) / (num_reviews + 1) END,
+          num_reviews = CASE WHEN num_reviews IS NULL THEN 1 ELSE num_reviews + 1 END
+                WHERE NEW.class_id = class_id and NEW.semester = semester
+                ;
 
           -- Remember who changed the payroll when
-          INSERT INTO emp VALUES(NEW.star_number, 'testing');
+          -- INSERT INTO emp VALUES(NEW.star_number, 'testing');
           RETURN NEW;
       END;
   $emp_stamp$ LANGUAGE plpgsql;

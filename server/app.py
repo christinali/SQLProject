@@ -450,8 +450,6 @@ def getClassesInMajor():
         i+=1
     return jsonify(classList)
 
-
-
 @app.route('/get-class-info', methods=['GET'])
 def getClassInfo():
     class_id = request.args.get('class_id')

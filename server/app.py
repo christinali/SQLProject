@@ -178,58 +178,49 @@ def getAllMajors():
     return jsonify(majors)
 
 def getRating(class_id):
-    takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
-    notNull = db.session.query(models.Taken, models.Comment).filter_by(class_id=class_id).join().all()
-    totalUpvotes = 0
-    totalDownvotes = 0
-    for comment in notNull:
-        totalUpvotes +=comment.Comment.upvotes
-        totalDownvotes += comment.Comment.downvotes
-    ratings = list()
-    for taken in takenTuples:
-        if taken.comment_id is not None:
-            #should probably optimize
-            comment = db.session.query(models.Comment).filter_by(comment_id=taken.comment_id).first()
-            numUpvotes = comment.upvotes
-            numDownvotes = comment.downvotes
-            timesToAppend = int(math.log(1/(1-numUpvotes/totalUpvotes+.00000001),2))
-            timesToAppend -= int(math.log(1/(1-numDownvotes/totalDownvotes+.00000001),2))
-            for i in range(timesToAppend):
-                ratings.append(taken.star_number)
-        ratings.append(taken.star_number)
-    total = 0
-    for rating in ratings:
-        total+=rating
-    if len(ratings)==0:
-        return 2.5
-    return total/len(ratings)
+    teachTuples = db.session.query(models.Teaches).filter_by(class_id=class_id).all()
+    totalReviews = 0
+    totalScore = 0
+    for teach in teachTuples:
+        totalScore+=teach.average_quality*teach.num_reviews
+        totalReviews+=teach.num_reviews
+
+    return totalScore/max(totalReviews,1)
+
+    # takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
+    # notNull = db.session.query(models.Taken, models.Comment).filter_by(class_id=class_id).join().all()
+    # totalUpvotes = 0
+    # totalDownvotes = 0
+    # for comment in notNull:
+    #     totalUpvotes +=comment.Comment.upvotes
+    #     totalDownvotes += comment.Comment.downvotes
+    # ratings = list()
+    # for taken in takenTuples:
+    #     if taken.comment_id is not None:
+    #         #should probably optimize
+    #         comment = db.session.query(models.Comment).filter_by(comment_id=taken.comment_id).first()
+    #         numUpvotes = comment.upvotes
+    #         numDownvotes = comment.downvotes
+    #         timesToAppend = int(math.log(1/(1-numUpvotes/totalUpvotes+.00000001),2))
+    #         timesToAppend -= int(math.log(1/(1-numDownvotes/totalDownvotes+.00000001),2))
+    #         for i in range(timesToAppend):
+    #             ratings.append(taken.star_number)
+    #     ratings.append(taken.star_number)
+    # total = 0
+    # for rating in ratings:
+    #     total+=rating
+    # if len(ratings)==0:
+    #     return 2.5
+    # return total/len(ratings)
 
 def getDifficulty(class_id):
-    takenTuples = db.session.query(models.Taken).filter_by(class_id=class_id).all()
-    notNull = db.session.query(models.Taken, models.Comment).filter_by(class_id=class_id).join().all()
-    totalUpvotes = 0
-    totalDownvotes = 0
-    for comment in notNull:
-        totalUpvotes +=comment.Comment.upvotes
-        totalDownvotes += comment.Comment.downvotes
-    difficulties = list()
-    for taken in takenTuples:
-        if taken.comment_id is not None:
-            #should probably optimize
-            comment = db.session.query(models.Comment).filter_by(comment_id=taken.comment_id).first()
-            numUpvotes = comment.upvotes
-            numDownvotes = comment.downvotes
-            timesToAppend = int(math.log(1/(1-numUpvotes/totalUpvotes+.00000001),2))
-            timesToAppend -= int(math.log(1/(1-numDownvotes/totalDownvotes+.00000001),2))
-            for i in range(timesToAppend):
-                difficulties.append(taken.difficulty)
-        difficulties.append(taken.difficulty)
-    total = 0
-    for rating in difficulties:
-        total+=rating
-    if len(difficulties)==0:
-        return 2.5
-    return total/len(difficulties)
+    teachTuples = db.session.query(models.Teaches).filter_by(class_id=class_id).all()
+    totalReviews = 0
+    totalScore = 0
+    for teach in teachTuples:
+        totalScore+=teach.average_difficulty*teach.num_reviews
+        totalReviews+=teach.num_reviews
+    return totalScore/max(totalReviews,1)
 
 def findUserMajor(user_id):
     student = db.session.query(models.Student).filter_by(student_id=user_id).first()
@@ -459,8 +450,6 @@ def getClassesInMajor():
         i+=1
     return jsonify(classList)
 
-
-
 @app.route('/get-class-info', methods=['GET'])
 def getClassInfo():
     class_id = request.args.get('class_id')
@@ -477,7 +466,22 @@ def getAllProfInfo():
 
 @app.route('/get-all-classes', methods=['GET'])
 def getAllClasses():
-    return jsonify(getFullClasses())
+    user_id = request.args.get('user_id')
+    currClasses = db.session.query(models.Class).all()
+    classList = list()
+    haveTaken = set()
+    similarList = dict()
+    i = 0
+    for _,eachClass in enumerate(currClasses):
+        classList.append(dict())
+        classList[i]['dept'] = eachClass.department_id
+        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
+        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
+        classList[i]['name'] = eachClass.name
+        classList[i]['id'] = eachClass.class_id
+        classList[i]['num'] = eachClass.class_num
+        i+=1
+    return jsonify(classList)
 
 @app.route('/get-all-reviews', methods=['GET'])
 def getReviews():

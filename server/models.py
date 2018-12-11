@@ -62,7 +62,9 @@ class Teaches(db.Model):
     class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
     professor_id = db.Column('professor_id', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
     semester = db.Column('semester', db.String(100), primary_key=True)
-
+    average_quality = db.Column("average_quality", db.Float)
+    average_difficulty = db.Column("average_difficulty", db.Float)
+    num_reviews = db.Column("num_reviews", db.Integer)
 # class Drinker(db.Model):
 #     __tablename__ = 'drinker'
 #     name = db.Column('name', db.String(20), primary_key=True)

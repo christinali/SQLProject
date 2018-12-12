@@ -18,7 +18,7 @@ class Class extends Component {
     }
 
     getClassInfo() {
-        axios.get('http://localhost:5000/get-class-info?class_id=' + 1) //this.props.currClass
+        axios.get('http://localhost:5000/get-class-info?class_id=' + 513) //this.props.currClass
             .then(res => {
                 this.setState({
                   currClass: res.data,
@@ -44,10 +44,9 @@ class Class extends Component {
 
         return (
             <div className="Overall">
-                {this.props.id}
                 <div className = "topRow">
                     <div className = "topLeft">
-                        <h1> {currClass.dept}{currClass.num}: </h1>
+                        <h1> {currClass.dept}{currClass.class_num}: </h1>
                         <h1> {currClass.name} </h1>
                     </div>
                     <div className = "topRight">
@@ -72,9 +71,9 @@ class Class extends Component {
                         <div className = "otherClasses">
                             <h2> Next Semester Professor: </h2>
                             <div className = "profInfo">
-                                {currClass.nextSemProf && Object.keys(currClass.nextSemProf).map((c, i) => {
+                                {currClass.nextSemProfs && currClass.nextSemProfs.map((c, i) => {
                                   if (c) {
-                                    return <p onClick={() => this.props.changeProf(c.id)}> {c}: {currClass.nextSemProf[c]} </p>
+                                    return <p onClick={() => this.props.changeProf(c.prof_id)}> {c.prof_name} </p>
                                   }
                                 })}
                             </div>
@@ -82,7 +81,7 @@ class Class extends Component {
                             <div className = "classInfo">
                                 {currClass.profs && currClass.profs.map((c, i) => {
                                   if (c && i<3) {
-                                    return <button className = "classOffers" onClick={() => this.props.changeProf(c.id)}> {c.name} </button>
+                                    return <button className = "classOffers" onClick={() => this.props.changeProf(c.prof_id)}> {c.prof_name} </button>
                                   }
                                 })}
                             </div>
@@ -91,21 +90,19 @@ class Class extends Component {
                 </div>
                 <h2 className = 'TSR'> Top Student Reviews: </h2>
                     {classComms && classComms.map((c, i) => {
-                      if (c) {
+                      if (c && i < 3) {
                         if (i%2) {
                         return <div className = "botRow">
                             <div className = "reviewInfo">
-                                <h4> {c.date} </h4>
                                 <h3> <strong>Overall: </strong>{c.overall} </h3>
                                 <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
                                 <h4> <strong>Prof: </strong>{c.prof} </h4>
                                 <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
-                                <h4> <strong>Grade Received: </strong>{c.grade} </h4>
                             </div>
                             <div className = "reviewContent">
-                                <h4> {c.comment} </h4>
+                                <h4> {c.text} </h4>
                                 <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
                                 <button className = "downvotes" onClick={() => this.downVote(c.id)}> &#x1f44e;{c.down} </button>
                             </div>
@@ -114,17 +111,15 @@ class Class extends Component {
                       else {
                         return <div className = "botRow2">
                             <div className = "reviewInfo">
-                                <h4> {c.date} </h4>
                                 <h3> <strong>Overall: </strong>{c.overall} </h3>
                                 <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
                                 <h4> <strong>Prof: </strong>{c.prof} </h4>
                                 <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
-                                <h4> <strong>Grade Received: </strong>{c.grade} </h4>
                             </div>
                             <div className = "reviewContent">
-                                <h4> {c.comment} </h4>
+                                <h4> {c.text} </h4>
                                 <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
                                 <button className = "downvotes" onClick={() => this.downVote(c.id)}> &#x1f44e;{c.down} </button>
                             </div>
@@ -132,6 +127,7 @@ class Class extends Component {
                       }
                       }
                   })}
+                  <button className = "seeAll"> See all reviews... </button>
             </div>
         );
     }

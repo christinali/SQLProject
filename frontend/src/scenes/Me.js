@@ -5,8 +5,18 @@ class Me extends Component {
     constructor() {
         super();
         this.state = {
-            testing: []
+            data: []
         }
+    }
+
+    getInfo(email) {
+        axios.get('http://localhost:5000/get-user-classes?email=' + this.props.email) //replace with this.props.currProf
+            .then(res => {
+                this.setState({
+                  data: res.data,
+                })
+            })
+            .catch(e => console.log(e))
     }
 
     componentDidMount() {

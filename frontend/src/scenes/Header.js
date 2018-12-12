@@ -22,9 +22,9 @@ const Header = (props) => {
 			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.homePage}>
 				Home
 			</NavItem>: ''}
-			{props.loggedin && <NavItem eventKey={1} href="#" onClick={props.me}>
+			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.me}>
 				Me
-			</NavItem>}
+			</NavItem>: ''}
 			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.advanceSearchPage}>
 				Advanced Search
 			</NavItem>: ''}

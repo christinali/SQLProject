@@ -81,7 +81,10 @@ def getAllDepartments():
 def getId():
     email = request.args.get('email')
     if (email):
-        return db.session.query(models.Student).filter_by(email=email).first().student_id
+        return emailToId(email)
+
+def emailToId(email):
+    return db.session.query(models.Student).filter_by(email=email).first().student_id
 
 @app.route('/create-user', methods=['GET', 'POST'])
 def createUser():
@@ -155,7 +158,8 @@ def getClasses():
 
 @app.route('/get-recommended-major', methods=['GET'])
 def getRecommendedMajorClasses():
-    user_id = request.args.get('user_id')
+    email = request.args.get('email')
+    user_id = emailToId(email)
     major = findUserMajor(user_id)
     # department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
     classesInMajor = db.session.query(models.Class).filter_by(department_id=major).all()
@@ -398,7 +402,8 @@ def getNeededClasses(user_id):
 
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
-    user_id = request.args.get('user_id')
+    email = request.args.get('email')
+    user_id = emailToId(email)
     completed, classesWithReqs = getNeededClasses(user_id)
     takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
     classList = list()

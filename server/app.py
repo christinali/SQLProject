@@ -617,6 +617,9 @@ def getProfInfo():
     profList = list()
     i = 0
     allComments = list()
+    totalOverall = 0
+    totalDifficulty = 0
+    totalReviews = 0
     for _, eachProf in enumerate(professors):
         profList.append(dict())
         profList[i]['professor_id'] = eachProf.professor_id
@@ -627,19 +630,22 @@ def getProfInfo():
             profList[i]['name'] = eachClass.name
             profList[i]['dept'] = eachClass.department_id
             profList[i]['num'] = eachClass.class_num
-        profList[i]['overall'] = eachProf.average_quality
-        profList[i]['difficulty'] = eachProf.average_difficulty
-        profList[i]['num_reviews'] = eachProf.num_reviews
-        taken = db.session.query(models.Taken).filter(models.Taken.class_id == eachProf.class_id).filter(models.Taken.semester == eachProf.semester).all()
-        for j, eachTaken in enumerate(taken):
-            if (eachTaken.comment_id):
-                print(type(eachTaken.comment_id))
-                comments = db.session.query(models.Comment).filter_by(comment_id = eachTaken.comment_id).all()
-                for k, eachComment in enumerate(comments):
-                    allComments.append({'overall': eachTaken.star_number, 'difficulty': eachTaken.difficulty,
-                    'semester': eachProf.semester, 'dept': eachClass.department_id, 'num': eachClass.class_num,
-                    'class_id': eachProf.class_id, 'text': eachComment.text,
-                    'up': eachComment.upvotes, 'down': eachComment.downvotes})
+            profList[i]['overall'] = eachProf.average_quality
+            profList[i]['difficulty'] = eachProf.average_difficulty
+            profList[i]['num_reviews'] = eachProf.num_reviews
+            totalOverall += eachProf.average_quality * eachProf.num_reviews
+            totalDifficulty += eachProf.average_difficulty * eachProf.num_reviews
+            totalReviews += eachProf.num_reviews
+            taken = db.session.query(models.Taken).filter(models.Taken.class_id == eachProf.class_id).filter(models.Taken.semester == eachProf.semester).all()
+            for j, eachTaken in enumerate(taken):
+                if (eachTaken.comment_id):
+                    print(type(eachTaken.comment_id))
+                    comments = db.session.query(models.Comment).filter_by(comment_id = eachTaken.comment_id).all()
+                    for k, eachComment in enumerate(comments):
+                        allComments.append({'overall': eachTaken.star_number, 'difficulty': eachTaken.difficulty,
+                        'semester': eachProf.semester, 'dept': eachClass.department_id, 'num': eachClass.class_num,
+                        'class_id': eachProf.class_id, 'text': eachComment.text,
+                        'up': eachComment.upvotes, 'down': eachComment.downvotes})
         i+=1
     toReturn = {'name': name}
     allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
@@ -647,6 +653,7 @@ def getProfInfo():
 
     ret = []
     real = []
+
     for dic in profList:
         for dics in ret:
             if dics['extra'] == (dic['dept']+dic['num']+dic['name']):
@@ -656,13 +663,16 @@ def getProfInfo():
             ret.append(new_dic)
             real.append(dic)
     profList = real
-    
+    overall = totalOverall / (max(totalReviews, 1))
+    difficulty = totalDifficulty / (max(totalReviews, 1))
+
+
     nextSemClasses = []
     for classObj in profList:
         if (classObj['semester'] == '2019 Spring Term'):
             nextSemClasses.append(classObj)
     return jsonify({'name': name, 'comments': allComments, 'classes': profList,
-    'prof_id': proof_id, 'nextSemClasses': nextSemClasses})
+    'prof_id': proof_id, 'nextSemClasses': nextSemClasses, 'overall': overall, 'difficulty': difficulty})
 
 @app.route('/get-all-profs', methods=['GET'])
 def getAllProfInfo():

@@ -174,18 +174,32 @@ def createFeroze():
     # print("NOPE\n\n\n\n")
     # return "Failure"
 
+def createComment():
+    comments = list()
+    classesInMajor = db.session.query(models.Comment).all()
+
+
+
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():
     user_id = int(request.args.get('user_id'))
-    class_id = int(request.args.get('class_id'))
+    dept_id = request.args.get('dept')
+    num = request.args.get('class_num')
+    class_id = 0
     semester = request.args.get('semester')
     star_number = float(request.args.get('star_number'))
-    comment_id = request.args.get('comment_id')
+    comment = request.args.get('comment')
+    ids = db.session.query(models.Class).filter(models.Class.department_id==dept_id).filter(models.Class.class_num==num).all()
+    for id in ids:
+        class_id = id.class_id
+
+
     difficulty = float(request.args.get('difficulty'))
     if (user_id and class_id and semester and star_number and difficulty):
-        if not comment_id:
+        if not comment:
             newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,difficulty=difficulty)
         else:
+            commentId = createComment(comment)
             newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty,comment_id=comment_id)
         db.session.add(newTaken)
         db.session.commit()

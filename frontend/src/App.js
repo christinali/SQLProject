@@ -38,7 +38,7 @@ class App extends Component {
   constructor(props){
     super(props);
     console.log("STARTING");
-    axios.post('http://localhost:5000/add-class?user_id=1000&class_id=527&semester=2012 Fall Term&star_number=1&difficulty=1')
+    axios.post('http://localhost:5000/add-class?user_id=1000&dept=COMPSCI&class_num=330&semester=2012 Fall Term&star_number=1&difficulty=1')
         .then(res => {
             console.log(res.data);
         })

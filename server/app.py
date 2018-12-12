@@ -645,8 +645,8 @@ def getProfInfo():
     allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
     profList.sort(key=lambda y: y['overall'] - y['difficulty'], reverse=True)
 
-    ret = []
-    real = []
+
+    # the below removes duplicates from profList
     for dic in profList:
         for dics in ret:
             if dics['extra'] == (dic['dept']+dic['num']+dic['name']):
@@ -656,11 +656,15 @@ def getProfInfo():
             ret.append(new_dic)
             real.append(dic)
     profList = real
-    
+
+    tempproflist = []
     nextSemClasses = []
-    for classObj in profList:
+    for classObj in tempprofList:
         if (classObj['semester'] == '2019 Spring Term'):
             nextSemClasses.append(classObj)
+        else:
+            tempproflist.append(classObj)
+    profList = tempproflist
     return jsonify({'name': name, 'comments': allComments, 'classes': profList,
     'prof_id': proof_id, 'nextSemClasses': nextSemClasses})
 

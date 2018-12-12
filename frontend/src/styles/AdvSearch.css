@@ -31,3 +31,14 @@
   width: 220px;
   padding-right: 10px;
 }
+
+.searchClasses {
+  display:flex;
+  width: 100%;
+}
+
+button.SearchClasses {
+  background: none;
+  border: none;
+  color: blue;
+}

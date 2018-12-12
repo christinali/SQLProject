@@ -113,8 +113,7 @@ class AdvSearch extends React.Component {
         else if (this.state.searchCat === 'prof') {
             let resultCopy = this.state.allProfs;
             resultCopy = this.state.allProfs.filter(c => {
-              return (c.name.toLowerCase().includes(result.toLowerCase()) && (parseFloat(c.overall) >= parseFloat(this.state.minOvr))
-                && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)));
+              return (c.name.toLowerCase().includes(result.toLowerCase()));
             })
             this.setState({
               query: result,
@@ -255,7 +254,6 @@ class AdvSearch extends React.Component {
           for (var i = 0; i < newValue.length; i++) {
               res.push(newValue[i].value)
           }
-          console.log(res);
           this.setState ({
             searchAOKs: res,
           }, () => this.peruse(this.state.query))
@@ -273,7 +271,6 @@ class AdvSearch extends React.Component {
           for (var i = 0; i < newValue.length; i++) {
               res.push(newValue[i].value)
           }
-          console.log(res);
           this.setState ({
             searchMOIs: res,
           }, () => this.peruse(this.state.query))
@@ -413,10 +410,10 @@ class AdvSearch extends React.Component {
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
                           if (this.state.searchCat === 'classname' || this.state.searchCat === 'classid') {
-                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}; overall: {c.overall}, diff: {c.difficulty}, treqs: {this.parseTreqs(c)}</button>
+                            return <div className = "SearchClasses"> <button className = "SearchClasses" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name} </button> overall: {c.overall}, diff: {c.difficulty}, treqs: {this.parseTreqs(c)}</div>
                           }
                           else {
-                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.name} </button>
+                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.professor_id)}> {c.name} </button>
                           }
                         }
                       })}

@@ -42,6 +42,8 @@ def getUserClasses():
                     prof_id = eachTeach.professor_id
                 profs = db.session.query(models.Professor).filter_by(professor_id=prof_id).all()
                 prof_name = ''
+                print(prof_id)
+                print("\n\n\n\n\n")
                 for eachProf in profs:
                     prof_name = eachProf.name
                 allClasses.append({"name": eachClass.name, "id": eachClass.class_id,
@@ -141,7 +143,7 @@ def createUser():
         year -= 10
     if (name and email and year and major):
         while db.session.query(models.Student).filter_by(student_id=lastIds[year]).first():
-            lastIds[year]+=10
+            lastIds[year] = (lastIds[year] + 10) % 10
         newUser = models.Student(name=name, email=email, student_id=lastIds[year], major=major)
         db.session.add(newUser)
         db.session.commit()
@@ -627,13 +629,13 @@ def score(currClass):
 
 def treq_score(currClass, completed):
     score = 0
-    score += currClass['overall']
-    score-=currClass['difficulty']
+    score += currClass['overall'] * 2
+    score-=currClass['difficulty'] * 2
     if 'satisfiesNeeded' in currClass:
         for key in currClass['satisfiesNeeded']:
-            score += 2
+            score += 0.6
             if (key in completed):
-                score -= completed[key]
+                score -= (0.3 * completed[key])
     return score
 
 def compareClasses(class1, class2):
@@ -757,7 +759,7 @@ def getClassInfo():
 
     overall = totalOverall / (max(totalReviews, 1))
     difficulty = totalDifficulty / (max(totalReviews, 1))
-
+    allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
     return jsonify({'name': name, 'dept': department_id, 'class_num': class_num, 'comments': allComments,
     'semesters': classList, 'id': class_id, 'nextSemProfs': nextSemProfs, "profs": ret2,
     'overall': overall, 'difficulty': difficulty

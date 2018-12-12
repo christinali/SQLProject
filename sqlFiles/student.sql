@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 INSERT INTO student(student_id,name,email,major) VALUES (0001,'Matthew O''Boyle','mo121@duke.edu','COMPSCI');
 INSERT INTO student(student_id,name,email,major) VALUES (0002,'Salil Mitra','salil.mitra@duke.edu','ECON');
 INSERT INTO student(student_id,name,email,major) VALUES (0003,'Christina Li',NULL,'ECE');
@@ -9004,10 +9003,3 @@ INSERT INTO student(student_id,name,email,major) VALUES (9996,'student9996','stu
 INSERT INTO student(student_id,name,email,major) VALUES (9997,'student9997','student9997@test.com','ECON');
 INSERT INTO student(student_id,name,email,major) VALUES (9998,'student9998','student9998@test.com','ENGLISH');
 INSERT INTO student(student_id,name,email,major) VALUES (9999,'student9999','student9999@test.com','GERMAN');
-=======
-INSERT INTO Student VALUES
-('Matt','test@test.test', 69, 'COMPSCI'),
-('Christina','christinaHalfMarathonGod@gmail.com',420, 'ECE'),
-('Salil','micropenis@gmail.com',10, 'ECON'),
-('Feroze','mlLegend@gmail.com',7, 'COMPSCI');
->>>>>>> 22bbd1ca56ddee426c3b9e10cc39ef23adbb53b5

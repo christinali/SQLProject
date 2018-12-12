@@ -5,6 +5,7 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 export default class ClassInput extends React.Component {
   handleChange = event => {
+    console.log(event.target);
     let newfieldValues = this.state.main;
     newfieldValues[event.target.id] = event.target.value;
     this.setState({
@@ -42,11 +43,11 @@ export default class ClassInput extends React.Component {
                 'difficulty': gg.difficulty,
                 'comment_id': gg.review,
     };*/
-    let ret = '';
-    ret += 'user_id=' + fieldValues.user_id + '&' + 'dept=' + gg.major + 'class_num=' + gg.class + 'semester=' + gg.year + ' '
-      + gg.semester + ' Term' + '&' + 'star_number=' + gg.overall + '&' + "difficulty=" + gg.difficulty;
+    console.log(gg.num);
 
-    console.log(ret);
+    let ret = '';
+    ret += 'user_id=' + fieldValues.user_id + '&' + 'dept=' + gg.major + '&' + 'class_num=' + gg.class + '&' +  'semester=' + gg.year + ' '
+      + gg.semester + ' Term' + '&' + 'star_number=' + gg.overall + '&' + "difficulty=" + gg.difficulty;
 
     axios.post('http://localhost:5000/add-class?' + ret)
         .then(res => {
@@ -74,7 +75,7 @@ export default class ClassInput extends React.Component {
             this.setState({classes: res.data});
         })
         .catch(e => console.log(e))
-        
+
     const classes = this.state.classes;
     return(
       <div className="Login">
@@ -92,8 +93,8 @@ export default class ClassInput extends React.Component {
         <ControlLabel><p className='name'>Class Name </p></ControlLabel>
           <FormControl componentClass="select"
             onChange={this.handleChange}>
-            {classes.map(key => {
-              return <option value={key.name}>{key.dept + " " + key.num + ": " + key.name }</option>
+            {classes.map((key, i) => {
+              return <option value={key.num}>{key.dept + " " + key.num + ": " + key.name }</option>
             })}
           </FormControl>
       </FormGroup>
@@ -102,8 +103,8 @@ export default class ClassInput extends React.Component {
           <FormControl componentClass="select"
             onChange={this.handleChange}>
               <option value="">...</option>
-              <option value="F">Fall</option>
-              <option value="S">Spring</option>
+              <option value="Fall">Fall</option>
+              <option value="Spring">Spring</option>
           </FormControl>
       </FormGroup>
       <FormGroup controlId="year" bsSize="large">
@@ -111,11 +112,11 @@ export default class ClassInput extends React.Component {
           <FormControl componentClass="select"
             onChange={this.handleChange}>
               <option value="">...</option>
-              <option value="15">2015</option>
-              <option value="16">2016</option>
-              <option value="17">2017</option>
-              <option value="18">2018</option>
-              <option value="19">2019</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
           </FormControl>
       </FormGroup>
       <FormGroup controlId="overall" bsSize="large">

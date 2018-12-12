@@ -50,39 +50,40 @@ class Prof extends Component {
                     <div className = "topRight">
                         <div className = "scores">
                             <h2> Overall:
+                              {currProf.overall != 0 ?
                                 <StarRatings
                                     rating={currProf.overall}
                                     starDimension="40px"
                                     starSpacing="3px"
                                     starRatedColor="#FF8C00"
-                                />
+                                /> : <h3> No rating yet! </h3> }
                             </h2>
                             <h2> Difficulty:
+                              {currProf.difficulty != 0 ?
                                 <StarRatings
                                     rating={currProf.difficulty}
                                     starDimension="40px"
                                     starSpacing="3px"
                                     starRatedColor="#FF8C00"
-                                />
+                                /> : <h3> No rating yet! </h3> }
                             </h2>
                         </div>
                         <div className = "otherClasses">
                             <h2> Classes Taught Next Semester: </h2>
                             <div className = "classInfo">
+                                {currProf.nextSemClasses && currProf.nextSemClasses.length === 0 && <h3> Not teaching next semester </h3>}
                                 {currProf.nextSemClasses && currProf.nextSemClasses.map((c, i) => {
                                   if (c) {
-                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name}</button>
-                                  }
-                                  else {
-                                    return <p> 'Not Teaching Next Semester :(' </p>
+                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null}</button>
                                   }
                                 })}
                             </div>
                             <h2> Previously Taught Classes: </h2>
                             <div className = "classInfo">
+                                {currProf.classes && currProf.classes.length === 0 && <h3> No previously taught classes </h3>}
                                 {currProf.classes && currProf.classes.map((c, i) => {
                                   if (c && i<3) {
-                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name}</button>
+                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null}</button>
                                   }
                                 })}
                             </div>
@@ -99,7 +100,7 @@ class Prof extends Component {
                                   <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
                               </div>
                               <div className = "reviewTarget">
-                                  <h4> <strong>Class: </strong>{c.dept}{c.num} - {c.name} </h4>
+                                  <h4> <strong>Class: </strong>{c.dept}{c.num} - <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
                                   <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
                               </div>
                               <div className = "reviewContent">
@@ -116,7 +117,7 @@ class Prof extends Component {
                                 <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
-                                <h4> <strong>Class: </strong>{c.dept}{c.num} - {c.name} </h4>
+                                <h4> <strong>Class: </strong>{c.dept}{c.num} - <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
                                 <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
                             </div>
                             <div className = "reviewContent">
@@ -128,7 +129,9 @@ class Prof extends Component {
                         }
                       }
                   })}
-                  <button className = "seeAll"> See all reviews... </button>
+                  {profComms.length === 0 ? <h3 className = 'noReviews'> Sorry! Seems like there are no reviews of this professor yet. </h3>
+                    : <button className = "seeAll"> See all reviews... </button>
+                  }
             </div>
         );
     }

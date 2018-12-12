@@ -9,7 +9,6 @@ class AdvSearch extends React.Component {
         super();
         this.state = {
             id: null, //whatever the user login id is
-            email: '', //replace with ''
             currClass: null,
             currProf: null,
             allClasses: [], //load at start
@@ -246,7 +245,7 @@ class AdvSearch extends React.Component {
                   <h2> Advanced Search: </h2>
                   <div className = 'topRow'>
                       <form>
-                        <textarea
+                        <textarea style={{resize:'none'}}
                           type="text"
                           placeholder = 'Enter search here...'
                           value = {this.state.query}

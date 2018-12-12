@@ -3,7 +3,7 @@ CS 316 Course Project
 
 Install PostgreSQL via your Operating System's package manager (brew, apt-get, etc.).
 
-run the command `./setup.sh`
+Run the command `./setup.sh`
 This may take a few minutes as it is loading all the data we have (quite a lot) into a PostgreSQL database. 
 
 `cd frontend`

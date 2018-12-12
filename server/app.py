@@ -532,7 +532,24 @@ def getClassInfo():
             nextSemProfs.append(profObj)
     classList.sort(key=lambda y: y['quality'] - y['difficulty'], reverse=True)
     #classList = array of dictionaries!!! [{'prof_name': 'name', 'difficulty': 3, 'quality': 2, 'prof_id': 02313}]
-
+    ret = []
+    for dic in classList:
+        name = dic['prof_name']
+        for dics in ret:
+            if dics['prof_name'] == name:
+                # do something
+                dics['difficulty'] += dic['difficulty']
+                dics['quality'] += dic['quality']
+                dics['count'] += 1
+                break
+        else:
+            new_dic = {'prof_name': name, 'difficulty': dic['difficulty'], 'quality': dic['quality'], 'count': 1, 'prof_id': dic['prof_id']}
+            ret.append(new_dic)
+    ret2 = []
+    for dic in ret:
+        new_dic = {'prof_name': dic['prof_name'], 'difficulty': dic['difficulty']/dic['count'], 'quality': dic['quality']/dic['count'], 'prof_id': dic['prof_id']}
+        ret2.append(new_dic)
+    return ret2
 
 
 

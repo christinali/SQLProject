@@ -37,11 +37,11 @@ def getUserClasses():
             classes = db.session.query(models.Class).filter_by(class_id=eachTaken.class_id).all()
             for eachClass in classes:
                 teaches = db.session.query(models.Teaches).filter(models.Teaches.semester==eachTaken.semester).filter(models.Teaches.class_id==eachClass.class_id).all()
-                prof_id = ''
+                prof_id = 0
                 for eachTeach in teaches:
                     prof_id = eachTeach.professor_id
                 profs = db.session.query(models.Professor).filter_by(professor_id=prof_id).all()
-                prof_name = ''
+                prof_name = ""
                 print(prof_id)
                 print("\n\n\n\n\n")
                 for eachProf in profs:

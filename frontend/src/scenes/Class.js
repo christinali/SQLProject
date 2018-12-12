@@ -7,7 +7,7 @@ class Class extends Component {
     constructor() {
         super();
         this.state = {
-            currID: 513,
+            currID: 0,
             currClass: [],
             classComms: [],
         }

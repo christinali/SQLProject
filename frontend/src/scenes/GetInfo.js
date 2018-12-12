@@ -254,7 +254,7 @@ class GetInfo extends React.Component {
                             return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}</button>
                           }
                           else {
-                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.name} </button>
+                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.professor_id)}> {c.name} </button>
                           }
                         }
                       })}

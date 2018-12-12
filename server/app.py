@@ -12,6 +12,7 @@ import csv
 import sqlalchemy
 from sqlalchemy.sql import exists
 from sqlalchemy.sql.expression import cast
+from sqlalchemy import or_
 
 app = Flask(__name__)
 app.secret_key = 's3cr3t'
@@ -27,15 +28,33 @@ def dontReach():
 
 @app.route('/get-user-classes', methods=['GET'])
 def getUserClasses():
-    user_id = request.args.get('user_id')
+    email = request.args.get('email')
+    user_id = emailToId(email)
     allClasses = list()
     if (user_id):
         taken = db.session.query(models.Taken).filter_by(student_id=user_id).all()
         for eachTaken in taken:
             classes = db.session.query(models.Class).filter_by(class_id=eachTaken.class_id).all()
             for eachClass in classes:
+                teaches = db.session.query(models.Teaches).filter(models.Teaches.semester==eachTaken.semester).filter(models.Teaches.class_id==eachClass.class_id).all()
+                prof_id = 0
+                for eachTeach in teaches:
+                    prof_id = eachTeach.professor_id
+                profs = db.session.query(models.Professor).filter_by(professor_id=prof_id).all()
+                prof_name = ""
+                print(prof_id)
+                print("\n\n\n\n\n")
+                for eachProf in profs:
+                    prof_name = eachProf.name
                 allClasses.append({"name": eachClass.name, "id": eachClass.class_id,
-                 "dept": eachClass.department_id, "class_num": eachClass.class_num})
+                 "dept": eachClass.department_id, "class_num": eachClass.class_num,
+                 "quality": eachTaken.star_number, "difficulty": eachTaken.difficulty,
+                 "semester": eachTaken.semester, "prof_id": prof_id, "prof_name": prof_name,
+                 "cz": eachClass.cz, "ss": eachClass.ss, "cci": eachClass.cci,
+                 "alp": eachClass.alp, "ns": eachClass.ns, "qs": eachClass.qs,
+                 "ei": eachClass.ei, "fl": eachClass.fl, "r": eachClass.r,
+                 "sts": eachClass.sts, "w": eachClass.w
+                 })
     return jsonify(allClasses)
 
 
@@ -66,8 +85,11 @@ def test():
     ins = db.insert(models.Professor).values(professor_id='123456789', name='Testing test test')
     print(ins)
 
-
-
+@app.route('/get-treqs-completed', methods=['GET'])
+def getTreqsCompleted():
+    email = request.args.get('email')
+    student_id = emailToId(email)
+    return jsonify(getCompleted(student_id))
 
 @app.route('/longteaches', methods=['GET'])
 def longteaches():
@@ -115,20 +137,13 @@ def createUser():
     email = request.args.get('email')
     year = request.args.get('year')
     major = request.args.get('major')
-    print("WORD \n\n\n\n\n\n\n")
-    print(name)
-    print(email)
-    print(year)
-    print(major)
-    print("WORD2 \n\n\n\n\n\n\n")
-
     year = year[-1]
     year = int(year)
     if (year == 0):
         year -= 10
     if (name and email and year and major):
         while db.session.query(models.Student).filter_by(student_id=lastIds[year]).first():
-            lastIds[year]+=10
+            lastIds[year] = (lastIds[year] + 10) % 10
         newUser = models.Student(name=name, email=email, student_id=lastIds[year], major=major)
         db.session.add(newUser)
         db.session.commit()
@@ -183,9 +198,34 @@ def createFeroze():
     # print("NOPE\n\n\n\n")
     # return "Failure"
 
-def createComment():
+def createComment(comment, student_id):
+    allComments = list()
+    comments = db.session.query(models.Comment).all()
+    count = 1
+    for eachComment in comments:
+        count += 1
+    newComment = models.Comment(text=comment,upvotes=0,downvotes=0,student_id=student_id,comment_id=count)
+    db.session.add(newComment)
+    db.session.commit()
+    print(newComment)
+    print(comment)
+    print(student_id)
+    print(count)
+    print("\n\n\n\n\n")
+    return str(count)
+
+@app.route('/get-all-comments', methods=['GET', 'POST'])
+def getAllComments():
     comments = list()
-    classesInMajor = db.session.query(models.Comment).all()
+    allComments = db.session.query(models.Comment).all()
+    for eachComment in allComments:
+        comments.append({'text': eachComment.text, 'upvotes': eachComment.upvotes,
+        'downvotes': eachComment.downvotes, 'student_id': eachComment.student_id,
+        'comment_id': eachComment.comment_id})
+    return jsonify(comments)
+
+
+
 
 
 
@@ -201,15 +241,13 @@ def addClass():
     ids = db.session.query(models.Class).filter(models.Class.department_id==dept_id).filter(models.Class.class_num==num).all()
     for id in ids:
         class_id = id.class_id
-
-
     difficulty = float(request.args.get('difficulty'))
     if (user_id and class_id and semester and star_number and difficulty):
         if not comment:
             newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,difficulty=difficulty)
         else:
-            commentId = createComment(comment)
-            newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty,comment_id=comment_id)
+            comment_id = createComment(comment, user_id)
+            newTaken = models.Taken(semester=semester,star_number=star_number,comment_id=comment_id,student_id=user_id,class_id=class_id,difficulty=difficulty)
         db.session.add(newTaken)
         db.session.commit()
         return "Success!"
@@ -218,7 +256,6 @@ def addClass():
 @app.route('/feroze-add-class', methods=['GET', 'POST'])
 def addFakeClass():
     req_data = request.get_json()
-
     user_id = req_data['user_id']
     department_id = req_data['dept_id']
     class_num = req_data['class_num']
@@ -408,72 +445,120 @@ def getClassesWithReqs(needed):
     #         classes[currClass].append('cz')
     #     if (currClass.ss == 1):
     #         classes[currClass].append('ss')
-    if 'cz' in needed:
-        currClasses = db.session.query(models.Class).filter_by(cz=1).all()
-        for currClass in currClasses:
+    currClasses = db.session.query(models.Class).filter(or_(models.Class.cz==1, models.Class.ss==1
+    , models.Class.cci==1 , models.Class.alp==1 , models.Class.ns==1 ,
+    models.Class.qs==1 , models.Class.ei==1 , models.Class.fl==1 ,
+    models.Class.r==1 , models.Class.sts==1 , models.Class.w==1)).all()
+    for currClass in currClasses:
+        if currClass.cz == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('cz')
-    if 'ss' in needed:
-        currClasses = db.session.query(models.Class).filter_by(ss=1).all()
-        for currClass in currClasses:
+        if currClass.ss == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('ss')
-    if 'cci' in needed:
-        currClasses = db.session.query(models.Class).filter_by(cci=1).all()
-        for currClass in currClasses:
+        if currClass.cci == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('cci')
-    if 'alp' in needed:
-        currClasses = db.session.query(models.Class).filter_by(alp=1).all()
-        for currClass in currClasses:
+        if currClass.alp == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('alp')
-    if 'ns' in needed:
-        currClasses = db.session.query(models.Class).filter_by(ns=1).all()
-        for currClass in currClasses:
+        if currClass.ns == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('ns')
-    if 'qs' in needed:
-        currClasses = db.session.query(models.Class).filter_by(qs=1).all()
-        for currClass in currClasses:
+        if currClass.qs == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('qs')
-    if 'ei' in needed:
-        currClasses = db.session.query(models.Class).filter_by(ei=1).all()
-        for currClass in currClasses:
+        if currClass.ei == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('ei')
-    if 'fl' in needed:
-        currClasses = db.session.query(models.Class).filter_by(fl=1).all()
-        for currClass in currClasses:
+        if currClass.fl == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('fl')
-    if 'r' in needed:
-        currClasses = db.session.query(models.Class).filter_by(r=1).all()
-        for currClass in currClasses:
+        if currClass.r == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('r')
-    if 'sts' in needed:
-        currClasses = db.session.query(models.Class).filter_by(sts=1).all()
-        for currClass in currClasses:
+        if currClass.sts == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('sts')
-    if 'w' in needed:
-        currClasses = db.session.query(models.Class).filter_by(w=1).all()
-        for currClass in currClasses:
+        if currClass.w == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('w')
+    # if 'cz' in needed:
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('cz')
+    # if 'ss' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(ss=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('ss')
+    # if 'cci' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(cci=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('cci')
+    # if 'alp' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(alp=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('alp')
+    # if 'ns' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(ns=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('ns')
+    # if 'qs' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(qs=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('qs')
+    # if 'ei' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(ei=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('ei')
+    # if 'fl' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(fl=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('fl')
+    # if 'r' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(r=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('r')
+    # if 'sts' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(sts=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('sts')
+    # if 'w' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(w=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('w')
     return classes
 
 
@@ -485,6 +570,27 @@ def getNeededClasses(user_id):
             needed.remove(key)
     return completed, getClassesWithReqs(needed)
 
+def getTeachesInfo(class_id):
+    teachTuples = db.session.query(models.Teaches).filter(models.Teaches.class_id == class_id).all()
+    taughtNextSem = False
+    totalScore = 0
+    totalDifficulty = 0
+    totalReviews = 0
+    nextSemProf = ''
+    nextSemId = ''
+    for teach in teachTuples:
+        totalScore+=teach.average_quality*teach.num_reviews
+        totalDifficulty+=teach.average_difficulty*teach.num_reviews
+        totalReviews+=teach.num_reviews
+        if teach.semester == "2019 Spring Term":
+            taughtNextSem = True
+            nextSemId = teach.professor_id
+            allProfs = db.session.query(models.Professor).filter_by(professor_id=nextSemId).all()
+            for p in allProfs:
+                nextSemProf = p.name
+            break
+    return taughtNextSem, totalScore/max(totalReviews,1), totalDifficulty/max(totalReviews,1), nextSemId, nextSemProf
+
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     email = request.args.get('email')
@@ -493,49 +599,43 @@ def gettreqs():
     takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
     classList = list()
     haveTaken = set()
-    # similarList = dict()
-    # for taken in takenAlready:
-    #     haveTaken.add(taken.class_id)
-    #     others = db.session.query(models.Taken).filter(models.Taken.student_id != user_id ).all()
-    #     for other in others:
-    #         similarList[other.student_id] += (other.star_number-3)*(taken.star_number-3)
     i = 0
     for _,eachClass in enumerate(classesWithReqs.keys()):
         if eachClass.class_id in haveTaken:
             continue
+        taughtNextSem, overall, difficulty, prof_id, prof_name = getTeachesInfo(eachClass.class_id)
+        if not taughtNextSem:
+            continue
+
         classList.append(dict())
         classList[i]['dept'] = eachClass.department_id
-        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
-        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
+        classList[i]['overall'] = round(overall,2)
+        classList[i]['difficulty'] = round(difficulty,2)
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
         classList[i]['satisfiesNeeded'] = classesWithReqs[eachClass]
-        for req in classList[i]['satisfiesNeeded']:
-            if 'numNeeded' not in classList[i]:
-                    classList[i]['numNeeded']=dict()
-            if req not in completed or completed[req]==0:
-                classList[i]['numNeeded'][req] = 2
-            else:
-                classList[i]['numNeeded'][req]=1
-        #This implements weighting by the t-reqs you need more, but would also return alp twice to the frontend if you needed two alps
-        # temp = list()
-        # for req in classList[i]['satisfiesNeeded']:
-        #     if req not in completed or completed[req]==0:
-        #         temp.append(req)
-        # for t in temp:
-        #     classList[i]['satisfiesNeeded'].append(t)
+        classList[i]['next_sem_prof_id'] = prof_id
+        classList[i]['next_sem_prof_name'] = prof_name
         i+=1
-    classList = sorted(classList, key=cmp_to_key(compareClasses))
+    classList.sort(key=lambda x: treq_score(x, completed), reverse=True)
     return jsonify(classList)
 
 def score(currClass):
     score = 0
     score += currClass['overall']
     score-=currClass['difficulty']
-    if 'numNeeded' in currClass:
-        for key in currClass['numNeeded'].keys():
-            score+=currClass['numNeeded'][key]
+    return score
+
+def treq_score(currClass, completed):
+    score = 0
+    score += currClass['overall'] * 2
+    score-=currClass['difficulty'] * 2
+    if 'satisfiesNeeded' in currClass:
+        for key in currClass['satisfiesNeeded']:
+            score += 0.6
+            if (key in completed):
+                score -= (0.3 * completed[key])
     return score
 
 def compareClasses(class1, class2):
@@ -659,7 +759,7 @@ def getClassInfo():
 
     overall = totalOverall / (max(totalReviews, 1))
     difficulty = totalDifficulty / (max(totalReviews, 1))
-
+    allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
     return jsonify({'name': name, 'dept': department_id, 'class_num': class_num, 'comments': allComments,
     'semesters': classList, 'id': class_id, 'nextSemProfs': nextSemProfs, "profs": ret2,
     'overall': overall, 'difficulty': difficulty
@@ -751,9 +851,14 @@ def getProfInfo():
     allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
     profList.sort(key=lambda y: y['overall'] - y['difficulty'], reverse=True)
 
+<<<<<<< HEAD
+
+    # the below removes duplicates from profList
+=======
     ret = []
     real = []
 
+>>>>>>> 19a099ff175c2023f890bc0b0fe1dac937da1d45
     for dic in profList:
         for dics in ret:
             if dics['extra'] == (dic['dept']+dic['num']+dic['name']):
@@ -763,14 +868,22 @@ def getProfInfo():
             ret.append(new_dic)
             real.append(dic)
     profList = real
+<<<<<<< HEAD
+
+    tempproflist = []
+=======
     overall = totalOverall / (max(totalReviews, 1))
     difficulty = totalDifficulty / (max(totalReviews, 1))
 
 
+>>>>>>> 19a099ff175c2023f890bc0b0fe1dac937da1d45
     nextSemClasses = []
-    for classObj in profList:
+    for classObj in tempprofList:
         if (classObj['semester'] == '2019 Spring Term'):
             nextSemClasses.append(classObj)
+        else:
+            tempproflist.append(classObj)
+    profList = tempproflist
     return jsonify({'name': name, 'comments': allComments, 'classes': profList,
     'prof_id': proof_id, 'nextSemClasses': nextSemClasses, 'overall': overall, 'difficulty': difficulty})
 

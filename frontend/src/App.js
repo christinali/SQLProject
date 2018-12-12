@@ -37,6 +37,12 @@ var sectionStyle = {
 class App extends Component {
   constructor(props){
     super(props);
+    // console.log("STARTING");
+    // axios.post('http://localhost:5000/add-class?user_id=1006&dept=COMPSCI&class_num=201&semester=2013 Fall Term&star_number=1&difficulty=1&comment=1006 Here is a long comment that I input from App.js')
+    //     .then(res => {
+    //         console.log(res.data);
+    //     })
+    //     .catch(e => console.log(e))
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
@@ -47,7 +53,7 @@ class App extends Component {
   //4 = ProfInfo
   //5 = All Recs
   //6 = Adv Search
-  state = {screen:0, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
+  state = {screen:3, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
 
   render() {
     if (this.state.screen == 0 || this.state.screen == 2) {
@@ -62,7 +68,7 @@ class App extends Component {
         <div className={name}>
             <Header headerText={this.state.headerText}
               logout={() => this.setState({screen:0})} loggedin={this.state.screen}
-              homePage={() => this.setState({screen:1, email: this.state.email})} loggedin={this.state.screen}
+              homePage={() => this.setState({screen:1})} loggedin={this.state.screen}
               advanceSearchPage={() => this.setState({screen:6})} loggedin={this.state.screen}
               fullRecPage={() => this.setState({screen:5})} loggedin={this.state.screen}
             />

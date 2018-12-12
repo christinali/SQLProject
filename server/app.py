@@ -486,10 +486,93 @@ def getClassesInMajor():
         i+=1
     return jsonify(classList)
 
+# @app.route('/get-class-info', methods=['GET'])
+# def getClassInfo():
+#     class_id = request.args.get('class_id')
+#     return jsonify(getFullClasses()[int(class_id)])
+
 @app.route('/get-class-info', methods=['GET'])
 def getClassInfo():
-    class_id = request.args.get('class_id')
-    return jsonify(getFullClasses()[int(class_id)])
+    # name VARCHAR(100) NOT NULL,
+    # 	class_id INTEGER NOT NULL,
+    # 	department_id VARCHAR(100) NOT NULL,
+    # 	class_num VARCHAR(10) NOT NULL,
+    class_id = int(request.args.get('class_id'))
+    classes = db.session.query(models.Class).filter_by(class_id = class_id).all()
+    name = ''
+    department_id = ''
+    class_num = ''
+    for i, eachClass in enumerate(classes):
+        name = eachClass.name
+        department_id = eachClass.department_id
+        class_num = eachClass.class_num
+    taken = db.session.query(models.Teaches).filter_by(class_id = class_id).all()
+    classList = list()
+    index = 0
+    for j, eachTaken in enumerate(taken):
+        classList.append(dict())
+        classList[j]['quality'] = eachTaken.average_quality
+        classList[j]['difficulty'] = eachTaken.average_difficulty
+        classList[j]['prof_id'] = eachTaken.professor_id
+        classList[j]['num_reviews'] = eachTaken.num_reviews
+        classList[j]['semester'] = eachTaken.semester
+        profs = db.session.query(models.Professor).filter_by(professor_id = eachTaken.professor_id).all()
+        profName = ''
+        for k, eachProf in enumerate(profs):
+            profName = eachProf.name
+        classList[j]['prof_name'] = profName
+
+        j += 1
+    nextSemProfs = []
+    for profObj in classList:
+        if (profObj['semester'] == '2019 Spring Term'):
+            nextSemProfs.append(profObj)
+    classList.sort(key=lambda y: y['quality'] - y['difficulty'], reverse=True)
+    #classList = array of dictionaries!!! [{'prof_name': 'name', 'difficulty': 3, 'quality': 2, 'prof_id': 02313}]
+
+
+
+
+
+    #pro = db.session.query(models.Professor).filter_by(professor_id =id).first()
+    # professors = db.session.query(models.Teaches).filter_by(professor_id = proof_id).all()
+    # profList = list()
+    # i = 0
+    # allComments = list()
+    # for _, eachProf in enumerate(professors):
+    #     profList.append(dict())
+    #     profList[i]['professor_id'] = eachProf.professor_id
+    #     profList[i]['semester'] = eachProf.semester
+    #     profList[i]['class_id'] = eachProf.class_id
+    #     classes = db.session.query(models.Class).filter(models.Class.class_id == eachProf.class_id).all()
+    #     for a, eachClass in enumerate(classes):
+    #         profList[i]['name'] = eachClass.name
+    #         profList[i]['dept'] = eachClass.department_id
+    #         profList[i]['num'] = eachClass.class_num
+    #     profList[i]['overall'] = eachProf.average_quality
+    #     profList[i]['difficulty'] = eachProf.average_difficulty
+    #     profList[i]['num_reviews'] = eachProf.num_reviews
+    #     taken = db.session.query(models.Taken).filter(models.Taken.class_id == eachProf.class_id).filter(models.Taken.semester == eachProf.semester).all()
+    #     top3 = list()
+    #     for j, eachTaken in enumerate(taken):
+    #         if (eachTaken.comment_id):
+    #             print(type(eachTaken.comment_id))
+    #             comments = db.session.query(models.Comment).filter_by(comment_id = eachTaken.comment_id).all()
+    #             for k, eachComment in enumerate(comments):
+    #                 allComments.append({'semester': eachProf.semester, 'class_id': eachProf.class_id, 'text': eachComment.text, 'up': eachComment.upvotes, 'down': eachComment.downvotes})
+    #     i+=1
+    # toReturn = {'name': name}
+    # allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
+    # profList.sort(key=lambda y: y['overall'] - y['difficulty'], reverse=True)
+    # nextSemClasses = []
+    # for classObj in profList:
+    #     if (classObj['semester'] == '2019 Spring Term'):
+    #         nextSemClasses.append(classObj)
+
+
+    return jsonify({'name': name, 'dept': department_id, 'class_num': class_num,
+    'semesters': classList, 'id': class_id, 'nextSemProfs': nextSemProfs
+    })
 
 @app.route('/get-prof-info', methods=['GET'])
 def getProfInfo():

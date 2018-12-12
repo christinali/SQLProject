@@ -93,6 +93,8 @@ class App extends Component {
                             />;
                 case 6:
                   return <AdvSearch
+                            changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                            changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
                             />;
                 default:
                   return null;

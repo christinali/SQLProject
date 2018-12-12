@@ -5,7 +5,7 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 
 export default class Login extends React.Component {
-  state = { email: '', password: '' };
+  state = { email: '', password: '', user_id: '' };
 
   handleSignup = () => {
     this.props.signup();
@@ -20,6 +20,7 @@ export default class Login extends React.Component {
       if (user) {
         this.props.login(this.state.email)
         alert("You logged in successfully")
+        
       }
     })
     .catch(e => {
@@ -49,7 +50,7 @@ export default class Login extends React.Component {
       <div className="Login">
           <div className="inner">
             <h2>Welcome to Our App!</h2>
-            <p>Please enter your email and password to login, or click sign up below!</p>
+            <p>Please enter your email and password to login, or click sign up below.</p>
           </div>
           <FormGroup controlId="email" bsSize="large">
             <ControlLabel><p className='name'>Email:</p></ControlLabel>

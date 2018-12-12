@@ -1,0 +1,194 @@
+.Overall {
+  background: #fff none repeat scroll 0 0;
+
+  position: absolute;
+  font-family: 'Garamond', sans-serif;
+  width: 100%;
+}
+
+.topRow {
+  position: relative;
+  width: 100%;
+  /* background-color: #ff0000; */
+  display: flex;
+
+}
+
+.topLeft {
+  background-color: #fff;
+  float: left;
+  width: 38%;
+  display: block;
+  margin-right:30px;
+  border-radius: 30px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #000000;
+  margin-bottom: 10px;
+}
+
+.topLeft h1 {
+  text-decoration: bold;
+  padding-left: 5px;
+  font-size: 4.5vw;
+  text-align: center;
+}
+
+.topRight {
+  float: left;
+  height: 100%;
+  width: 60%;
+  display:flex;
+
+}
+
+.scores {
+  position: relative;
+  float:left;
+  /* background-color: #66bb55; */
+  width: 68%;
+  border-radius: 30px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #000000;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  background-color: #fff;
+}
+
+.scores h2 {
+  padding-left: 5px;
+  font-size: 3vw;
+  text-align: left;
+}
+
+.otherClasses {
+  position: relative;
+  float: left;
+  /*background-color: #ffff00;*/
+  font-size: 1.5vw;
+  text-align: left;
+  width: 100%;
+  border-radius: 30px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #000000;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.otherClasses h2 {
+  padding-left: 5px;
+  font-size: 2vw;
+}
+
+.classInfo {
+  padding-left: 5px;
+  text-align: center;
+}
+
+.profInfo {
+  text-align: center;
+}
+
+.botRow {
+  padding: 5px 25px 5px 25px;
+  display: flex;
+  border-radius: 30px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #000000;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.botRow2 {
+  padding: 5px 25px 5px 25px;
+  border-radius: 30px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #000000;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.reviewInfo {
+  width: 20%;
+  float: left;
+  padding-right: 2px;
+  position:relative;
+  text-align:center;
+  margin-right: 10px;
+  border-right-color: #000000;
+  border-right-width: 2px;
+  border-right-style: groove;
+}
+
+.reviewTarget {
+  width: 20%;
+  float: left;
+  position:relative;
+  text-align: left;
+  margin-right: 10px;
+  border-right-color: #000000;
+  border-right-width: 2px;
+  border-right-style: groove;
+}
+
+.reviewContent {
+  width: 58%;
+  float: right;
+  position:relative;
+
+}
+
+button.upvotes {
+  padding-right: 60px;
+  font-size: 1.5vw;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+button.downvotes {
+  font-size: 1.5vw;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.TSR {
+  padding-left: 10px;
+}
+
+button.classOffers {
+  color: blue;
+  text-decoration: underline;
+  background: none;
+  border: none;
+}
+
+button.seeAll {
+  font-size: 1.2em;
+  color: blue;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  float: right;
+}
+
+button.revProf {
+  color: blue;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  margin-left: -6px;
+}
+
+.noReviews {
+  text-align: center;
+}

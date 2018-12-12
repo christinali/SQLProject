@@ -17,23 +17,31 @@ const Header = (props) => {
     <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
-    <Nav>
-      <NavItem eventKey={1} href="#">
-        Link
-      </NavItem>
-      <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-        <MenuItem eventKey={3.1}>Action</MenuItem>
-        <MenuItem eventKey={3.2}>Another action</MenuItem>
-        <MenuItem eventKey={3.3}>Something else here</MenuItem>
-        <MenuItem divider />
-        <MenuItem eventKey={3.3}>Separated link</MenuItem>
-      </NavDropdown>
-    </Nav>
-    {props.loggedin && <Nav pullRight>
-      <NavItem eventKey={1} href="#" onClick={props.logout}>
+
+    <Nav pullLeft>
+			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.homePage}>
+				Home
+			</NavItem>: <NavItem eventKey={1} href="#" onClick={props.homePage}>
+				About Us
+			</NavItem>}
+			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.advanceSearchPage}>
+				Advanced Search
+			</NavItem>: <NavItem eventKey={1} href="#" onClick={props.advanceSearchPage}>
+				About Us
+			</NavItem>}
+			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.fullRecPage}>
+				Full Recommendations
+			</NavItem>: <NavItem eventKey={1} href="#" onClick={props.fullRecPage}>
+				About Us
+			</NavItem>}
+		</Nav>
+		<Nav pullRight>
+      {props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.logout}>
         Log Out
-      </NavItem>
-    </Nav>}
+      </NavItem>: <NavItem eventKey={1} href="#" onClick={props.logout}>
+        About Us
+      </NavItem>}
+    </Nav>
   </Navbar.Collapse>
 </Navbar>
 

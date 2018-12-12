@@ -6,10 +6,22 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 export default class BasicInput extends React.Component {
   constructor(props){
     super(props);
-    this.state = {fieldValues: this.props.fieldValues, majors: []};
+    this.state = {fieldValues: this.props.fieldValues, majors: [], user_id:''};
   }
   saveAndContinue = () => {
-    this.props.saveValues(this.state.fieldValues);
+    let temp = this.state.fieldValues;
+    let ret = '';
+    ret += 'name=' + temp.fname + ' ' + temp.lname + '&' + 'email=' + temp.email + '&' + 'year=' + temp.gradyear + '&' + 'major=' + temp.major;
+    console.log(ret);
+    axios.post('http://localhost:5000/create-user?' + ret)
+        .then(res => {
+            console.log(res.data);
+            temp.user_id = res.data;
+            this.setState({user_id: res.data});
+            this.props.saveValues(temp);
+        })
+        .catch(e => console.log(e))
+
   }
 
   handleChange = event => {
@@ -23,7 +35,6 @@ export default class BasicInput extends React.Component {
   componentDidMount() {
     axios.get('http://localhost:5000/get-all-majors')
         .then(res => {
-            console.log(res.data);
             this.setState({majors: res.data});
         })
         .catch(e => console.log(e))

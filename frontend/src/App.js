@@ -9,11 +9,16 @@ import firebase from 'firebase';
 import Background from './images/background_image.jpg';
 import Class from './scenes/Class';
 import Prof from './scenes/Prof';
+import AllRecs from './scenes/AllRecs';
+import AdvSearch from './scenes/AdvSearch';
+import axios from 'axios';
 
-import './App.css';
+import './styles/app.css';
 import './styles/login.css';
-import './styles/GetInfo.css';
-import './styles/Prof.css';
+import './styles/getInfo.css';
+import './styles/ProfClass.css';
+import './styles/AllRecs.css';
+import './styles/AdvSearch.css';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDfXgvgX2_eyPam6O3eenzLTJHrwHc2tdc",
@@ -32,6 +37,12 @@ var sectionStyle = {
 class App extends Component {
   constructor(props){
     super(props);
+    // console.log("STARTING");
+    // axios.post('http://localhost:5000/add-class?user_id=1006&dept=COMPSCI&class_num=201&semester=2013 Fall Term&star_number=1&difficulty=1&comment=1006 Here is a long comment that I input from App.js')
+    //     .then(res => {
+    //         console.log(res.data);
+    //     })
+    //     .catch(e => console.log(e))
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
@@ -40,23 +51,42 @@ class App extends Component {
   //2 = Sign Up
   //3 = ClassInfo
   //4 = ProfInfo
-  state = {screen:4 , email: '', headerText: 'MISTAAAAAH MOHIIIIPPPPPPEEEENNNNNNNN is a frontend legend'}
+  //5 = All Recs
+  //6 = Adv Search
+  state = {screen:3, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
 
   render() {
+    if (this.state.screen == 0 || this.state.screen == 2) {
+      var name = 'main0';
+    }
+    else {
+      var name = 'lmao';
+    }
+
+    console.log(name);
     return (
-        <div>
-            <Header headerText={this.state.headerText} logout={() => this.setState({screen:0})} loggedin={this.state.screen}/>
+        <div className={name}>
+            <Header headerText={this.state.headerText}
+              logout={() => this.setState({screen:0})} loggedin={this.state.screen}
+              homePage={() => this.setState({screen:1})} loggedin={this.state.screen}
+              advanceSearchPage={() => this.setState({screen:6})} loggedin={this.state.screen}
+              fullRecPage={() => this.setState({screen:5})} loggedin={this.state.screen}
+            />
             {(()=> {
               switch(this.state.screen) {
                 case 0:
-                  return <Login
+                  return <div ><Login
                             login={(email) => this.setState({screen: 1, email: email, headerText: "Welcome " + email + "!"})}
                             signup={() => this.setState({screen: 2})}
                             app={this.app}
-                          />;
+                          /></div>;
                 case 1:
                   return <GetInfo
                           email={this.state.email}
+                          changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                          changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                          getMore={tempEmail => this.setState({screen: 5, email: tempEmail})}
+                          advanceSearch={() => this.setState({screen: 6})}
                           logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input
@@ -64,10 +94,25 @@ class App extends Component {
                             app={this.app}
                             />;
                 case 3:
-                  return <Class />;
+                  return <Class
+                            changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                            currClass = {this.state.currClass}
+                            />;
                 case 4:
-                  return <Prof />;
-
+                  return <Prof
+                            changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            currProf={this.state.currProf}
+                            />;
+                case 5:
+                  return <AllRecs
+                            changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            email={this.state.email}
+                            />;
+                case 6:
+                  return <AdvSearch
+                            changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                            changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            />;
                 default:
                   return null;
               }

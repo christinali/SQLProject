@@ -117,6 +117,8 @@ def createUser():
     major = request.args.get('major')
     year = year[-1]
     year = int(year)
+    if (year == 0):
+        year -= 10
     if (name and email and year and major):
         while db.session.query(models.Student).filter_by(student_id=lastIds[year]).first():
             lastIds[year]+=10
@@ -735,7 +737,7 @@ def getProfInfo():
                     for k, eachComment in enumerate(comments):
                         allComments.append({'overall': eachTaken.star_number, 'difficulty': eachTaken.difficulty,
                         'semester': eachProf.semester, 'dept': eachClass.department_id, 'num': eachClass.class_num,
-                        'class_id': eachProf.class_id, 'text': eachComment.text,
+                        'class_id': eachProf.class_id, 'text': eachComment.text, "class_name": eachClass.name,
                         'up': eachComment.upvotes, 'down': eachComment.downvotes})
         i+=1
     toReturn = {'name': name}

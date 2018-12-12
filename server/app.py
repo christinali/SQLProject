@@ -84,7 +84,12 @@ def getId():
         return emailToId(email)
 
 def emailToId(email):
-    return db.session.query(models.Student).filter_by(email=email).first().student_id
+    ids = db.session.query(models.Student).filter_by(email=email).all()
+    student_id = ''
+    for id in ids:
+        id.student_id
+    return id
+
 
 @app.route('/create-user', methods=['GET', 'POST'])
 def createUser():
@@ -703,7 +708,6 @@ def getAllProfInfo():
 
 @app.route('/get-all-classes', methods=['GET'])
 def getAllClasses():
-    user_id = request.args.get('user_id')
     currClasses = db.session.query(models.Class).all()
     classList = list()
     haveTaken = set()

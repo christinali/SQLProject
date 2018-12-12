@@ -627,7 +627,7 @@ def getClassInfo():
                 comments = db.session.query(models.Comment).filter_by(comment_id = eachTaken.comment_id).all()
                 for k, eachComment in enumerate(comments):
                     allComments.append({'overall': eachTaken.star_number, 'difficulty': eachTaken.difficulty,
-                    'semester': eachTaught.semester, 'prof': profName,
+                    'semester': eachTaught.semester, 'prof': profName, 'prof_id': eachTaught.professor_id,
                     'class_id': class_id, 'text': eachComment.text,
                     'up': eachComment.upvotes, 'down': eachComment.downvotes})
 

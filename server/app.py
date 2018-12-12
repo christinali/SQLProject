@@ -36,20 +36,19 @@ def getUserClasses():
         for eachTaken in taken:
             classes = db.session.query(models.Class).filter_by(class_id=eachTaken.class_id).all()
             for eachClass in classes:
-                teaches = db.session.query(models.Teaches).filter(models.Teaches.semester==eachTaken.semester).filter(models.Teaches.class_id==eachClass.class_id).all()
+                class_id = int(eachClass.class_id)
+                teaches = db.session.query(models.Teaches).filter(models.Teaches.class_id == class_id).all()
                 prof_id = 0
                 for eachTeach in teaches:
                     prof_id = eachTeach.professor_id
                 profs = db.session.query(models.Professor).filter_by(professor_id=prof_id).all()
                 prof_name = ""
-                print(prof_id)
-                print("\n\n\n\n\n")
                 for eachProf in profs:
                     prof_name = eachProf.name
                 allClasses.append({"name": eachClass.name, "id": eachClass.class_id,
                  "dept": eachClass.department_id, "class_num": eachClass.class_num,
                  "quality": eachTaken.star_number, "difficulty": eachTaken.difficulty,
-                 "semester": eachTaken.semester, "prof_id": prof_id, "prof_name": prof_name,
+                 "semester": eachTaken.semester,
                  "cz": eachClass.cz, "ss": eachClass.ss, "cci": eachClass.cci,
                  "alp": eachClass.alp, "ns": eachClass.ns, "qs": eachClass.qs,
                  "ei": eachClass.ei, "fl": eachClass.fl, "r": eachClass.r,

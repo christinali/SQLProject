@@ -123,7 +123,7 @@ def createUser():
         newUser = models.Student(name=name, email=email, student_id=lastIds[year], major=major)
         db.session.add(newUser)
         db.session.commit()
-        lastIds[year]+=10
+        # lastIds[year]+=10
         return lastIds[year]
     return "Need to give name, user, year, and major, but not all inputs were given"
 

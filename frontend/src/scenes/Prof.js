@@ -18,11 +18,11 @@ class Prof extends Component {
     }
 
     getProfInfo() {
-        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 1) //replace with this.props.currProf
+        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 402703) //replace with this.props.currProf
             .then(res => {
                 this.setState({
                   currProf: res.data,
-                  profComms: res.data.topComments,
+                  profComms: res.data.comments,
                 })
             })
             .catch(e => console.log(e))
@@ -67,15 +67,15 @@ class Prof extends Component {
                             <div className = "classInfo">
                                 {currProf.nextSemClasses && currProf.nextSemClasses.map((c, i) => {
                                   if (c) {
-                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.classNum} - {c.name}</button>
+                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}</button>
                                   }
                                 })}
                             </div>
                             <h2> Previously Taught Classes: </h2>
                             <div className = "classInfo">
-                                {currProf.prevClasses && currProf.prevClasses.map((c, i) => {
+                                {currProf.classes && currProf.classes.map((c, i) => {
                                   if (c && i<3) {
-                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.classNum} - {c.name}</button>
+                                    return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}</button>
                                   }
                                 })}
                             </div>
@@ -86,23 +86,22 @@ class Prof extends Component {
                     {profComms && profComms.map((c, i) => {
                       if (c) {
                         if (i % 2) {
-                        return <div className = "botRow">
-                            <div className = "reviewInfo">
-                                <h4> {c.date} </h4>
-                                <h3> <strong>Overall: </strong>{c.overall} </h3>
-                                <h3> <strong>Difficulty:</strong>{c.difficulty} </h3>
-                            </div>
-                            <div className = "reviewTarget">
-                                <h4> <strong>Class: </strong>{c.class[0].dept}{c.class[0].classNum} </h4>
-                                <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
-                                <h4> <strong>Grade Received: </strong>{c.grade} </h4>
-                            </div>
-                            <div className = "reviewContent">
-                                <h4> {c.comment} </h4>
-                                <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
-                                <button className = "downvotes"> &#x1f44e;{c.down} </button>
-                            </div>
-                        </div>
+                          return <div className = "botRow">
+                              <div className = "reviewInfo">
+                                  <h3> <strong>Overall: </strong>{c.overall} </h3>
+                                  <h3> <strong>Difficulty:</strong>{c.difficulty} </h3>
+                              </div>
+                              <div className = "reviewTarget">
+                                  <h4> <strong>Class: </strong>{c.dept}{c.num} - {c.name} </h4>
+                                  <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
+                                  <h4> <strong>Grade Received: </strong>{c.grade} </h4>
+                              </div>
+                              <div className = "reviewContent">
+                                  <h4> {c.text} </h4>
+                                  <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
+                                  <button className = "downvotes"> &#x1f44e;{c.down} </button>
+                              </div>
+                          </div>
                       }
                       else {
                         return <div className = "botRow2">

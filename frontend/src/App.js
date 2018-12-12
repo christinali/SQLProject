@@ -45,7 +45,8 @@ class App extends Component {
   //3 = ClassInfo
   //4 = ProfInfo
   //5 = All Recs
-  state = {screen:6, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+  //6 = Adv Search
+  state = {screen:4, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
 
   render() {
     if (this.state.screen == 0 || this.state.screen == 2) {

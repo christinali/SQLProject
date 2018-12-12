@@ -31,7 +31,7 @@ class AllRecs extends React.Component {
     }
 
     getTReqs(email) {
-        axios.get('http://localhost:5000/get-recommended-treqs?user_email=' + email) //replace with email
+        axios.get('http://localhost:5000/get-recommended-treqs?email=' + email) //replace with email
             .then(res => {
                 this.setState({
                   Treqs: res.data,
@@ -41,7 +41,7 @@ class AllRecs extends React.Component {
     }
 
     getMajors(email) {
-        axios.get('http://localhost:5000/get-recommended-major?user_email=' + email) //replace with email
+        axios.get('http://localhost:5000/get-recommended-major?email=' + email) //replace with email
             .then(res => {
                 this.setState({
                   Majors: res.data,
@@ -69,28 +69,30 @@ class AllRecs extends React.Component {
         return (
             <div className = 'big'>
                 <div className = 'LeftCol'>
-                    <h1> Trinity Recs (Top 10) </h1>
+                    <h1> Trinity Recs (Top 15) </h1>
                     <div className = 'stopOverflow'>
                         {Treqs && Treqs.map((c, i) => {
-                          if (c && i<10) {
+                          if (c && i<15) {
                             return <div className = 'recResults'>
-                              <button className = "classTitle" onClick={() => this.props.changeClass(c.id)}> ({i+1}) {c.dept}{c.num} - {c.name} </button>
+                              <button className = "classTitle" onClick={() => this.props.changeClass(c.id)}> ({i+1}) {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button>
                               <br/>
                               <h3> Overall:
+                                {c.overall != 0 ?
                                   <StarRatings
                                       rating={c.overall}
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  />
+                                  /> : <h3> No rating yet </h3> }
                               </h3>
                               <h3> Difficulty:
+                                {c.difficulty != 0 ?
                                   <StarRatings
                                       rating={c.difficulty}
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  />
+                                  /> : <h3> No rating yet </h3> }
                               </h3>
                               <h4> Treqs Satisfied: {this.splitTreqs(c.satisfiesNeeded)} </h4>
                               </div>
@@ -99,31 +101,33 @@ class AllRecs extends React.Component {
                     </div>
                 </div>
                 <div className = 'RightCol'>
-                    <h1> Major Recs (Top 10) </h1>
+                    <h1> Major Recs (Top 15) </h1>
                     <div className = 'stopOverflow'>
                         {Majors && Majors.map((c, i) => {
-                          if (c && i<10) {
+                          if (c && i < 15) {
                             return <div className = 'recResults'>
-                              <button className = "classTitle" onClick={() => this.props.changeClass(c.id)}> ({i+1}) {c.dept}{c.num} - {c.name} </button>
+                              <button className = "classTitle" onClick={() => this.props.changeClass(c.id)}> ({i+1}) {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button>
                               <br/>
                               <h3> Overall:
-                                  <StarRatings
-                                      rating={c.overall}
-                                      starDimension="22px"
-                                      starSpacing="3px"
-                                      starRatedColor="#FF8C00"
-                                  />
+                                  {c.overall != 0 ?
+                                    <StarRatings
+                                        rating={c.overall}
+                                        starDimension="22px"
+                                        starSpacing="3px"
+                                        starRatedColor="#FF8C00"
+                                    /> : <h4> No rating yet </h4> }
                               </h3>
                               <h3> Difficulty:
-                                  <StarRatings
-                                      rating={c.difficulty}
-                                      starDimension="22px"
-                                      starSpacing="3px"
-                                      starRatedColor="#FF8C00"
-                                  />
+                                  {c.difficulty != 0 ?
+                                    <StarRatings
+                                        rating={c.difficulty}
+                                        starDimension="22px"
+                                        starSpacing="3px"
+                                        starRatedColor="#FF8C00"
+                                    /> : <h4> No rating yet </h4> }
                               </h3>
                               <h4> Treqs Satisfied: {this.splitTreqs(c.satisfiesNeeded)} </h4>
-                              </div>
+                            </div>
                           }
                         })}
                     </div>
@@ -134,59 +138,3 @@ class AllRecs extends React.Component {
 }
 
 export default AllRecs;
-
-/*
-getClass() {
-    axios.get('http://localhost:5000/get-class-info?class_id=' + this.state.id)
-        .then(res => {
-            console.log(res.data);
-            this.setState({currClass: res.data});
-        })
-        .catch(e => console.log(e))
-}
-
-getProf() {
-    axios.get('http://localhost:5000/get-prof-info?prof_id=' + this.state.id)
-        .then(res => {
-            console.log(res.data);
-            this.setState({currProf: res.data});
-        })
-        .catch(e => console.log(e))
-}
-{currClass && <div>
-    <h1>Class Info:</h1>
-    {Object.keys(currClass).map(key => {
-        if (key === "nextSemProf") {
-            return <div>
-                <h4>{key}</h4>
-                <ul>
-                {Object.keys(currClass[key]).map(secondkey => {
-                    return <li>{secondkey} = {currClass[key][secondkey]}</li>
-                })}
-                </ul>
-            </div>
-        }
-        else if (key === "comments" || key === "profs") {
-            const arr = currClass[key];
-            return <ol>
-                {arr.map(a => {
-                    return <li>
-                        {Object.keys(a).map(secondkey => {
-                            return <p>{secondkey} = {a[secondkey]}</p>
-                    })}
-                    </li>
-                })}
-            </ol>
-        } else {
-            return <h5>{key} = {currClass[key]}</h5>
-        }
-    })}
-</div>}
-
-
-/*
-MAIN - FIGURE OUT HOW TO GET PROF ID AUTOMATICALLY
-1) need to make backend real
-2) need to link everything
-
-*/

@@ -11,6 +11,7 @@ import Class from './scenes/Class';
 import Prof from './scenes/Prof';
 import AllRecs from './scenes/AllRecs';
 import AdvSearch from './scenes/AdvSearch';
+import axios from 'axios';
 
 import './styles/app.css';
 import './styles/login.css';
@@ -36,6 +37,12 @@ var sectionStyle = {
 class App extends Component {
   constructor(props){
     super(props);
+    // console.log("STARTING");
+    // axios.post('http://localhost:5000/add-class?user_id=1006&dept=COMPSCI&class_num=201&semester=2013 Fall Term&star_number=1&difficulty=1&comment=1006 Here is a long comment that I input from App.js')
+    //     .then(res => {
+    //         console.log(res.data);
+    //     })
+    //     .catch(e => console.log(e))
     this.app = firebase.initializeApp(firebaseConfig);
   }
 
@@ -46,7 +53,7 @@ class App extends Component {
   //4 = ProfInfo
   //5 = All Recs
   //6 = Adv Search
-  state = {screen:4, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+  state = {screen:3, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
 
   render() {
     if (this.state.screen == 0 || this.state.screen == 2) {
@@ -59,7 +66,12 @@ class App extends Component {
     console.log(name);
     return (
         <div className={name}>
-            <Header headerText={this.state.headerText} logout={() => this.setState({screen:0})} loggedin={this.state.screen}/>
+            <Header headerText={this.state.headerText}
+              logout={() => this.setState({screen:0})} loggedin={this.state.screen}
+              homePage={() => this.setState({screen:1})} loggedin={this.state.screen}
+              advanceSearchPage={() => this.setState({screen:6})} loggedin={this.state.screen}
+              fullRecPage={() => this.setState({screen:5})} loggedin={this.state.screen}
+            />
             {(()=> {
               switch(this.state.screen) {
                 case 0:
@@ -74,6 +86,7 @@ class App extends Component {
                           changeProf={prof => this.setState({screen: 4, currProf: prof})}
                           changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
                           getMore={tempEmail => this.setState({screen: 5, email: tempEmail})}
+                          advanceSearch={() => this.setState({screen: 6})}
                           logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input
@@ -83,14 +96,17 @@ class App extends Component {
                 case 3:
                   return <Class
                             changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                            currClass = {this.state.currClass}
                             />;
                 case 4:
                   return <Prof
                             changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            currProf={this.state.currProf}
                             />;
                 case 5:
                   return <AllRecs
                             changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            email={this.state.email}
                             />;
                 case 6:
                   return <AdvSearch

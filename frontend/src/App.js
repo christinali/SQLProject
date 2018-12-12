@@ -37,11 +37,18 @@ var sectionStyle = {
 class App extends Component {
   constructor(props){
     super(props);
-    // axios.post('http://localhost:5000/create-user?name=Feroze Mitra&email=feroze@matt.com&year=2012&major=CULANTH')
-    //     .then(res => {
-    //         console.log(res.data);
-    //     })
-    //     .catch(e => console.log(e))
+    // user_id = request.args.get('user_id')
+    //   class_id = request.args.get('class_id')
+    //   department_id = db.session.query(models.Class).select(class_id=class_id).first().department_id
+    //   semester = request.args.get('semester')
+    //   star_number = request.args.get('star_number')
+    //   comment_id = request.args.get('comment_id')
+    //   difficulty = request.args.get('difficulty')
+    axios.post('http://localhost:5000/add-class?user_id=1000&class_id=513&semester=2014 Spring Term&star_number=1&difficulty=5')
+        .then(res => {
+            console.log(res.data);
+        })
+        .catch(e => console.log(e))
     this.app = firebase.initializeApp(firebaseConfig);
   }
 

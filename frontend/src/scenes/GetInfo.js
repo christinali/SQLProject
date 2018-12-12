@@ -151,14 +151,6 @@ class GetInfo extends React.Component {
 
         return (
             <div className = 'Overall'>
-                <label className="idsearch">id:
-                    <input type="text" value={this.state.id} onChange={e => this.setState({id: e.target.value})} />
-                </label>
-                <button onClick={() => this.getTReqs(this.state.email)}>Get Trecs</button>
-                <button onClick={() => this.getMajors(this.state.email)}>Get Majors</button>
-                <button onClick={() => this.getTReqs(this.state.email)}>Get Trecs</button>
-                <button onClick={() => this.getMajors(this.state.email)}>Get Majors</button>
-                <button onClick={() => this.props.changeProf("1")}>Change prof</button>
 
                 <div className = 'Top3Recs'>
                     <div className = 'RecsTopRow'>
@@ -259,10 +251,10 @@ class GetInfo extends React.Component {
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
                           if (this.state.searchCat === 'classname' || this.state.searchCat === 'classid') {
-                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.id} {c.dept}{c.num} - {c.name}</button>
+                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}</button>
                           }
                           else {
-                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.id} {c.name} </button>
+                            return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.name} </button>
                           }
                         }
                       })}

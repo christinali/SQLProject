@@ -171,9 +171,6 @@ export default class ClassInput extends React.Component {
       >
         Submit
       </Button>
-
-
-
       </div>
     );
   }

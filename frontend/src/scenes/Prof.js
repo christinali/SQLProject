@@ -131,35 +131,35 @@ class Prof extends Component {
                     if (c) {
                       if (i < 3) {
                         return <div className = "botRow">
-                            <div className = "reviewInfo">
-                                <h3> <strong>Overall: </strong>
-                                    {c.overall != 0 ?
-                                      <StarRatings
-                                          rating={c.overall}
-                                          starDimension="22px"
-                                          starSpacing="3px"
-                                          starRatedColor="#FF8C00"
-                                      /> : <h4> No rating yet </h4> }
-                                </h3>
-                                <h3> <strong>Difficulty: </strong>
-                                    {c.difficulty != 0 ?
-                                      <StarRatings
-                                          rating={c.difficulty}
-                                          starDimension="22px"
-                                          starSpacing="3px"
-                                          starRatedColor="#FF8C00"
-                                      /> : <h4> No rating yet </h4> }
-                                </h3>
-                            </div>
-                            <div className = "reviewTarget">
-                                <h4>  <strong>Prof: </strong><button className = "revProf" onClick={() => this.props.changeProf(c.prof_id)}> {c.prof} </button> </h4>
-                                <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
-                            </div>
-                            <div className = "reviewContent">
-                                <h4> {c.text} </h4>
-                                <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
-                                <button className = "downvotes" onClick={() => this.downVote(c.id)}> &#x1f44e;{c.down} </button>
-                            </div>
+                          <div className = "reviewInfo">
+                              <h3> <strong>Overall: </strong>
+                                  {c.overall != 0 ?
+                                    <StarRatings
+                                        rating={c.overall}
+                                        starDimension="22px"
+                                        starSpacing="3px"
+                                        starRatedColor="#FF8C00"
+                                    /> : <h4> No rating yet </h4> }
+                              </h3>
+                              <h3> <strong>Difficulty: </strong>
+                                  {c.difficulty != 0 ?
+                                    <StarRatings
+                                        rating={c.difficulty}
+                                        starDimension="22px"
+                                        starSpacing="3px"
+                                        starRatedColor="#FF8C00"
+                                    /> : <h4> No rating yet </h4> }
+                              </h3>
+                          </div>
+                          <div className = "reviewTarget">
+                              <h4> <strong>Class: </strong> <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.class_name != null ? String(c.class_name).replace("\\u0026", "&") : null} </button> </h4>
+                              <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
+                          </div>
+                          <div className = "reviewContent">
+                              <h4> {c.text} </h4>
+                              <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
+                              <button className = "downvotes"> &#x1f44e;{c.down} </button>
+                          </div>
                         </div>
                       }
                       else {
@@ -185,7 +185,7 @@ class Prof extends Component {
                                 </h3>
                             </div>
                             <div className = "reviewTarget">
-                                <h4> <strong>Class: </strong> <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
+                                <h4> <strong>Class: </strong> <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.class_name != null ? String(c.class_name).replace("\\u0026", "&") : null} </button> </h4>
                                 <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
                             </div>
                             <div className = "reviewContent">
@@ -209,7 +209,3 @@ class Prof extends Component {
 }
 
 export default Prof;
-
-
-/*
-*/

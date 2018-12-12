@@ -320,10 +320,3 @@ class AdvSearch extends React.Component {
 }
 
 export default AdvSearch;
-
-/*
-MAIN - FIGURE OUT HOW TO GET PROF ID AUTOMATICALLY
-1) need to make backend real
-2) need to link everything
-
-*/

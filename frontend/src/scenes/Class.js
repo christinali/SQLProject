@@ -215,11 +215,3 @@ class Class extends Component {
 }
 
 export default Class;
-
-
-/*
-MAIN - FIGURE OUT HOW TO GET PROF ID AUTOMATICALLY
-1) need to add Up/Downvote Functionality
-2) need to make backend real
-3) need to link everything
-*/

@@ -338,6 +338,12 @@ class AdvSearch extends React.Component {
           { value: 'R', label: 'R' }
         ];
 
+        const sortOptions = [
+          { value: 'alph', label: 'Alphabetical' },
+          { value: 'diff', label: 'Diff' },
+          { value: 'ovr', label: 'Overall' }
+        ];
+
         const defaultPrimary = [
           {value: 'classname', label: 'Class Name' }
         ]
@@ -425,3 +431,12 @@ class AdvSearch extends React.Component {
 }
 
 export default AdvSearch;
+/*
+<div className = "filter1">
+  <Select
+    options={sortOptions}
+    placeholder = "Sort By"
+    onChange = {this.changeSort}
+  />
+</div>
+*/

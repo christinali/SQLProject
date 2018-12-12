@@ -53,7 +53,7 @@ class App extends Component {
   //4 = ProfInfo
   //5 = All Recs
   //6 = Adv Search
-  state = {screen:6, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
+  state = {screen:0, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
 
   render() {
     if (this.state.screen == 0 || this.state.screen == 2) {

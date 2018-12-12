@@ -112,7 +112,7 @@
 }
 
 .reviewInfo {
-  width: 20%;
+  width: 28%;
   float: left;
   padding-right: 2px;
   position:relative;
@@ -124,7 +124,7 @@
 }
 
 .reviewTarget {
-  width: 20%;
+  width: 30%;
   float: left;
   position:relative;
   text-align: left;

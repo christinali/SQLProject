@@ -18,7 +18,7 @@ class Prof extends Component {
     }
 
     getProfInfo() {
-        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 402703) //replace with this.props.currProf
+        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 1863664) //replace with this.props.currProf
             .then(res => {
                 this.setState({
                   currProf: res.data,
@@ -69,6 +69,9 @@ class Prof extends Component {
                                   if (c) {
                                     return <button className = "classOffers" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}</button>
                                   }
+                                  else {
+                                    return <p> 'Not Teaching Next Semester :(' </p>
+                                  }
                                 })}
                             </div>
                             <h2> Previously Taught Classes: </h2>
@@ -84,17 +87,16 @@ class Prof extends Component {
                 </div>
                 <h2 className = 'TSR'> <strong>Top Student Reviews: </strong></h2>
                     {profComms && profComms.map((c, i) => {
-                      if (c) {
+                      if (c && i < 3) {
                         if (i % 2) {
                           return <div className = "botRow">
                               <div className = "reviewInfo">
                                   <h3> <strong>Overall: </strong>{c.overall} </h3>
-                                  <h3> <strong>Difficulty:</strong>{c.difficulty} </h3>
+                                  <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
                               </div>
                               <div className = "reviewTarget">
                                   <h4> <strong>Class: </strong>{c.dept}{c.num} - {c.name} </h4>
                                   <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
-                                  <h4> <strong>Grade Received: </strong>{c.grade} </h4>
                               </div>
                               <div className = "reviewContent">
                                   <h4> {c.text} </h4>
@@ -106,24 +108,23 @@ class Prof extends Component {
                       else {
                         return <div className = "botRow2">
                             <div className = "reviewInfo">
-                                <h4> {c.date} </h4>
                                 <h3> <strong>Overall: </strong>{c.overall} </h3>
-                                <h3> <strong>Difficulty:</strong>{c.difficulty} </h3>
+                                <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
-                                <h4> <strong>Class: </strong>{c.class[0].dept}{c.class[0].classNum} </h4>
+                                <h4> <strong>Class: </strong>{c.dept}{c.num} - {c.name} </h4>
                                 <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
-                                <h4> <strong>Grade Received: </strong>{c.grade} </h4>
                             </div>
                             <div className = "reviewContent">
-                                <h4> {c.comment} </h4>
+                                <h4> {c.text} </h4>
                                 <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
                                 <button className = "downvotes"> &#x1f44e;{c.down} </button>
                             </div>
                         </div>
-                      }
+                        }
                       }
                   })}
+                  <button className = "seeAll"> See all reviews... </button>
             </div>
         );
     }

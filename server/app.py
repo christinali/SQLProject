@@ -328,6 +328,13 @@ def getRecommendedMajorClasses():
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
         classList[i]['satisfiesNeeded'] = returnAllTreqs(eachClass)
+        classList[i]['similarityScore'] = 0
+        #Will need to get the rest of the code from get-recommended-treqs for this to work
+        # for similarStudent in bestSimilar:
+        #     similarStudentId = similarStudent[0]
+        #     similarReview = db.session.query(models.Taken).filter(models.Taken.class_id == eachClass.class_id).filter(models.Taken.student_id == similarStudentId).first()
+        #     if similarReview:
+        #         classList[i]['similarityScore']+=similarReview.star_number-3
         i+=1
     classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)
@@ -631,20 +638,20 @@ def gettreqs():
     classList = list()
     haveTaken = set()
     i = 0
-    similarity = dict()
-    similarStudents = dict()
-    classesTaken = list()
-    for bestTaken in takenAlready:
-        bb = db.session.query(models.Taken).filter(models.Taken.class_id == bestTaken.class_id).all()
-        for b in bb:
-            classesTaken.append(b)
-    for eachClass in classesTaken:
-        studentsWithSameClasses = db.session.query(models.Taken).filter(models.Taken.class_id == eachClass.class_id).all()
-        for student in studentsWithSameClasses:
-            if student.student_id not in similarStudents:
-                similarStudents[student.student_id] = 0
-            similarStudents[student.student_id]+=(student.star_number-3)*(eachClass.star_number-3)
-    bestSimilar = sorted(similarStudents.items(), key=lambda x: x[1])[0:5]
+    # similarity = dict()
+    # similarStudents = dict()
+    # classesTaken = list()
+    # for bestTaken in takenAlready:
+    #     bb = db.session.query(models.Taken).filter(models.Taken.class_id == bestTaken.class_id).all()
+    #     for b in bb:
+    #         classesTaken.append(b)
+    # for eachClass in classesTaken:
+    #     studentsWithSameClasses = db.session.query(models.Taken).filter(models.Taken.class_id == eachClass.class_id).all()
+    #     for student in studentsWithSameClasses:
+    #         if student.student_id not in similarStudents:
+    #             similarStudents[student.student_id] = 0
+    #         similarStudents[student.student_id]+=(student.star_number-3)*(eachClass.star_number-3)
+    # bestSimilar = sorted(similarStudents.items(), key=lambda x: x[1])[0:5]
 
     for _,eachClass in enumerate(classesWithReqs.keys()):
         if eachClass.class_id in haveTaken:

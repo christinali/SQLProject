@@ -83,7 +83,7 @@ class AllRecs extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                               </h3>
                               <h3> Difficulty:
                                 {c.difficulty != 0 ?
@@ -92,7 +92,7 @@ class AllRecs extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                               </h3>
                               <h4> Treqs Satisfied: {this.splitTreqs(c.satisfiesNeeded)} </h4>
                               </div>
@@ -115,7 +115,7 @@ class AllRecs extends React.Component {
                                         starDimension="22px"
                                         starSpacing="3px"
                                         starRatedColor="#FF8C00"
-                                    /> : <h4> No rating yet! </h4> }
+                                    /> : <h4> No rating yet </h4> }
                               </h3>
                               <h3> Difficulty:
                                   {c.difficulty != 0 ?
@@ -124,7 +124,7 @@ class AllRecs extends React.Component {
                                         starDimension="22px"
                                         starSpacing="3px"
                                         starRatedColor="#FF8C00"
-                                    /> : <h4> No rating yet! </h4> }
+                                    /> : <h4> No rating yet </h4> }
                               </h3>
                               <h4> Treqs Satisfied: {this.splitTreqs(c.satisfiesNeeded)} </h4>
                             </div>

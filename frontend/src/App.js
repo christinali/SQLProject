@@ -53,7 +53,7 @@ class App extends Component {
   //4 = ProfInfo
   //5 = All Recs
   //6 = Adv Search
-  state = {screen:3, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
+  state = {screen:0, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
 
   render() {
     if (this.state.screen == 0 || this.state.screen == 2) {
@@ -68,7 +68,7 @@ class App extends Component {
         <div className={name}>
             <Header headerText={this.state.headerText}
               logout={() => this.setState({screen:0})} loggedin={this.state.screen}
-              homePage={() => this.setState({screen:1})} loggedin={this.state.screen}
+              homePage={() => this.setState({screen:1, email: this.state.email})} loggedin={this.state.screen}
               advanceSearchPage={() => this.setState({screen:6})} loggedin={this.state.screen}
               fullRecPage={() => this.setState({screen:5})} loggedin={this.state.screen}
             />

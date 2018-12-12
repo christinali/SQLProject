@@ -37,6 +37,42 @@ class Prof extends Component {
           .then(res => console.log(res))
     }
 
+    reveal() {
+      var x = document.getElementsByClassName("botRow2");
+      var y = document.getElementById("seeAll");
+      var z = document.getElementById("hideAll");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        if (x[i].style.display === "none") {
+          x[i].style.display = "flex";
+        }
+      }
+      if (y.style.display === "flex") {
+        y.style.display = "none";
+      }
+      if (z.style.display === "none") {
+        z.style.display = "flex";
+      }
+    }
+
+    hide() {
+      var x = document.getElementsByClassName("botRow2");
+      var y = document.getElementById("seeAll");
+      var z = document.getElementById("hideAll");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        if (x[i].style.display === "flex") {
+          x[i].style.display = "none";
+        }
+      }
+      if (y.style.display === "none") {
+        y.style.display = "flex";
+      }
+      if (z.style.display === "flex") {
+        z.style.display = "none";
+      }
+    }
+
     render() {
         const currProf = this.state.currProf;
         const profComms = this.state.profComms;
@@ -56,7 +92,7 @@ class Prof extends Component {
                                     starDimension="40px"
                                     starSpacing="3px"
                                     starRatedColor="#FF8C00"
-                                /> : <h3> No rating yet! </h3> }
+                                /> : <h3> No rating yet </h3> }
                             </h2>
                             <h2> Difficulty:
                               {currProf.difficulty != 0 ?
@@ -65,7 +101,7 @@ class Prof extends Component {
                                     starDimension="40px"
                                     starSpacing="3px"
                                     starRatedColor="#FF8C00"
-                                /> : <h3> No rating yet! </h3> }
+                                /> : <h3> No rating yet </h3> }
                             </h2>
                         </div>
                         <div className = "otherClasses">
@@ -91,30 +127,62 @@ class Prof extends Component {
                     </div>
                 </div>
                 <h2 className = 'TSR'> <strong>Top Student Reviews: </strong></h2>
-                    {profComms && profComms.map((c, i) => {
-                      if (c && i < 3) {
-                        if (i % 2) {
-                          return <div className = "botRow">
-                              <div className = "reviewInfo">
-                                  <h3> <strong>Overall: </strong>{c.overall} </h3>
-                                  <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
-                              </div>
-                              <div className = "reviewTarget">
-                                  <h4> <strong>Class: </strong> <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
-                                  <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
-                              </div>
-                              <div className = "reviewContent">
-                                  <h4> {c.text} </h4>
-                                  <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
-                                  <button className = "downvotes"> &#x1f44e;{c.down} </button>
-                              </div>
-                          </div>
+                  {profComms && profComms.map((c, i) => {
+                    if (c) {
+                      if (i < 3) {
+                        return <div className = "botRow">
+                            <div className = "reviewInfo">
+                                <h3> <strong>Overall: </strong>
+                                    {c.overall != 0 ?
+                                      <StarRatings
+                                          rating={c.overall}
+                                          starDimension="22px"
+                                          starSpacing="3px"
+                                          starRatedColor="#FF8C00"
+                                      /> : <h4> No rating yet </h4> }
+                                </h3>
+                                <h3> <strong>Difficulty: </strong>
+                                    {c.difficulty != 0 ?
+                                      <StarRatings
+                                          rating={c.difficulty}
+                                          starDimension="22px"
+                                          starSpacing="3px"
+                                          starRatedColor="#FF8C00"
+                                      /> : <h4> No rating yet </h4> }
+                                </h3>
+                            </div>
+                            <div className = "reviewTarget">
+                                <h4>  <strong>Prof: </strong><button className = "revProf" onClick={() => this.props.changeProf(c.prof_id)}> {c.prof} </button> </h4>
+                                <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
+                            </div>
+                            <div className = "reviewContent">
+                                <h4> {c.text} </h4>
+                                <button className = "upvotes" onClick={() => this.upVote(c.id)}> &#x1f44d;{c.up} </button>
+                                <button className = "downvotes" onClick={() => this.downVote(c.id)}> &#x1f44e;{c.down} </button>
+                            </div>
+                        </div>
                       }
                       else {
-                        return <div className = "botRow2">
+                        return <div className = "botRow2" style={{display:"none"}}>
                             <div className = "reviewInfo">
-                                <h3> <strong>Overall: </strong> {c.overall} </h3>
-                                <h3> <strong>Difficulty: </strong> {c.difficulty} </h3>
+                                <h3> <strong>Overall: </strong>
+                                    {c.overall != 0 ?
+                                      <StarRatings
+                                          rating={c.overall}
+                                          starDimension="22px"
+                                          starSpacing="3px"
+                                          starRatedColor="#FF8C00"
+                                      /> : <h4> No rating yet </h4> }
+                                </h3>
+                                <h3> <strong>Difficulty: </strong>
+                                    {c.difficulty != 0 ?
+                                      <StarRatings
+                                          rating={c.difficulty}
+                                          starDimension="22px"
+                                          starSpacing="3px"
+                                          starRatedColor="#FF8C00"
+                                      /> : <h4> No rating yet </h4> }
+                                </h3>
                             </div>
                             <div className = "reviewTarget">
                                 <h4> <strong>Class: </strong> <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
@@ -126,12 +194,15 @@ class Prof extends Component {
                                 <button className = "downvotes"> &#x1f44e;{c.down} </button>
                             </div>
                         </div>
-                        }
                       }
-                  })}
-                  {profComms.length === 0 ? <h3 className = 'noReviews'> Sorry! Seems like there are no reviews of this professor yet. </h3>
-                    : <button className = "seeAll"> See all reviews... </button>
-                  }
+                    }
+                })}
+                {profComms.length === 0 ? <h3 className = 'noReviews'> Sorry! Seems like there are no reviews of this class yet. </h3>
+                  : <div>
+                      <button className = "seeAll" id="seeAll" style = {{display:'flex'}} onClick={() => this.reveal()}> See all reviews... </button>
+                      <button className = "seeAll" id="hideAll" style = {{display:'none'}} onClick={() => this.hide()}> Hide all reviews... </button>
+                    </div>
+                }
             </div>
         );
     }
@@ -141,8 +212,4 @@ export default Prof;
 
 
 /*
-MAIN - FIGURE OUT HOW TO GET PROF ID AUTOMATICALLY
-1) need to add Up/Downvote Functionality
-2) need to make backend real
-3) need to link everything
 */

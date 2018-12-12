@@ -545,6 +545,8 @@ def getClassInfo():
     ret2 = []
     for dic in ret:
         new_dic = {'prof_name': dic['prof_name'], 'difficulty': dic['difficulty']/dic['count'], 'quality': dic['quality']/dic['count'], 'prof_id': dic['prof_id']}
+        ret2.append(new_dic)
+    return ret2
 
 
 

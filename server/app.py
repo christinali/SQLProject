@@ -536,7 +536,6 @@ def getProfInfo():
 
     return jsonify({'name': name, 'comments': allComments, 'classes': profList,
     'prof_id': proof_id, 'nextSemClasses': nextSemClasses})
-    return jsonify(retList)
 
 @app.route('/get-all-profs', methods=['GET'])
 def getAllProfInfo():

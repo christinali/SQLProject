@@ -898,7 +898,7 @@ def getProfInfo():
     overall = totalOverall / (max(totalReviews, 1))
     difficulty = totalDifficulty / (max(totalReviews, 1))
 
-
+    tempprofList = []
     nextSemClasses = []
     for classObj in tempprofList:
         if (classObj['semester'] == '2019 Spring Term'):

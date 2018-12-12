@@ -1,3 +1,17 @@
-INSERT INTO Comment VALUES
-('Very clear lecturer. Fully understands the content and presents it in an interesting and fulfilling way. Homework is also useful in conveying the content to the student. Semester group project is entirely reasonable and tests are based on lectures heavily (though slides are available on course site). Take the class! Learned a lot!', 10, 2, 69, 0),
-('HE IS SO NICE!!!! Gives a ton of extra credit. Great at explaining concepts and always there for students. Really excited about the material and knows it well. Absolutely loves the course project and his passion shows. Also makes a lot of Simpson references! Puts a lot of effort into the course.', 100, 18, 420, 1);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 0',3,1,2323,0);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 1',7,3,2323,1);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 2',8,1,2323,2);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 3',9,1,2323,3);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 4',12,7,2323,4);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 5',12,9,2323,5);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 6',0,0,2323,6);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 7',0,0,2323,7);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 8',0,0,2323,8);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 9',7,3,2323,9);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 10',0,0,2323,10);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 11',0,0,2323,11);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 12',0,0,2323,12);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 13',0,0,2323,13);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 14',10,0,2323,14);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 15',0,0,2323,15);
+INSERT INTO comment(text,upvotes,downvotes,student_id,comment_id) VALUES ('Test 16',0,0,2323,16);

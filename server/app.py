@@ -9,7 +9,9 @@ import forms
 import sys
 import math
 import csv
+import sqlalchemy
 from sqlalchemy.sql import exists
+from sqlalchemy.sql.expression import cast
 
 app = Flask(__name__)
 app.secret_key = 's3cr3t'
@@ -469,8 +471,7 @@ def cmp_to_key(mycmp):
 @app.route('/get-classes-in-major', methods=['GET'])
 def getClassesInMajor():
     major = request.args.get('major')
-    department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
-    classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
+    classesInMajor = db.session.query(models.Class).filter_by(department_id=major).all()
     classList = list()
     i = 0
     for _,eachClass in enumerate(classesInMajor):
@@ -492,71 +493,56 @@ def getClassInfo():
 
 @app.route('/get-prof-info', methods=['GET'])
 def getProfInfo():
-    proof_id = request.args.get('prof_id')
+    proof_id = int(request.args.get('prof_id'))
+    professors2 = db.session.query(models.Professor).filter_by(professor_id = proof_id).all()
+    name = ''
+    for _, eachProf in enumerate(professors2):
+        name = eachProf.name
     #pro = db.session.query(models.Professor).filter_by(professor_id =id).first()
-   # oldClassesByProf = db.session.query(models.Teaches, models.Class).filter_by(professor_id = proof_id).all()
-
-
-    prevSem = list()
-    i=0 
-    for _, eachClass in enumerate(oldClassesByProf):
-        prevSem.append(dict())
-        prevSem[i]['class_num'] = eachClass.class_num
-    i+=1
-
-
-    i=0
-    difficultyList = list()
-    # for _, eachClass in enumerate(classesByProf):
-    #     difficultyList.append(dict())
-    #     difficultyList[i]['difficulty'] = eachClass.difficulty
-    #     i+=1
-
-    classesNextSem = list()
-    # i=0
-    # for _, eachClass in enumerate(classesByProf):
-    #     if eachClass.semester != "s19":
-    #         classesNextSem.append(dict())
-    # i+=1
-
-    retList = list()
-    #retList.append(pro.name) --> desn't work
-    retList.append()
-    retList.append(prof_id)
+    professors = db.session.query(models.Teaches).filter_by(professor_id = proof_id).all()
+    profList = list()
     i = 0
-    # for _, eachClass in enumerate():
-    #     retList.append(dict())
-    #     #retList[i]['difficulty'] = getDifficulty(class_id)
-    #     i+=1
+    allComments = list()
+    for _, eachProf in enumerate(professors):
+        profList.append(dict())
+        profList[i]['professor_id'] = eachProf.professor_id
+        profList[i]['semester'] = eachProf.semester
+        profList[i]['class_id'] = eachProf.class_id
+        classes = db.session.query(models.Class).filter(models.Class.class_id == eachProf.class_id).all()
+        for a, eachClass in enumerate(classes):
+            profList[i]['name'] = eachClass.name
+            profList[i]['dept'] = eachClass.department_id
+            profList[i]['num'] = eachClass.class_num
+        profList[i]['overall'] = eachProf.average_quality
+        profList[i]['difficulty'] = eachProf.average_difficulty
+        profList[i]['num_reviews'] = eachProf.num_reviews
+        taken = db.session.query(models.Taken).filter(models.Taken.class_id == eachProf.class_id).filter(models.Taken.semester == eachProf.semester).all()
+        top3 = list()
+        for j, eachTaken in enumerate(taken):
+            if (eachTaken.comment_id):
+                print(type(eachTaken.comment_id))
+                comments = db.session.query(models.Comment).filter_by(comment_id = eachTaken.comment_id).all()
+                for k, eachComment in enumerate(comments):
+                    allComments.append({'semester': eachProf.semester, 'class_id': eachProf.class_id, 'text': eachComment.text, 'up': eachComment.upvotes, 'down': eachComment.downvotes})
+        i+=1
+    toReturn = {'name': name}
+    allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
+    profList.sort(key=lambda y: y['overall'] - y['difficulty'], reverse=True)
+    nextSemClasses = []
+    for classObj in profList:
+        if (classObj['semester'] == '2019 Spring Term'):
+            nextSemClasses.append(classObj)
 
-    
-    # i=0    
-    # for _, eachClass in enumerate(classesPrevSem):
-    #     
 
-    # nextSem = list()
-    # i=0
-    # for _, eachClass in enumerate(classesNextSem):
-    #     i+=1
-
-    # retList.append(prevSem)
-    # retList.append(nextSem)
-    retList.append(difficulty)
-
+    return jsonify({'name': name, 'comments': allComments, 'classes': profList,
+    'prof_id': proof_id, 'nextSemClasses': nextSemClasses})
     return jsonify(retList)
-
-    #2019 spring term 
-    #previous classes: arrays from teaches with the same professor id's
-    # array of top comments from top comments in take 
-
-    #prof_id = request.args.get('prof_id')
-    #return jsonify(getAllProfs()[int(prof_id)])
 
 @app.route('/get-all-profs', methods=['GET'])
 def getAllProfInfo():
     professors = db.session.query(models.Professor).all()
     profList = list()
-    i = 0 
+    i = 0
     for _, eachProf in enumerate(professors):
         profList.append(dict())
         profList[i]['professor_id'] = eachProf.professor_id

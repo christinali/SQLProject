@@ -85,10 +85,10 @@ def getId():
 
 def emailToId(email):
     ids = db.session.query(models.Student).filter_by(email=email).all()
-    student_id = ''
+    student_id = 0
     for id in ids:
-        id.student_id
-    return id
+        student_id = id.student_id
+    return student_id
 
 
 @app.route('/create-user', methods=['GET', 'POST'])
@@ -179,9 +179,6 @@ def getRecommendedMajorClasses():
             continue
         classList.append(dict())
         classList[i]['dept'] = major
-        print(eachClass.class_id)
-
-        print("\n\n\n\n\n")
         classList[i]['overall'] = round(getRating(eachClass.class_id),2)
         classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
         classList[i]['name'] = eachClass.name

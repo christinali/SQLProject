@@ -21,22 +21,16 @@ const Header = (props) => {
     <Nav pullLeft>
 			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.homePage}>
 				Home
-			</NavItem>: <NavItem eventKey={1} href="#" onClick={props.homePage}>
-				About Us
-			</NavItem>}
+			</NavItem>: ''}
 			{props.loggedin && <NavItem eventKey={1} href="#" onClick={props.me}>
 				Me
 			</NavItem>}
 			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.advanceSearchPage}>
 				Advanced Search
-			</NavItem>: <NavItem eventKey={1} href="#" onClick={props.advanceSearchPage}>
-				About Us
-			</NavItem>}
+			</NavItem>: ''}
 			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.fullRecPage}>
 				Full Recommendations
-			</NavItem>: <NavItem eventKey={1} href="#" onClick={props.fullRecPage}>
-				About Us
-			</NavItem>}
+			</NavItem>: ''}
 		</Nav>
 		<Nav pullRight>
       {props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.logout}>

@@ -512,6 +512,9 @@ def getClassInfo():
     teaches = db.session.query(models.Teaches).filter_by(class_id = class_id).all()
     classList = list()
     allComments = list()
+    totalOverall = 0
+    totalDifficulty = 0
+    totalReviews = 0
     index = 0
     for j, eachTaught in enumerate(teaches):
         classList.append(dict())
@@ -520,6 +523,9 @@ def getClassInfo():
         classList[j]['prof_id'] = eachTaught.professor_id
         classList[j]['num_reviews'] = eachTaught.num_reviews
         classList[j]['semester'] = eachTaught.semester
+        totalOverall += eachTaught.average_quality * eachTaught.num_reviews
+        totalDifficulty += eachTaught.average_difficulty * eachTaught.num_reviews
+        totalReviews += eachTaught.num_reviews
         profs = db.session.query(models.Professor).filter_by(professor_id = eachTaught.professor_id).all()
         profName = ''
         for k, eachProf in enumerate(profs):
@@ -561,8 +567,12 @@ def getClassInfo():
         ret2.append(new_dic)
     ret2.sort(key=lambda y: y['quality'] - y['difficulty'], reverse=True)
 
+    overall = totalOverall / (max(totalReviews, 1))
+    difficulty = totalDifficulty / (max(totalReviews, 1))
+
     return jsonify({'name': name, 'dept': department_id, 'class_num': class_num, 'comments': allComments,
-    'semesters': classList, 'id': class_id, 'nextSemProfs': nextSemProfs, "profs": ret2
+    'semesters': classList, 'id': class_id, 'nextSemProfs': nextSemProfs, "profs": ret2,
+    'overall': overall, 'difficulty': difficulty
     })
     return jsonify(ret2)
 
@@ -702,6 +712,20 @@ def getAllClasses():
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
+        # cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w
+        classList[i]['cz'] = eachClass.cz
+        classList[i]['ss'] = eachClass.ss
+        classList[i]['cci'] = eachClass.cci
+        classList[i]['alp'] = eachClass.alp
+        classList[i]['ns'] = eachClass.ns
+        classList[i]['qs'] = eachClass.qs
+        classList[i]['ei'] = eachClass.ei
+        classList[i]['fl'] = eachClass.fl
+        classList[i]['r'] = eachClass.r
+        classList[i]['sts'] = eachClass.sts
+        classList[i]['w'] = eachClass.w
+
+
         i+=1
     return jsonify(classList)
 

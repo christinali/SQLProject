@@ -65,7 +65,12 @@ class App extends Component {
     console.log(name);
     return (
         <div className={name}>
-            <Header headerText={this.state.headerText} logout={() => this.setState({screen:0})} loggedin={this.state.screen}/>
+            <Header headerText={this.state.headerText}
+              logout={() => this.setState({screen:0})} loggedin={this.state.screen}
+              homePage={() => this.setState({screen:1})} loggedin={this.state.screen}
+              advanceSearchPage={() => this.setState({screen:6})} loggedin={this.state.screen}
+              fullRecPage={() => this.setState({screen:5})} loggedin={this.state.screen}
+            />
             {(()=> {
               switch(this.state.screen) {
                 case 0:

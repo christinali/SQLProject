@@ -12,6 +12,7 @@ import csv
 import sqlalchemy
 from sqlalchemy.sql import exists
 from sqlalchemy.sql.expression import cast
+from sqlalchemy import or_
 
 app = Flask(__name__)
 app.secret_key = 's3cr3t'
@@ -27,15 +28,31 @@ def dontReach():
 
 @app.route('/get-user-classes', methods=['GET'])
 def getUserClasses():
-    user_id = request.args.get('user_id')
+    email = request.args.get('email')
+    user_id = emailToId(email)
     allClasses = list()
     if (user_id):
         taken = db.session.query(models.Taken).filter_by(student_id=user_id).all()
         for eachTaken in taken:
             classes = db.session.query(models.Class).filter_by(class_id=eachTaken.class_id).all()
             for eachClass in classes:
+                teaches = db.session.query(models.Teaches).filter(models.Teaches.semester==eachTaken.semester).filter(models.Teaches.class_id==eachClass.class_id).all()
+                prof_id = ''
+                for eachTeach in teaches:
+                    prof_id = eachTeach.professor_id
+                profs = db.session.query(models.Professor).filter_by(professor_id=prof_id).all()
+                prof_name = ''
+                for eachProf in profs:
+                    prof_name = eachProf.name
                 allClasses.append({"name": eachClass.name, "id": eachClass.class_id,
-                 "dept": eachClass.department_id, "class_num": eachClass.class_num})
+                 "dept": eachClass.department_id, "class_num": eachClass.class_num,
+                 "quality": eachTaken.star_number, "difficulty": eachTaken.difficulty,
+                 "semester": eachTaken.semester, "prof_id": prof_id, "prof_name": prof_name,
+                 "cz": eachClass.cz, "ss": eachClass.ss, "cci": eachClass.cci,
+                 "alp": eachClass.alp, "ns": eachClass.ns, "qs": eachClass.qs,
+                 "ei": eachClass.ei, "fl": eachClass.fl, "r": eachClass.r,
+                 "sts": eachClass.sts, "w": eachClass.w
+                 })
     return jsonify(allClasses)
 
 
@@ -66,8 +83,11 @@ def test():
     ins = db.insert(models.Professor).values(professor_id='123456789', name='Testing test test')
     print(ins)
 
-
-
+@app.route('/get-treqs-completed', methods=['GET'])
+def getTreqsCompleted():
+    email = request.args.get('email')
+    student_id = emailToId(email)
+    return jsonify(getCompleted(student_id))
 
 @app.route('/longteaches', methods=['GET'])
 def longteaches():
@@ -115,13 +135,6 @@ def createUser():
     email = request.args.get('email')
     year = request.args.get('year')
     major = request.args.get('major')
-    print("WORD \n\n\n\n\n\n\n")
-    print(name)
-    print(email)
-    print(year)
-    print(major)
-    print("WORD2 \n\n\n\n\n\n\n")
-
     year = year[-1]
     year = int(year)
     if (year == 0):
@@ -430,72 +443,120 @@ def getClassesWithReqs(needed):
     #         classes[currClass].append('cz')
     #     if (currClass.ss == 1):
     #         classes[currClass].append('ss')
-    if 'cz' in needed:
-        currClasses = db.session.query(models.Class).filter_by(cz=1).all()
-        for currClass in currClasses:
+    currClasses = db.session.query(models.Class).filter(or_(models.Class.cz==1, models.Class.ss==1
+    , models.Class.cci==1 , models.Class.alp==1 , models.Class.ns==1 ,
+    models.Class.qs==1 , models.Class.ei==1 , models.Class.fl==1 ,
+    models.Class.r==1 , models.Class.sts==1 , models.Class.w==1)).all()
+    for currClass in currClasses:
+        if currClass.cz == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('cz')
-    if 'ss' in needed:
-        currClasses = db.session.query(models.Class).filter_by(ss=1).all()
-        for currClass in currClasses:
+        if currClass.ss == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('ss')
-    if 'cci' in needed:
-        currClasses = db.session.query(models.Class).filter_by(cci=1).all()
-        for currClass in currClasses:
+        if currClass.cci == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('cci')
-    if 'alp' in needed:
-        currClasses = db.session.query(models.Class).filter_by(alp=1).all()
-        for currClass in currClasses:
+        if currClass.alp == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('alp')
-    if 'ns' in needed:
-        currClasses = db.session.query(models.Class).filter_by(ns=1).all()
-        for currClass in currClasses:
+        if currClass.ns == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('ns')
-    if 'qs' in needed:
-        currClasses = db.session.query(models.Class).filter_by(qs=1).all()
-        for currClass in currClasses:
+        if currClass.qs == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('qs')
-    if 'ei' in needed:
-        currClasses = db.session.query(models.Class).filter_by(ei=1).all()
-        for currClass in currClasses:
+        if currClass.ei == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('ei')
-    if 'fl' in needed:
-        currClasses = db.session.query(models.Class).filter_by(fl=1).all()
-        for currClass in currClasses:
+        if currClass.fl == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('fl')
-    if 'r' in needed:
-        currClasses = db.session.query(models.Class).filter_by(r=1).all()
-        for currClass in currClasses:
+        if currClass.r == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('r')
-    if 'sts' in needed:
-        currClasses = db.session.query(models.Class).filter_by(sts=1).all()
-        for currClass in currClasses:
+        if currClass.sts == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('sts')
-    if 'w' in needed:
-        currClasses = db.session.query(models.Class).filter_by(w=1).all()
-        for currClass in currClasses:
+        if currClass.w == 1:
             if currClass not in classes:
                 classes[currClass] = list()
             classes[currClass].append('w')
+    # if 'cz' in needed:
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('cz')
+    # if 'ss' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(ss=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('ss')
+    # if 'cci' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(cci=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('cci')
+    # if 'alp' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(alp=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('alp')
+    # if 'ns' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(ns=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('ns')
+    # if 'qs' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(qs=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('qs')
+    # if 'ei' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(ei=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('ei')
+    # if 'fl' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(fl=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('fl')
+    # if 'r' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(r=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('r')
+    # if 'sts' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(sts=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('sts')
+    # if 'w' in needed:
+    #     currClasses = db.session.query(models.Class).filter_by(w=1).all()
+    #     for currClass in currClasses:
+    #         if currClass not in classes:
+    #             classes[currClass] = list()
+    #         classes[currClass].append('w')
     return classes
 
 
@@ -507,6 +568,27 @@ def getNeededClasses(user_id):
             needed.remove(key)
     return completed, getClassesWithReqs(needed)
 
+def getTeachesInfo(class_id):
+    teachTuples = db.session.query(models.Teaches).filter(models.Teaches.class_id == class_id).all()
+    taughtNextSem = False
+    totalScore = 0
+    totalDifficulty = 0
+    totalReviews = 0
+    nextSemProf = ''
+    nextSemId = ''
+    for teach in teachTuples:
+        totalScore+=teach.average_quality*teach.num_reviews
+        totalDifficulty+=teach.average_difficulty*teach.num_reviews
+        totalReviews+=teach.num_reviews
+        if teach.semester == "2019 Spring Term":
+            taughtNextSem = True
+            nextSemId = teach.professor_id
+            allProfs = db.session.query(models.Professor).filter_by(professor_id=nextSemId).all()
+            for p in allProfs:
+                nextSemProf = p.name
+            break
+    return taughtNextSem, totalScore/max(totalReviews,1), totalDifficulty/max(totalReviews,1), nextSemId, nextSemProf
+
 @app.route('/get-recommended-treqs', methods=['GET'])
 def gettreqs():
     email = request.args.get('email')
@@ -515,49 +597,43 @@ def gettreqs():
     takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
     classList = list()
     haveTaken = set()
-    # similarList = dict()
-    # for taken in takenAlready:
-    #     haveTaken.add(taken.class_id)
-    #     others = db.session.query(models.Taken).filter(models.Taken.student_id != user_id ).all()
-    #     for other in others:
-    #         similarList[other.student_id] += (other.star_number-3)*(taken.star_number-3)
     i = 0
     for _,eachClass in enumerate(classesWithReqs.keys()):
         if eachClass.class_id in haveTaken:
             continue
+        taughtNextSem, overall, difficulty, prof_id, prof_name = getTeachesInfo(eachClass.class_id)
+        if not taughtNextSem:
+            continue
+
         classList.append(dict())
         classList[i]['dept'] = eachClass.department_id
-        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
-        classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
+        classList[i]['overall'] = round(overall,2)
+        classList[i]['difficulty'] = round(difficulty,2)
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
         classList[i]['satisfiesNeeded'] = classesWithReqs[eachClass]
-        for req in classList[i]['satisfiesNeeded']:
-            if 'numNeeded' not in classList[i]:
-                    classList[i]['numNeeded']=dict()
-            if req not in completed or completed[req]==0:
-                classList[i]['numNeeded'][req] = 2
-            else:
-                classList[i]['numNeeded'][req]=1
-        #This implements weighting by the t-reqs you need more, but would also return alp twice to the frontend if you needed two alps
-        # temp = list()
-        # for req in classList[i]['satisfiesNeeded']:
-        #     if req not in completed or completed[req]==0:
-        #         temp.append(req)
-        # for t in temp:
-        #     classList[i]['satisfiesNeeded'].append(t)
+        classList[i]['next_sem_prof_id'] = prof_id
+        classList[i]['next_sem_prof_name'] = prof_name
         i+=1
-    classList = sorted(classList, key=cmp_to_key(compareClasses))
+    classList.sort(key=lambda x: treq_score(x, completed), reverse=True)
     return jsonify(classList)
 
 def score(currClass):
     score = 0
     score += currClass['overall']
     score-=currClass['difficulty']
-    if 'numNeeded' in currClass:
-        for key in currClass['numNeeded'].keys():
-            score+=currClass['numNeeded'][key]
+    return score
+
+def treq_score(currClass, completed):
+    score = 0
+    score += currClass['overall']
+    score-=currClass['difficulty']
+    if 'satisfiesNeeded' in currClass:
+        for key in currClass['satisfiesNeeded']:
+            score += 2
+            if (key in completed):
+                score -= completed[key]
     return score
 
 def compareClasses(class1, class2):

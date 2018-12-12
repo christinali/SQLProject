@@ -549,7 +549,12 @@ def getClassInfo():
     for dic in ret:
         new_dic = {'prof_name': dic['prof_name'], 'difficulty': dic['difficulty']/dic['count'], 'quality': dic['quality']/dic['count'], 'prof_id': dic['prof_id']}
         ret2.append(new_dic)
-    return ret2
+    ret2.sort(key=lambda y: y['quality'] - y['difficulty'], reverse=True)
+
+    return jsonify({'name': name, 'dept': department_id, 'class_num': class_num,
+    'semesters': classList, 'id': class_id, 'nextSemProfs': nextSemProfs, "profs": ret2
+    })
+    return jsonify(ret2)
 
 
 
@@ -590,10 +595,6 @@ def getClassInfo():
     #         nextSemClasses.append(classObj)
 
 
-    return jsonify({'name': name, 'dept': department_id, 'class_num': class_num,
-    'semesters': classList, 'id': class_id, 'nextSemProfs': nextSemProfs
-    })
-
 @app.route('/get-prof-info', methods=['GET'])
 def getProfInfo():
     proof_id = int(request.args.get('prof_id'))
@@ -626,7 +627,10 @@ def getProfInfo():
                 print(type(eachTaken.comment_id))
                 comments = db.session.query(models.Comment).filter_by(comment_id = eachTaken.comment_id).all()
                 for k, eachComment in enumerate(comments):
-                    allComments.append({'semester': eachProf.semester, 'class_id': eachProf.class_id, 'text': eachComment.text, 'up': eachComment.upvotes, 'down': eachComment.downvotes})
+                    allComments.append({'overall': eachTaken.star_number, 'difficulty': eachTaken.difficulty,
+                    'semester': eachProf.semester, 'dept': eachClass.department_id, 'num': eachClass.class_num,
+                    'class_id': eachProf.class_id, 'text': eachComment.text,
+                    'up': eachComment.upvotes, 'down': eachComment.downvotes})
         i+=1
     toReturn = {'name': name}
     allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
@@ -635,8 +639,6 @@ def getProfInfo():
     for classObj in profList:
         if (classObj['semester'] == '2019 Spring Term'):
             nextSemClasses.append(classObj)
-
-
     return jsonify({'name': name, 'comments': allComments, 'classes': profList,
     'prof_id': proof_id, 'nextSemClasses': nextSemClasses})
 

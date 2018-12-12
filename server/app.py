@@ -632,6 +632,21 @@ def gettreqs():
     classList = list()
     haveTaken = set()
     i = 0
+    similarity = dict()
+    similarStudents = dict()
+    classesTaken = list()
+    for bestTaken in takenAlready:
+        bb = db.session.query(models.Taken).filter(models.Taken.class_id == bestTaken.class_id).all()
+        for b in bb:
+            classesTaken.append(b)
+    for eachClass in classesTaken:
+        studentsWithSameClasses = db.session.query(models.Taken).filter(models.Taken.class_id == eachClass.class_id).all()
+        for student in studentsWithSameClasses:
+            if student.student_id not in similarStudents:
+                similarStudents[student.student_id] = 0
+            similarStudents[student.student_id]+=(student.star_number-3)*(eachClass.star_number-3)
+    bestSimilar = sorted(similarStudents.items(), key=lambda x: x[1])[0:5]
+
     for _,eachClass in enumerate(classesWithReqs.keys()):
         if eachClass.class_id in haveTaken:
             continue
@@ -649,6 +664,12 @@ def gettreqs():
         classList[i]['satisfiesNeeded'] = classesWithReqs[eachClass]
         classList[i]['next_sem_prof_id'] = prof_id
         classList[i]['next_sem_prof_name'] = prof_name
+        classList[i]['similarityScore'] = 0
+        # for similarStudent in bestSimilar:
+        #     similarStudentId = similarStudent[0]
+        #     similarReview = db.session.query(models.Taken).filter(models.Taken.class_id == eachClass.class_id).filter(models.Taken.student_id == similarStudentId).first()
+        #     if similarReview:
+        #         classList[i]['similarityScore']+=similarReview.star_number-3
         i+=1
     classList.sort(key=lambda x: treq_score(x, completed), reverse=True)
     return jsonify(classList)
@@ -656,7 +677,8 @@ def gettreqs():
 def score(currClass):
     score = 0
     score += currClass['overall']
-    score-=currClass['difficulty']
+    score -= currClass['difficulty']
+    score+=currClass['similarityScore']
     return score
 
 def treq_score(currClass, completed):
@@ -668,6 +690,7 @@ def treq_score(currClass, completed):
             score += 0.6
             if (key in completed):
                 score -= (0.3 * completed[key])
+    score+=currClass['similarityScore']
     return score
 
 def compareClasses(class1, class2):

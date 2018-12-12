@@ -438,10 +438,10 @@ INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,f
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Delivering Software: From Concept to Client',021860,'COMPSCI','408',0,0,0,0,0,0,0,0,1,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Topological Data Analysis',021375,'COMPSCI','434',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to High Dimensional Data Analysis',021376,'COMPSCI','445',0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cultural Anthropology',001860,'CULANTH','101',0,0,1,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'CULANTH','104D',0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to African Studies (DS3 or DS4)',000082,'CULANTH','105',0,0,1,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Experience: A Video Approach',008062,'CULANTH','106S',0,0,0,0,0,0,0,0,1,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cultural Anthropology',001860,'CULANTH','101',1,1,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'CULANTH','104D',1,0,1,1,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to African Studies (DS3 or DS4)',000082,'CULANTH','105',1,0,1,1,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Experience: A Video Approach',008062,'CULANTH','106S',1,0,1,1,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Sustainable Development',024136,'CULANTH','107',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fantasy Mass Media and Popular Culture',001873,'CULANTH','108',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Enterprising Leadership and Civic Engagement',023568,'CULANTH','113FS',0,0,0,0,0,0,0,0,0,0,0);
@@ -560,8 +560,8 @@ INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,f
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Environment Health and Development in China',020240,'CULANTH','395S',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Health Policy in Transition: Challenges for China',020270,'CULANTH','396AS',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Language in Immigrant America',021084,'CULANTH','397S',0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',020278,'CULANTH','399',0,0,1,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',023884,'CULANTH','399A',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',020278,'CULANTH','399',1,1,1,0,0,0,1,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Global Russia',023884,'CULANTH','399A',1,1,1,0,0,0,1,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Politics and Obligations of Memory',020049,'CULANTH','403S',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Surviving Globalization: The Global South and the Development Imagination',024244,'CULANTH','409',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Research in Human Rights',022361,'CULANTH','414S',0,0,1,0,0,0,0,0,0,0,0);
@@ -1906,13 +1906,13 @@ INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,f
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Narrative History and Historical Fiction',022145,'HISTORY','489S',0,0,0,0,0,0,0,0,1,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Special Topics in History',023984,'HISTORY','490',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Seminars in Special Topics',005383,'HISTORY','490S',0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cultural Anthropology',001860,'ICS','101',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Cultural Anthropology',001860,'ICS','101',1,1,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('AIDS and Other Emerging Diseases',012940,'ICS','103',0,0,0,0,0,0,0,0,0,1,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Anthropology and Film',001868,'ICS','104',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Migration and Human Rights in Korea: Local and Global Perspectives',025057,'ICS','105S',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Latino/a Studies in the Global South',022918,'ICS','106',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fantasy Mass Media and Popular Culture',001873,'ICS','109',0,0,1,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'ICS','113D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'ICS','113D',1,0,1,1,0,0,1,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Private Wealth and Public Giving: A Modern History',023658,'ICS','123',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Islam',009188,'ICS','160',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Gateway Seminar: Gandhi King Mandela',025250,'ICS','163S',0,0,1,0,0,0,0,0,0,0,0);
@@ -2824,7 +2824,7 @@ INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,f
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Fragmented Memories: Polish and Polish Jewish Culture Through Film',020242,'POLISH','308S',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Political Science',023876,'POLSCI','101',0,1,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('The Documentary Experience: A Video Approach',008062,'POLSCI','105S',0,0,0,0,0,0,0,0,1,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to African Studies (DS3 or DS4)',000082,'POLSCI','108',0,0,1,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to African Studies (DS3 or DS4)',000082,'POLSCI','108',1,0,1,1,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Comparative Approaches to Global Issues',002842,'POLSCI','110',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('From Voting to Protests: Introduction to Political Attitudes Groups and Behaviors',021542,'POLSCI','114D',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Rules of Power: How Institutions Shape What Politics Deliver',021802,'POLSCI','115D',0,1,0,0,0,0,0,0,0,0,0);
@@ -3168,7 +3168,7 @@ INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,f
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of War Military and Society',022168,'PUBPOL','160',0,0,0,0,0,0,1,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of War Military and Society',022168,'PUBPOL','160D',0,0,0,0,0,0,1,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the History of Law and Governance',023139,'PUBPOL','161',0,0,0,0,0,0,1,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'PUBPOL','162D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'PUBPOL','162D',1,0,1,1,0,0,1,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the United States Health Care System',015334,'PUBPOL','165',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to the United States Health Care System',015334,'PUBPOL','165',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Security Peace and Conflict',008337,'PUBPOL','166D',0,0,1,0,0,0,0,0,0,0,0);
@@ -3478,7 +3478,7 @@ INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,f
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Capstone Seminar: Sex Celibacy and Purity in the Middle Ages',020214,'RELIGION','415S',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Human Rights in Islam',021861,'RELIGION','450S',0,0,1,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Junior-Senior Seminars',009330,'RELIGION','490S',0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'RIGHTS','104D',0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Introduction to Human Rights: Gateway for the Human Rights Certificate',023954,'RIGHTS','104D',1,0,1,1,0,0,1,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Pursuit of Equality: Rethinking Schools - Lens of Social Justice',020823,'RIGHTS','111FS',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Medical Ethics Aging and End of Life Care in the US',023540,'RIGHTS','112FS',0,0,0,0,0,0,0,0,0,0,0);
 INSERT INTO class(name,class_id,department_id,class_num,cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w) VALUES ('Enterprising Leadership and Civic Engagement',023568,'RIGHTS','113FS',0,0,0,0,0,0,0,0,0,0,0);

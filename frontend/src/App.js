@@ -11,6 +11,7 @@ import Class from './scenes/Class';
 import Prof from './scenes/Prof';
 import AllRecs from './scenes/AllRecs';
 import AdvSearch from './scenes/AdvSearch';
+import axios from 'axios';
 
 import './styles/app.css';
 import './styles/login.css';
@@ -36,6 +37,11 @@ var sectionStyle = {
 class App extends Component {
   constructor(props){
     super(props);
+    // axios.post('http://localhost:5000/create-user?name=Feroze Mitra&email=feroze@matt.com&year=2012&major=CULANTH')
+    //     .then(res => {
+    //         console.log(res.data);
+    //     })
+    //     .catch(e => console.log(e))
     this.app = firebase.initializeApp(firebaseConfig);
   }
 

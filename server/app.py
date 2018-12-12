@@ -325,6 +325,14 @@ def getCompleted(user_id):
 
 def getClassesWithReqs(needed):
     classes = dict()
+    # currClasses = db.session.query(models.Class).filter(models.Class.cz==1 or models.Class.ss==1).all()
+    # for currClass in currClasses:
+    #     if currClass not in classes:
+    #         classes[currClass] = list()
+    #     if (currClass.cz == 1):
+    #         classes[currClass].append('cz')
+    #     if (currClass.ss == 1):
+    #         classes[currClass].append('ss')
     if 'cz' in needed:
         currClasses = db.session.query(models.Class).filter_by(cz=1).all()
         for currClass in currClasses:

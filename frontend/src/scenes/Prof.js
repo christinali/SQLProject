@@ -7,18 +7,22 @@ class Prof extends Component {
     constructor() {
         super();
         this.state = {
+            currID: 0,
             currProf: [],
             profComms: [],
         }
-
     }
 
     componentDidMount() {
-        this.getProfInfo()
+        this.setState({
+            currID: this.props.currProf,
+        })
+        this.getProfInfo(this.props.currProf)
     }
 
-    getProfInfo() {
-        axios.get('http://localhost:5000/get-prof-info?prof_id=' + 1863664) //replace with this.props.currProf
+    getProfInfo(currID) {
+        console.log(this.props.id);
+        axios.get('http://localhost:5000/get-prof-info?prof_id=' + currID) //replace with this.props.currProf
             .then(res => {
                 this.setState({
                   currProf: res.data,

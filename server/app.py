@@ -635,6 +635,19 @@ def getProfInfo():
     toReturn = {'name': name}
     allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
     profList.sort(key=lambda y: y['overall'] - y['difficulty'], reverse=True)
+
+    ret = []
+    real = []
+    for dic in profList:
+        for dics in ret:
+            if dics['extra'] == (dic['dept']+dic['num']+dic['name']):
+                break
+        else:
+            new_dic = {'extra': (dic['dept']+dic['num']+dic['name'])}
+            ret.append(new_dic)
+            real.append(dic)
+    profList = real
+    
     nextSemClasses = []
     for classObj in profList:
         if (classObj['semester'] == '2019 Spring Term'):

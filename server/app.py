@@ -712,6 +712,20 @@ def getAllClasses():
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
+        # cz,ss,cci,alp,ns,qs,ei,fl,r,sts,w
+        classList[i]['cz'] = eachClass.cz
+        classList[i]['ss'] = eachClass.ss
+        classList[i]['cci'] = eachClass.cci
+        classList[i]['alp'] = eachClass.alp
+        classList[i]['ns'] = eachClass.ns
+        classList[i]['qs'] = eachClass.qs
+        classList[i]['ei'] = eachClass.ei
+        classList[i]['fl'] = eachClass.fl
+        classList[i]['r'] = eachClass.r
+        classList[i]['sts'] = eachClass.sts
+        classList[i]['w'] = eachClass.w
+
+
         i+=1
     return jsonify(classList)
 

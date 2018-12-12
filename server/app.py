@@ -25,6 +25,25 @@ lastIds = [i for i in range(10)]
 def dontReach():
     return '"DONT REACH" - Feroze'
 
+@app.route('/get-user-classes', methods=['GET'])
+def getUserClasses():
+    user_id = request.args.get('user_id')
+    allClasses = list()
+    if (user_id):
+        taken = db.session.query(models.Taken).filter_by(student_id=user_id).all()
+        for eachTaken in taken:
+            classes = db.session.query(models.Class).filter_by(student_id=user_id).all()
+            for eachClass in classes:
+                print(eachClass)
+    return "3"
+                # allClasses.add({"name" eachClass.name, "id": eachClass.class_id,
+                #  "dept": eachClass.department_id, "class_num": eachClass.class_num})
+
+
+
+
+
+
 @app.route('/longclasses', methods=['GET'])
 def longclasses():
     with open('/Users/moboyle769/Documents/compsci316/project/sqlproject/classes.csv') as csv_file:
@@ -81,7 +100,7 @@ def getAllDepartments():
 def getId():
     email = request.args.get('email')
     if (email):
-        return emailToId(email)
+        return jsonify(emailToId(email))
 
 def emailToId(email):
     ids = db.session.query(models.Student).filter_by(email=email).all()
@@ -748,6 +767,8 @@ def getReviews():
     class_id = request.args.get('class_id')
     if (class_id):
         return jsonify(getAllReviews())
+
+
 
 @app.route('/reviews/upvote', methods=['GET', 'POST'])
 def upvote():

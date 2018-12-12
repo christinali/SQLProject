@@ -21,8 +21,6 @@ class GetInfo extends React.Component {
             searchCat: 'classname' //default to searching by class name
         }
 
-        this.getAllClasses();
-        this.getAllProfs();
     }
 
     componentDidMount() {
@@ -31,6 +29,8 @@ class GetInfo extends React.Component {
         })
         this.getTReqs(this.props.email);
         this.getMajors(this.props.email);
+        this.getAllClasses();
+        this.getAllProfs();
     }
 
     getTReqs(email) {

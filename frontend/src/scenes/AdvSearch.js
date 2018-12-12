@@ -98,11 +98,12 @@ class AdvSearch extends React.Component {
               }
               if (this.state.searchDept != '') {
                 return (c.name.toLowerCase().includes(result.toLowerCase()) && (c.dept.toLowerCase() === this.state.searchDept.toLowerCase())
-                  && (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)) && (hasRightTreqs === 1));
+                  && (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff))
+                    && (parseFloat(c.overall) != 0 && parseFloat(c.difficulty) != 0) && (hasRightTreqs === 1));
               }
               else {
                 return (c.name.toLowerCase().includes(result.toLowerCase()) && (parseFloat(c.overall) >= parseFloat(this.state.minOvr))
-                  && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)) && (hasRightTreqs === 1));
+                  && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)) && (parseFloat(c.overall) != 0 && parseFloat(c.difficulty) != 0) && (hasRightTreqs === 1));
               }
             })
             this.setState({
@@ -139,11 +140,11 @@ class AdvSearch extends React.Component {
                 let temp = c.dept.toLowerCase() + c.num;
                 if (this.state.searchDept != '') {
                   return (temp.includes(result.toLowerCase()) && (c.dept.toLowerCase() === this.state.searchDept.toLowerCase()) && (parseFloat(c.overall) >= parseFloat(this.state.minOvr))
-                    && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)) && (hasRightTreqs === 1));
+                    && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)) && (parseFloat(c.overall) != 0 && parseFloat(c.difficulty) != 0) && (hasRightTreqs === 1));
                 }
                 else {
                   return (temp.includes(result.toLowerCase())&& (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff))
-                    && (hasRightTreqs === 1));
+                    && (parseFloat(c.overall) != 0 && parseFloat(c.difficulty) != 0) && (hasRightTreqs === 1));
                 }
               }
             })
@@ -416,7 +417,7 @@ class AdvSearch extends React.Component {
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
                           if (this.state.searchCat === 'classname' || this.state.searchCat === 'classid') {
-                            return <div className = "SearchClasses"> <button className = "SearchClasses" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name} </button> overall: {c.overall}, diff: {c.difficulty}, treqs: {this.parseTreqs(c)}</div>
+                            return <div className = "SearchClasses"> <button className = "SearchClasses" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> overall: {c.overall}, diff: {c.difficulty}, treqs: {this.parseTreqs(c)}</div>
                           }
                           else {
                             return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.professor_id)}> {c.name} </button>

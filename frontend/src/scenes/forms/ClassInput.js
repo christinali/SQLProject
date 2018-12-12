@@ -47,7 +47,7 @@ export default class ClassInput extends React.Component {
 
     let ret = '';
     ret += 'user_id=' + fieldValues.user_id + '&' + 'dept=' + gg.major + '&' + 'class_num=' + gg.class + '&' +  'semester=' + gg.year + ' '
-      + gg.semester + ' Term' + '&' + 'star_number=' + gg.overall + '&' + "difficulty=" + gg.difficulty;
+      + gg.semester + ' Term' + '&' + 'star_number=' + gg.overall + '&' + "difficulty=" + gg.difficulty + '&' + 'comment=' + gg.review;
 
     axios.post('http://localhost:5000/add-class?' + ret)
         .then(res => {

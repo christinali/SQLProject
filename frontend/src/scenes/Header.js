@@ -24,6 +24,9 @@ const Header = (props) => {
 			</NavItem>: <NavItem eventKey={1} href="#" onClick={props.homePage}>
 				About Us
 			</NavItem>}
+			{props.loggedin && <NavItem eventKey={1} href="#" onClick={props.me}>
+				Me
+			</NavItem>}
 			{props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.advanceSearchPage}>
 				Advanced Search
 			</NavItem>: <NavItem eventKey={1} href="#" onClick={props.advanceSearchPage}>

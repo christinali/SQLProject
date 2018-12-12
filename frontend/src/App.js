@@ -12,7 +12,7 @@ import Prof from './scenes/Prof';
 import AllRecs from './scenes/AllRecs';
 import AdvSearch from './scenes/AdvSearch';
 import axios from 'axios';
-
+import Me from './scenes/Me'
 import './styles/app.css';
 import './styles/login.css';
 import './styles/getInfo.css';
@@ -66,9 +66,10 @@ class App extends Component {
     return (
         <div className={name}>
             <Header headerText={this.state.headerText}
+              advanceSearchPage={() => this.setState({screen:6})} loggedin={this.state.screen}
               logout={() => this.setState({screen:0})} loggedin={this.state.screen}
               homePage={() => this.setState({screen:1})} loggedin={this.state.screen}
-              advanceSearchPage={() => this.setState({screen:6})} loggedin={this.state.screen}
+              me={() => this.setState({screen:7})} loggedin={this.state.screen}
               fullRecPage={() => this.setState({screen:5})} loggedin={this.state.screen}
             />
             {(()=> {
@@ -112,6 +113,10 @@ class App extends Component {
                             changeProf={prof => this.setState({screen: 4, currProf: prof})}
                             changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
                             />;
+                case 7:
+                  return <Me
+                            email={this.state.email}
+                        />;
                 default:
                   return null;
               }

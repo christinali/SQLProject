@@ -243,7 +243,7 @@ def addClass():
         class_id = id.class_id
     difficulty = float(request.args.get('difficulty'))
     if (user_id and class_id and semester and star_number and difficulty):
-        if not comment:
+        if comment == '' or not comment:
             newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,difficulty=difficulty)
         else:
             comment_id = createComment(comment, user_id)

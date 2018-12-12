@@ -124,7 +124,7 @@ def createUser():
         db.session.add(newUser)
         db.session.commit()
         lastIds[year]+=10
-        return lastIds
+        return lastIds[year]
     return "Need to give name, user, year, and major, but not all inputs were given"
 
 @app.route('/feroze-create-user', methods=['GET', 'POST'])

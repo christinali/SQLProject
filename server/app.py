@@ -851,14 +851,10 @@ def getProfInfo():
     allComments.sort(key=lambda x: x['up'] - x['down'], reverse=True)
     profList.sort(key=lambda y: y['overall'] - y['difficulty'], reverse=True)
 
-<<<<<<< HEAD
-
     # the below removes duplicates from profList
-=======
     ret = []
     real = []
 
->>>>>>> 19a099ff175c2023f890bc0b0fe1dac937da1d45
     for dic in profList:
         for dics in ret:
             if dics['extra'] == (dic['dept']+dic['num']+dic['name']):
@@ -868,17 +864,12 @@ def getProfInfo():
             ret.append(new_dic)
             real.append(dic)
     profList = real
-<<<<<<< HEAD
 
     tempproflist = []
-=======
     overall = totalOverall / (max(totalReviews, 1))
     difficulty = totalDifficulty / (max(totalReviews, 1))
-
-
->>>>>>> 19a099ff175c2023f890bc0b0fe1dac937da1d45
     nextSemClasses = []
-    for classObj in tempprofList:
+    for classObj in profList:
         if (classObj['semester'] == '2019 Spring Term'):
             nextSemClasses.append(classObj)
         else:

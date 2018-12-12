@@ -20,7 +20,8 @@ class AdvSearch extends React.Component {
             resultOut: [],
             searchCat: 'classname', //default to searching by class name
             searchDept: '',
-            searchTreqs: ''
+            searchAOKs: [],
+            searchMOIs: []
         }
 
         this.getAllClasses();
@@ -83,12 +84,25 @@ class AdvSearch extends React.Component {
         if (this.state.searchCat === 'classname') {
             let resultCopy = this.state.allClasses;
             resultCopy = this.state.allClasses.filter(c => {
+              var tReqs = this.parseTreqs(c);
+              var hasRightTreqs = 1;
+              for (var i = 0; i < this.state.searchAOKs.length; i++) {
+                if (!(tReqs.toLowerCase().includes(this.state.searchAOKs[i].toLowerCase()))) {
+                  hasRightTreqs = 0;
+                }
+              }
+              for (var i = 0; i < this.state.searchMOIs.length; i++) {
+                if (!(tReqs.toLowerCase().includes(this.state.searchMOIs[i].toLowerCase()))) {
+                  hasRightTreqs = 0;
+                }
+              }
               if (this.state.searchDept != '') {
                 return (c.name.toLowerCase().includes(result.toLowerCase()) && (c.dept.toLowerCase() === this.state.searchDept.toLowerCase())
-                  && (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)));
+                  && (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)) && (hasRightTreqs === 1));
               }
               else {
-                return (c.name.toLowerCase().includes(result.toLowerCase()) && (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)));
+                return (c.name.toLowerCase().includes(result.toLowerCase()) && (parseFloat(c.overall) >= parseFloat(this.state.minOvr))
+                  && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)) && (hasRightTreqs === 1));
               }
             })
             this.setState({
@@ -99,7 +113,8 @@ class AdvSearch extends React.Component {
         else if (this.state.searchCat === 'prof') {
             let resultCopy = this.state.allProfs;
             resultCopy = this.state.allProfs.filter(c => {
-              return (c.name.toLowerCase().includes(result.toLowerCase()) && (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)));
+              return (c.name.toLowerCase().includes(result.toLowerCase()) && (parseFloat(c.overall) >= parseFloat(this.state.minOvr))
+                && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)));
             })
             this.setState({
               query: result,
@@ -109,13 +124,27 @@ class AdvSearch extends React.Component {
         else if (this.state.searchCat === 'classid') {
             let resultCopy = this.state.allClasses;
             resultCopy = this.state.allClasses.filter(c => {
+              var tReqs = this.parseTreqs(c);
+              var hasRightTreqs = 1;
+              for (var i = 0; i < this.state.searchAOKs.length; i++) {
+                if (!(tReqs.toLowerCase().includes(this.state.searchAOKs[i].toLowerCase()))) {
+                  hasRightTreqs = 0;
+                }
+              }
+              for (var i = 0; i < this.state.searchMOIs.length; i++) {
+                if (!(tReqs.toLowerCase().includes(this.state.searchMOIs[i].toLowerCase()))) {
+                  hasRightTreqs = 0;
+                }
+              }
               if (c.dept && c.num) {
                 let temp = c.dept.toLowerCase() + c.num;
                 if (this.state.searchDept != '') {
-                  return (temp.includes(result.toLowerCase()) && (c.dept.toLowerCase() === this.state.searchDept.toLowerCase())&& (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)));
+                  return (temp.includes(result.toLowerCase()) && (c.dept.toLowerCase() === this.state.searchDept.toLowerCase()) && (parseFloat(c.overall) >= parseFloat(this.state.minOvr))
+                    && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)) && (hasRightTreqs === 1));
                 }
                 else {
-                  return (temp.includes(result.toLowerCase())&& (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff)));
+                  return (temp.includes(result.toLowerCase())&& (parseFloat(c.overall) >= parseFloat(this.state.minOvr)) && (parseFloat(c.difficulty) <= parseFloat(this.state.maxDiff))
+                    && (hasRightTreqs === 1));
                 }
               }
             })
@@ -124,6 +153,47 @@ class AdvSearch extends React.Component {
               resultOut: resultCopy,
             })
         }
+    }
+
+    parseTreqs(array) {
+      let res = '';
+      var i;
+      if (array) {
+          if (array.alp === 1) {
+            res += 'ALP '
+          }
+          if (array.cci === 1) {
+            res += 'CCI '
+          }
+          if (array.cz === 1) {
+            res += 'CZ '
+          }
+          if (array.ei === 1) {
+            res += 'EI '
+          }
+          if (array.fl === 1) {
+            res += 'FL '
+          }
+          if (array.ns === 1) {
+            res += 'NS '
+          }
+          if (array.qs === 1) {
+            res += 'QS '
+          }
+          if (array.r === 1) {
+            res += 'R '
+          }
+          if (array.sss === 1) {
+            res += 'SS '
+          }
+          if (array.sts === 1) {
+            res += 'STS '
+          }
+          if (array.w === 1) {
+            res += 'W '
+          }
+      }
+      return res;
     }
 
     changeCat = (newValue: any) => {
@@ -179,6 +249,42 @@ class AdvSearch extends React.Component {
       }
     }
 
+    changeAOKs = (newValue) => {
+      if (newValue) {
+          var res = [];
+          for (var i = 0; i < newValue.length; i++) {
+              res.push(newValue[i].value)
+          }
+          console.log(res);
+          this.setState ({
+            searchAOKs: res,
+          }, () => this.peruse(this.state.query))
+      }
+      else {
+          this.setState ({
+            searchAOKS: []
+          })
+      }
+    }
+
+    changeMOIs = (newValue) => {
+      if (newValue) {
+          var res = [];
+          for (var i = 0; i < newValue.length; i++) {
+              res.push(newValue[i].value)
+          }
+          console.log(res);
+          this.setState ({
+            searchMOIs: res,
+          }, () => this.peruse(this.state.query))
+      }
+      else {
+          this.setState ({
+            searchMOIs: []
+          })
+      }
+    }
+
     render() {
         const currClass = this.state.currClass;
         const currProf = this.state.currProf;
@@ -219,20 +325,20 @@ class AdvSearch extends React.Component {
         ];
 
         const aokOptions = [
-          { value: 'alp', label: 'ALP' },
-          { value: 'cz', label: 'CZ' },
-          { value: 'ns', label: 'NS' },
-          { value: 'qs', label: 'QS' },
-          { value: 'ss', label: 'SS' }
+          { value: 'ALP', label: 'ALP' },
+          { value: 'CZ', label: 'CZ' },
+          { value: 'NS', label: 'NS' },
+          { value: 'QS', label: 'QS' },
+          { value: 'SS', label: 'SS' }
         ];
 
         const moiOptions = [
-          { value: 'cci', label: 'CCI' },
-          { value: 'ei', label: 'EI' },
-          { value: 'sts', label: 'STS' },
-          { value: 'fl', label: 'FL' },
-          { value: 'w', label: 'W' },
-          { value: 'r', label: 'R' }
+          { value: 'CCI', label: 'CCI' },
+          { value: 'EI', label: 'EI' },
+          { value: 'STS', label: 'STS' },
+          { value: 'FL', label: 'FL' },
+          { value: 'W', label: 'W' },
+          { value: 'R', label: 'R' }
         ];
 
         const defaultPrimary = [
@@ -274,6 +380,7 @@ class AdvSearch extends React.Component {
                             className = "basic-multi-select"
                             classNamePrefix = "select"
                             placeholder = "Areas of Knowledge"
+                            onChange = {this.changeAOKs}
                           />
                         </div>
                         <div className = "filter2">
@@ -283,6 +390,7 @@ class AdvSearch extends React.Component {
                             className = "basic-multi-select"
                             classNamePrefix = "select"
                             placeholder = "Modes of Inquiry"
+                            onChange = {this.changeMOIs}
                           />
                         </div>
                         <div className = "filter1">
@@ -305,7 +413,7 @@ class AdvSearch extends React.Component {
                       {this.state.resultOut.map((c, i) => {
                         if (this.state.query.length > 0) {
                           if (this.state.searchCat === 'classname' || this.state.searchCat === 'classid') {
-                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}; overall: {c.overall} diff: {c.difficulty}</button>
+                            return <button className = "SearchClass" key={i} onClick={() => this.props.changeClass(c.id)}> {c.dept}{c.num} - {c.name}; overall: {c.overall}, diff: {c.difficulty}, treqs: {this.parseTreqs(c)}</button>
                           }
                           else {
                             return <button className = "SearchProf" key={i} onClick={() => this.props.changeProf(c.id)}> {c.name} </button>

@@ -155,7 +155,6 @@ class GetInfo extends React.Component {
                 <div className = 'Top3Recs'>
                     <div className = 'RecsTopRow'>
                         <h1> Top Treq Classes </h1>
-                        <div className = 'RecsTopRowRemaining'> Remaining TReqs: 2 CCI, NS, FL </div>
                     </div>
                     <div className = 'ReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
                         {Treqs ? Treqs[0] && <div className = 'ReqsComp'>

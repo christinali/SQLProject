@@ -46,7 +46,7 @@ class App extends Component {
   //4 = ProfInfo
   //5 = All Recs
   //6 = Adv Search
-  state = {screen:3, email: '', currProf: null, currClass: null, headerText: '(Insert Title Here)'}
+  state = {screen:3, email: '', currProf: 0, currClass: 0, headerText: '(Insert Title Here)'}
 
   render() {
     if (this.state.screen == 0 || this.state.screen == 2) {
@@ -83,10 +83,12 @@ class App extends Component {
                 case 3:
                   return <Class
                             changeProf={prof => this.setState({screen: 4, currProf: prof})}
+                            currClass = {this.state.currClass}
                             />;
                 case 4:
                   return <Prof
                             changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            currProf={this.state.currProf}
                             />;
                 case 5:
                   return <AllRecs

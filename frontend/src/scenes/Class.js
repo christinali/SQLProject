@@ -7,6 +7,7 @@ class Class extends Component {
     constructor() {
         super();
         this.state = {
+            currID: 513,
             currClass: [],
             classComms: [],
         }
@@ -14,11 +15,14 @@ class Class extends Component {
     }
 
     componentDidMount() {
-        this.getClassInfo()
+        this.setState({
+            currID: this.props.currClass,
+        })
+        this.getClassInfo(this.props.currClass)
     }
 
-    getClassInfo() {
-        axios.get('http://localhost:5000/get-class-info?class_id=' + 513) //this.props.currClass
+    getClassInfo(currID) {
+        axios.get('http://localhost:5000/get-class-info?class_id=' + currID) //this.props.currClass
             .then(res => {
                 this.setState({
                   currClass: res.data,
@@ -73,7 +77,7 @@ class Class extends Component {
                             <div className = "profInfo">
                                 {currClass.nextSemProfs && currClass.nextSemProfs.map((c, i) => {
                                   if (c) {
-                                    return <p onClick={() => this.props.changeProf(c.prof_id)}> {c.prof_name} </p>
+                                    return <button className = "classOffers" onClick={() => this.props.changeProf(c.prof_id)}> {c.prof_id} {c.prof_name} </button>
                                   }
                                 })}
                             </div>

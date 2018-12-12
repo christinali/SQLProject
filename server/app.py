@@ -115,6 +115,13 @@ def createUser():
     email = request.args.get('email')
     year = request.args.get('year')
     major = request.args.get('major')
+    print("WORD \n\n\n\n\n\n\n")
+    print(name)
+    print(email)
+    print(year)
+    print(major)
+    print("WORD2 \n\n\n\n\n\n\n")
+
     year = year[-1]
     year = int(year)
     if (year == 0):

@@ -158,7 +158,7 @@ class GetInfo extends React.Component {
                         <div className = 'RecsTopRowRemaining'> Remaining TReqs: 2 CCI, NS, FL </div>
                     </div>
                     <div className = 'ReqsAll'style={{display: 'flex', flexDirection: 'row'}}>
-                        {Treqs && Treqs[0] && <div className = 'ReqsComp'>
+                        {Treqs ? Treqs[0] && <div className = 'ReqsComp'>
                             <button className = "classTitle" onClick={() => this.props.changeClass(Treqs[0].id)}> {Treqs[0].dept}{Treqs[0].num} {Treqs[0].name != null ? String(Treqs[0].name).replace("\\u0026", "&") : null} </button>
                             <br/>
                             <h3> Overall:
@@ -180,7 +180,7 @@ class GetInfo extends React.Component {
                                   /> : <h3> No rating yet </h3> }
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Treqs[0].satisfiesNeeded)} </h4>
-                        </div>}
+                        </div> : <p style={{marginTop: '2%'}}>Running algorithm to find your best t-reqs...</p>}
 
                         {Treqs && Treqs[1] && <div className = 'ReqsComp'>
                             <button className = "classTitle" onClick={() => this.props.changeClass(Treqs[1].id)}> {Treqs[1].dept}{Treqs[1].num} {Treqs[1].name != null ? String(Treqs[1].name).replace("\\u0026", "&") : null} </button>
@@ -227,7 +227,7 @@ class GetInfo extends React.Component {
                                       starRatedColor="#FF8C00"
                                   /> : <h3> No rating yet </h3> }
                             </h3>
-                            <h4> Treqs Satisfied: {this.splitTreqs(Treqs[2].satisfiesNeeded)} </h4>
+                            // <h4> Treqs Satisfied: {this.splitTreqs(Treqs[2].satisfiesNeeded)} </h4>
                         </div>}
                     </div>
                     <div className = "RecsBotRow">

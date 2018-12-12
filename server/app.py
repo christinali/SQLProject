@@ -157,8 +157,8 @@ def getClasses():
 def getRecommendedMajorClasses():
     user_id = request.args.get('user_id')
     major = findUserMajor(user_id)
-    department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
-    classesInMajor = db.session.query(models.Class).filter_by(department_id=department_id).all()
+    # department_id = db.session.query(models.Department).filter_by(department_id=major).first().department_id
+    classesInMajor = db.session.query(models.Class).filter_by(department_id=major).all()
     classList = list()
     takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
     haveTaken = set()
@@ -170,6 +170,9 @@ def getRecommendedMajorClasses():
             continue
         classList.append(dict())
         classList[i]['dept'] = major
+        print(eachClass.class_id)
+
+        print("\n\n\n\n\n")
         classList[i]['overall'] = round(getRating(eachClass.class_id),2)
         classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
         classList[i]['name'] = eachClass.name
@@ -215,7 +218,7 @@ def getAllMajors():
     return jsonify(majors)
 
 def getRating(class_id):
-    teachTuples = db.session.query(models.Teaches).filter_by(class_id=class_id).all()
+    teachTuples = db.session.query(models.Teaches).filter(models.Teaches.class_id == class_id).all()
     totalReviews = 0
     totalScore = 0
     for teach in teachTuples:
@@ -400,12 +403,12 @@ def gettreqs():
     takenAlready = db.session.query(models.Taken).filter_by(student_id=user_id).all()
     classList = list()
     haveTaken = set()
-    similarList = dict()
-    for taken in takenAlready:
-        haveTaken.add(taken.class_id)
-        others = db.session.query(models.Taken).filter(models.Taken.student_id != user_id ).all()
-        for other in others:
-            similarList[other.student_id] += (other.star_number-3)*(taken.star_number-3)
+    # similarList = dict()
+    # for taken in takenAlready:
+    #     haveTaken.add(taken.class_id)
+    #     others = db.session.query(models.Taken).filter(models.Taken.student_id != user_id ).all()
+    #     for other in others:
+    #         similarList[other.student_id] += (other.star_number-3)*(taken.star_number-3)
     i = 0
     for _,eachClass in enumerate(classesWithReqs.keys()):
         if eachClass.class_id in haveTaken:
@@ -477,7 +480,7 @@ def getClassesInMajor():
     for _,eachClass in enumerate(classesInMajor):
         classList.append(dict())
         classList[i]['dept'] = major
-        classList[i]['overall'] = round(getRating(eachClass.class_id),2)
+        classList[i]['overall'] = getRating(eachClass.class_id)
         classList[i]['difficulty'] = round(getDifficulty(eachClass.class_id),2)
         classList[i]['name'] = eachClass.name
         classList[i]['id'] = eachClass.class_id

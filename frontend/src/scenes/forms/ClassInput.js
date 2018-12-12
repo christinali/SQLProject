@@ -43,12 +43,12 @@ export default class ClassInput extends React.Component {
                 'comment_id': gg.review,
     };*/
     let ret = '';
-    ret += 'user_id=' + fieldValues.user_id + '&' + 'dept=' + gg.major + 'num=' + gg.class + 'semester=' + gg.year + ' '
+    ret += 'user_id=' + fieldValues.user_id + '&' + 'dept=' + gg.major + 'class_num=' + gg.class + 'semester=' + gg.year + ' '
       + gg.semester + ' Term' + '&' + 'star_number=' + gg.overall + '&' + "difficulty=" + gg.difficulty;
 
     console.log(ret);
 
-    axios.post('http://localhost:5000/feroze-add-class', ret)
+    axios.post('http://localhost:5000/add-class?' + ret)
         .then(res => {
             console.log(res.data);
         })
@@ -71,10 +71,10 @@ export default class ClassInput extends React.Component {
     const majors = this.state.majors;
     axios.get('http://localhost:5000/get-classes-in-major?major=' + this.state.main.major)
         .then(res => {
-            console.log(res.data);
             this.setState({classes: res.data});
         })
         .catch(e => console.log(e))
+        
     const classes = this.state.classes;
     return(
       <div className="Login">

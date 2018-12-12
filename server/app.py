@@ -32,12 +32,11 @@ def getUserClasses():
     if (user_id):
         taken = db.session.query(models.Taken).filter_by(student_id=user_id).all()
         for eachTaken in taken:
-            classes = db.session.query(models.Class).filter_by(student_id=user_id).all()
+            classes = db.session.query(models.Class).filter_by(class_id=eachTaken.class_id).all()
             for eachClass in classes:
-                print(eachClass)
-    return "3"
-                # allClasses.add({"name" eachClass.name, "id": eachClass.class_id,
-                #  "dept": eachClass.department_id, "class_num": eachClass.class_num})
+                allClasses.append({"name": eachClass.name, "id": eachClass.class_id,
+                 "dept": eachClass.department_id, "class_num": eachClass.class_num})
+    return jsonify(allClasses)
 
 
 
@@ -140,24 +139,58 @@ def createFeroze():
         return "1"
     return "0"
 
+# @app.route('/add-class', methods=['GET', 'POST'])
+# def addClass():
+#     user_id = request.args.get('user_id')
+#     class_id = request.args.get('class_id')
+#     semester = request.args.get('semester')
+#     star_number = request.args.get('star_number')
+#     comment_id = request.args.get('comment_id')
+#     difficulty = request.args.get('difficulty')
+#     print(user_id)
+#     print(class_id)
+#     print(department_id)
+#     print(semester)
+#     print(start_number)
+#     print(difficulty)
+#     print("\n\n\n\n\n\n")
+    # if (user_id and class_id and department_id and semester and star_number and difficulty):
+    #     print(user_id)
+    #     print(class_id)
+    #     print(department_id)
+    #     print(semester)
+    #     print(start_number)
+    #     print(difficulty)
+    #     print("\n\n\n\n\n\n")
+    #
+    #     if not comment_id:
+    #         newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty)
+    #     else:
+    #         newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty,comment_id=comment_id)
+    #     db.session.add(newTaken)
+    #     db.session.commit()
+    #     print("YEAH\n\n\n\n\n")
+    #     return "Success!"
+    # print("NOPE\n\n\n\n")
+    # return "Failure"
+
 @app.route('/add-class', methods=['GET', 'POST'])
 def addClass():
-    user_id = request.args.get('user_id')
-    class_id = request.args.get('class_id')
-    department_id = db.session.query(models.Class).select(class_id=class_id).first().department_id
+    user_id = int(request.args.get('user_id'))
+    class_id = int(request.args.get('class_id'))
     semester = request.args.get('semester')
-    star_number = request.args.get('star_number')
+    star_number = float(request.args.get('star_number'))
     comment_id = request.args.get('comment_id')
-    difficulty = request.args.get('difficulty')
-    if (user_id and class_id and department_id and semester and star_number and difficulty):
+    difficulty = float(request.args.get('difficulty'))
+    if (user_id and class_id and semester and star_number and difficulty):
         if not comment_id:
-            newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty)
+            newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,difficulty=difficulty)
         else:
             newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty,comment_id=comment_id)
         db.session.add(newTaken)
         db.session.commit()
         return "Success!"
-    return "Failure"
+    return "Need to give name, user, year, and major, but not all inputs were given"
 
 @app.route('/feroze-add-class', methods=['GET', 'POST'])
 def addFakeClass():

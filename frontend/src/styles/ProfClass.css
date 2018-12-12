@@ -117,6 +117,7 @@
 .reviewInfo {
   width: 20%;
   float: left;
+  padding-right: 2px;
   position:relative;
   text-align:center;
   margin-right: 10px;

@@ -100,7 +100,7 @@ class Prof extends Component {
                                   <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
                               </div>
                               <div className = "reviewTarget">
-                                  <h4> <strong>Class: </strong>{c.dept}{c.num} - <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
+                                  <h4> <strong>Class: </strong> <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
                                   <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
                               </div>
                               <div className = "reviewContent">
@@ -113,11 +113,11 @@ class Prof extends Component {
                       else {
                         return <div className = "botRow2">
                             <div className = "reviewInfo">
-                                <h3> <strong>Overall: </strong>{c.overall} </h3>
-                                <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
+                                <h3> <strong>Overall: </strong> {c.overall} </h3>
+                                <h3> <strong>Difficulty: </strong> {c.difficulty} </h3>
                             </div>
                             <div className = "reviewTarget">
-                                <h4> <strong>Class: </strong>{c.dept}{c.num} - <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
+                                <h4> <strong>Class: </strong> <button className="revProf" onClick={() => this.props.changeClass(c.class_id)}> {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button> </h4>
                                 <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
                             </div>
                             <div className = "reviewContent">

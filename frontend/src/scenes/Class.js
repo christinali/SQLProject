@@ -102,8 +102,24 @@ class Class extends Component {
                         if (i % 2) {
                           return <div className = "botRow">
                               <div className = "reviewInfo">
-                                  <h3> <strong>Overall: </strong>{c.overall} </h3>
-                                  <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
+                                  <h3> <strong>Overall: </strong>
+                                      {c.overall != 0 ?
+                                        <StarRatings
+                                            rating={c.overall}
+                                            starDimension="22px"
+                                            starSpacing="3px"
+                                            starRatedColor="#FF8C00"
+                                        /> : <h4> No rating yet! </h4> }
+                                  </h3>
+                                  <h3> <strong>Difficulty: </strong>
+                                      {c.difficulty != 0 ?
+                                        <StarRatings
+                                            rating={c.difficulty}
+                                            starDimension="22px"
+                                            starSpacing="3px"
+                                            starRatedColor="#FF8C00"
+                                        /> : <h4> No rating yet! </h4> }
+                                  </h3>
                               </div>
                               <div className = "reviewTarget">
                                   <h4>  <strong>Prof: </strong><button className = "revProf" onClick={() => this.props.changeProf(c.prof_id)}> {c.prof} </button> </h4>
@@ -119,11 +135,27 @@ class Class extends Component {
                         else {
                           return <div className = "botRow2">
                               <div className = "reviewInfo">
-                                  <h3> <strong>Overall: </strong>{c.overall} </h3>
-                                  <h3> <strong>Difficulty: </strong>{c.difficulty} </h3>
+                                  <h3> <strong>Overall: </strong>
+                                      {c.overall != 0 ?
+                                        <StarRatings
+                                            rating={c.overall}
+                                            starDimension="22px"
+                                            starSpacing="3px"
+                                            starRatedColor="#FF8C00"
+                                        /> : <h4> No rating yet! </h4> }
+                                  </h3>
+                                  <h3> <strong>Difficulty: </strong>
+                                      {c.difficulty != 0 ?
+                                        <StarRatings
+                                            rating={c.difficulty}
+                                            starDimension="22px"
+                                            starSpacing="3px"
+                                            starRatedColor="#FF8C00"
+                                        /> : <h4> No rating yet! </h4> }
+                                  </h3>
                               </div>
                               <div className = "reviewTarget">
-                                  <h4>  <strong>Prof: </strong><button className = "revProf" onClick={() => this.props.changeProf(c.prof_id)}> {c.prof} </button> </h4>
+                                  <h4> <strong>Prof: </strong><button className = "revProf" onClick={() => this.props.changeProf(c.prof_id)}> {c.prof} </button> </h4>
                                   <h4> <strong>Semester Taken: </strong>{c.semester} </h4>
                               </div>
                               <div className = "reviewContent">

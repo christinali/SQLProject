@@ -109,20 +109,22 @@ class AllRecs extends React.Component {
                               <button className = "classTitle" onClick={() => this.props.changeClass(c.id)}> ({i+1}) {c.dept}{c.num} - {c.name != null ? String(c.name).replace("\\u0026", "&") : null} </button>
                               <br/>
                               <h3> Overall:
-                                  <StarRatings
-                                      rating={c.overall}
-                                      starDimension="22px"
-                                      starSpacing="3px"
-                                      starRatedColor="#FF8C00"
-                                  />
+                                  {c.overall != 0 ?
+                                    <StarRatings
+                                        rating={c.overall}
+                                        starDimension="22px"
+                                        starSpacing="3px"
+                                        starRatedColor="#FF8C00"
+                                    /> : <h4> No rating yet! </h4> }
                               </h3>
                               <h3> Difficulty:
-                                  <StarRatings
-                                      rating={c.difficulty}
-                                      starDimension="22px"
-                                      starSpacing="3px"
-                                      starRatedColor="#FF8C00"
-                                  />
+                                  {c.difficulty != 0 ?
+                                    <StarRatings
+                                        rating={c.difficulty}
+                                        starDimension="22px"
+                                        starSpacing="3px"
+                                        starRatedColor="#FF8C00"
+                                    /> : <h4> No rating yet! </h4> }
                               </h3>
                               <h4> Treqs Satisfied: {this.splitTreqs(c.satisfiesNeeded)} </h4>
                             </div>

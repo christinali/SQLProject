@@ -43,9 +43,10 @@ export default class ClassInput extends React.Component {
                 'comment_id': gg.review,
     };*/
     let ret = '';
-    ret += 'user_id=' + fieldValues.user_id + '&' + 'SHIT HERE' + 'semester=' + gg.year + ' ' + gg.semester + ' Term' + '&'
-      + 'star_number=' + gg.overall + '&' + "difficulty=" + gg.difficulty;
+    ret += 'user_id=' + fieldValues.user_id + '&' + 'dept=' + gg.major + 'num=' + gg.class + 'semester=' + gg.year + ' '
+      + gg.semester + ' Term' + '&' + 'star_number=' + gg.overall + '&' + "difficulty=" + gg.difficulty;
 
+    console.log(ret);
 
     axios.post('http://localhost:5000/feroze-add-class', ret)
         .then(res => {

@@ -33,7 +33,7 @@ class Comment(db.Model):
     text = db.Column('text', db.String(10000))
     upvotes = db.Column('upvotes', db.Integer)
     downvotes = db.Column('downvotes', db.Integer)
-    student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.studentID'))
+    student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.student_id'))
     comment_id = db.Column('comment_id', db.Integer, primary_key=True)
 
 class Department(db.Model):
@@ -47,8 +47,8 @@ class Taken(db.Model):
     semester = db.Column('semester', db.String(4))
     star_number = db.Column("star_number", db.Float)
     comment_id = db.Column("comment_id", db.Integer, nullable=True)
-    student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.studentID'), primary_key=True)
-    class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
+    student_id = db.Column('student_id', db.Integer, db.ForeignKey('student.student_id'), primary_key=True)
+    class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.class_id'), primary_key=True)
     #TODO: This might be broken, idk if you can have a foreign key that is also nullable
     difficulty = db.Column("difficulty", db.Float)
 
@@ -59,8 +59,8 @@ class Professor(db.Model):
 
 class Teaches(db.Model):
     __tablename__ = "teaches"
-    class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.classID'), primary_key=True)
-    professor_id = db.Column('professor_id', db.Integer, db.ForeignKey('professor.professorID'),primary_key=True)
+    class_id = db.Column('class_id', db.Integer, db.ForeignKey('class.class_id'), primary_key=True)
+    professor_id = db.Column('professor_id', db.Integer, db.ForeignKey('professor.professor_id'),primary_key=True)
     semester = db.Column('semester', db.String(100), primary_key=True)
     average_quality = db.Column("average_quality", db.Float)
     average_difficulty = db.Column("average_difficulty", db.Float)

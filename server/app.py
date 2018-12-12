@@ -329,6 +329,13 @@ def getRecommendedMajorClasses():
         classList[i]['id'] = eachClass.class_id
         classList[i]['num'] = eachClass.class_num
         classList[i]['satisfiesNeeded'] = returnAllTreqs(eachClass)
+        classList[i]['similarityScore'] = 0
+        #Will need to get the rest of the code from get-recommended-treqs for this to work
+        # for similarStudent in bestSimilar:
+        #     similarStudentId = similarStudent[0]
+        #     similarReview = db.session.query(models.Taken).filter(models.Taken.class_id == eachClass.class_id).filter(models.Taken.student_id == similarStudentId).first()
+        #     if similarReview:
+        #         classList[i]['similarityScore']+=similarReview.star_number-3
         i+=1
     classList = sorted(classList, key=cmp_to_key(compareClasses))
     return jsonify(classList)

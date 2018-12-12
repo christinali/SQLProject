@@ -183,9 +183,34 @@ def createFeroze():
     # print("NOPE\n\n\n\n")
     # return "Failure"
 
-def createComment():
+def createComment(comment, student_id):
+    allComments = list()
+    comments = db.session.query(models.Comment).all()
+    count = 1
+    for eachComment in comments:
+        count += 1
+    newComment = models.Comment(text=comment,upvotes=0,downvotes=0,student_id=student_id,comment_id=count)
+    db.session.add(newComment)
+    db.session.commit()
+    print(newComment)
+    print(comment)
+    print(student_id)
+    print(count)
+    print("\n\n\n\n\n")
+    return str(count)
+
+@app.route('/get-all-comments', methods=['GET', 'POST'])
+def getAllComments():
     comments = list()
-    classesInMajor = db.session.query(models.Comment).all()
+    allComments = db.session.query(models.Comment).all()
+    for eachComment in allComments:
+        comments.append({'text': eachComment.text, 'upvotes': eachComment.upvotes,
+        'downvotes': eachComment.downvotes, 'student_id': eachComment.student_id,
+        'comment_id': eachComment.comment_id})
+    return jsonify(comments)
+
+
+
 
 
 
@@ -201,15 +226,13 @@ def addClass():
     ids = db.session.query(models.Class).filter(models.Class.department_id==dept_id).filter(models.Class.class_num==num).all()
     for id in ids:
         class_id = id.class_id
-
-
     difficulty = float(request.args.get('difficulty'))
     if (user_id and class_id and semester and star_number and difficulty):
         if not comment:
             newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,difficulty=difficulty)
         else:
-            commentId = createComment(comment)
-            newTaken = models.Taken(semester=semester,star_number=star_number,student_id=user_id,class_id=class_id,department_id=department_id,difficulty=difficulty,comment_id=comment_id)
+            comment_id = createComment(comment, user_id)
+            newTaken = models.Taken(semester=semester,star_number=star_number,comment_id=comment_id,student_id=user_id,class_id=class_id,difficulty=difficulty)
         db.session.add(newTaken)
         db.session.commit()
         return "Success!"
@@ -218,7 +241,6 @@ def addClass():
 @app.route('/feroze-add-class', methods=['GET', 'POST'])
 def addFakeClass():
     req_data = request.get_json()
-
     user_id = req_data['user_id']
     department_id = req_data['dept_id']
     class_num = req_data['class_num']

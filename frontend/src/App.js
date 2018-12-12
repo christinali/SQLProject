@@ -67,7 +67,7 @@ class App extends Component {
         <div className={name}>
             <Header headerText={this.state.headerText}
               advanceSearchPage={() => this.setState({screen:6})} loggedin={this.state.screen}
-              logout={() => this.setState({screen:0})} loggedin={this.state.screen}
+              logout={() => this.setState({screen:0, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'})} loggedin={this.state.screen}
               homePage={() => this.setState({screen:1})} loggedin={this.state.screen}
               me={() => this.setState({screen:7})} loggedin={this.state.screen}
               fullRecPage={() => this.setState({screen:5})} loggedin={this.state.screen}

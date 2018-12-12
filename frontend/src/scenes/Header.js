@@ -1,10 +1,18 @@
 // Import libraries for making a component
 import React from 'react';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, OverlayTrigger, Popover, Button} from 'react-bootstrap';
 
 
 // Make a component
 const navbar = {background: '#f2efe8'};
+const popoverBottom = (
+  <Popover id="popover-positioned-bottom" title="Who are we?">
+    We are a team of students enrolled in CS316: Databases at Duke University,
+		and this is our final project. Many of us were frustrated with ambiguities
+		and uncertainties	in enrolling for courses, so we designed this bookbagging
+		recommender application with students in mind. We hope you find it useful!
+  </Popover>
+);
 const Header = (props) => {
 
 
@@ -35,9 +43,9 @@ const Header = (props) => {
 		<Nav pullRight>
       {props.loggedin ? <NavItem eventKey={1} href="#" onClick={props.logout}>
         Log Out
-      </NavItem>: <NavItem eventKey={1} href="#" onClick={props.logout}>
-        About Us
-      </NavItem>}
+      </NavItem>: <NavItem><OverlayTrigger trigger="click" placement="bottom" overlay={popoverBottom}>
+      <Button>About Us</Button>
+    </OverlayTrigger></NavItem>}
     </Nav>
   </Navbar.Collapse>
 </Navbar>

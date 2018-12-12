@@ -6,6 +6,8 @@ Install PostgreSQL via your Operating System's package manager (brew, apt-get, e
 Run the command `./setup.sh`
 This may take a few minutes as it is loading all the data we have (quite a lot) into a PostgreSQL database. 
 
+To start the frontend server run the following commands:
+
 `cd frontend` 
 
 `npm install`

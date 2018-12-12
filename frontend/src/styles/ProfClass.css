@@ -181,3 +181,15 @@ button.seeAll {
   border: none;
   float: right;
 }
+
+button.revProf {
+  color: blue;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  margin-left: -6px;
+}
+
+.noReviews {
+  text-align: center;
+}

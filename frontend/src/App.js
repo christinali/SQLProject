@@ -46,7 +46,7 @@ class App extends Component {
   //4 = ProfInfo
   //5 = All Recs
   //6 = Adv Search
-  state = {screen:0, email: '', currProf: 0, currClass: 0, headerText: '(Insert Title Here)'}
+  state = {screen:3, email: '', currProf: 0, currClass: 0, headerText: 'The Bookbaggregator'}
 
   render() {
     if (this.state.screen == 0 || this.state.screen == 2) {
@@ -74,6 +74,7 @@ class App extends Component {
                           changeProf={prof => this.setState({screen: 4, currProf: prof})}
                           changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
                           getMore={tempEmail => this.setState({screen: 5, email: tempEmail})}
+                          advanceSearch={() => this.setState({screen: 6})}
                           logout={() => this.setState({screen: 0})}/>;
                 case 2:
                   return <Input
@@ -93,6 +94,7 @@ class App extends Component {
                 case 5:
                   return <AllRecs
                             changeClass={tempClass => this.setState({screen: 3, currClass: tempClass})}
+                            email={this.state.email}
                             />;
                 case 6:
                   return <AdvSearch

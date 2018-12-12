@@ -9,10 +9,11 @@ export default class BasicInput extends React.Component {
     this.state = {fieldValues: this.props.fieldValues, majors: [], user_id:''};
   }
   saveAndContinue = () => {
-
     let temp = this.state.fieldValues;
-    let ret = {'first': temp.fname, 'last': temp.lname, 'email': temp.email, 'grad_year': temp.gradyear, 'major': temp.major};
-    axios.post('http://localhost:5000/feroze-create-user', ret)
+    let ret = '';
+    ret += 'name=' + temp.fname + ' ' + temp.lname + '&' + 'email=' + temp.email + '&' + 'year=' + temp.gradyear + '&' + 'major=' + temp.major;
+    console.log(ret);
+    axios.post('http://localhost:5000/create-user?' + ret)
         .then(res => {
             console.log(res.data);
             temp.user_id = res.data;
@@ -34,7 +35,6 @@ export default class BasicInput extends React.Component {
   componentDidMount() {
     axios.get('http://localhost:5000/get-all-majors')
         .then(res => {
-            console.log(res.data);
             this.setState({majors: res.data});
         })
         .catch(e => console.log(e))

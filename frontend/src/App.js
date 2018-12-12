@@ -44,11 +44,11 @@ class App extends Component {
     //   star_number = request.args.get('star_number')
     //   comment_id = request.args.get('comment_id')
     //   difficulty = request.args.get('difficulty')
-    axios.post('http://localhost:5000/add-class?user_id=1000&class_id=513&semester=2014 Spring Term&star_number=1&difficulty=5')
-        .then(res => {
-            console.log(res.data);
-        })
-        .catch(e => console.log(e))
+    // axios.post('http://localhost:5000/add-class?user_id=1000&class_id=513&semester=2014 Spring Term&star_number=1&difficulty=5')
+    //     .then(res => {
+    //         console.log(res.data);
+    //     })
+    //     .catch(e => console.log(e))
     this.app = firebase.initializeApp(firebaseConfig);
   }
 

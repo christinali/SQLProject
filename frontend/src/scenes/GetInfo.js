@@ -34,7 +34,7 @@ class GetInfo extends React.Component {
     }
 
     getTReqs(email) {
-        axios.get('http://localhost:5000/get-recommended-treqs?email=' + this.props.email) //replace with email
+        axios.get('http://localhost:5000/get-recommended-treqs?email=' + email) //replace with email
             .then(res => {
                 this.setState({
                   Treqs: res.data,
@@ -44,7 +44,7 @@ class GetInfo extends React.Component {
     }
 
     getMajors(email) {
-        axios.get('http://localhost:5000/get-recommended-major?email=' + this.props.email) //replace with email
+        axios.get('http://localhost:5000/get-recommended-major?email=' + email) //replace with email
             .then(res => {
                 this.setState({
                   Majors: res.data,
@@ -168,7 +168,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h3> Difficulty:
                                 {Treqs[0].difficulty != 0 ?
@@ -177,7 +177,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Treqs[0].satisfiesNeeded)} </h4>
                         </div>}
@@ -192,7 +192,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h3> Difficulty:
                                 {Treqs[1].difficulty != 0 ?
@@ -201,7 +201,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Treqs[1].satisfiesNeeded)} </h4>
                         </div>}
@@ -216,7 +216,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h3> Difficulty:
                                 {Treqs[2].difficulty != 0 ?
@@ -225,7 +225,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Treqs[2].satisfiesNeeded)} </h4>
                         </div>}
@@ -282,7 +282,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h3> Difficulty:
                                 {Majors[0].difficulty != 0 ?
@@ -291,7 +291,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Majors[0].satisfiesNeeded)} </h4>
                         </div>}
@@ -306,7 +306,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h3> Difficulty:
                                 {Majors[1].difficulty != 0 ?
@@ -315,7 +315,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Majors[1].satisfiesNeeded)} </h4>
                         </div>}
@@ -330,7 +330,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h3> Difficulty:
                                 {Majors[2].difficulty != 0 ?
@@ -339,7 +339,7 @@ class GetInfo extends React.Component {
                                       starDimension="22px"
                                       starSpacing="3px"
                                       starRatedColor="#FF8C00"
-                                  /> : <h3> No rating yet! </h3> }
+                                  /> : <h3> No rating yet </h3> }
                             </h3>
                             <h4> Treqs Satisfied: {this.splitTreqs(Majors[2].satisfiesNeeded)} </h4>
                         </div>}

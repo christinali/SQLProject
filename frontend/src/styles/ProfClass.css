@@ -92,7 +92,6 @@
 }
 
 .botRow {
-  /* background-color: #ffff00; */
   padding: 5px 25px 5px 25px;
   display: flex;
   border-radius: 30px;
@@ -105,13 +104,12 @@
 
 .botRow2 {
   padding: 5px 25px 5px 25px;
-  display: flex;
   border-radius: 30px;
   border-style: groove;
   border-width: 3px;
   border-color: #000000;
   margin-bottom: 10px;
-  background-color: #f2efe8;
+  background-color: #fff;
 }
 
 .reviewInfo {
